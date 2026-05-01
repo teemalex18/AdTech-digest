@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AdTech-дайджест: рекламные кабинеты РФ — 30 апреля 2026</title>
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 28-30 апреля 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,18 +13,15 @@
     body {
       font-family: 'Inter', sans-serif;
       font-size: 16px;
-      line-height: 1.65;
-      background: #f4f5f7;
+      line-height: 1.6;
       color: #1a1a2e;
+      background: #f4f6fa;
     }
-
-    a { color: #1a6ef5; text-decoration: none; }
-    a:hover { text-decoration: underline; }
 
     .wrapper {
       max-width: 800px;
       margin: 0 auto;
-      padding: 24px 16px 60px;
+      padding: 32px 20px 64px;
     }
 
     /* Header */
@@ -32,206 +29,191 @@
       background: #1a1a2e;
       color: #fff;
       border-radius: 12px;
-      padding: 32px 28px;
+      padding: 32px 36px;
       margin-bottom: 24px;
     }
-    .header-label {
+    .header .label {
       font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #7b8cde;
-      margin-bottom: 10px;
+      color: #7c9abf;
+      margin-bottom: 8px;
     }
     .header h1 {
       font-size: 26px;
       font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 10px;
+      line-height: 1.25;
+      margin-bottom: 12px;
     }
-    .header-meta {
+    .header .meta {
       font-size: 14px;
-      color: #a8b2d8;
+      color: #a0b4cc;
+    }
+    .header .meta strong {
+      color: #d0e0f0;
     }
 
     /* Summary block */
     .summary {
       background: #fff;
-      border-radius: 12px;
+      border-radius: 10px;
       padding: 20px 24px;
-      margin-bottom: 24px;
-      border-left: 4px solid #7b8cde;
-    }
-    .summary-title {
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #7b8cde;
-      margin-bottom: 10px;
-    }
-    .summary p {
+      margin-bottom: 28px;
+      border-left: 4px solid #4a7fc1;
       font-size: 15px;
-      color: #444;
+      color: #333;
     }
+    .summary p { margin-bottom: 6px; }
+    .summary p:last-child { margin-bottom: 0; }
     .summary .stat {
       display: inline-block;
-      background: #f0f2ff;
-      border-radius: 6px;
-      padding: 2px 10px;
+      background: #eaf0fb;
+      color: #2a5fa5;
       font-weight: 600;
-      color: #1a6ef5;
-      margin: 0 2px;
+      border-radius: 4px;
+      padding: 0 6px;
+      font-size: 14px;
     }
 
     /* Section headings */
     .section-title {
       font-size: 13px;
       font-weight: 700;
-      text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #888;
-      margin: 32px 0 14px;
+      text-transform: uppercase;
+      color: #666;
+      margin: 36px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e0e6f0;
     }
 
-    /* News card */
+    /* Cards */
     .card {
       background: #fff;
-      border-radius: 12px;
-      padding: 22px 24px;
+      border-radius: 10px;
+      padding: 24px 28px;
       margin-bottom: 16px;
-      border: 1px solid #e8eaf0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
-    .card.primary {
-      border-left: 4px solid #1a6ef5;
+    .card.featured {
+      border-left: 4px solid #2a5fa5;
     }
     .card.secondary {
-      border-left: 4px solid #d0d4e8;
+      border-left: 4px solid #c8d8ee;
     }
 
-    .card-top {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-    }
-    .badge {
+    .card-platform {
       display: inline-block;
       font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
+      font-weight: 700;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
-      border-radius: 20px;
-      padding: 3px 10px;
+      background: #eaf0fb;
+      color: #2a5fa5;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 10px;
     }
-    .badge-platform {
-      background: #eef2ff;
-      color: #3d5af1;
-    }
-    .badge-date {
-      background: #f3f4f6;
-      color: #666;
-    }
-    .badge-new {
-      background: #e6f9f0;
-      color: #0d7a45;
-    }
+    .card-platform.vk { background: #e8f0fd; color: #2753d4; }
+    .card-platform.yandex { background: #fff6e0; color: #c77a00; }
 
     .card h2 {
       font-size: 18px;
       font-weight: 700;
-      line-height: 1.35;
+      line-height: 1.3;
       margin-bottom: 8px;
       color: #1a1a2e;
     }
-    .card-source {
+    .card .source-line {
       font-size: 13px;
       color: #888;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
-    .card-source a {
-      color: #1a6ef5;
+    .card .source-line a {
+      color: #4a7fc1;
+      text-decoration: none;
     }
+    .card .source-line a:hover { text-decoration: underline; }
 
-    .card-section-label {
+    .card-body { font-size: 15px; color: #333; }
+    .card-body p { margin-bottom: 10px; }
+    .card-body ul {
+      margin: 6px 0 10px 18px;
+    }
+    .card-body ul li { margin-bottom: 4px; }
+
+    .card-label {
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #aaa;
+      letter-spacing: 0.06em;
+      color: #999;
       margin: 14px 0 4px;
     }
-    .card p {
-      font-size: 15px;
-      color: #333;
-      margin-bottom: 8px;
-    }
-    .card p:last-child {
-      margin-bottom: 0;
-    }
 
-    .card-verdict {
-      background: #f7f9ff;
-      border-radius: 8px;
-      padding: 12px 14px;
-      margin-top: 14px;
+    .conclusion {
+      background: #f0f6ff;
+      border-radius: 6px;
+      padding: 10px 14px;
       font-size: 14px;
-      color: #2d3a6e;
-      border-left: 3px solid #7b8cde;
+      color: #2a4a7a;
+      margin-top: 14px;
+      line-height: 1.5;
     }
 
     /* Not included block */
-    .not-included {
+    .skipped-block {
       background: #fafafa;
-      border: 1px solid #e4e6ee;
-      border-radius: 12px;
-      padding: 18px 22px;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      padding: 18px 24px;
       margin-bottom: 16px;
     }
-    .not-included ul {
-      padding-left: 18px;
+    .skipped-block h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    .skipped-block ul {
+      margin: 0 0 0 18px;
       font-size: 14px;
       color: #666;
     }
-    .not-included ul li {
-      margin-bottom: 5px;
-    }
+    .skipped-block ul li { margin-bottom: 4px; }
 
-    /* Takeaway block */
+    /* What it means block */
     .takeaway {
       background: #1a1a2e;
-      color: #e8ecff;
-      border-radius: 12px;
-      padding: 24px 26px;
-      margin-top: 10px;
+      color: #d0e0f0;
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-top: 8px;
     }
-    .takeaway .section-title {
-      color: #7b8cde;
-      margin-top: 0;
+    .takeaway h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
     }
-    .takeaway p {
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 10px;
-      color: #c9d1f0;
-    }
-    .takeaway p:last-child {
-      margin-bottom: 0;
-    }
+    .takeaway p { font-size: 15px; line-height: 1.65; margin-bottom: 10px; }
+    .takeaway p:last-child { margin-bottom: 0; }
+    .takeaway strong { color: #fff; }
 
     /* Footer */
     .footer {
-      margin-top: 36px;
+      text-align: center;
       font-size: 13px;
       color: #aaa;
-      text-align: center;
+      margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 560px) {
+      .header { padding: 24px 20px; }
       .header h1 { font-size: 21px; }
-      .card h2 { font-size: 16px; }
-      .wrapper { padding: 16px 12px 48px; }
+      .card { padding: 18px 18px; }
+      .takeaway { padding: 20px 18px; }
     }
   </style>
 </head>
@@ -240,153 +222,129 @@
 
   <!-- Header -->
   <div class="header">
-    <div class="header-label">Еженедельный выпуск</div>
+    <div class="label">Еженедельный дайджест</div>
     <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
-    <div class="header-meta">Выпуск от 30 апреля 2026 &nbsp;|&nbsp; Окно: 28-30 апреля 2026</div>
+    <div class="meta">
+      Выпуск от <strong>1 мая 2026</strong> &nbsp;|&nbsp; Окно: <strong>28-30 апреля 2026</strong>
+    </div>
   </div>
 
   <!-- Summary -->
   <div class="summary">
-    <div class="summary-title">Резюме выпуска</div>
-    <p>
-      Проверено <span class="stat">10</span> источников за период 28-30 апреля 2026.
-      Найдено <span class="stat">2</span> релевантных обновления рекламных кабинетов.
-      Затронуты платформы: <strong>VK Реклама</strong>, <strong>Яндекс Директ</strong>.
-    </p>
-    <p style="margin-top:10px;">
-      Большинство источников за период не содержали новостей о продуктовых изменениях кабинетов.
-      Материалы по рынку рекламы в Max и финансовым результатам Яндекса исключены как аналитика без изменений инструментов.
-    </p>
+    <p>Проверено <span class="stat">10 источников</span>. Найдено <span class="stat">2 релевантных обновления</span> с датой публикации в указанном окне.</p>
+    <p>Затронутые платформы: <strong>Яндекс Директ</strong>, <strong>VK Реклама</strong>. Оба обновления датированы 29 апреля 2026 года.</p>
+    <p>Источники, вернувшие 403 и недоступные для прямого обхода: Авито, Ozon, Wildberries, eLama, Magnetto.pro, MTS Marketolog, AdIndex, Yandex Adv. Проверены через поисковый индекс.</p>
   </div>
 
   <!-- Главное -->
   <div class="section-title">Главное</div>
 
-  <!-- Card 1 -->
-  <div class="card primary">
-    <div class="card-top">
-      <span class="badge badge-platform">VK Реклама</span>
-      <span class="badge badge-new">Новый формат</span>
-      <span class="badge badge-date">29 апреля 2026</span>
+  <!-- Card 1: Яндекс Директ мобильное приложение -->
+  <div class="card featured">
+    <div class="card-platform yandex">Яндекс Директ</div>
+    <h2>Мобильное приложение Директа получило полноценный Мастер отчетов и ИИ-помощника</h2>
+    <div class="source-line">
+      29 апреля 2026 &nbsp;|&nbsp;
+      Источник: <a href="https://yandex.ru/adv/news/mobilnoe-prilozhenie-direkta-novye-vozmozhnosti-dlya-specialistov" target="_blank">Яндекс Реклама (официально)</a>,
+      <a href="https://ppc.world/news/yandeks-obnovil-mobilnoe-prilozhenie-direkta/" target="_blank">ppc.world</a>
     </div>
-    <h2>VK Реклама добавила карусели в VK Клипы</h2>
-    <div class="card-source">
-      Источник:
-      <a href="https://www.seonews.ru/events/vk-reklama-dobavila-novyy-reklamnyy-format-karuseli-v-vk-klipakh/" target="_blank">SEOnews</a>,
-      подтверждено
-      <a href="https://www.cnews.ru/news/line/2026-04-29_vk_reklama_dobavila_novyj" target="_blank">CNews</a>
-    </div>
-
-    <div class="card-section-label">Что изменилось</div>
-    <p>
-      В VK Рекламе появился новый рекламный формат: карусель в ленте VK Клипов.
-      Объявление состоит из нескольких слайдов, которые пользователь пролистывает прямо внутри ленты, не покидая привычный интерфейс.
-    </p>
-
-    <div class="card-section-label">Возможности формата</div>
-    <p>
-      В одном размещении можно показать несколько товаров, экранов приложения или офферов.
-      По данным внутренних тестов, конверсия в клик достигает 1%. Формат нативно встраивается в общую ленту Клипов.
-    </p>
-
-    <div class="card-section-label">Кому подходит</div>
-    <p>
-      Интернет-магазины, мобильные приложения, сайты и мини-приложения. Особенно актуально для e-commerce, где важно показать ассортимент.
-    </p>
-
-    <div class="card-section-label">Почему важно</div>
-    <p>
-      Короткие вертикальные видео остаются одним из самых быстрорастущих форматов потребления контента. Карусель в Клипах позволяет совместить охват видеоленты с коммерческой механикой мультипродуктового показа.
-    </p>
-
-    <div class="card-verdict">
-      Для performance-рекламодателей в e-commerce: тестировать формат в первую очередь. CTR 1% внутри видеоленты -- сильный показатель для нативного формата.
+    <div class="card-body">
+      <div class="card-label">Что изменилось</div>
+      <p>Яндекс расширил мобильное приложение Яндекс Директа: теперь полноценная работа с аналитикой, отчетами и рекомендациями доступна прямо со смартфона без захода в веб-кабинет.</p>
+      <ul>
+        <li>В Мастере отчетов появились сохранённые отчёты, готовые шаблоны из Библиотеки отчётов и возможность самостоятельно собирать отчёты с нужными группировками, метриками, фильтрами, периодами, сравнением, целями и атрибуцией.</li>
+        <li>Авторизация через управляющий аккаунт и быстрое переключение между несколькими рекламными кабинетами в одном приложении.</li>
+        <li>Встроенный ИИ-помощник суммаризирует данные по продвижению и в один клик строит отчёт с подобранными параметрами.</li>
+        <li>Персональные рекомендации по улучшению кампаний: приложение подсказывает конкретные настройки для роста переходов и целевых действий.</li>
+      </ul>
+      <div class="card-label">Почему важно</div>
+      <p>Раньше полноценная аналитика и управление кабинетами через управляющий аккаунт были доступны только в браузере. Теперь специалист и руководитель могут оперативно реагировать на изменения кампаний с телефона.</p>
+      <div class="card-label">Кому полезно</div>
+      <p>Специалистам по контекстной рекламе, операторам агентских кабинетов (управляющий аккаунт), руководителям рекламных направлений, которые следят за несколькими аккаунтами. Полезно для оперативного мониторинга вне рабочего места.</p>
+      <div class="conclusion">
+        Яндекс последовательно переносит desktop-функционал в мобильное приложение. Обновление снижает зависимость от ноутбука при оперативном управлении кампаниями.
+      </div>
     </div>
   </div>
 
-  <!-- Card 2 -->
-  <div class="card primary">
-    <div class="card-top">
-      <span class="badge badge-platform">Яндекс Директ</span>
-      <span class="badge badge-new">Обновление кабинета</span>
-      <span class="badge badge-date">29 апреля 2026</span>
+  <!-- Card 2: VK Реклама карусели в VK Клипах -->
+  <div class="card featured">
+    <div class="card-platform vk">VK Реклама</div>
+    <h2>VK Реклама добавила карусели в VK Клипах</h2>
+    <div class="source-line">
+      29 апреля 2026 &nbsp;|&nbsp;
+      Источник: <a href="https://www.cnews.ru/news/line/2026-04-29_vk_reklama_dobavila_novyj" target="_blank">CNews</a>,
+      <a href="https://www.seonews.ru/events/vk-reklama-dobavila-novyy-reklamnyy-format-karuseli-v-vk-klipakh/" target="_blank">SEOnews</a>
     </div>
-    <h2>Яндекс расширил функционал мобильного приложения Директа</h2>
-    <div class="card-source">
-      Источник:
-      <a href="https://news.inhouse-marketing.ru/2026/04/29/iandeks-rasshiril-fynkcional-mobilnogo-prilojeniia-direkta/" target="_blank">Новости интернет-маркетинга</a>;
-      официальная страница:
-      <a href="https://yandex.ru/adv/news/mobilnoe-prilozhenie-direkta-novye-vozmozhnosti-dlya-specialistov" target="_blank">Яндекс Реклама</a>
-    </div>
-
-    <div class="card-section-label">Что изменилось</div>
-    <p>
-      Яндекс обновил мобильное приложение Директа. Теперь в нем доступен полноценный Мастер отчетов:
-      сохраненные отчеты, готовые шаблоны из Библиотеки, а также самостоятельная сборка -- группировки, метрики, фильтры, периоды сравнения, цели и атрибуция, графики.
-    </p>
-
-    <div class="card-section-label">ИИ-помощник и отчеты</div>
-    <p>
-      ИИ-помощник теперь умеет не только отвечать на вопросы по статистике, но и открывать нужный отчет в один клик -- с уже подобранными группировками, метриками и фильтрами.
-      Переход из диалога с ИИ сразу в отчет без ручной настройки.
-    </p>
-
-    <div class="card-section-label">Управление аккаунтами</div>
-    <p>
-      Добавлена авторизация через управляющий аккаунт и быстрое переключение между кабинетами.
-      С телефона теперь доступны: запуск кампаний (Простой старт, Мастер кампаний), пополнение баланса, редактирование кампаний, создание лендингов, применение рекомендаций.
-    </p>
-
-    <div class="card-section-label">Кому полезно</div>
-    <p>
-      Специалистам и агентствам, которые ведут несколько кабинетов и нуждаются в оперативном контроле без компьютера. Малому бизнесу, запускающему кампании самостоятельно.
-    </p>
-
-    <div class="card-verdict">
-      Директ на мобиле вырос от базового мониторинга до полноценного инструмента управления. Особенно полезно для агентств: управляющий аккаунт и переключение между кабинетами прямо из приложения.
+    <div class="card-body">
+      <div class="card-label">Что изменилось</div>
+      <p>В VK Рекламе появился новый рекламный формат: карусель внутри ленты VK Клипов. Пользователь видит многослайдовое объявление прямо в ленте коротких видео и может пролистывать слайды, не покидая привычный интерфейс.</p>
+      <ul>
+        <li>Формат нативно вписывается в ленту Клипов.</li>
+        <li>По данным внутренних тестов VK, конверсия в клик достигает 1%.</li>
+        <li>Подходит для продвижения товаров интернет-магазинов, мобильных приложений, сайтов и мини-приложений ВКонтакте.</li>
+      </ul>
+      <div class="card-label">Почему важно</div>
+      <p>VK Клипы — один из наиболее вовлекающих плейсментов ВКонтакте. Появление карусели в этом формате позволяет показывать несколько продуктов или экранов приложения в рамках одного объявления в высококонкурентной по вниманию ленте.</p>
+      <div class="card-label">Кому полезно</div>
+      <p>Рекламодателям с каталожным ассортиментом (e-commerce), разработчикам мобильных приложений и владельцам мини-приложений ВКонтакте. Агентствам, ведущим кампании в VK Рекламе с целью трафика и конверсий.</p>
+      <div class="conclusion">
+        Новый формат расширяет возможности для мультипродуктовых кампаний в VK Клипах. Стоит протестировать в связке с ретаргетингом или кампаниями на широкую аудиторию.
+      </div>
     </div>
   </div>
 
   <!-- Остальные обновления -->
   <div class="section-title">Остальные обновления</div>
   <div class="card secondary">
-    <p style="color:#888; font-size:15px;">
-      За период 28-30 апреля 2026 других релевантных обновлений рекламных кабинетов в проверенных источниках не обнаружено.
-      Все остальные публикации периода относятся к аналитике рынка, финансовым результатам или событиям вне окна дат.
-    </p>
+    <div class="card-body">
+      <p style="color:#666;">За период 28-30 апреля 2026 года других релевантных обновлений рекламных кабинетов не найдено.</p>
+      <p style="color:#888; font-size:14px;">Ряд заметных обновлений (монетизация каналов в Яндекс MAX, изменение минимальных ставок в Ozon) датируются 27 апреля и не попадают в указанное окно.</p>
+    </div>
   </div>
 
   <!-- Не вошло в выпуск -->
   <div class="section-title">Не вошло в выпуск</div>
-  <div class="not-included">
+  <div class="skipped-block">
+    <h3>Финансовые результаты и аналитика рынка</h3>
     <ul>
-      <li><strong>Аналитика рынка (adindex.ru, 28.04):</strong> рост рынка рекламы в мессенджере Max в 55 раз -- нет изменений в кабинете.</li>
-      <li><strong>Финансовые результаты (adindex.ru, 28.04):</strong> рекламная выручка Яндекса +9% -- не является продуктовым обновлением.</li>
-      <li><strong>Бюджеты рекламодателей (adindex.ru, 30.04):</strong> снижение рекламных расходов Ленты -- не является обновлением инструмента.</li>
-      <li><strong>Кейсы без новых функций:</strong> статьи о продвижении товаров в VK Рекламе, eLama, Яндекс Директ в связке -- нет новых возможностей кабинета.</li>
-      <li><strong>Вебинары и обучающие статьи:</strong> инструкции по настройке Директа, VK Рекламы -- без анонса нового функционала.</li>
-      <li><strong>Обновления за пределами окна (27.04):</strong> AdIndex «Обновления кабинета: таргетинг во внешних сетях и автоматизация рекламы в Max» -- дата публикации 27 апреля, вне окна.</li>
+      <li>Яндекс подвёл итоги I квартала 2026 года (рост выручки 22%) — общая финансовая отчётность, не изменение инструмента.</li>
+      <li>Прогноз: рекламный рынок в MAX может вырасти до 5 млрд руб. — аналитика без продуктового обновления.</li>
+    </ul>
+  </div>
+  <div class="skipped-block">
+    <h3>За пределами временного окна (опубликованы 27 апреля)</h3>
+    <ul>
+      <li>Яндекс запустил бета-тест монетизации каналов в MAX (27 апреля 2026) — новый рекламный плейсмент, но публикация на день раньше окна.</li>
+      <li>Ozon изменил минимальную ставку для баннеров «Нативный Главная» (27 апреля 2026) — изменение в рекламном кабинете, но дата вне окна.</li>
+    </ul>
+  </div>
+  <div class="skipped-block">
+    <h3>E-commerce и интеграции без изменения рекламного кабинета</h3>
+    <ul>
+      <li>Яндекс назвал первых ритейлеров, подключившихся к продажам через Алису AI / Yandex Commerce Protocol (29 апреля) — новость об агентной коммерции, не об изменении кабинета Директа.</li>
+    </ul>
+  </div>
+  <div class="skipped-block">
+    <h3>Прочие категории</h3>
+    <ul>
+      <li>Кейсы и обучающие материалы без новых возможностей.</li>
+      <li>PR-материалы агентств без продуктового обновления.</li>
+      <li>Тендеры и конкурсные объявления VK (28 апреля).</li>
     </ul>
   </div>
 
   <!-- Что это значит для работы -->
+  <div class="section-title">Что это значит для работы</div>
   <div class="takeaway">
-    <div class="section-title">Что это значит для работы</div>
-    <p>
-      <strong>VK Реклама:</strong> появление карусели в Клипах означает, что e-commerce-рекламодателям стоит протестировать формат до его масштабирования конкурентами.
-      Вертикальная видеолента -- высокая вовлеченность аудитории; мультипродуктовый формат в этом контексте ранее не был доступен.
-    </p>
-    <p>
-      <strong>Яндекс Директ:</strong> обновление мобильного приложения снижает зависимость от десктопа при оперативном управлении кампаниями.
-      Агентствам стоит проверить, настроен ли управляющий аккаунт для быстрого переключения между клиентскими кабинетами.
-    </p>
-    <p>
-      <strong>Общее:</strong> оба обновления вышли 29 апреля -- насыщенный день для рекламных платформ при спокойном начале и концом недели. Следите за официальными каналами Яндекс Рекламы и VK для подтверждения деталей и дат запуска в продакшн.
-    </p>
+    <h2>Вывод для рекламного специалиста и агентства</h2>
+    <p><strong>Яндекс Директ.</strong> Если вы ведёте несколько аккаунтов или регулярно сверяетесь со статистикой вне офиса, стоит обновить мобильное приложение Директа и проверить, как работает управляющий аккаунт в нём. Теперь это полноценный инструмент аналитики, а не только быстрый просмотр.</p>
+    <p><strong>VK Реклама.</strong> Карусель в VK Клипах — это новый плейсмент с нативным форматом в высокововлечённой аудитории. Если вы уже запускаете кампании в Клипах, добавьте тест карусели в сплит: по данным самого VK, кликабельность достигает 1%, что для in-feed формата является хорошим ориентиром.</p>
+    <p>Неделя была умеренной по количеству обновлений. Несколько значимых новинок апреля (MAX, Ozon) вышли 27-го числа и остались за рамками окна.</p>
   </div>
 
   <div class="footer">
-    AdTech-дайджест: рекламные кабинеты РФ &nbsp;|&nbsp; Окно 28-30 апреля 2026 &nbsp;|&nbsp; Сформирован 30 апреля 2026
+    AdTech-дайджест &nbsp;|&nbsp; Выпуск 2026-04-30 &nbsp;|&nbsp; Сформирован автоматически
   </div>
 
 </div>
