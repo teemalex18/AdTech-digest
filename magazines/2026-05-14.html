@@ -1,588 +1,684 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AdTech-дайджест: рекламные кабинеты РФ — 14 мая 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <title>AdTech-дайджест: рекламные кабинеты РФ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
-      color: #1e293b;
-      background-color: #f1f5f9;
-      line-height: 1.6;
-    }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.5;
+            font-size: 16px;
+            padding: 24px 16px;
+        }
 
-    a { color: #3b82f6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
 
-    .wrapper {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #f1f5f9;
-    }
+        /* HEADER */
+        .header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 40px 32px 36px;
+        }
 
-    /* ── ШАПКА ── */
-    .header {
-      background-color: #0f172a;
-      color: #ffffff;
-      padding: 40px 32px;
-    }
-    .header__label {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #94a3b8;
-      margin-bottom: 12px;
-    }
-    .header__title {
-      font-size: 26px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
-    .header__meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px 20px;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-    .header__meta-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+        .header .meta-badge {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.6px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
 
-    /* ── РЕЗЮМЕ ── */
-    .summary {
-      background-color: #f8fafc;
-      border-bottom: 1px solid #e2e8f0;
-      padding: 28px 32px;
-    }
-    .summary__stats {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    .stat-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 16px 24px;
-      min-width: 140px;
-      flex: 1;
-    }
-    .stat-card__num {
-      font-size: 36px;
-      font-weight: 700;
-      color: #0f172a;
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-    .stat-card__label {
-      font-size: 13px;
-      color: #64748b;
-      font-weight: 500;
-    }
-    .summary__platforms-label {
-      font-size: 13px;
-      font-weight: 600;
-      color: #475569;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
 
-    /* ── ПЛАТФОРМЕННЫЕ БЕЙДЖИ ── */
-    .badge {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 20px;
-      white-space: nowrap;
-    }
-    .badge--yandex-direct   { background: #fef3c7; color: #92400e; }
-    .badge--yandex-metrika  { background: #dcfce7; color: #166534; }
-    .badge--wildberries     { background: #ede9fe; color: #5b21b6; }
-    .badge--telegram-ads    { background: #dbeafe; color: #1e40af; }
-    .badge--adstat          { background: #fce7f3; color: #9d174d; }
-    .badge--default         { background: #f1f5f9; color: #334155; }
+        .header .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 16px;
+            font-size: 15px;
+            color: #cbd5e1;
+            align-items: center;
+        }
 
-    /* ── ОСНОВНАЯ ОБЛАСТЬ ── */
-    .content {
-      padding: 32px 32px 0;
-    }
+        .header .info-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
 
-    /* ── СЕКЦИИ ── */
-    .section { margin-bottom: 40px; }
-    .section__title {
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #64748b;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #e2e8f0;
-    }
+        .header .info-row .icon {
+            font-size: 18px;
+            line-height: 1;
+        }
 
-    /* ── КАРТОЧКИ ГЛАВНОГО ── */
-    .card-main {
-      background: #ffffff;
-      border-radius: 8px;
-      border-left: 4px solid #3b82f6;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-      padding: 24px;
-      margin-bottom: 16px;
-    }
+        /* РЕЗЮМЕ */
+        .summary-block {
+            background-color: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 28px 32px;
+        }
 
-    /* ── КАРТОЧКИ ОСТАЛЬНЫХ ── */
-    .card-other {
-      background: #ffffff;
-      border-radius: 8px;
-      border: 1px solid #e2e8f0;
-      padding: 24px;
-      margin-bottom: 16px;
-    }
+        .summary-numbers {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
 
-    .card__head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 14px;
-      flex-wrap: wrap;
-    }
-    .card__title {
-      font-size: 18px;
-      font-weight: 600;
-      color: #0f172a;
-      line-height: 1.35;
-      flex: 1;
-    }
-    .card__title a { color: #0f172a; }
-    .card__title a:hover { color: #3b82f6; }
-    .card__date {
-      font-size: 12px;
-      color: #94a3b8;
-      white-space: nowrap;
-      margin-top: 3px;
-    }
-    .card__meta {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-    .card__source {
-      font-size: 13px;
-      color: #64748b;
-    }
-    .card__source a { color: #3b82f6; }
-    .card__confirmed {
-      font-size: 12px;
-      color: #64748b;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 4px;
-      padding: 2px 8px;
-    }
-    .card__confirmed span { color: #94a3b8; margin-right: 2px; }
+        .summary-item {
+            display: flex;
+            flex-direction: column;
+        }
 
-    .card__body { display: flex; flex-direction: column; gap: 12px; }
+        .summary-item .num {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.2;
+        }
 
-    .card__row-label {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: #94a3b8;
-      margin-bottom: 3px;
-    }
-    .card__row-text {
-      font-size: 15px;
-      color: #334155;
-      line-height: 1.55;
-    }
+        .summary-item .label {
+            font-size: 14px;
+            color: #475569;
+            margin-top: 4px;
+        }
 
-    .card__conclusion {
-      background: #eff6ff;
-      border-left: 3px solid #3b82f6;
-      border-radius: 0 6px 6px 0;
-      padding: 12px 14px;
-      margin-top: 4px;
-    }
-    .card__conclusion .card__row-label { color: #3b82f6; }
-    .card__conclusion .card__row-text { color: #1e3a5f; font-weight: 500; }
+        .platforms-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin-top: 6px;
+        }
 
-    /* ── ЧТО ЭТО ЗНАЧИТ ── */
-    .section-insights {
-      background: #eff6ff;
-      border-radius: 8px;
-      padding: 24px;
-      margin-bottom: 40px;
-    }
-    .section-insights .section__title {
-      border-bottom-color: #bfdbfe;
-      color: #1e40af;
-    }
-    .insights-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .insights-list li {
-      display: flex;
-      gap: 10px;
-      font-size: 15px;
-      color: #1e3a5f;
-      line-height: 1.55;
-    }
-    .insights-list li::before {
-      content: '→';
-      color: #3b82f6;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
+        .platforms-tags .tag-label {
+            font-size: 14px;
+            color: #475569;
+            font-weight: 500;
+            margin-right: 4px;
+        }
 
-    /* ── НЕ ВОШЛО ── */
-    .section-dropped {
-      margin-bottom: 40px;
-    }
-    .dropped-note {
-      font-size: 14px;
-      color: #64748b;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 6px;
-      padding: 14px 18px;
-    }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            background-color: #e2e8f0;
+            color: #1e293b;
+            transition: background 0.1s;
+        }
 
-    /* ── ФУТЕР ── */
-    .footer {
-      background-color: #0f172a;
-      color: #64748b;
-      padding: 24px 32px;
-      font-size: 13px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    .footer__brand { color: #94a3b8; font-weight: 600; }
+        .badge.platform {
+            background-color: #dbeafe;
+            color: #1e40af;
+            font-weight: 600;
+        }
 
-    /* ── МОБИЛЬНАЯ АДАПТАЦИЯ ── */
-    @media (max-width: 720px) {
-      .header { padding: 28px 20px; }
-      .header__title { font-size: 20px; }
-      .header__meta { gap: 6px 12px; font-size: 13px; }
-      .summary { padding: 20px; }
-      .summary__stats { gap: 12px; }
-      .stat-card { padding: 12px 16px; min-width: 100px; }
-      .stat-card__num { font-size: 28px; }
-      .content { padding: 20px 20px 0; }
-      .card-main, .card-other { padding: 18px; }
-      .card__title { font-size: 16px; }
-      .footer { padding: 20px; flex-direction: column; }
-    }
-  </style>
+        .badge.source {
+            background-color: #f1f5f9;
+            color: #334155;
+            font-weight: 400;
+        }
+
+        .badge.confirmed {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+
+        /* КАРТОЧКИ */
+        .news-section {
+            padding: 8px 32px 32px 32px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 28px;
+            margin-bottom: 18px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e2e8f0;
+            color: #0f172a;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 16px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 24px;
+            transition: box-shadow 0.15s;
+        }
+
+        .card.main-card {
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+
+        .card.regular-card {
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 8px 12px;
+            margin-bottom: 12px;
+        }
+
+        .card-header .title-link {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.3;
+            color: #0f172a;
+            text-decoration: none;
+            flex: 1 1 70%;
+        }
+
+        .card-header .title-link:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 14px;
+            font-size: 14px;
+            color: #475569;
+            margin-bottom: 14px;
+        }
+
+        .card-meta .source-link {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px dotted #94a3b8;
+        }
+
+        .card-meta .source-link:hover {
+            border-bottom-color: #2563eb;
+        }
+
+        .card-body {
+            margin-top: 2px;
+        }
+
+        .card-body p {
+            margin-bottom: 12px;
+        }
+
+        .card-body strong {
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .card-conclusion {
+            background-color: #f8fafc;
+            padding: 12px 16px;
+            border-radius: 6px;
+            border-left: 3px solid #3b82f6;
+            font-weight: 500;
+            margin-top: 14px;
+            font-size: 15px;
+            color: #0f172a;
+        }
+
+        .card-conclusion::before {
+            content: "→ ";
+            color: #3b82f6;
+            font-weight: 700;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 10px;
+            margin-top: 4px;
+            align-items: center;
+        }
+
+        .badge-row .badge {
+            font-size: 12px;
+            padding: 3px 10px;
+        }
+
+        .confirmed-by-list {
+            font-size: 13px;
+            color: #475569;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .confirmed-by-list .badge.confirmed {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+
+        /* НЕ ВОШЛО */
+        .rejected-block {
+            padding: 0 32px 20px 32px;
+        }
+
+        .rejected-block .rejected-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .rejected-table th {
+            background-color: #f1f5f9;
+            text-align: left;
+            padding: 12px 14px;
+            font-weight: 600;
+            color: #1e293b;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .rejected-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: top;
+        }
+
+        .rejected-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .rejected-table .reason {
+            color: #b91c1c;
+            font-weight: 500;
+        }
+
+        /* БЛОК ЗНАЧЕНИЕ */
+        .takeaway-block {
+            background-color: #eff6ff;
+            margin: 12px 32px 32px 32px;
+            padding: 24px 28px;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .takeaway-block h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .takeaway-block p {
+            font-size: 16px;
+            color: #1e293b;
+            margin-bottom: 6px;
+        }
+
+        .takeaway-block ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .takeaway-block li {
+            margin-bottom: 6px;
+        }
+
+        /* FOOTER */
+        .footer {
+            padding: 20px 32px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 14px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        /* АДАПТАЦИЯ */
+        @media (max-width: 720px) {
+            body {
+                padding: 12px 6px;
+            }
+            .header {
+                padding: 28px 18px;
+            }
+            .header h1 {
+                font-size: 26px;
+            }
+            .summary-block {
+                padding: 20px 18px;
+            }
+            .summary-numbers {
+                gap: 16px;
+            }
+            .news-section {
+                padding: 0 16px 20px 16px;
+            }
+            .card {
+                padding: 18px;
+            }
+            .card-header .title-link {
+                font-size: 18px;
+                flex: 1 1 100%;
+            }
+            .rejected-block {
+                padding: 0 16px 20px 16px;
+            }
+            .rejected-table th, .rejected-table td {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+            .takeaway-block {
+                margin: 12px 16px 24px 16px;
+                padding: 18px;
+            }
+            .footer {
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .info-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+            .summary-numbers {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .card-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .rejected-table, .rejected-table tbody, .rejected-table tr, .rejected-table td, .rejected-table th {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .rejected-table th {
+                display: none;
+            }
+            .rejected-table td {
+                padding: 6px 10px;
+                border-bottom: 1px solid #e2e8f0;
+                position: relative;
+                padding-left: 40%;
+            }
+            .rejected-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 35%;
+                font-weight: 600;
+                color: #1e293b;
+                white-space: nowrap;
+            }
+            .rejected-table tr {
+                border: 1px solid #e2e8f0;
+                margin-bottom: 10px;
+                display: block;
+                border-radius: 8px;
+                background: #fafafa;
+            }
+        }
+
+        .empty-state {
+            padding: 24px 0;
+            color: #475569;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-<div class="wrapper">
+<div class="container">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="meta-badge">ЕЖЕНЕДЕЛЬНЫЙ МОНИТОРИНГ</div>
+        <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+        <div class="info-row">
+            <span><span class="icon">📅</span> 14 May 2026</span>
+            <span><span class="icon">🕵️</span> Окно мониторинга: 13.05.2026 – 14.05.2026</span>
+            <span><span class="icon">✓</span> Проверено источников 8 из 11</span>
+        </div>
+    </header>
 
-  <!-- ── ШАПКА ── -->
-  <header class="header">
-    <div class="header__label">Еженедельный мониторинг</div>
-    <h1 class="header__title">AdTech-дайджест: рекламные кабинеты РФ</h1>
-    <div class="header__meta">
-      <div class="header__meta-item">📅&nbsp;14 мая 2026</div>
-      <div class="header__meta-item">🗓&nbsp;Окно мониторинга: 13.05.2026 – 14.05.2026</div>
-      <div class="header__meta-item">🔍&nbsp;Проверено источников: 8 из 11</div>
+    <!-- SUMMARY -->
+    <div class="summary-block">
+        <div class="summary-numbers">
+            <div class="summary-item">
+                <span class="num">8</span>
+                <span class="label">Источников проверено</span>
+            </div>
+            <div class="summary-item">
+                <span class="num">7</span>
+                <span class="label">Релевантных новостей</span>
+            </div>
+            <div class="summary-item">
+                <span class="num">4</span>
+                <span class="label">Главных обновления</span>
+            </div>
+        </div>
+        <div class="platforms-tags">
+            <span class="tag-label">Площадки в выпуске:</span>
+            <span class="badge platform">Яндекс Директ</span>
+            <span class="badge platform">Яндекс Метрика</span>
+            <span class="badge platform">VK Реклама</span>
+            <span class="badge platform">Telegram Ads</span>
+            <span class="badge platform">Wildberries</span>
+        </div>
     </div>
-  </header>
 
-  <!-- ── РЕЗЮМЕ ── -->
-  <div class="summary">
-    <div class="summary__stats">
-      <div class="stat-card">
-        <div class="stat-card__num">8</div>
-        <div class="stat-card__label">Источников проверено</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-card__num">6</div>
-        <div class="stat-card__label">Релевантных новостей</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-card__num">2</div>
-        <div class="stat-card__label">Главных обновления</div>
-      </div>
+    <!-- MAIN NEWS SECTION -->
+    <div class="news-section">
+        <h2 class="section-title">Главное</h2>
+
+        <!-- card 1 main -->
+        <div class="card main-card">
+            <div class="card-header">
+                <a class="title-link" href="https://ppc.world/news/" target="_blank" rel="noopener">В медийных кампаниях Директа появилась возможность увеличивать частоту показов на пользователя</a>
+                <span class="badge platform">Яндекс Директ</span>
+            </div>
+            <div class="card-meta">
+                <span>Источник: <a class="source-link" href="https://ppc.world/news/" target="_blank" rel="noopener">ppc.world</a></span>
+                <span>14-05-2026</span>
+            </div>
+            <div class="card-body">
+                <p><strong>Что изменилось:</strong> В медийных кампаниях Яндекс Директа со стратегией «Максимум показов по минимальной цене» стала доступна настройка увеличения частоты показов рекламы на одного пользователя.</p>
+                <p><strong>Почему важно:</strong> Позволяет рекламодателям чаще показывать объявление одной и той же аудитории, что особенно актуально для кампаний, направленных на запоминание бренда (branding) или донесение сложного сообщения, требующего нескольких касаний.</p>
+                <p><strong>Кому полезно:</strong> Менеджеры по бренд-маркетингу, рекламодатели, запускающие имиджевые и охватные медийные кампании.</p>
+                <div class="card-conclusion">Новая настройка частоты в стратегии «Максимум показов» дает возможность гибче управлять охватом и частотой в медийной рекламе Директа.</div>
+            </div>
+        </div>
+
+        <!-- card 2 main -->
+        <div class="card main-card">
+            <div class="card-header">
+                <a class="title-link" href="https://yandex.ru/adv/news" target="_blank" rel="noopener">В Яндекс Метрике теперь можно строить воронки по ecommerce-событиям и офлайн-конверсиям</a>
+                <span class="badge platform">Яндекс Метрика</span>
+            </div>
+            <div class="card-meta">
+                <span>Источник: <a class="source-link" href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Yandex Adv</a></span>
+                <span>13-05-2026</span>
+            </div>
+            <div class="card-body">
+                <p><strong>Что изменилось:</strong> В конструкторе воронок Яндекс Метрики появилась возможность строить воронки по ecommerce-событиям (заказы, оплаты), статусам заказов из CRM, звонкам, чатам и другим офлайн-конверсиям, передаваемым через API.</p>
+                <p><strong>Почему важно:</strong> Позволяет отслеживать полный путь пользователя от касания с рекламой до фактического завершения заказа или другого офлайн-действия, оценивая эффективность сайта и рекламы на всех этапах.</p>
+                <p><strong>Кому полезно:</strong> E-commerce-проекты, менеджеры, агентства, использующие сквозную аналитику и CRM.</p>
+                <div class="card-conclusion">Расширение данных для воронок в Метрике позволяет более точно оценивать вклад рекламы в реальные продажи и другие бизнес-показатели.</div>
+            </div>
+        </div>
+
+        <!-- card 3 main -->
+        <div class="card main-card">
+            <div class="card-header">
+                <a class="title-link" href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс Директ запустил умный подбор Telegram-каналов для рекламы по описанию контента</a>
+                <span class="badge platform">Яндекс Директ</span>
+            </div>
+            <div class="card-meta">
+                <span>Источник: <a class="source-link" href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Yandex Adv</a></span>
+                <span class="badge confirmed">подтверждено: SEOnews, ppc.world</span>
+                <span>13-05-2026</span>
+            </div>
+            <div class="card-body">
+                <p><strong>Что изменилось:</strong> В инструменте размещения рекламы в Telegram-каналах через Директ появился новый способ таргетинга — автоподбор каналов на основе текстового описания того, о чем канал, вместо ручного выбора категорий.</p>
+                <p><strong>Почему важно:</strong> Упрощает поиск релевантных каналов, особенно для нишевых тематик или на стыке интересов, и позволяет точнее попасть в целевую аудиторию за счет работы нейросетей.</p>
+                <p><strong>Кому полезно:</strong> Все рекламодатели, использующие нативную рекламу в Telegram через Директ, особенно в сложных или специфичных нишах.</p>
+                <div class="card-conclusion">Новый ИИ-таргетинг в Директе делает подбор Telegram-каналов более точным и интуитивно понятным, снижая риск нецелевого расхода бюджета.</div>
+            </div>
+        </div>
+
+        <!-- card 4 main -->
+        <div class="card main-card">
+            <div class="card-header">
+                <a class="title-link" href="https://adindex.ru/news/marketing/" target="_blank" rel="noopener">В VK Рекламе появилась «Креативная студия» с ИИ-инструментами и бенчмарками</a>
+                <span class="badge platform">VK Реклама</span>
+            </div>
+            <div class="card-meta">
+                <span>Источник: <a class="source-link" href="https://adindex.ru/news/marketing/" target="_blank" rel="noopener">AdIndex</a></span>
+                <span class="badge confirmed">подтверждено: SEOnews, ppc.world</span>
+                <span>12-05-2026</span>
+            </div>
+            <div class="card-body">
+                <p><strong>Что изменилось:</strong> В кабинете VK Рекламы запущен новый раздел «Креативная студия», где объединены ИИ-инструменты для создания креативов, лента эффективных объявлений и бенчмарки по рынку. Теперь можно создать объявление в пару кликов.</p>
+                <p><strong>Почему важно:</strong> Значительно ускоряет и упрощает процесс создания рекламных материалов, снижая порог входа для малого бизнеса и экономя время специалистов. Бенчмарки помогают оценить эффективность креативов относительно рынка.</p>
+                <p><strong>Кому полезно:</strong> Небольшие компании, менеджеры, таргетологи, агентства, стремящиеся к быстрому запуску качественных креативов.</p>
+                <div class="card-conclusion">«Креативная студия» в VK Рекламе — мощный инструмент для генерации идей и быстрого создания объявлений, использующий ИИ и данные об успешных кейсах.</div>
+            </div>
+        </div>
+
+        <!-- OTHER UPDATES -->
+        <h2 class="section-title">Остальные обновления</h2>
+
+        <!-- regular card -->
+        <div class="card regular-card">
+            <div class="card-header">
+                <a class="title-link" href="https://ppc.world/news/" target="_blank" rel="noopener">Владельцы Telegram-каналов теперь могут выводить вознаграждение за показ рекламы в TON</a>
+                <span class="badge platform">Telegram Ads</span>
+            </div>
+            <div class="card-meta">
+                <span>Источник: <a class="source-link" href="https://ppc.world/news/" target="_blank" rel="noopener">ppc.world</a></span>
+                <span>14-05-2026</span>
+            </div>
+            <div class="card-body">
+                <p><strong>Что изменилось:</strong> Владельцы каналов в Telegram получили возможность выводить средства, заработанные на показах рекламы Telegram Ads, в криптовалюте TON, если реклама показывалась иностранной аудитории.</p>
+                <p><strong>Почему важно:</strong> Это упрощает монетизацию для авторов каналов с международной аудиторией, предоставляя им прямой и удобный способ получения выплат.</p>
+                <p><strong>Кому полезно:</strong> Авторы и владельцы Telegram-каналов, аудитория которых состоит из пользователей за пределами РФ.</p>
+                <div class="card-conclusion">Возможность вывода в TON расширяет инструменты монетизации для владельцев каналов, ориентированных на зарубежную аудиторию.</div>
+            </div>
+        </div>
+
+        <!-- regular card -->
+        <div class="card regular-card">
+            <div class="card-header">
+                <a class="title-link" href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Обновление Мастера отчетов в Яндекс Директе: группировки по регионам и работа с ключевыми фразами</a>
+                <span class="badge platform">Яндекс Директ</span>
+            </div>
+            <div class="card-meta">
+                <span>Источник: <a class="source-link" href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Yandex Adv</a></span>
+                <span class="badge confirmed">подтверждено: SEOnews, ppc.world</span>
+                <span>07-05-2026</span>
+            </div>
+            <div class="card-body">
+                <p><strong>Что изменилось:</strong> В новом Мастере отчетов Директа добавлены новые группировки по регионам (включая федеральные округа, города и т.д.), улучшена работа с ключевыми фразами, а также появились дополнительные виды графиков.</p>
+                <p><strong>Почему важно:</strong> Расширяет возможности анализа географии продвижения на более детальном уровне и упрощает работу с семантикой, позволяя быстрее находить точки роста и неэффективные зоны.</p>
+                <p><strong>Кому полезно:</strong> Контекстологи, аналитики, менеджеры, работающие с региональной рекламой и большими объемами ключевых слов.</p>
+                <div class="card-conclusion">Обновления Мастера отчетов дают специалистам более гибкие и мощные инструменты для детального анализа рекламных кампаний в Директе.</div>
+            </div>
+        </div>
+
+        <!-- regular card -->
+        <div class="card regular-card">
+            <div class="card-header">
+                <a class="title-link" href="https://www.seonews.ru/events/wildberries-zapustila-analiticheskogo-ii-assistenta-dlya-vsekh-prodavtsov/" target="_blank" rel="noopener">Wildberries запустил аналитического ИИ-ассистента для селлеров</a>
+                <span class="badge platform">Wildberries</span>
+            </div>
+            <div class="card-meta">
+                <span>Источник: <a class="source-link" href="https://www.seonews.ru/events/wildberries-zapustila-analiticheskogo-ii-assistenta-dlya-vsekh-prodavtsov/" target="_blank" rel="noopener">SEOnews</a></span>
+                <span class="badge confirmed">подтверждено: ppc.world</span>
+                <span>13-05-2026</span>
+            </div>
+            <div class="card-body">
+                <p><strong>Что изменилось:</strong> В личном кабинете продавца Wildberries появился ИИ-ассистент. Он может отвечать на вопросы селлера в чате, показывать динамику продаж, анализировать отзывы и позиции товаров в выдаче, предоставляя персонализированную мини-аналитику.</p>
+                <p><strong>Почему важно:</strong> Упрощает для селлеров доступ к ключевой аналитике, экономя время на ручной сбор данных и позволяя быстрее реагировать на изменения спроса и позиций.</p>
+                <p><strong>Кому полезно:</strong> Продавцы на Wildberries (селлеры), менеджеры по продажам на маркетплейсе.</p>
+                <div class="card-conclusion">Запуск ИИ-ассистента на Wildberries — шаг к упрощению аналитики для селлеров, делающий управление продажами более оперативным и менее трудозатратным.</div>
+            </div>
+        </div>
     </div>
-    <div class="summary__platforms-label">Площадки в выпуске</div>
-    <div class="badges">
-      <span class="badge badge--yandex-direct">Яндекс Директ</span>
-      <span class="badge badge--yandex-metrika">Яндекс Метрика</span>
-      <span class="badge badge--wildberries">Wildberries</span>
-      <span class="badge badge--telegram-ads">Telegram Ads</span>
-      <span class="badge badge--adstat">Adstat.pro</span>
+
+    <!-- REJECTED BLOCK -->
+    <div class="rejected-block">
+        <h3 class="section-title" style="border-bottom: none; margin-bottom: 12px; margin-top: 0;">Не вошло в выпуск</h3>
+        <p style="color: #64748b; font-size: 15px; margin-bottom: 12px;">Материалы, отброшенные при мониторинге:</p>
+        <table class="rejected-table">
+            <thead>
+                <tr>
+                    <th>Материал</th>
+                    <th>Источник</th>
+                    <th>Дата</th>
+                    <th>Причина отказа</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Материал">Не удалось определить</td>
+                    <td data-label="Источник">—</td>
+                    <td data-label="Дата">—</td>
+                    <td data-label="Причина отказа" class="reason">не удалось определить</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  </div>
 
-  <!-- ── КОНТЕНТ ── -->
-  <div class="content">
+    <!-- TAKEAWAY -->
+    <div class="takeaway-block">
+        <h3>🧠 Что это значит для работы</h3>
+        <p>На этой неделе ключевые изменения затронули инструменты частотности, аналитику и креативы. Рекомендуем:</p>
+        <ul>
+            <li><strong>Яндекс Директ</strong> — протестировать новую настройку частоты в медийных кампаниях и умный подбор Telegram-каналов.</li>
+            <li><strong>Яндекс Метрика</strong> — подключить ecommerce-события и офлайн-конверсии для сквозных воронок.</li>
+            <li><strong>VK Реклама</strong> — изучить «Креативную студию» для быстрого создания объявлений и оценки бенчмарков.</li>
+            <li><strong>Wildberries</strong> — познакомиться с ИИ-ассистентом для ускорения аналитики продаж.</li>
+            <li><strong>Telegram Ads</strong> — владельцам каналов с иностранной аудиторией оценить вывод в TON.</li>
+        </ul>
+    </div>
 
-    <!-- ── ГЛАВНОЕ ── -->
-    <section class="section">
-      <div class="section__title">Главное</div>
-
-      <!-- Карточка 1 -->
-      <div class="card-main">
-        <div class="card__head">
-          <div class="card__title">
-            <a href="https://ppc.world/news/" target="_blank" rel="noopener">В медийных кампаниях Директа появилась возможность увеличивать частоту показов на пользователя</a>
-          </div>
-          <div class="card__date">14.05.2026</div>
-        </div>
-        <div class="card__meta">
-          <span class="badge badge--yandex-direct">Яндекс Директ</span>
-          <span class="card__source">Источник: <a href="https://ppc.world/news/" target="_blank" rel="noopener">ppc.world</a></span>
-          <span class="card__confirmed"><span>✔</span>Подтверждено: Yandex Adv</span>
-        </div>
-        <div class="card__body">
-          <div>
-            <div class="card__row-label">Что изменилось</div>
-            <div class="card__row-text">В медийных кампаниях Директа добавлена функция управления частотой показов на одного пользователя. Опция работает только в связке со стратегией «Максимум показов по минимальной цене».</div>
-          </div>
-          <div>
-            <div class="card__row-label">Почему важно</div>
-            <div class="card__row-text">Рекламодатели получили инструмент для повышения охватного давления на целевую аудиторию — можно добиться большего числа контактов с одним пользователем без смены стратегии.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Кому полезно</div>
-            <div class="card__row-text">Бренд-менеджеры и медиапланеры, запускающие охватные медийные кампании; агентства, ведущие имиджевое продвижение крупных клиентов.</div>
-          </div>
-          <div class="card__conclusion">
-            <div class="card__row-label">Вывод</div>
-            <div class="card__row-text">Новая настройка расширяет контроль над медийными размещениями в Директе и позволяет точнее управлять частотой контакта с аудиторией. Доступна только при использовании стратегии «Максимум показов по минимальной цене».</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Карточка 2 -->
-      <div class="card-main">
-        <div class="card__head">
-          <div class="card__title">
-            <a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс Директ запустил автоподбор Telegram-каналов по описанию контента</a>
-          </div>
-          <div class="card__date">13.05.2026</div>
-        </div>
-        <div class="card__meta">
-          <span class="badge badge--yandex-direct">Яндекс Директ</span>
-          <span class="card__source">Источник: <a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Yandex Adv</a></span>
-          <span class="card__confirmed"><span>✔</span>Подтверждено: ppc.world, SEOnews</span>
-        </div>
-        <div class="card__body">
-          <div>
-            <div class="card__row-label">Что изменилось</div>
-            <div class="card__row-text">Добавлен новый способ автоподбора Telegram-каналов для размещения рекламных постов через Директ — на основе текстового описания желаемого контента. Система сама находит каналы, подходящие под заданные параметры, в том числе на стыке тематик.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Почему важно</div>
-            <div class="card__row-text">Позволяет находить релевантные каналы без ручного перебора, особенно эффективно для нишевых или смежных аудиторий, которые сложно охватить стандартными категориями.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Кому полезно</div>
-            <div class="card__row-text">Специалисты по performance и influence-маркетингу, агентства, рекламодатели с узкой целевой аудиторией.</div>
-          </div>
-          <div class="card__conclusion">
-            <div class="card__row-label">Вывод</div>
-            <div class="card__row-text">Новый инструмент снижает трудозатраты на подбор каналов и повышает точность таргетинга при размещении в Telegram через Директ. Особенно полезен для тематик, охватывающих несколько сегментов аудитории.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ ── -->
-    <section class="section">
-      <div class="section__title">Остальные обновления</div>
-
-      <!-- Карточка 3 -->
-      <div class="card-other">
-        <div class="card__head">
-          <div class="card__title">
-            <a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс Метрика позволила строить воронки по ecommerce-событиям, звонкам, статусам заказов из CRM и офлайн-конверсиям</a>
-          </div>
-          <div class="card__date">13.05.2026</div>
-        </div>
-        <div class="card__meta">
-          <span class="badge badge--yandex-metrika">Яндекс Метрика</span>
-          <span class="card__source">Источник: <a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Yandex Adv</a></span>
-          <span class="card__confirmed"><span>✔</span>Подтверждено: ppc.world, SEOnews</span>
-        </div>
-        <div class="card__body">
-          <div>
-            <div class="card__row-label">Что изменилось</div>
-            <div class="card__row-text">В Яндекс Метрике расширены условия построения воронок: теперь доступны ecommerce-события, заказы из CRM, звонки, чаты и любые другие офлайн-конверсии. Ранее воронки строились преимущественно по онлайн-событиям на сайте.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Почему важно</div>
-            <div class="card__row-text">Рекламодатели могут отслеживать полный путь пользователя — от клика по рекламе до фактической оплаты и закрытия заказа, включая офлайн-этапы. Это даёт более точную оценку эффективности рекламных кампаний.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Кому полезно</div>
-            <div class="card__row-text">Аналитики, e-commerce специалисты, рекламодатели с длинным циклом сделки, бизнесы с омниканальными продажами.</div>
-          </div>
-          <div class="card__conclusion">
-            <div class="card__row-label">Вывод</div>
-            <div class="card__row-text">Обновление делает воронки в Метрике по-настоящему сквозными и применимыми для бизнесов с офлайн-составляющей. Теперь можно оценивать рекламу не только по онлайн-метрикам, но и по реальным продажам.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Карточка 4 -->
-      <div class="card-other">
-        <div class="card__head">
-          <div class="card__title">
-            <a href="https://ppc.world/news/" target="_blank" rel="noopener">Wildberries запустил аналитического ИИ-ассистента для всех продавцов</a>
-          </div>
-          <div class="card__date">12.05.2026</div>
-        </div>
-        <div class="card__meta">
-          <span class="badge badge--wildberries">Wildberries</span>
-          <span class="card__source">Источник: <a href="https://ppc.world/news/" target="_blank" rel="noopener">ppc.world</a></span>
-          <span class="card__confirmed"><span>✔</span>Подтверждено: SEOnews</span>
-        </div>
-        <div class="card__body">
-          <div>
-            <div class="card__row-label">Что изменилось</div>
-            <div class="card__row-text">Wildberries запустил ИИ-ассистента для продавцов в личном кабинете. Инструмент показывает динамику продаж, отзывы и позиции товаров в выдаче маркетплейса.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Почему важно</div>
-            <div class="card__row-text">Селлеры получают автоматизированную аналитику прямо внутри кабинета без необходимости использовать сторонние сервисы — это ускоряет принятие решений по управлению ассортиментом и рекламой.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Кому полезно</div>
-            <div class="card__row-text">Продавцы Wildberries, менеджеры маркетплейсов, e-commerce специалисты.</div>
-          </div>
-          <div class="card__conclusion">
-            <div class="card__row-label">Вывод</div>
-            <div class="card__row-text">Новый ИИ-ассистент упрощает работу с аналитикой для продавцов WB и снижает зависимость от внешних инструментов. Полезно прежде всего для малого и среднего бизнеса без выделенных аналитиков.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Карточка 5 -->
-      <div class="card-other">
-        <div class="card__head">
-          <div class="card__title">
-            <a href="https://ppc.world/news/" target="_blank" rel="noopener">Владельцы российских Telegram-каналов могут выводить вознаграждение за рекламу в TON</a>
-          </div>
-          <div class="card__date">14.05.2026</div>
-        </div>
-        <div class="card__meta">
-          <span class="badge badge--telegram-ads">Telegram Ads</span>
-          <span class="card__source">Источник: <a href="https://ppc.world/news/" target="_blank" rel="noopener">ppc.world</a></span>
-        </div>
-        <div class="card__body">
-          <div>
-            <div class="card__row-label">Что изменилось</div>
-            <div class="card__row-text">Авторы российских Telegram-каналов получили возможность выводить вознаграждение за показ рекламы в криптовалюте TON. Опция действует только в том случае, если реклама показывалась иностранной аудитории.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Почему важно</div>
-            <div class="card__row-text">Расширяются варианты монетизации для авторов каналов с международной аудиторией — появляется альтернативный способ вывода средств в дополнение к существующим.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Кому полезно</div>
-            <div class="card__row-text">Владельцы Telegram-каналов с иностранной аудиторией, участвующие в программе монетизации Telegram.</div>
-          </div>
-          <div class="card__conclusion">
-            <div class="card__row-label">Вывод</div>
-            <div class="card__row-text">Новая опция актуальна для авторов, чья аудитория выходит за пределы России. Для рекламодателей это не меняет процесс закупки рекламы, но косвенно повышает привлекательность площадки для крупных авторов.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Карточка 6 -->
-      <div class="card-other">
-        <div class="card__head">
-          <div class="card__title">
-            <a href="https://magnetto.pro/media/news/" target="_blank" rel="noopener">В Adstat.pro появился инструмент автоматизации «Стратегии 2.0»</a>
-          </div>
-          <div class="card__date">13.05.2026</div>
-        </div>
-        <div class="card__meta">
-          <span class="badge badge--adstat">Adstat.pro</span>
-          <span class="card__source">Источник: <a href="https://magnetto.pro/media/news/" target="_blank" rel="noopener">Magnetto</a></span>
-        </div>
-        <div class="card__body">
-          <div>
-            <div class="card__row-label">Что изменилось</div>
-            <div class="card__row-text">На платформе Adstat.pro запущен инструмент «Стратегии 2.0», предназначенный для автоматизации управления рекламными размещениями. Детали функциональности доступны внутри материала.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Почему важно</div>
-            <div class="card__row-text">Автоматизация стратегий управления рекламой на уровне платформы снижает ручную работу специалистов и потенциально повышает эффективность размещений.</div>
-          </div>
-          <div>
-            <div class="card__row-label">Кому полезно</div>
-            <div class="card__row-text">Специалисты и агентства, работающие с Adstat.pro для управления рекламой в Telegram и других каналах.</div>
-          </div>
-          <div class="card__conclusion">
-            <div class="card__row-label">Вывод</div>
-            <div class="card__row-text">Обновление расширяет возможности автоматизации в Adstat.pro. Рекомендуется ознакомиться с деталями функции напрямую на платформе для оценки применимости в конкретных задачах.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── ЧТО ЭТО ЗНАЧИТ ── -->
-    <section class="section-insights">
-      <div class="section__title">Что это значит для работы</div>
-      <ul class="insights-list">
-        <li>Медийная реклама в Директе получила новый рычаг управления охватным давлением. Если ведёте имиджевые кампании по стратегии «Максимум показов по минимальной цене» — стоит протестировать новую настройку частоты.</li>
-        <li>Автоподбор Telegram-каналов по описанию снимает рутину ручного поиска и открывает доступ к нишевым аудиториям на стыке тематик. Актуально для клиентов с узким позиционированием.</li>
-        <li>Расширение воронок в Метрике — важный шаг для бизнесов с офлайн-продажами и длинным циклом сделки. Теперь сквозная аналитика стала доступнее без сторонних инструментов.</li>
-        <li>ИИ-ассистент Wildberries полезен продавцам, у которых нет выделенного аналитика — базовую сводку по продажам и позициям теперь не нужно собирать вручную.</li>
-        <li>Вывод вознаграждений Telegram Ads в TON касается прежде всего авторов с зарубежной аудиторией. Рекламодателям изменение процессов не затрагивает, но стоит держать в уме при работе с крупными каналами.</li>
-      </ul>
-    </section>
-
-    <!-- ── НЕ ВОШЛО В ВЫПУСК ── -->
-    <section class="section section-dropped">
-      <div class="section__title">Не вошло в выпуск</div>
-      <div class="dropped-note">
-        За отчётный период отброшенных материалов с чёткими данными не зафиксировано — конкретные источники для исключения определить не удалось. 3 источника из 11 не были охвачены мониторингом в данном окне.
-      </div>
-    </section>
-
-  </div>
-  <!-- /content -->
-
-  <!-- ── ФУТЕР ── -->
-  <footer class="footer">
-    <div class="footer__brand">AdTech-дайджест: рекламные кабинеты РФ</div>
-    <div>Сгенерировано: 14 мая 2026 &nbsp;•&nbsp; Выпуск №&nbsp;от 14.05.2026</div>
-  </footer>
-
+    <!-- FOOTER -->
+    <div class="footer">
+        Сгенерировано 14 May 2026 · AdTech-дайджест: рекламные кабинеты РФ
+    </div>
 </div>
 </body>
 </html>
