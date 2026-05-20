@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — 20.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #f4f6f9;
+    padding: 0 0 48px;
+  }
+
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 36px 24px 28px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .header .meta {
+    font-size: 0.9rem;
+    color: #a0aec0;
+  }
+  .header .window-label {
+    display: inline-block;
+    margin-top: 10px;
+    background: #2d3561;
+    color: #93c5fd;
+    border-radius: 6px;
+    padding: 4px 14px;
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 28px auto 0;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .summary h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #2563eb;
+    margin-bottom: 12px;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 14px;
+  }
+  .summary-stat {
+    text-align: center;
+    padding: 12px;
+    background: #f0f4ff;
+    border-radius: 8px;
+  }
+  .summary-stat .num {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e40af;
+  }
+  .summary-stat .label {
+    font-size: 0.78rem;
+    color: #64748b;
+    margin-top: 2px;
+  }
+  .platforms-list {
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #475569;
+  }
+  .platform-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #3730a3;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin: 2px 3px 2px 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .takeaway {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 12px;
+    padding: 22px 28px;
+    margin: 20px auto 0;
+    max-width: 860px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .takeaway h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #92400e;
+    margin-bottom: 12px;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 0.92rem;
+    color: #44403c;
+    margin-bottom: 7px;
+  }
+  .takeaway li::marker { color: #d97706; }
+
+  .section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 32px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title .count {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 20px;
+    padding: 2px 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+  .section-title.secondary-title .count {
+    background: #64748b;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    position: relative;
+    overflow: hidden;
+  }
+  .card.primary {
+    border-left: 5px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #cbd5e1;
+  }
+  .card.rejected {
+    border-left: 4px solid #e2e8f0;
+    background: #f8fafc;
+  }
+
+  .card-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .platform-tag {
+    font-size: 0.76rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: #dbeafe;
+    color: #1d4ed8;
+  }
+  .platform-tag.vk { background: #ede9fe; color: #6d28d9; }
+  .platform-tag.avito { background: #d1fae5; color: #065f46; }
+  .platform-tag.appmetrica { background: #fef3c7; color: #92400e; }
+  .platform-tag.yatm { background: #e0f2fe; color: #0369a1; }
+
+  .card-date {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin-left: auto;
+  }
+  .card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card h3 a {
+    color: inherit;
+  }
+  .card h3 a:hover { color: #2563eb; text-decoration: none; }
+
+  .card-source {
+    font-size: 0.78rem;
+    color: #64748b;
+    margin-bottom: 12px;
+  }
+  .card-source a { color: #64748b; }
+  .card-source a:hover { color: #2563eb; }
+
+  .card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    margin-bottom: 12px;
+  }
+  @media (max-width: 600px) {
+    .card-body { grid-template-columns: 1fr; }
+  }
+  .card-field {
+    font-size: 0.85rem;
+    color: #374151;
+  }
+  .card-field strong {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #9ca3af;
+    margin-bottom: 2px;
+  }
+
+  .card-conclusion {
+    font-size: 0.88rem;
+    color: #1e3a5f;
+    background: #eff6ff;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-top: 4px;
+    border-left: 3px solid #3b82f6;
+  }
+  .card.secondary .card-conclusion {
+    background: #f8fafc;
+    border-left-color: #94a3b8;
+    color: #374151;
+  }
+
+  .rejected-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .rejected-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    color: #64748b;
+  }
+  .rejected-item strong {
+    color: #374151;
+  }
+  .rejected-reason {
+    font-size: 0.78rem;
+    color: #9ca3af;
+    margin-top: 2px;
+  }
+
+  .footer {
+    margin: 40px auto 0;
+    max-width: 860px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding: 20px 16px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  @media (max-width: 480px) {
+    .header h1 { font-size: 1.3rem; }
+    .card { padding: 16px 16px; }
+    .summary, .takeaway { padding: 18px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+  <div class="meta">Выпуск от 20 мая 2026</div>
+  <div class="window-label">Окно дат: 19-20 мая 2026</div>
+</div>
+
+<div class="container">
+
+  <div class="summary">
+    <h2>Резюме выпуска</h2>
+    <p style="font-size:0.9rem;color:#475569;">Проверено 16 источников. Актуальных релевантных новостей найдено 6. Два источника вернули пустой контент (seonews.ru), один содержит только архив за 2024 год (magnetto.pro).</p>
+    <div class="summary-grid">
+      <div class="summary-stat"><div class="num">16</div><div class="label">источников проверено</div></div>
+      <div class="summary-stat"><div class="num">6</div><div class="label">релевантных новостей</div></div>
+      <div class="summary-stat"><div class="num">4</div><div class="label">площадки затронуты</div></div>
+    </div>
+    <div class="platforms-list" style="margin-top:14px;">
+      Площадки в выпуске:
+      <span class="platform-badge">Яндекс Директ</span>
+      <span class="platform-badge">VK Реклама</span>
+      <span class="platform-badge">Авито Реклама</span>
+      <span class="platform-badge">AppMetrica</span>
+      <span class="platform-badge">Яндекс Тег Менеджер</span>
+    </div>
+  </div>
+
+  <div class="takeaway">
+    <h2>Что это значит для работы</h2>
+    <ul>
+      <li>VK Реклама мигрирует на Discovery-платформу: стоит внимательно следить за изменениями в кабинете и проверить, не затронуты ли действующие кампании.</li>
+      <li>Авито Реклама дала новый сегмент для акционных кампаний - скидочная аудитория. Актуально проверить для кампаний с промо-механиками.</li>
+      <li>Кросс-платформенное продвижение приложений в Директе вышло из беты: разработчикам мобильных приложений пора тестировать в боевых кампаниях.</li>
+      <li>CTV-инвентарь в Директе вырос вдвое, и одновременно AppMetrica научилась его атрибутировать: связка стала более полноценной для охватных кампаний.</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Главное <span class="count">3</span></div>
+
+  <div class="cards">
+
+    <div class="card primary">
+      <div class="card-top">
+        <span class="platform-tag vk">VK Реклама</span>
+        <span class="card-date">19.05.2026</span>
+      </div>
+      <h3><a href="https://blog.click.ru/market-news/vk-reklama-perevodit-reklamnye-texnologii-na-edinuyu-discovery-platformu/" target="_blank">VK Реклама переводит рекламные технологии на единую Discovery-платформу</a></h3>
+      <div class="card-source">Источник: <a href="https://blog.click.ru/market-news/vk-reklama-perevodit-reklamnye-texnologii-na-edinuyu-discovery-platformu/" target="_blank">blog.click.ru</a></div>
+      <div class="card-body">
+        <div class="card-field"><strong>Что изменилось</strong>VK Реклама консолидирует рекламные технологии на единой платформе Discovery. Это архитектурное изменение всей рекламной инфраструктуры VK.</div>
+        <div class="card-field"><strong>Почему важно</strong>Переход на единую платформу меняет принципы работы с аудиторией и трафиком внутри экосистемы VK. Возможны изменения в логике кабинета и алгоритмах.</div>
+        <div class="card-field"><strong>Кому полезно</strong>Всем рекламодателям, ведущим кампании во ВКонтакте, Одноклассниках и других продуктах VK.</div>
+      </div>
+      <div class="card-conclusion">Проверьте текущие кампании на предмет изменений в доставке и метриках. Следите за официальными анонсами VK об этапах перехода.</div>
+    </div>
+
+    <div class="card primary">
+      <div class="card-top">
+        <span class="platform-tag avito">Авито Реклама</span>
+        <span class="card-date">19.05.2026</span>
+      </div>
+      <h3>В Авито Рекламе появился таргетинг на любителей скидок и акций</h3>
+      <div class="card-source">Источник: ppc.world</div>
+      <div class="card-body">
+        <div class="card-field"><strong>Что изменилось</strong>В кабинете Авито Рекламы добавлен новый сегмент аудитории - пользователи, которые активно ищут скидки и акционные предложения.</div>
+        <div class="card-field"><strong>Почему важно</strong>Позволяет точечно охватить аудиторию с высоким покупательским намерением в момент акции, не расширяя охват на всех пользователей.</div>
+        <div class="card-field"><strong>Кому полезно</strong>Рекламодателям в ритейле, e-commerce и сервисах с регулярными промо-акциями на Авито.</div>
+      </div>
+      <div class="card-conclusion">Протестируйте новый сегмент в ближайшей акционной кампании. Особенно актуально для распродаж и сезонных предложений.</div>
+    </div>
+
+    <div class="card primary">
+      <div class="card-top">
+        <span class="platform-tag">Яндекс Директ</span>
+        <span class="card-date">20.05.2026</span>
+      </div>
+      <h3><a href="https://blog.click.ru/market-news/v-yandeks-direkte-zaversheno-otkrytoe-beta-testirovanie-instrumenta-dlya-kross-platformennogo-prodvizheniya-prilozhenij/" target="_blank">В Яндекс Директе завершено бета-тестирование инструмента для кросс-платформенного продвижения приложений</a></h3>
+      <div class="card-source">Источник: <a href="https://blog.click.ru/market-news/v-yandeks-direkte-zaversheno-otkrytoe-beta-testirovanie-instrumenta-dlya-kross-platformennogo-prodvizheniya-prilozhenij/" target="_blank">blog.click.ru</a></div>
+      <div class="card-body">
+        <div class="card-field"><strong>Что изменилось</strong>Инструмент для продвижения приложений одновременно на нескольких платформах вышел из открытого бета-тестирования и стал доступен всем рекламодателям.</div>
+        <div class="card-field"><strong>Почему важно</strong>Теперь без ограничений бета-доступа можно запускать единую кампанию для охвата аудитории на разных платформах через Директ.</div>
+        <div class="card-field"><strong>Кому полезно</strong>Мобильным маркетологам и разработчикам приложений, которые ранее не успели попасть в бету.</div>
+      </div>
+      <div class="card-conclusion">Проверьте кабинет Директа: инструмент должен быть доступен без заявки. Подходящий момент для тестирования кросс-платформенных кампаний по установкам.</div>
+    </div>
+
+  </div>
+
+  <div class="section-title secondary-title">Остальные обновления <span class="count">3</span></div>
+
+  <div class="cards">
+
+    <div class="card secondary">
+      <div class="card-top">
+        <span class="platform-tag">Яндекс Директ / CTV</span>
+        <span class="card-date">20.05.2026</span>
+      </div>
+      <h3>Директ почти вдвое увеличил инвентарь CTV-рекламы за год</h3>
+      <div class="card-source">Источник: ppc.world</div>
+      <div class="card-body">
+        <div class="card-field"><strong>Что изменилось</strong>Подключено более 100 телеканалов и новых приложений. Инвентарь CTV-рекламы в Директе вырос почти вдвое год к году.</div>
+        <div class="card-field"><strong>Кому полезно</strong>Рекламодателям с имиджевыми задачами и широкой аудиторией, кто рассматривает CTV как охватный канал.</div>
+      </div>
+      <div class="card-conclusion">CTV в Директе превращается в полноценный охватный канал. В связке с новой атрибуцией в AppMetrica становится более измеримым.</div>
+    </div>
+
+    <div class="card secondary">
+      <div class="card-top">
+        <span class="platform-tag appmetrica">AppMetrica</span>
+        <span class="card-date">20.05.2026</span>
+      </div>
+      <h3><a href="https://blog.click.ru/market-news/v-appmetrica-poyavilas-atribuciya-pokazov-na-ctv-i-desktopax/" target="_blank">В AppMetrica появилась атрибуция показов на CTV и десктопах</a></h3>
+      <div class="card-source">Источник: <a href="https://blog.click.ru/market-news/v-appmetrica-poyavilas-atribuciya-pokazov-na-ctv-i-desktopax/" target="_blank">blog.click.ru</a></div>
+      <div class="card-body">
+        <div class="card-field"><strong>Что изменилось</strong>AppMetrica научилась учитывать показы на CTV и десктопных платформах при атрибуции установок мобильных приложений.</div>
+        <div class="card-field"><strong>Кому полезно</strong>Разработчикам приложений, которые ведут мультиканальные кампании с охватом за пределами мобильного трафика.</div>
+      </div>
+      <div class="card-conclusion">Позволяет оценить реальный вклад CTV и десктопных показов в установки. Особенно ценно при росте CTV-инвентаря в Директе.</div>
+    </div>
+
+    <div class="card secondary">
+      <div class="card-top">
+        <span class="platform-tag yatm">Яндекс Тег Менеджер</span>
+        <span class="card-date">20.05.2026</span>
+      </div>
+      <h3>В Яндекс Тег Менеджере появились бандлы для подключения партнерских сервисов</h3>
+      <div class="card-source">Источник: ppc.world, подтверждено yandex.ru/adv/news</div>
+      <div class="card-body">
+        <div class="card-field"><strong>Что изменилось</strong>Бандлы позволяют подключить партнерские сервисы к сайту в несколько кликов - без ручной настройки тегов, триггеров и переменных. На старте доступны 5 сервисов.</div>
+        <div class="card-field"><strong>Кому полезно</strong>Специалистам, настраивающим веб-аналитику и трекинг: снижает порог входа для интеграции со сторонними решениями.</div>
+      </div>
+      <div class="card-conclusion">Полезно для ускорения настройки аналитики на сайтах. Не замена ручной настройке тегов, но удобный инструмент для типовых интеграций.</div>
+    </div>
+
+  </div>
+
+  <div class="section-title secondary-title">Не вошло в выпуск</div>
+
+  <div class="rejected-list">
+
+    <div class="rejected-item">
+      <strong>Алиса AI в 3 раза точнее генерирует изображения с русским текстом</strong> (ppc.world, 20.05.2026)
+      <div class="rejected-reason">Улучшение генеративного ИИ Яндекса, не связано с рекламным кабинетом напрямую.</div>
+    </div>
+
+    <div class="rejected-item">
+      <strong>Google Analytics выделяет трафик из ChatGPT и нейросетей в отдельный канал</strong> (ppc.world, 19.05.2026)
+      <div class="rejected-reason">Изменение в Google Analytics, не в российских рекламных кабинетах. Может быть интересно при работе с GA, но вне тематики дайджеста.</div>
+    </div>
+
+    <div class="rejected-item">
+      <strong>Яндекс Маркет запустил раздел «Спешл» с товарами от рейтинговых продавцов</strong> (ppc.world, 20.05.2026)
+      <div class="rejected-reason">Потребительская функция маркетплейса, не обновление рекламного кабинета Яндекс Маркета.</div>
+    </div>
+
+    <div class="rejected-item">
+      <strong>PromoPult: перенос аккаунтов из Яндекс Директа без потери настроек</strong> (blog.promopult.ru, 19.05.2026)
+      <div class="rejected-reason">Функция инструмента-посредника PromoPult, а не обновление самого рекламного кабинета.</div>
+    </div>
+
+    <div class="rejected-item">
+      <strong>VK Видео обогнал YouTube по просмотрам длинного контента</strong> (adindex.ru, 20.05.2026)
+      <div class="rejected-reason">Рыночная аналитика без практического изменения рекламных инструментов.</div>
+    </div>
+
+    <div class="rejected-item">
+      <strong>В Яндекс Вебмастере появился инструмент «Баллы за отзывы»</strong> (inhouse-marketing.ru, 19.05.2026)
+      <div class="rejected-reason">Функция Яндекс Вебмастера, не рекламного кабинета. Инструмент для органической репутации.</div>
+    </div>
+
+    <div class="rejected-item">
+      <strong>Wildberries анонсировала экспорт российских товаров в Китай</strong> (inhouse-marketing.ru, 19.05.2026)
+      <div class="rejected-reason">Бизнес-новость о логистике маркетплейса, не обновление рекламного кабинета.</div>
+    </div>
+
+    <div class="rejected-item">
+      <strong>seonews.ru (основной и events)</strong> - [НЕДОСТУПЕН]: оба URL вернули пустой контент.
+    </div>
+
+    <div class="rejected-item">
+      <strong>magnetto.pro/media/news</strong> - [УСТАРЕЛ]: последние доступные данные за 2024 год, актуальные материалы за май 2026 недоступны.
+    </div>
+
+    <div class="rejected-item">
+      <strong>Unisender, Cossa, New Retail, elama.ru</strong> - материалы за 19-20 мая не соответствуют тематике рекламных кабинетов: исследования рынка, PR-активности, образовательные статьи без новых возможностей.
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  AdTech-дайджест. Выпуск 20-05-2026. Проверено 16 источников за 19-20 мая 2026.
+</div>
+
+</body>
+</html>
