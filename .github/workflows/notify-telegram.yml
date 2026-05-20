@@ -45,7 +45,7 @@ jobs:
           else
             SUMMARY="AdTech-дайджест за ${DATE}"
           fi
-          FULL_TEXT="${SUMMARY}"$'\n'"[Полный выпуск](${URL})"
+          FULL_TEXT="${SUMMARY}"$'\n\n'"[Полный текст выпуска](${URL})"
           curl -s "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
             -d chat_id="${TG_CHAT_ID}" \
             -d parse_mode=Markdown \
