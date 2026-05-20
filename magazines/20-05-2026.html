@@ -98,33 +98,35 @@
       font-size: 32px;
       font-weight: 700;
       color: #2563eb;
-      line-height: 1;
     }
 
     .summary-stat .label {
       font-size: 13px;
       color: #6b7280;
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
     .summary-platforms {
       font-size: 14px;
       color: #374151;
-      padding-top: 12px;
-      border-top: 1px solid #e5e7eb;
+      margin-bottom: 10px;
     }
 
-    .summary-platforms strong {
-      color: #1a1a2e;
+    .summary-access {
+      font-size: 13px;
+      color: #6b7280;
+      background: #f9fafb;
+      border-radius: 6px;
+      padding: 10px 14px;
     }
 
     /* TAKEAWAY */
     .takeaway {
-      background: #eef2ff;
-      border: 1px solid #c7d2fe;
-      border-radius: 10px;
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
       padding: 24px 28px;
       margin: 20px 0 0;
+      border-radius: 0 8px 8px 0;
     }
 
     .takeaway h2 {
@@ -132,7 +134,7 @@
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #4338ca;
+      color: #1d4ed8;
       margin-bottom: 14px;
     }
 
@@ -143,87 +145,79 @@
       gap: 10px;
     }
 
-    .takeaway ul li {
+    .takeaway li {
       font-size: 15px;
-      color: #1e40af;
       padding-left: 20px;
       position: relative;
     }
 
-    .takeaway ul li::before {
+    .takeaway li::before {
       content: '';
       position: absolute;
       left: 0;
-      top: 10px;
-      width: 7px;
-      height: 7px;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      background: #3b82f6;
       border-radius: 50%;
-      background: #6366f1;
     }
 
     /* MAIN CONTENT */
     .main-content {
-      padding: 32px 0 48px;
+      margin-top: 28px;
+      padding-bottom: 40px;
     }
 
     .section-title {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #6b7280;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #e5e7eb;
+      color: #9ca3c4;
+      margin: 32px 0 14px;
     }
 
-    /* CARDS */
     .cards-list {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      margin-bottom: 36px;
     }
 
+    /* CARD */
     .card {
       background: #fff;
       border-radius: 10px;
-      padding: 24px 28px;
+      padding: 22px 24px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.07);
     }
 
     .card.primary {
-      border-left: 4px solid #2563eb;
-      box-shadow: 0 2px 12px rgba(37,99,235,0.1);
+      border-top: 3px solid #2563eb;
     }
 
     .card.secondary {
-      border-left: 4px solid #e5e7eb;
+      border-top: 3px solid #d1d5db;
+    }
+
+    .card.skipped {
+      border-top: 3px solid #e5e7eb;
+      background: #fafafa;
     }
 
     .card-top {
       display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
+      align-items: center;
+      gap: 10px;
       margin-bottom: 10px;
-      flex-wrap: wrap;
     }
 
     .card-badge {
-      display: inline-block;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      padding: 3px 10px;
+      padding: 2px 10px;
       border-radius: 20px;
-      white-space: nowrap;
-    }
-
-    .card.primary .card-badge {
-      background: #dbeafe;
-      color: #1d4ed8;
+      background: #eff6ff;
+      color: #2563eb;
     }
 
     .card.secondary .card-badge {
@@ -232,92 +226,88 @@
     }
 
     .card-date {
-      font-size: 12px;
-      color: #9ca3af;
-      white-space: nowrap;
+      font-size: 13px;
+      color: #9ca3c4;
     }
 
     .card h3 {
       font-size: 18px;
       font-weight: 700;
-      color: #1a1a2e;
-      line-height: 1.3;
+      line-height: 1.35;
       margin-bottom: 8px;
+      color: #1a1a2e;
     }
 
     .card.secondary h3 {
       font-size: 16px;
     }
 
-    .card-source {
-      font-size: 12px;
-      color: #9ca3af;
-      margin-bottom: 14px;
-    }
-
-    .card-source a {
-      color: #6b7280;
+    .card h3 a {
+      color: inherit;
       text-decoration: none;
     }
 
-    .card-source a:hover {
+    .card h3 a:hover {
       color: #2563eb;
       text-decoration: underline;
+    }
+
+    .card-source {
+      font-size: 13px;
+      color: #9ca3c4;
+      margin-bottom: 14px;
     }
 
     .card-rows {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      font-size: 14px;
       margin-bottom: 14px;
     }
 
-    .card-row {
-      font-size: 14px;
+    .card-row strong {
       color: #374151;
     }
 
-    .card-row strong {
-      color: #1a1a2e;
-      font-weight: 600;
-    }
-
     .card-conclusion {
+      background: #f0fdf4;
+      border-left: 3px solid #22c55e;
+      padding: 10px 14px;
       font-size: 14px;
-      font-style: italic;
-      color: #4b5563;
-      border-top: 1px solid #f3f4f6;
-      padding-top: 12px;
-      margin-top: 4px;
+      border-radius: 0 6px 6px 0;
+      color: #166534;
     }
 
-    /* SKIPPED section */
-    .card.secondary.skipped {
-      opacity: 0.85;
+    .card.secondary .card-conclusion {
+      background: #f9fafb;
+      border-left-color: #d1d5db;
+      color: #374151;
     }
 
     .skipped-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 10px;
+      font-size: 14px;
+      color: #6b7280;
     }
 
     .skipped-list li {
-      font-size: 14px;
-      color: #6b7280;
-      padding-left: 18px;
+      padding-left: 14px;
       position: relative;
     }
 
     .skipped-list li::before {
-      content: 'x';
+      content: '';
       position: absolute;
       left: 0;
-      top: 0;
-      font-size: 12px;
-      color: #d1d5db;
-      font-weight: 700;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      background: #d1d5db;
+      border-radius: 50%;
     }
 
     /* FOOTER */
@@ -327,6 +317,7 @@
       text-align: center;
       padding: 24px 20px;
       font-size: 13px;
+      margin-top: 40px;
     }
 
     .footer strong {
@@ -353,7 +344,7 @@
     <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
     <div class="header-meta">
       Выпуск от <strong>20 мая 2026</strong> &nbsp;|&nbsp;
-      Окно дат: <strong>19&ndash;20 мая 2026</strong> (последние 24 часа)
+      Окно дат: <strong>19-20 мая 2026</strong> (последние 24 часа)
     </div>
   </div>
 </div>
@@ -368,27 +359,28 @@
         <div class="label">источников проверено</div>
       </div>
       <div class="summary-stat">
-        <div class="num">7</div>
-        <div class="label">релевантных новостей</div>
+        <div class="num">1</div>
+        <div class="label">релевантная новость</div>
       </div>
       <div class="summary-stat">
-        <div class="num">5</div>
-        <div class="label">площадок затронуто</div>
+        <div class="num">1</div>
+        <div class="label">площадка затронута</div>
       </div>
     </div>
     <div class="summary-platforms">
-      <strong>Площадки в выпуске:</strong> Яндекс Директ, VK Реклама, Авито Реклама, Яндекс Маркет, Яндекс Товары, AppMetrica
+      <strong>Площадки в выпуске:</strong> Яндекс Директ (CTV)
+    </div>
+    <div class="summary-access">
+      Все 16 основных страниц источников доступны. Прямые ссылки на отдельные статьи недоступны через парсер для трёх источников с JavaScript-рендерингом: ppc.world, yandex.ru/adv/news, ads.avito.com/blog.
     </div>
   </div>
 
   <div class="takeaway">
     <h2>Что это значит для работы</h2>
     <ul>
-      <li>VK Реклама переводит всю технологическую базу на Discovery-платформу: в тестах конверсия покупок из показов выросла на 45%, стоимость снизилась на 18,5%. Рекламодателям ecom и мобильных приложений стоит следить за изменением эффективности кампаний.</li>
-      <li>Яндекс Директ вывел из беты кросс-платформенное продвижение приложений: теперь можно официально размещать рекламу приложений на CTV и десктопе через единый кабинет.</li>
-      <li>AppMetrica научилась атрибутировать установки приложений, если пользователь видел рекламу на Smart TV или ПК, а потом установил приложение на смартфоне. Нужно включить атрибуцию показов на уровне трекера.</li>
-      <li>Авито Реклама добавила аудиторный сегмент "любители скидок": полезно для акционных кампаний, особенно в категориях с высоким промо-трафиком.</li>
-      <li>В кабинете Яндекс Товары появилось самостоятельное подключение кнопки "Купить в 1 клик" без заявки в поддержку.</li>
+      <li>CTV-инвентарь в Яндекс Директе вырос на 81% за год: подключены 100+ телеканалов, интеграции с Haier и TCL. Больший инвентарь снижает частоту показов на одного пользователя и расширяет охват.</li>
+      <li>Для действующих CTV-кампаний в Директе изменений не требуется: расширение инвентаря происходит автоматически.</li>
+      <li>В Авито Рекламе появился таргетинг на любителей скидок и акций (19.05, ppc.world) — актуально для промо-кампаний. Прямая ссылка на материал не найдена через парсер; следите за ads.avito.com/blog.</li>
     </ul>
   </div>
 
@@ -397,170 +389,53 @@
     <div class="section-title">Главное</div>
     <div class="cards-list">
 
-      <!-- CARD 1 -->
-      <div class="card primary">
-        <div class="card-top">
-          <span class="card-badge">VK Реклама</span>
-          <span class="card-date">19 мая 2026</span>
-        </div>
-        <h3>VK Реклама переводит рекламные технологии на единую Discovery-платформу</h3>
-        <div class="card-source">
-          Источник: <a href="https://blog.click.ru/market-news/vk-reklama-perevodit-reklamnye-texnologii-na-edinuyu-discovery-platformu/" target="_blank">blog.click.ru</a>
-        </div>
-        <div class="card-rows">
-          <div class="card-row"><strong>Что изменилось:</strong> VK Реклама начала поэтапный переход на единую Discovery-платформу — технологическую основу для рекомендаций, поиска и рекламных сервисов VK. На первом этапе подключены крупные рекламодатели ecom и мобильных приложений.</div>
-          <div class="card-row"><strong>Ключевые цифры из тестирования:</strong> конверсия кликов из показов +27,5%; конверсия покупок из показов +45%; повторная конверсия +104%; стоимость покупки -18,5%.</div>
-          <div class="card-row"><strong>Как это работает:</strong> платформа строит расширенный профиль интересов на основе активности пользователя во всех сервисах VK и использует многоуровневую систему ML-отбора контента для быстрого внедрения моделей.</div>
-          <div class="card-row"><strong>Почему важно:</strong> это инфраструктурное изменение всей рекламной системы VK, которое затронет алгоритмы показа и оптимизации для всех рекламодателей.</div>
-          <div class="card-row"><strong>Кому полезно:</strong> рекламодателям ecom и мобильных приложений в первую очередь; затем рассчитывается расширение на остальных.</div>
-        </div>
-        <div class="card-conclusion">Если вы запускаете кампании в VK Рекламе, следите за показателями в ближайшие недели: новая платформа должна улучшить эффективность, но возможны краткосрочные колебания.</div>
-      </div>
-
-      <!-- CARD 2 -->
       <div class="card primary">
         <div class="card-top">
           <span class="card-badge">Яндекс Директ</span>
           <span class="card-date">20 мая 2026</span>
         </div>
-        <h3>Яндекс Директ завершил открытую бету инструмента кросс-платформенного продвижения приложений</h3>
+        <h3><a href="https://www.seonews.ru/events/yandeks-direkt-udvoil-obem-ctv-inventarya-reklama-na-umnykh-televizorakh-stala-dostupnee-dlya-biznesa/" target="_blank">Яндекс Директ удвоил объём CTV-инвентаря: реклама на «умных» телевизорах стала доступнее</a></h3>
         <div class="card-source">
-          Источник: <a href="https://blog.click.ru/market-news/v-yandeks-direkte-zaversheno-otkrytoe-beta-testirovanie-instrumenta-dlya-kross-platformennogo-prodvizheniya-prilozhenij/" target="_blank">blog.click.ru</a> (подтверждено официальными данными Яндекс)
+          Источник: <a href="https://www.seonews.ru/events/yandeks-direkt-udvoil-obem-ctv-inventarya-reklama-na-umnykh-televizorakh-stala-dostupnee-dlya-biznesa/" target="_blank">seonews.ru</a>
         </div>
         <div class="card-rows">
-          <div class="card-row"><strong>Что изменилось:</strong> инструмент для продвижения приложений на CTV и десктопных устройствах вышел из беты и доступен всем рекламодателям. Тестирование шло с ноября 2025 года.</div>
-          <div class="card-row"><strong>Доступные плейсменты:</strong> федеральные и тематические телеканалы при просмотре ТВ онлайн, бесплатный контент CTV-приложений и видеосервисов, YaOS, Кинопоиск.</div>
-          <div class="card-row"><strong>Возможности:</strong> ML-оптимизация в реальном времени, таргетинг по полу, возрасту, доходу, ограничение частоты показов, списки исключений площадок. Интеграция с AppMetrica.</div>
-          <div class="card-row"><strong>Почему важно:</strong> раньше продвигать приложения через CTV и Desktop в Директе можно было только в закрытой бете; теперь формат общедоступен.</div>
-          <div class="card-row"><strong>Кому полезно:</strong> приложения с целевой аудиторией 25+ и рекламным бюджетом, позволяющим тестировать новые форматы.</div>
+          <div class="card-row"><strong>Что изменилось:</strong> за год Яндекс Директ подключил более 100 новых телеканалов и расширил интеграции с производителями устройств (Haier, TCL). Суммарный объём CTV-инвентаря вырос на 81%.</div>
+          <div class="card-row"><strong>Масштаб:</strong> более 800 брендов запустили кампании на CTV, из них 66% — представители малого и среднего бизнеса. За год проведено свыше 2800 кампаний; половина брендов вернулась к повторным размещениям.</div>
+          <div class="card-row"><strong>Формат:</strong> аукционная видеореклама — у 9 из 10 рекламодателей CTV; часто с ML-оптимизацией показов. Лидеры по инвестициям: финансовый сектор, HoReCa, маркетплейсы, телеком, розница.</div>
+          <div class="card-row"><strong>Почему важно:</strong> больший инвентарь снижает частоту показов на одного пользователя и открывает доступ к аудитории из новых каналов и устройств без изменения настроек кампании.</div>
+          <div class="card-row"><strong>Кому полезно:</strong> всем, кто использует или планирует видеорекламу на CTV в Яндекс Директе, особенно в категориях с широкой аудиторией.</div>
         </div>
-        <div class="card-conclusion">Можно запускать кампании на CTV и Desktop через стандартный кабинет Директа; атрибуцию установок подключать через AppMetrica.</div>
+        <div class="card-conclusion">Для действующих CTV-кампаний в Директе ничего настраивать не нужно: расширение инвентаря применяется автоматически. Тем, кто ещё не тестировал CTV, снижение порога входа (доля МСБ 66%) говорит о том, что формат доступен не только крупному бизнесу.</div>
       </div>
 
-      <!-- CARD 3 -->
-      <div class="card primary">
-        <div class="card-top">
-          <span class="card-badge">Авито Реклама</span>
-          <span class="card-date">19 мая 2026</span>
-        </div>
-        <h3>В Авито Рекламе появился таргетинг на любителей скидок и акций</h3>
-        <div class="card-source">
-          Источник: <a href="https://ppc.world/news/" target="_blank">ppc.world</a>
-        </div>
-        <div class="card-rows">
-          <div class="card-row"><strong>Что изменилось:</strong> в рекламном кабинете Авито появился новый аудиторный сегмент — пользователи, активно ищущие выгодные предложения, скидки и акции.</div>
-          <div class="card-row"><strong>Как использовать:</strong> сегмент доступен в настройках таргетинга при создании или редактировании кампании.</div>
-          <div class="card-row"><strong>Почему важно:</strong> позволяет точнее направить промо-предложения на аудиторию с высокой склонностью к покупке по акционным ценам.</div>
-          <div class="card-row"><strong>Кому полезно:</strong> ритейлерам и сервисам с активной акционной механикой, продавцам в категориях, где скидки являются ключевым конкурентным преимуществом.</div>
-        </div>
-        <div class="card-conclusion">Актуально для сезонных и промо-кампаний на Авито: протестировать новый сегмент можно сразу, сравнив с текущей аудиторией по CPA.</div>
-      </div>
-
-    </div><!-- /cards-list primary -->
-
-    <div class="section-title">Остальные обновления</div>
-    <div class="cards-list">
-
-      <!-- CARD 4 -->
-      <div class="card secondary">
-        <div class="card-top">
-          <span class="card-badge">Яндекс Директ</span>
-          <span class="card-date">20 мая 2026</span>
-        </div>
-        <h3>Директ почти вдвое увеличил инвентарь CTV-рекламы за год</h3>
-        <div class="card-source">
-          Источник: <a href="https://ppc.world/news/" target="_blank">ppc.world</a>
-        </div>
-        <div class="card-rows">
-          <div class="card-row"><strong>Что изменилось:</strong> Яндекс Директ подключил более 100 новых телеканалов и новые приложения к CTV-инвентарю. За год общий инвентарь вырос почти вдвое.</div>
-          <div class="card-row"><strong>Почему важно:</strong> больший инвентарь снижает частоту показов одному пользователю и открывает доступ к новым аудиторным сегментам.</div>
-          <div class="card-row"><strong>Кому полезно:</strong> рекламодателям, использующим видеорекламу в Директе и желающим расширить охват на CTV-аудиторию.</div>
-        </div>
-        <div class="card-conclusion">Для действующих CTV-кампаний не требуется никаких действий: расширение инвентаря происходит автоматически.</div>
-      </div>
-
-      <!-- CARD 5 -->
-      <div class="card secondary">
-        <div class="card-top">
-          <span class="card-badge">AppMetrica</span>
-          <span class="card-date">20 мая 2026</span>
-        </div>
-        <h3>В AppMetrica появилась атрибуция показов на CTV и десктопах</h3>
-        <div class="card-source">
-          Источник: <a href="https://blog.click.ru/market-news/v-appmetrica-poyavilas-atribuciya-pokazov-na-ctv-i-desktopax/" target="_blank">blog.click.ru</a>
-        </div>
-        <div class="card-rows">
-          <div class="card-row"><strong>Что изменилось:</strong> AppMetrica запустила кросс-девайс атрибуцию: если пользователь видел рекламу приложения на Smart TV или ПК, а потом установил его на смартфон в той же сети (одинаковый IP), установка связывается с этим показом.</div>
-          <div class="card-row"><strong>Важное ограничение:</strong> приоритет всегда у мобильных взаимодействий; кросс-девайс атрибуция применяется только при отсутствии мобильных кликов или показов.</div>
-          <div class="card-row"><strong>Настройка:</strong> функция включается на уровне трекера и работает независимо от выбранной модели атрибуции.</div>
-          <div class="card-row"><strong>Кому полезно:</strong> разработчикам приложений, запускающим кампании на CTV и Desktop через Яндекс Директ.</div>
-        </div>
-        <div class="card-conclusion">Если используете кросс-платформенное продвижение приложений в Директе, стоит включить эту атрибуцию, чтобы видеть полную картину по CTV-кампаниям.</div>
-      </div>
-
-      <!-- CARD 6 -->
-      <div class="card secondary">
-        <div class="card-top">
-          <span class="card-badge">Яндекс Товары</span>
-          <span class="card-date">20 мая 2026</span>
-        </div>
-        <h3>Интернет-магазины могут самостоятельно подключить кнопку "Купить в 1 клик"</h3>
-        <div class="card-source">
-          Источник: <a href="https://yandex.ru/adv/news" target="_blank">yandex.ru/adv/news</a>
-        </div>
-        <div class="card-rows">
-          <div class="card-row"><strong>Что изменилось:</strong> раньше подключение кнопки быстрой покупки требовало заявки; теперь это делается напрямую в личном кабинете Яндекс Товары, там же настраивается унифицированное оформление заказа.</div>
-          <div class="card-row"><strong>Почему важно:</strong> снижает операционный барьер для магазинов, ускоряет запуск функции.</div>
-          <div class="card-row"><strong>Кому полезно:</strong> интернет-магазинам, размещающимся через Яндекс Товары.</div>
-        </div>
-        <div class="card-conclusion">Если ещё не подключили быструю покупку, теперь это можно сделать в несколько кликов в кабинете без ожидания обработки заявки.</div>
-      </div>
-
-      <!-- CARD 7 -->
-      <div class="card secondary">
-        <div class="card-top">
-          <span class="card-badge">Яндекс Маркет</span>
-          <span class="card-date">20 мая 2026</span>
-        </div>
-        <h3>Яндекс Маркет запустил раздел "Спешл" с товарами от высокорейтинговых продавцов</h3>
-        <div class="card-source">
-          Источник: <a href="https://ppc.world/news/" target="_blank">ppc.world</a>
-        </div>
-        <div class="card-rows">
-          <div class="card-row"><strong>Что изменилось:</strong> Яндекс Маркет запустил раздел "Спешл" с товарами от продавцов с высоким рейтингом. Дополнительно добавлен ИИ-агент, формирующий готовые образы на основе трендов с недель мод.</div>
-          <div class="card-row"><strong>Почему важно для рекламодателей:</strong> наличие высокого рейтинга продавца становится условием попадания в выделенный раздел с повышенной видимостью.</div>
-          <div class="card-row"><strong>Кому полезно:</strong> продавцам fashion- и lifestyle-категорий на Яндекс Маркете.</div>
-        </div>
-        <div class="card-conclusion">Прямого изменения в рекламных инструментах нет, но попадание в "Спешл" зависит от рейтинга продавца, что косвенно влияет на видимость.</div>
-      </div>
-
-    </div><!-- /cards-list secondary -->
+    </div>
 
     <div class="section-title">Не вошло в выпуск</div>
     <div class="cards-list">
       <div class="card secondary skipped">
         <ul class="skipped-list">
-          <li><strong>Google Analytics: выделение трафика из ChatGPT и нейросетей</strong> (ppc.world, 19.05) — изменения в зарубежном инструменте, не затрагивает рекламные кабинеты РФ напрямую.</li>
-          <li><strong>Яндекс Тег Менеджер: бандлы</strong> (yandex.ru/adv/news, 20.05) — техническая интеграция сторонних сервисов, не рекламный кабинет.</li>
-          <li><strong>Алиса AI: улучшение генерации изображений с русским текстом</strong> (ppc.world, 20.05) — продукт AI, не рекламный кабинет.</li>
-          <li><strong>PromoPult: перенос аккаунтов из Яндекс Директа</strong> (blog.promopult.ru, 19.05) — функция агентской платформы, не изменение в рекламном кабинете Директа.</li>
-          <li><strong>Статьи конференции ЦИПР-2026</strong> (inhouse-marketing.ru, 20.05) — анонсы и отчёты с мероприятия, нет конкретных продуктовых обновлений кабинетов.</li>
-          <li><strong>Wildberries: анонс экспорта в Китай</strong> (inhouse-marketing.ru, 19.05) — логистика маркетплейса, не рекламные инструменты.</li>
-          <li><strong>VK + Корпорация МСП: расширение сотрудничества</strong> (inhouse-marketing.ru, 20.05) — PR-новость о партнёрстве, без изменений в рекламном кабинете.</li>
-          <li><strong>Sostav.ru</strong> — за период нет материалов о продуктовых обновлениях рекламных кабинетов.</li>
-          <li><strong>Magnetto.pro, seonews.ru, new-retail.ru, unisender.com</strong> — нет релевантных материалов за окно дат либо источник вернул пустой ответ.</li>
+          <li><strong>Авито Реклама: таргетинг на любителей скидок и акций</strong> (ppc.world, 19.05) — дата публикации подтверждена, но прямая ссылка на конкретный материал недоступна через парсер (JavaScript-рендеринг ppc.world). Следите за ads.avito.com/blog.</li>
+          <li><strong>VK Реклама: переход на единую Discovery-платформу</strong> (click.ru, 19.05) — Cossa опубликовала ту же новость 15 мая, что выходит за пределы окна. Возможен дубль с более ранней публикацией.</li>
+          <li><strong>Яндекс Директ: кросс-платформенное продвижение приложений вышло из беты</strong> (ppc.world, 18.05) — вне окна. Click.ru переопубликовал 20.05, но первая публикация датирована 18.05.</li>
+          <li><strong>AppMetrica: атрибуция показов на CTV и десктопах</strong> (ppc.world, 18.05) — вне окна.</li>
+          <li><strong>ПромоСтраницы: обновление системы выбора стратегий</strong> (click.ru, 18.05) — вне окна.</li>
+          <li><strong>Реклама в мессенджере МАКС через Яндекс Директ</strong> (ppc.world, 18.05) — вне окна.</li>
+          <li><strong>Яндекс Тег Менеджер: бандлы</strong> (yandex.ru/adv/news, 20.05) — техническая интеграция для подключения сторонних сервисов к сайту; не изменение рекламного кабинета.</li>
+          <li><strong>Яндекс Маркет: раздел «Спешл» с товарами от высокорейтинговых продавцов</strong> (ppc.world, 20.05) — нет прямого изменения в рекламных инструментах.</li>
+          <li><strong>Законопроект об упрощении требований к рекламе финансовых услуг</strong> (adindex.ru, 20.05) — законодательная инициатива, не продуктовое обновление рекламного кабинета.</li>
+          <li><strong>Google Analytics: выделение трафика из ChatGPT и нейросетей</strong> (ppc.world, 19.05) — зарубежный инструмент аналитики, не затрагивает рекламные кабинеты РФ напрямую.</li>
         </ul>
       </div>
     </div>
 
-  </div><!-- /main-content -->
+  </div>
 
-</div><!-- /container -->
+</div>
 
 <div class="footer">
-  <strong>AdTech-дайджест</strong> &nbsp;|&nbsp; Выпуск от 20 мая 2026 &nbsp;|&nbsp; Окно: 19&ndash;20 мая 2026
+  <strong>AdTech-дайджест</strong> &nbsp;|&nbsp; Выпуск от 20 мая 2026 &nbsp;|&nbsp; Окно: 19-20 мая 2026
   <br>
-  Источники: ppc.world, blog.click.ru, yandex.ru/adv/news и ещё 13 источников
+  Проверено 16 источников: ppc.world, adindex.ru, sostav.ru, inhouse-marketing.ru, yandex.ru/adv/news, ads.avito.com/blog, elama.ru, blog.click.ru, magnetto.pro, blog.promopult.ru, cossa.ru, seonews.ru, new-retail.ru, unisender.com и другие
 </div>
 
 </body>
