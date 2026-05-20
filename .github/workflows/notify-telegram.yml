@@ -40,8 +40,17 @@ jobs:
           DATE: ${{ steps.find.outputs.date }}
         run: |
           URL="https://teemalex18.github.io/AdTech-digest/magazines/${DATE}.html"
-          TEXT="🧪 *Тестовый AdTech-дайджест* (${DATE})
-          ${URL}"
+
+          if [ -f tg_summary.txt ]; then
+            SUMMARY=$(cat tg_summary.txt)
+          else
+            SUMMARY="AdTech-дайджест за ${DATE}"
+          fi
+
+          TEXT="${SUMMARY}
+
+[Полный выпуск](${URL})"
+
           curl -s "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
             -d chat_id="${TG_CHAT_ID}" \
             -d parse_mode=Markdown \
