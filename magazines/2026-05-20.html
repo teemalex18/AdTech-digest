@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 20 мая 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      background: #f4f5f7;
+      color: #1a1a2e;
+    }
+
+    a { color: #1a6ef5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #a8b2d8;
+    }
+
+    /* Summary block */
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-left: 4px solid #7b8cde;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .summary p {
+      font-size: 15px;
+      color: #444;
+    }
+    .summary .stat {
+      display: inline-block;
+      background: #f0f2ff;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-weight: 600;
+      color: #1a6ef5;
+      margin: 0 2px;
+    }
+    .summary .stat-warn {
+      display: inline-block;
+      background: #fff4e5;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-weight: 600;
+      color: #c76b00;
+      margin: 0 2px;
+    }
+
+    /* Section headings */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 32px 0 14px;
+    }
+
+    /* News card */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .card.primary {
+      border-left: 4px solid #1a6ef5;
+    }
+    .card.secondary {
+      border-left: 4px solid #d0d4e8;
+    }
+    .card.warn {
+      border-left: 4px solid #f5a623;
+      background: #fffdf8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .badge-platform {
+      background: #eef2ff;
+      color: #3d5af1;
+    }
+    .badge-date {
+      background: #f3f4f6;
+      color: #666;
+    }
+    .badge-new {
+      background: #e6f9f0;
+      color: #0d7a45;
+    }
+    .badge-warn {
+      background: #fff4e5;
+      color: #c76b00;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card-source {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-source a {
+      color: #1a6ef5;
+    }
+
+    .card-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin: 14px 0 4px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-verdict {
+      background: #f7f9ff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #2d3a6e;
+      border-left: 3px solid #7b8cde;
+    }
+
+    /* Not included block */
+    .not-included {
+      background: #fafafa;
+      border: 1px solid #e4e6ee;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .not-included ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+    .not-included ul li {
+      margin-bottom: 5px;
+    }
+
+    /* Unavailable sources table */
+    .sources-table {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .sources-table table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .sources-table th {
+      text-align: left;
+      font-weight: 600;
+      color: #888;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 6px 8px;
+      border-bottom: 1px solid #e8eaf0;
+    }
+    .sources-table td {
+      padding: 8px 8px;
+      color: #444;
+      border-bottom: 1px solid #f0f2f5;
+      vertical-align: top;
+    }
+    .sources-table tr:last-child td {
+      border-bottom: none;
+    }
+    .status-unavailable {
+      display: inline-block;
+      background: #fff0f0;
+      color: #c0392b;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* Takeaway block */
+    .takeaway {
+      background: #1a1a2e;
+      color: #e8ecff;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-top: 10px;
+    }
+    .takeaway .section-title {
+      color: #7b8cde;
+      margin-top: 0;
+    }
+    .takeaway p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #c9d1f0;
+    }
+    .takeaway p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 21px; }
+      .card h2 { font-size: 16px; }
+      .wrapper { padding: 16px 12px 48px; }
+      .sources-table { overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск от 20 мая 2026 &nbsp;|&nbsp; Окно: 19.05.2026 – 20.05.2026</div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период 19-20 мая 2026.
+      Доступных источников: <span class="stat-warn">0</span>.
+      Релевантных обновлений: <span class="stat">0</span>.
+    </p>
+    <p style="margin-top:10px;">
+      Все 13 источников вернули ошибку доступа. Яндекс Функция (российский IP-шлюз) ответила
+      «Host not in allowlist» — облачное окружение выпуска не входит в список разрешённых адресов.
+      Прямые запросы к сайтам возвращали HTTP 403 (геоблокировка). Контент за период не получен.
+    </p>
+    <p style="margin-top:10px;">
+      За период не найдено значимых обновлений по рекламным кабинетам.
+    </p>
+  </div>
+
+  <!-- ТАКЭАВЭЙ -->
+  <div class="takeaway">
+    <div class="section-title">Что это значит для работы</div>
+    <p>
+      Выпуск не содержит новостей: источники недоступны из текущего окружения.
+      Рекомендуем проверить конфигурацию Яндекс Функции -- убедитесь, что IP-адрес
+      облачного агента добавлен в allowlist функции, либо настройте прокси с российским IP.
+    </p>
+    <p>
+      До восстановления доступа к источникам ручная проверка ключевых площадок
+      (ppc.world, Яндекс Реклама, VK for Business) займет 10-15 минут.
+    </p>
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section-title">Главное</div>
+  <div class="card secondary">
+    <p style="color:#888; font-size:15px;">
+      За период 19-20 мая 2026 данные не получены: все источники недоступны.
+    </p>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section-title">Остальные обновления</div>
+  <div class="card secondary">
+    <p style="color:#888; font-size:15px;">
+      Нет данных по тем же причинам.
+    </p>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <p style="font-size:14px; color:#555; margin-bottom:12px;">
+      Все 13 источников отмечены как недоступные. Статус каждого:
+    </p>
+    <div class="sources-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Источник</th>
+            <th>Приоритет</th>
+            <th>Статус</th>
+            <th>Причина</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://ppc.world/news/" target="_blank">ppc.world/news</a></td>
+            <td>P1</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://adindex.ru/news/" target="_blank">adindex.ru/news</a></td>
+            <td>P1</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://yandex.ru/adv/news" target="_blank">yandex.ru/adv/news</a></td>
+            <td>P2</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://ads.avito.com/blog" target="_blank">ads.avito.com/blog</a></td>
+            <td>P2</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://seller.ozon.ru/media/" target="_blank">seller.ozon.ru/media</a></td>
+            <td>P2</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://pro.wildberries.ru/" target="_blank">pro.wildberries.ru</a></td>
+            <td>P2</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.avito.ru/avito-care/blog" target="_blank">avito.ru/avito-care/blog</a></td>
+            <td>P2</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://elama.ru/blog/" target="_blank">elama.ru/blog</a></td>
+            <td>P3</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://click.ru/blog/" target="_blank">click.ru/blog</a></td>
+            <td>P3</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://magnetto.pro/media/news/" target="_blank">magnetto.pro/media/news</a></td>
+            <td>P3</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://marketolog.mts.ru/blog" target="_blank">marketolog.mts.ru/blog</a></td>
+            <td>P3</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.sostav.ru/" target="_blank">sostav.ru</a></td>
+            <td>P3</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+          <tr>
+            <td><a href="https://inhouse.marketing/news/" target="_blank">inhouse.marketing/news</a></td>
+            <td>P3</td>
+            <td><span class="status-unavailable">НЕДОСТУПЕН</span></td>
+            <td>HTTP 403 (геоблокировка)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px; color:#999; margin-top:12px;">
+      Яндекс Функция (d4eu7n3g23hsulc1opck) также недоступна: ответ «Host not in allowlist».
+      IP текущего облачного агента не добавлен в allowlist функции.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ &nbsp;|&nbsp; Окно 19.05.2026 – 20.05.2026 &nbsp;|&nbsp; Сформирован 20 мая 2026
+  </div>
+
+</div>
+</body>
+</html>
