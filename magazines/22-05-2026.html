@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ - 22 мая 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #1a1a2e;
+      background: #f5f6fa;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* HEADER */
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 40px 0 32px;
+    }
+
+    .header .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7c83ad;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #fff;
+    }
+
+    .header-meta {
+      font-size: 14px;
+      color: #9ca3c4;
+      margin-top: 4px;
+    }
+
+    .header-meta strong {
+      color: #c7ceea;
+    }
+
+    /* SUMMARY BLOCK */
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      padding: 20px 24px;
+      margin: 28px 0 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 15px;
+    }
+
+    .summary h2 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .summary p + p {
+      margin-top: 8px;
+    }
+
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* MAIN CONTENT */
+    .main-content {
+      margin-top: 28px;
+      padding-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9ca3c4;
+      margin: 32px 0 14px;
+    }
+
+    .cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* CARD */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 22px 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+
+    .card.primary {
+      border-top: 3px solid #2563eb;
+    }
+
+    .card.secondary {
+      border-top: 3px solid #d1d5db;
+    }
+
+    .card.skipped {
+      border-top: 3px solid #e5e7eb;
+      background: #fafafa;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .card-badge {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 20px;
+      background: #eff6ff;
+      color: #2563eb;
+    }
+
+    .card.secondary .card-badge {
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+
+    .card.skipped .card-badge {
+      background: #f3f4f6;
+      color: #9ca3af;
+    }
+
+    .card-date {
+      font-size: 13px;
+      color: #9ca3c4;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+
+    .card.secondary h3 {
+      font-size: 16px;
+    }
+
+    .card.skipped h3 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .card h3 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card h3 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .card-source {
+      font-size: 13px;
+      color: #9ca3c4;
+      margin-bottom: 14px;
+    }
+
+    .card-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .card-row strong {
+      color: #374151;
+    }
+
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      padding: 10px 14px;
+      font-size: 14px;
+      border-radius: 0 6px 6px 0;
+      color: #1e3a5f;
+    }
+
+    .skipped-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .skipped-list li {
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .skipped-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      background: #d1d5db;
+      border-radius: 50%;
+    }
+
+    /* TAKEAWAY / SUMMARY DARK BLOCK */
+    .takeaway {
+      background: #1a1a2e;
+      border-radius: 10px;
+      padding: 28px 28px;
+      margin-top: 32px;
+    }
+
+    .takeaway h2 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      color: #7c83ad;
+      margin-bottom: 16px;
+    }
+
+    .takeaway ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .takeaway li {
+      font-size: 15px;
+      padding-left: 20px;
+      position: relative;
+      color: #c7ceea;
+    }
+
+    .takeaway li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      background: #3b82f6;
+      border-radius: 50%;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #1a1a2e;
+      color: #7c83ad;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 13px;
+      margin-top: 40px;
+    }
+
+    .footer strong {
+      color: #9ca3c4;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .header h1 { font-size: 22px; }
+      .card { padding: 18px 16px; }
+      .card h3 { font-size: 16px; }
+      .card.secondary h3 { font-size: 15px; }
+      .summary { padding: 16px 16px; }
+      .takeaway { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="header-label">Ежедневный дайджест</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">
+      Выпуск <strong>22 мая 2026</strong> за период <strong>21-22 мая</strong>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="summary">
+    <h2>Резюме выпуска</h2>
+    <p>Проверено <span class="stat">16</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>Яндекс (Ритейл Медиа, Commerce Protocol, Тег Менеджер, Вебмастер), VK AdBlogger / PromoPult</strong>.</p>
+  </div>
+
+  <div class="main-content">
+
+    <div class="section-title">Главное</div>
+    <div class="cards-list">
+
+      <div class="card primary">
+        <div class="card-top">
+          <span class="card-badge">Яндекс Ритейл Медиа</span>
+          <span class="card-date">21 мая 2026</span>
+        </div>
+        <h3><a href="https://news.inhouse-marketing.ru/2026/05/21/internet-magaziny-smogyt-zarabatyvat-s-iandeks-riteil-media/" target="_blank">Яндекс Ритейл Медиа: интернет-магазины могут за несколько дней запустить собственное ритейл-медиа</a></h3>
+        <div class="card-source">
+          Источник: <a href="https://news.inhouse-marketing.ru/2026/05/21/internet-magaziny-smogyt-zarabatyvat-s-iandeks-riteil-media/" target="_blank">inhouse-marketing.ru</a>, <a href="https://ppc.world/news/" target="_blank">ppc.world</a>, <a href="https://yandex.ru/adv/news" target="_blank">yandex.ru/adv/news</a> &nbsp;|&nbsp; Площадка: Яндекс Ритейл Медиа
+        </div>
+        <div class="card-rows">
+          <div class="card-row"><strong>Что изменилось:</strong> Яндекс запустил no-code редактор рекламных блоков для нишевых маркетплейсов и интернет-магазинов. Площадке достаточно настроить внешний вид через конструктор и вставить код - система сама подбирает товары и считает статистику. Доступные форматы: карточка-слайдер, товарная полка, горизонтальные и вертикальные карточки, сетка. Регистрация бесплатная.</div>
+          <div class="card-row"><strong>Почему важно:</strong> Рынок ритейл-медиа в России составил около 600 млрд рублей в 2025 году с прогнозом до 1,2 трлн рублей к концу 2026-го. Раньше войти без сложной разработки было нельзя - теперь барьер снят. Среди первых участников: Lamoda, DNS, "Детский мир".</div>
+          <div class="card-row"><strong>Кому полезно:</strong> Интернет-магазинам и нишевым маркетплейсам, которые хотят монетизировать собственный трафик через нативные товарные блоки без ресурсов разработки.</div>
+        </div>
+        <div class="card-conclusion">Инструмент открывает монетизацию трафика для среднего и малого e-commerce без программиста. Если у магазина есть стабильный органический трафик, стоит оценить потенциал уже сейчас.</div>
+      </div>
+
+      <div class="card primary">
+        <div class="card-top">
+          <span class="card-badge">Яндекс (YCP)</span>
+          <span class="card-date">21 мая 2026</span>
+        </div>
+        <h3><a href="https://news.inhouse-marketing.ru/2026/05/21/iandeks-otkryl-internet-magazinam-samostoiatelnyi-dostyp-k-prodajam-cherez-alisy-ai-i-poisk/" target="_blank">Яндекс открыл магазинам самостоятельное подключение к продажам через Алису и Поиск</a></h3>
+        <div class="card-source">
+          Источник: <a href="https://news.inhouse-marketing.ru/2026/05/21/iandeks-otkryl-internet-magazinam-samostoiatelnyi-dostyp-k-prodajam-cherez-alisy-ai-i-poisk/" target="_blank">inhouse-marketing.ru</a>, <a href="https://ppc.world/news/" target="_blank">ppc.world</a> &nbsp;|&nbsp; Площадка: Яндекс Поиск / Алиса
+        </div>
+        <div class="card-rows">
+          <div class="card-row"><strong>Что изменилось:</strong> Яндекс открыл самостоятельное подключение к Yandex Commerce Protocol (YCP) - стандарту, через который магазины принимают заказы прямо из чата с Алисой AI, из Поиска Яндекса и ленты Яндекс Ритм. Ранее подключение требовало заявки и ожидания менеджера.</div>
+          <div class="card-row"><strong>Как подключиться:</strong> Магазины на Яндекс KIT и Яндекс Маркете подключаются в несколько кликов через личный кабинет. Для 1С-Битрикс доступен готовый модуль, для сложных инфраструктур - API. Уже подключились СТОКМАНН, restore:, "Горздрав", "36,6", билайн, The Act. Поступило свыше 2270 заявок.</div>
+          <div class="card-row"><strong>Почему важно:</strong> Появляется новый канал транзакций прямо из поисковой и рекламной выдачи: клик по объявлению или органике может завершаться покупкой без перехода на сайт магазина.</div>
+        </div>
+        <div class="card-conclusion">Изменение влияет на атрибуцию: конверсии из Поиска и Алисы через YCP могут не фиксироваться в стандартной аналитике сайта. Стоит проверить настройки отслеживания до подключения протокола.</div>
+      </div>
+
+      <div class="card primary">
+        <div class="card-top">
+          <span class="card-badge">VK AdBlogger / PromoPult</span>
+          <span class="card-date">21 мая 2026</span>
+        </div>
+        <h3><a href="https://promopult.ru/news.857.html" target="_blank">В PromoPult появились прямые аккаунты VK AdBlogger</a></h3>
+        <div class="card-source">
+          Источник: <a href="https://promopult.ru/news.857.html" target="_blank">blog.promopult.ru</a> &nbsp;|&nbsp; Площадка: VK AdBlogger
+        </div>
+        <div class="card-rows">
+          <div class="card-row"><strong>Что изменилось:</strong> PromoPult добавил возможность создавать прямые аккаунты в официальной бирже VK AdBlogger для размещения рекламы в сообществах и у блогеров ВКонтакте. Один пост можно отправить в десятки сообществ с автоматическим согласованием. Оплата происходит только после публикации.</div>
+          <div class="card-row"><strong>Что дает интеграция:</strong> Единый счет и договор на все виды рекламы в PromoPult. Возврат до 19% расходов через бонусную программу платформы. Общий дашборд статистики. Фильтры по тематике, демографии аудитории и прогнозируемому охвату.</div>
+          <div class="card-row"><strong>Кому подходит:</strong> Агентствам и командам, которые совмещают размещение в сообществах ВКонтакте с другими каналами в PromoPult и хотят единый биллинг без отдельного кабинета VK AdBlogger.</div>
+        </div>
+        <div class="card-conclusion">Полезно агентствам с мультиканальными кампаниями в PromoPult: VK-блогерские размещения теперь закрываются одним договором и дают 19%-й кэшбэк через общий бонусный счет.</div>
+      </div>
+
+    </div>
+
+    <div class="section-title">Остальные обновления</div>
+    <div class="cards-list">
+
+      <div class="card secondary">
+        <div class="card-top">
+          <span class="card-badge">Яндекс Тег Менеджер</span>
+          <span class="card-date">21 мая 2026</span>
+        </div>
+        <h3><a href="https://news.inhouse-marketing.ru/2026/05/21/iandeks-teg-menedjer-zapystil-bandly-podkluchenie-servisov-k-saity-teper-zanimaet-neskolko-klikov/" target="_blank">Яндекс Тег Менеджер запустил бандлы: готовые интеграции в несколько кликов</a></h3>
+        <div class="card-source">
+          Источник: <a href="https://news.inhouse-marketing.ru/2026/05/21/iandeks-teg-menedjer-zapystil-bandly-podkluchenie-servisov-k-saity-teper-zanimaet-neskolko-klikov/" target="_blank">inhouse-marketing.ru</a> &nbsp;|&nbsp; Площадка: Яндекс Тег Менеджер
+        </div>
+        <div class="card-rows">
+          <div class="card-row"><strong>Что изменилось:</strong> В Яндекс Тег Менеджере появились бандлы - готовые наборы с тегом, триггером и переменными. Вместо ручной настройки каждого компонента достаточно выбрать интеграцию в каталоге и опубликовать. Публикация бандла не затрагивает основной контейнер.</div>
+          <div class="card-row"><strong>Доступные интеграции:</strong> РСЯ (рекламные блоки), Яндекс Пэй, Вариокуб (A/B-тесты), Вебмастер (верификация сайта), Mindbox (передача офлайн-конверсий). Добавлена роль "Управление бандлами" для сотрудников без доступа к основному контейнеру.</div>
+        </div>
+        <div class="card-conclusion">Снижает порог настройки аналитики и рекламных тегов. Передача офлайн-конверсий в Яндекс через Mindbox теперь не требует разработчика.</div>
+      </div>
+
+      <div class="card secondary">
+        <div class="card-top">
+          <span class="card-badge">Яндекс Вебмастер</span>
+          <span class="card-date">21 мая 2026</span>
+        </div>
+        <h3><a href="https://blog.click.ru/market-news/yandeks-vebmaster-zapustil-instrument-bally-za-otzyvy/" target="_blank">Яндекс Вебмастер запустил инструмент "Баллы за отзывы"</a></h3>
+        <div class="card-source">
+          Источник: <a href="https://blog.click.ru/market-news/yandeks-vebmaster-zapustil-instrument-bally-za-otzyvy/" target="_blank">blog.click.ru</a> &nbsp;|&nbsp; Площадка: Яндекс Вебмастер
+        </div>
+        <div class="card-rows">
+          <div class="card-row"><strong>Что изменилось:</strong> В Яндекс Вебмастере появился инструмент для стимулирования отзывов: пользователь получает 40 баллов Яндекс Плюс за публикацию. Запросы автоматически отправляются тем, кто с высокой вероятностью уже пользовался услугами компании. Количество запросов определяется бюджетом.</div>
+          <div class="card-row"><strong>Как влияет на рекламу:</strong> Рейтинг из отзывов отображается в сниппетах поисковой выдачи и интерфейсах интернет-магазинов, напрямую влияя на CTR в Директе и органике. Свежие отзывы служат сигналом актуальности ресурса для алгоритмов.</div>
+        </div>
+        <div class="card-conclusion">Инструмент полезен для e-commerce с низким количеством отзывов: рост рейтинга в сниппете улучшает CTR рекламных объявлений. Управляется из Вебмастера, не из кабинета Директа.</div>
+      </div>
+
+    </div>
+
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="cards-list">
+      <div class="card skipped">
+        <ul class="skipped-list">
+          <li>
+            <a href="https://blog.click.ru/market-news/v-appmetrica-poyavilas-atribuciya-pokazov-na-ctv-i-desktopax/" target="_blank">AppMetrica: атрибуция показов на CTV и десктопах</a> - вне окна дат, первая публикация 20 мая
+          </li>
+          <li>
+            <a href="https://blog.click.ru/market-news/v-yandeks-direkte-zaversheno-otkrytoe-beta-testirovanie-instrumenta-dlya-kross-platformennogo-prodvizheniya-prilozhenij/" target="_blank">Яндекс Директ: завершено бета-тестирование кросс-платформенного продвижения приложений</a> - вне окна дат, первая публикация 20 мая
+          </li>
+          <li>
+            <a href="https://ppc.world/news/" target="_blank">VK: выручка от онлайн-рекламы крупного бизнеса выросла на 4% в Q1 2026</a> - финансовые результаты без изменений в рекламном кабинете
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="takeaway">
+      <h2>Summary</h2>
+      <ul>
+        <li>21 мая Яндекс одновременно открыл ритейл-медиа без разработки и прямые покупки из Алисы и Поиска через YCP. Это два разных инструмента для разных задач: первый монетизирует трафик самого магазина, второй расширяет точки покупки в экосистеме Яндекса.</li>
+        <li>Подключение к Yandex Commerce Protocol меняет атрибуцию: транзакции через Поиск и Алису могут не попадать в стандартную аналитику сайта. До подключения стоит настроить сквозное отслеживание и согласовать модель атрибуции с командой.</li>
+        <li>PromoPult добавил VK AdBlogger: для агентств, уже работающих в платформе, блогерские размещения в ВКонтакте теперь закрываются одним договором с кэшбэком до 19%.</li>
+        <li>Две значимые новости по AppMetrica и Директу (кросс-платформенное продвижение приложений) вышли 20 мая и не попали в окно. Их стоит учесть в следующем выпуске, если не появятся официальные материалы Яндекса.</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  <strong>AdTech-дайджест: рекламные кабинеты РФ</strong>
+  Выпуск 22 мая 2026 за период 21-22 мая.
+</div>
+
+</body>
+</html>
