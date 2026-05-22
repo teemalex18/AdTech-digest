@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — Выпуск 22 мая 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
+      color: #1e293b;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 32px auto;
+      padding: 0 16px 32px;
+    }
+
+    .header {
+      background: #0f172a;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 20px;
+    }
+    .header-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .header-meta {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.7;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 28px 0 12px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+      border-top: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .card.secondary {
+      border-left: 4px solid #cbd5e1;
+    }
+
+    .card-headline {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }
+    .card-headline a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .card-headline a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .card-meta {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 14px;
+    }
+    .card-meta span { margin-right: 12px; }
+
+    .card-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+    .card-body {
+      font-size: 0.93rem;
+      color: #334155;
+    }
+
+    .card-conclusion {
+      margin-top: 14px;
+      background: #f8fafc;
+      border-left: 3px solid #94a3b8;
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.88rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .not-included-list {
+      list-style: none;
+      padding: 0;
+    }
+    .not-included-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+    .not-included-list li:last-child { border-bottom: none; }
+    .not-included-list li a {
+      color: #334155;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .not-included-list li a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .not-included-reason {
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    .takeaway {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 32px;
+      margin-bottom: 24px;
+    }
+    .takeaway-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #60a5fa;
+      margin-bottom: 16px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+    .takeaway ul li {
+      font-size: 0.93rem;
+      color: #cbd5e1;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      line-height: 1.65;
+    }
+    .takeaway ul li::before {
+      content: '-';
+      position: absolute;
+      left: 0;
+      color: #60a5fa;
+      font-weight: 700;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      padding-top: 8px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { margin: 16px auto; padding: 0 12px 24px; }
+      .header { padding: 24px 20px; }
+      .card { padding: 18px 16px; }
+      .takeaway { padding: 22px 20px; }
+      .header-title { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+      <div class="header-meta">Выпуск 22 мая 2026 за период 21-22 мая</div>
+    </header>
+
+    <div class="summary">
+      Проверено <span class="stat">587</span> материалов из источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Google, Авито, Яндекс</strong>.
+    </div>
+
+    <div class="section-title">Главное</div>
+
+    <div class="card primary">
+      <div class="card-headline">
+        <a href="https://ppc.world/news/google-nachal-vstraivat-reklamu-v-ii-otvety-poiska/" target="_blank">Google начал встраивать рекламу в ИИ-ответы Поиска</a>
+      </div>
+      <div class="card-meta">
+        <span>ppc.world</span><span>Google</span><span>22 мая 2026</span>
+      </div>
+      <div class="card-label">Что изменилось</div>
+      <div class="card-body">Google тестирует два рекламных формата внутри ИИ-ответов: <em>Conversational Ads</em> — объявления, которые Gemini генерирует под конкретный запрос пользователя, акцентируя подходящие характеристики товара, — и <em>Featured Answers</em> — реклама в списке рекомендаций ИИ. Тест запущен в США на десктопе и мобильных устройствах. Оба формата маркируются как реклама.</div>
+      <div class="card-label">Дополнительно в разработке</div>
+      <div class="card-body">Google Shopping с ИИ-подбором товаров под запрос и Business Agent — чат-бот на сайте рекламодателя, который отвечает на вопросы пользователей данными со страниц сайта и ведет к конверсии.</div>
+      <div class="card-label">Почему важно</div>
+      <div class="card-body">ИИ-поиск вытесняет классическую выдачу — реклама следует туда же. Форматы, где модель сама адаптирует объявление под запрос, меняют логику работы с креативами и ключевыми словами.</div>
+      <div class="card-conclusion">Пока тест ограничен США, но это сигнал для всего рынка. Когда аналогичный функционал появится в Яндексе, перестраивать подходы придется быстро — стоит следить за изменениями уже сейчас.</div>
+    </div>
+
+    <div class="card primary">
+      <div class="card-headline">
+        <a href="https://news.inhouse-marketing.ru/2026/05/22/avito-reklama-zapyskaet-avtotargeting/" target="_blank">Авито Реклама запускает автотаргетинг</a>
+      </div>
+      <div class="card-meta">
+        <span>Inhouse Marketing</span><span>Авито Реклама</span><span>22 мая 2026</span>
+      </div>
+      <div class="card-label">Что изменилось</div>
+      <div class="card-body">В рекламном кабинете Авито появился автотаргетинг: алгоритм сам подбирает целевую аудиторию на основе текста объявления, визуальных креативов и поведения пользователей на платформе. Функция работает как для новых кампаний, так и для уже активных.</div>
+      <div class="card-label">Кому подходит</div>
+      <div class="card-body">В первую очередь для малого и среднего бизнеса и рекламодателей, которым важна скорость запуска без ручной настройки таргетинга. Модель оплаты — CPC. Доступно через личный кабинет Авито Рекламы.</div>
+      <div class="card-conclusion">Авито закрывает разрыв с Директом и VK Рекламой по уровню автоматизации. Тем, кто раньше избегал платформу из-за сложности настройки, стоит вернуться к ней и оценить автотаргетинг на тестовом бюджете.</div>
+    </div>
+
+    <div class="card primary">
+      <div class="card-headline">
+        <a href="https://ppc.world/news/internet-magaziny-teper-mogut-za-neskolko-dney-zapuskatsya-v-yandeks-riteyl-media-i-zarabatyvat/" target="_blank">Яндекс Ритейл Медиа: запуск за 1-7 дней вместо 3 лет</a>
+      </div>
+      <div class="card-meta">
+        <span>ppc.world, официальный блог Яндекса</span><span>Яндекс Ритейл Медиа</span><span>21 мая 2026</span>
+      </div>
+      <div class="card-label">Что изменилось</div>
+      <div class="card-body">Яндекс выпустил бесплатный редактор рекламных блоков для интернет-магазинов, которые хотят монетизировать свой трафик через ритейл-медиа. Раньше запуск собственной инфраструктуры занимал до 3 лет и требовал 250-350 млн руб. в год. Теперь — 1-7 дней, бесплатно после регистрации в кабинете Яндекс Ритейл Медиа.</div>
+      <div class="card-label">Возможности редактора</div>
+      <div class="card-body">Настройка цветов, шрифтов, отступов, выбор шаблонов и превью до публикации. Рекламодатели — производители товаров — приходят через Яндекс Директ для вендоров: магазину не нужно искать бренды самостоятельно.</div>
+      <div class="card-label">Рынок</div>
+      <div class="card-body">84% производителей товаров уже выделяют до трети рекламного бюджета на ритейл-медиа по данным 2025 года.</div>
+      <div class="card-conclusion">Порог входа в ритейл-медиа для онлайн-ритейла радикально снизился. Формат, который раньше был реален только для Ozon и Wildberries, теперь доступен магазинам любого масштаба.</div>
+    </div>
+
+    <div class="section-title">Остальные обновления</div>
+
+    <div class="card secondary">
+      <div class="card-headline">
+        <a href="https://ppc.world/news/internet-magaziny-teper-mogut-sami-podklyuchit-knopku-kupit-v-odin-klik-v-yandekse/" target="_blank">Яндекс: кнопку «Купить в 1 клик» теперь можно подключить самостоятельно</a>
+      </div>
+      <div class="card-meta">
+        <span>ppc.world</span><span>Яндекс</span><span>21 мая 2026</span>
+      </div>
+      <div class="card-label">Что изменилось</div>
+      <div class="card-body">Раньше подключение кнопки «Купить в 1 клик» в сервисах Яндекса требовало подачи заявки. Теперь интернет-магазин делает это самостоятельно через личный кабинет Яндекс Маркета, настроив интеграцию по Яндекс Комерс Протоколу (YCP). Поддерживаемые платежи: СБП, банковские карты, рассрочка Сплит.</div>
+      <div class="card-label">Что это дает</div>
+      <div class="card-body">Кнопка открывает универсальную страницу оформления заказа прямо в сервисах Яндекса — платежные данные подставляются автоматически из Яндекс ID. По данным ритейлеров, конверсия с кнопкой выше примерно в 1,5 раза. Яндекс ID есть у 114 млн пользователей.</div>
+      <div class="card-conclusion">Для интернет-магазинов, работающих с Яндекс Маркетом, стоит проверить возможность подключения и оценить прирост конверсии на практике.</div>
+    </div>
+
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://news.inhouse-marketing.ru/2026/05/22/google-zapystil-obnovlenie-algoritma-may-2026-core-update/" target="_blank">Google May 2026 Core Update</a>
+          <span class="not-included-reason"> — обновление алгоритма органического поиска, не рекламного кабинета</span>
+        </li>
+        <li>
+          <a href="https://ppc.world/news/vyruchka-vk-ot-onlayn-reklamy-krupnogo-biznesa-uvelichilas-na-4/" target="_blank">Выручка VK от онлайн-рекламы крупного бизнеса увеличилась на 4%</a>
+          <span class="not-included-reason"> — финансовый отчет без изменений в рекламном кабинете</span>
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/digital/2026/05/22/345196.phtml" target="_blank">Сбер представил ИИ-систему для маркетинга «Маркус»</a>
+          <span class="not-included-reason"> — PR-анонс без конкретного рекламного инструмента или кабинета</span>
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/digital/2026/05/22/345193.phtml" target="_blank">М.Видео и Яндекс создадут единую ретейл-медиа-экосистему</a>
+          <span class="not-included-reason"> — партнерство без деталей о новых функциях для рекламодателей</span>
+        </li>
+        <li>
+          <a href="https://ppc.world/news/pv-yandeks-teg-menedzhere-poyavilis-bandly-prostoy-sposob-integracii-sayta-s-partnerskimi-servisamip/" target="_blank">В Яндекс Тег Менеджере появились бандлы</a>
+          <span class="not-included-reason"> — первая публикация 20.05, вне периода выпуска</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="takeaway">
+      <div class="takeaway-title">Summary</div>
+      <ul>
+        <li>Авито Реклама закрывает разрыв с Директом по автоматизации. Если раньше Авито требовал ручной настройки таргетинга, теперь платформа подходит для быстрого теста на сопоставимых с другими кабинетами условиях.</li>
+        <li>Яндекс Ритейл Медиа сделал шаг в сторону демократизации формата: интернет-магазины среднего размера теперь могут монетизировать собственный трафик через ритейл-медиа за дни, а не годы и сотни миллионов рублей.</li>
+        <li>Кнопка «Купить в 1 клик» без заявки — конкретный операционный шаг для Яндекс Маркета: стоит подключить и сравнить конверсию с базовым сценарием.</li>
+        <li>Google встраивает рекламу в ИИ-ответы — пока тест в США, но это прямой сигнал о том, куда движется рынок. Когда аналогичный функционал появится в российских поисковиках, стратегию работы с форматами придется пересматривать.</li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <div>AdTech-дайджест: рекламные кабинеты РФ</div>
+      <div>Выпуск 22 мая 2026 за период 21-22 мая</div>
+    </footer>
+
+  </div>
+</body>
+</html>
