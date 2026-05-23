@@ -1,16 +1,14 @@
 """
-Новый рецепты.
+Новые рецепты.
 Источники: vkusnyblog (RSS) + say7 (HTML).
 
 Настройки:
-  TG_TOKEN  — токен бота
-  TG_CHAT_ID    — chat_id получателя (узнать через @userinfobot или написать боту /start)
+  TG_BOT_TOKEN  — токен бота
+  TG_CHAT_ID    — chat_id получателя
   DAYS_BACK     — сколько дней назад брать рецепты (по умолчанию 7)
 
 Запуск:
   python recipe_digest.py
-
-Для еженедельного запуска — добавить в cron или Task Scheduler.
 """
 
 import datetime
@@ -42,7 +40,6 @@ def date_from(days_back):
 
 
 def parse_say7_date(text):
-    """Парсит дату вида '19.05.2026' из текста."""
     m = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", text)
     if m:
         return datetime.date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
@@ -50,7 +47,6 @@ def parse_say7_date(text):
 
 
 def fetch_vkusnyblog(since):
-    """Берёт рецепты из RSS vkusnyblog за период с since."""
     url = "https://www.vkusnyblog.com/feed/"
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -63,7 +59,6 @@ def fetch_vkusnyblog(since):
     recipes = []
 
     for entry in feed.entries:
-        # Дата публикации
         pub = entry.get("published_parsed") or entry.get("updated_parsed")
         if not pub:
             continue
@@ -85,7 +80,6 @@ def fetch_vkusnyblog(since):
 
 
 def fetch_say7(since):
-    """Парсит рецепты со страницы say7, отсортированной по дате."""
     url = "https://www.say7.info/cook/linkqi_order-3.html"
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -107,7 +101,6 @@ def fetch_say7(since):
         if not a:
             continue
 
-        # Заголовок — текст ссылки без alt картинки
         img = a.find("img")
         if img:
             img.decompose()
@@ -119,12 +112,10 @@ def fetch_say7(since):
         if not href.startswith("http"):
             href = "https://www.say7.info" + href
 
-        # Дата — берём весь текст <li> и ищем паттерн ДД.ММ.ГГГГ
         pub_date = parse_say7_date(li.get_text(" ", strip=True))
         if not pub_date:
             continue
         if pub_date < since:
-            # Страница отсортирована по дате — дальше только старее
             break
 
         recipes.append({
@@ -138,25 +129,23 @@ def fetch_say7(since):
 
 
 def format_message(recipes, since):
-    """Форматирует сообщение для Telegram."""
     today = datetime.date.today()
 
     lines = [
-        f"Новые рецепты за {since.strftime('%d.%m')} - {today.strftime('%d.%m.%Y')}",
+        f"Новые рецепты за {since.strftime('%d.%m')} - {today.strftime('%d.%m.%Y')} для любименькой Чуни Муни",
         "",
     ]
 
-    # Группируем по источнику
     by_source = {}
     for r in recipes:
         by_source.setdefault(r["source"], []).append(r)
 
     for source, items in by_source.items():
-        lines.append(f"📌 {source}")
+        lines.append(source)
         for r in items:
             date_str = r["date"].strftime("%d.%m")
-            lines.append(f"  {date_str} — {r['title']}")
-            lines.append(f"  {r['url']}")
+            lines.append(f"{date_str}  —  {r['title']}")
+            lines.append(f"[Рецепт полностью]({r['url']})")
         lines.append("")
 
     if not recipes:
@@ -166,12 +155,12 @@ def format_message(recipes, since):
 
 
 def send_telegram(text, token, chat_id):
-    """Отправляет сообщение в Telegram."""
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         "chat_id": chat_id,
         "text": text,
-        "disable_web_page_preview": False,
+        "parse_mode": "Markdown",
+        "disable_web_page_preview": True,
     }
     try:
         resp = requests.post(url, json=payload, timeout=15)
@@ -192,7 +181,6 @@ def main():
     recipes += fetch_vkusnyblog(since)
     recipes += fetch_say7(since)
 
-    # Сортируем по дате — новые первыми
     recipes.sort(key=lambda r: r["date"], reverse=True)
 
     print(f"Найдено рецептов: {len(recipes)}")
@@ -206,7 +194,6 @@ def main():
 
     if TG_BOT_TOKEN == "ВАШ_ТОКЕН_СЮДА" or TG_CHAT_ID == "ВАШ_CHAT_ID_СЮДА":
         print("Токен или chat_id не заданы — Telegram не отправляем.")
-        print("Задай переменные TG_BOT_TOKEN и TG_CHAT_ID или впиши прямо в скрипт.")
     else:
         send_telegram(message, TG_BOT_TOKEN, TG_CHAT_ID)
 
