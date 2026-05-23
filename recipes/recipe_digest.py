@@ -3,7 +3,7 @@
 Источники: vkusnyblog (RSS) + say7 (HTML).
 
 Настройки:
-  TG_BOT_TOKEN  — токен бота
+  TG_TOKEN  — токен бота
   TG_CHAT_ID    — chat_id получателя (узнать через @userinfobot или написать боту /start)
   DAYS_BACK     — сколько дней назад брать рецепты (по умолчанию 7)
 
@@ -22,7 +22,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # --- Настройки ---
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "ВАШ_ТОКЕН_СЮДА")
+TG_BOT_TOKEN = os.environ.get("TG_TOKEN", "ВАШ_ТОКЕН_СЮДА")
 TG_CHAT_ID   = os.environ.get("TG_CHAT_ID",   "ВАШ_CHAT_ID_СЮДА")
 DAYS_BACK    = int(os.environ.get("DAYS_BACK", "7"))
 # -----------------
