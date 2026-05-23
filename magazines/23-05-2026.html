@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — 23 мая 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a { color: #2563eb; }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li { margin-bottom: 7px; }
+  .not-included a { color: #2563eb; }
+
+  /* Takeaway */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  .takeaway p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway p:last-child { margin-bottom: 0; }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 23 мая 2026 за период 22-23 мая</div>
+  </div>
+
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">1</span> релевантное обновление.
+      Затронуты платформы: <strong>Яндекс Ритейл Медиа</strong>.
+    </p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Ритейл Медиа</span>
+      <span class="badge badge-date">22 мая 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/digital/2026/05/22/345193.phtml" target="_blank">М.Видео и Яндекс создадут единую ретейл-медиа-экосистему</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/digital/2026/05/22/345193.phtml" target="_blank">AdIndex</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      М.Видео подключается к платформе Яндекс Ритейл Медиа. Интеграция начнется в текущем квартале. Первые кампании запланированы на Q3: медийная реклама и продвижение товаров через Direct Pro. Для вендоров при старте заявлен кешбэк 100% от суммы первого размещения.
+    </p>
+
+    <div class="card-section-label">Возможности</div>
+    <p>
+      Вендоры М.Видео получат возможность запускать рекламу на площадке ритейлера через единый инструмент Яндекса. М.Видео позиционирует себя как омниканальную платформу и планирует расширять охват за рамки электроники и бытовой техники.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Вендорам и брендам, которые продают через М.Видео. Агентствам, ведущим ретейл-медиа-кампании для производителей электроники.
+    </p>
+
+    <div class="card-conclusion">
+      Первые кампании стартуют в Q3, кешбэк 100% при запуске делает вход фактически бесплатным. Вендорам стоит уточнить условия участия у менеджеров М.Видео и Яндекса уже сейчас, чтобы попасть в первую волну.
+    </div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <p style="color:#888; font-size:15px;">
+      За период 22-23 мая 2026 других релевантных обновлений рекламных кабинетов в проверенных источниках не обнаружено.
+    </p>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="not-included">
+    <ul>
+      <li>
+        <a href="https://adindex.ru/news/digital/2026/05/22/345196.phtml" target="_blank">Сбер запустил «Маркуса» - ИИ-ассистента для маркетинговых команд</a> - PR-анонс нового продукта без подтвержденных интеграций с рекламными кабинетами
+      </li>
+      <li>
+        <a href="https://www.cossa.ru/news/348720/" target="_blank">VK и Корпорация МСП расширили сотрудничество по поддержке малого и среднего бизнеса</a> - бизнес-партнерство без конкретных изменений в рекламном кабинете VK
+      </li>
+      <li>
+        <a href="https://adindex.ru/news/ad_budjet/2026/05/22/345191.phtml" target="_blank">Выручка МТС AdTech выросла на 2% в первом квартале 2026 года</a> - финансовые результаты без изменений в рекламном кабинете
+      </li>
+    </ul>
+  </div>
+
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <p>
+      <strong>М.Видео + Яндекс Ритейл Медиа:</strong> для вендоров электроники и техники появляется новый рекламный канал с низким порогом входа. Кешбэк 100% при первом размещении через Direct Pro - хороший момент для пилота без бюджетного риска. Стоит уточнить условия у менеджеров до старта первой волны кампаний в Q3.
+    </p>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 23 мая 2026 за период 22-23 мая
+  </div>
+
+</div>
+</body>
+</html>
