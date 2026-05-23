@@ -22,8 +22,8 @@ import requests
 from bs4 import BeautifulSoup
 
 # --- Настройки ---
-TG_BOT_TOKEN = os.environ.get("TG_TOKEN", "ВАШ_ТОКЕН_СЮДА")
-TG_CHAT_ID   = os.environ.get("WIFE_TG_CHAT_ID",   "ВАШ_CHAT_ID_СЮДА")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "ВАШ_ТОКЕН_СЮДА")
+TG_CHAT_ID   = os.environ.get("TG_CHAT_ID",   "ВАШ_CHAT_ID_СЮДА")
 DAYS_BACK    = int(os.environ.get("DAYS_BACK", "7"))
 # -----------------
 
