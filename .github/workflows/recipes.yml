@@ -1,0 +1,20 @@
+name: Recipe Digest
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # понедельник 12:00 мск
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install feedparser requests beautifulsoup4
+      - run: python recipes/recipe_digest.py
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.WIFE_TG_CHAT_ID }}
