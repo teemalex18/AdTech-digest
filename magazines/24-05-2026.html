@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — 24 мая 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-source {
+    background: #f0fdf4;
+    color: #166534;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a { color: #2563eb; }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li { margin-bottom: 7px; }
+  .not-included a { color: #2563eb; }
+
+  /* Takeaway / SUMMARY */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  .takeaway p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway p:last-child { margin-bottom: 0; }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 24 мая 2026 за период 23-24 мая</div>
+  </div>
+
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">6</span> релевантных обновлений.
+      Затронуты платформы: <strong>Авито Реклама, Яндекс Ритейл Медиа, AppMetrica, Яндекс Директ</strong>.
+    </p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <!-- Карточка 1: Авито автотаргетинг -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Авито Реклама</span>
+      <span class="badge badge-date">22 мая 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/v-avito-reklame-poyavilsya-avtotargeting/" target="_blank" rel="noopener">В Авито Рекламе появился автотаргетинг</a></h2>
+    <div class="card-source">Источник: <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-avtotargeting/" target="_blank" rel="noopener">ppc.world</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Авито Реклама запустила автотаргетинг: алгоритм самостоятельно определяет подходящую аудиторию, анализируя тексты объявлений и поведение пользователей на платформе. Ручная настройка аудитории не требуется. Функция включается в один клик для новых или уже существующих CPC-кампаний.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Авито движется в сторону автоматизированной платформы: рекламодатель больше не обязан настраивать аудитории вручную. Алгоритм сам подбирает охват по содержимому объявления и поведенческой истории пользователей.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Бизнесу с активным размещением на Авито - особенно тем, кто ведет много объявлений с разными SKU или запускает кампании без выделенного специалиста по таргетингу.
+    </p>
+
+    <div class="card-conclusion">
+      Стоит включить в тестовых кампаниях и сравнить результаты с ручными настройками. Авито последовательно идет по пути автоматических стратегий - логично ожидать дальнейшего развития функции.
+    </div>
+  </div>
+
+  <!-- Карточка 2: Яндекс Ритейл Медиа -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Ритейл Медиа</span>
+      <span class="badge badge-date">21 мая 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/novyj-sposob-integracii-s-yandex-ritejl-media" target="_blank" rel="noopener">Яндекс Ритейл Медиа: новый способ интеграции - запуск за несколько дней</a></h2>
+    <div class="card-source">Источник: <a href="https://yandex.ru/adv/news/novyj-sposob-integracii-s-yandex-ritejl-media" target="_blank" rel="noopener">Яндекс Реклама (офиц.)</a>, ppc.world</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Яндекс добавил клиентский способ интеграции с Ритейл Медиа через визуальный редактор. Подключение теперь в 4 раза быстрее: не нужна backend-разработка. Ретейлер встраивает embed-код, настраивает параметры в интерфейсе и сразу получает товарные карточки от Яндекса. Доступно пять форматов: Shelf, Горизонтальная карточка, Вертикальная карточка, Сетка, Карточка-слайдер.
+    </p>
+
+    <div class="card-section-label">Как использовать</div>
+    <p>
+      Нескольким форматам можно назначить один блок - аукцион определит, какой покажет лучший результат для конкретного пользователя. Настроенные форматы переиспользуются в разных блоках сайта без повторной настройки.
+    </p>
+
+    <div class="card-conclusion">
+      Порог входа в ритейл-медиа существенно снизился. Небольшие интернет-магазины, у которых не было ресурсов на серверную интеграцию, теперь могут подключиться самостоятельно - раньше запуск занимал месяцы разработки.
+    </div>
+  </div>
+
+  <!-- Карточка 3: Купить в 1 клик -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс KIT / Поиск</span>
+      <span class="badge badge-date">21 мая 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/knopka-kupit-v-1-klik-dlya-internet-magazinov" target="_blank" rel="noopener">Кнопка "Купить в 1 клик" в Яндекс Поиске: самостоятельное подключение для магазинов</a></h2>
+    <div class="card-source">Источник: <a href="https://ppc.world/news/internet-magaziny-teper-mogut-sami-podklyuchit-knopku-kupit-v-1-klik/" target="_blank" rel="noopener">ppc.world</a>, Яндекс Реклама (офиц.)</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Интернет-магазины на Яндекс KIT теперь могут самостоятельно подключить кнопку "Купить в 1 клик" прямо в результатах Яндекс Поиска. Ранее для подключения требовалось участие команды Яндекса. Покупка совершается без перехода на сайт магазина.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Сокращение шагов до покупки напрямую влияет на конверсию поискового трафика. Магазины, которые раньше ждали согласования с командой Яндекса, теперь включают функцию самостоятельно в личном кабинете.
+    </p>
+
+    <div class="card-conclusion">
+      Магазинам на KIT стоит проверить настройки прямо сейчас. Кнопка покупки в поиске снижает трение и может заметно изменить метрики поискового канала.
+    </div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Карточка 4: AppMetrica CTV -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">AppMetrica</span>
+      <span class="badge badge-date">21 мая 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/v-appmetrica-poyavilas-atribuciya-pokazov-na-ctv-i-desktopax/" target="_blank" rel="noopener">AppMetrica: атрибуция показов на CTV и десктопах</a></h2>
+    <div class="card-source">Источник: <a href="https://blog.click.ru/market-news/v-appmetrica-poyavilas-atribuciya-pokazov-na-ctv-i-desktopax/" target="_blank" rel="noopener">Click.ru</a>, Яндекс Реклама (офиц.)</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      AppMetrica добавила view-through атрибуцию для CTV и десктопных размещений. Теперь можно отслеживать, как показ видеорекламы на телевизорах и компьютерах влияет на последующие конверсии в мобильных приложениях - без клика, по факту показа.
+    </p>
+
+    <div class="card-conclusion">
+      Закрывает важный пробел в измерении CTV-кампаний. Если уже используете AppMetrica для мобильного приложения и запускаете видео на CTV - это данные, которых раньше не было в отчетах.
+    </div>
+  </div>
+
+  <!-- Карточка 5: Яндекс Тег Менеджер бандлы -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Тег Менеджер</span>
+      <span class="badge badge-date">21 мая 2026</span>
+    </div>
+    <h2><a href="https://news.inhouse-marketing.ru/2026/05/21/iandeks-teg-menedjer-zapystil-bandly-podkluchenie-servisov-k-saity-teper-zanimaet-neskolko-klikov/" target="_blank" rel="noopener">Яндекс Тег Менеджер запустил бандлы: подключение сервисов в несколько кликов</a></h2>
+    <div class="card-source">Источник: <a href="https://news.inhouse-marketing.ru/2026/05/21/iandeks-teg-menedjer-zapystil-bandly-podkluchenie-servisov-k-saity-teper-zanimaet-neskolko-klikov/" target="_blank" rel="noopener">Inhouse Marketing</a>, ppc.world</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В Яндекс Тег Менеджере появились бандлы - готовые наборы для быстрого подключения сервисов к сайту. Установка, ранее требовавшая ручной настройки тегов, теперь выполняется в несколько кликов. Актуально для подключения пикселей конверсий Директа, счетчиков Метрики и других рекламных инструментов.
+    </p>
+
+    <div class="card-conclusion">
+      Ускоряет настройку конверсионного трекинга при запуске рекламных кампаний. Особенно полезно для агентств, которые запускают новые сайты клиентов с нуля и хотят быстро подключить аналитику.
+    </div>
+  </div>
+
+  <!-- Карточка 6: Кешбэк CTV -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ / CTV</span>
+      <span class="badge badge-date">18 мая 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/keshbek-do-12-za-pervyy-zapusk-auktsionnoy-videoreklamy-na-ctv" target="_blank" rel="noopener">Кешбэк до 12% за первый запуск CTV-видеорекламы в Яндекс Директе</a></h2>
+    <div class="card-source">Источник: <a href="https://yandex.ru/adv/news/keshbek-do-12-za-pervyy-zapusk-auktsionnoy-videoreklamy-na-ctv" target="_blank" rel="noopener">Яндекс Реклама (офиц.)</a></div>
+
+    <div class="card-section-label">Условия акции</div>
+    <p>
+      Акция для рекламодателей, впервые запускающих CTV или потративших менее 50 000 руб. за последние 6 месяцев. Размеры кешбэка: 5% при бюджете от 750 000 руб., 7% от 1 000 000 руб., 10% от 3 000 000 руб. Дополнительно +2%, если медиавидеобюджет вырос на 200% к предыдущим 3 месяцам.
+    </p>
+
+    <div class="card-section-label">Сроки</div>
+    <p>
+      Старт кампании до 15 июня - период май-июль. Старт до 15 июля - период июнь-август. Бонусы зачисляются на счет Директа и тратятся в течение 1,5 месяца на медиа или CTV-рекламу.
+    </p>
+
+    <div class="card-conclusion">
+      Финансово выгодный момент для первого теста CTV. Важно: акция только для тех, кто ещё не запускал CTV или давно не запускал. Бонусы поступают на баланс Директа и не выводятся.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="not-included">
+    <ul>
+      <li>
+        <a href="https://ppc.world/news/google-nachal-vstraivat-reklamu-v-ii-otvety-poiska/" target="_blank" rel="noopener">Google начал встраивать рекламу в ИИ-ответы поиска</a> - международный анонс, изменений в российском рекламном кабинете нет
+      </li>
+      <li>
+        <a href="https://ppc.world/news/direkt-pochti-vdvoe-uvelchil-inventar-ctv-reklamy-za-god/" target="_blank" rel="noopener">Яндекс Директ почти вдвое увеличил инвентарь CTV за год</a> - итоговая статистика, не новая функция или изменение условий
+      </li>
+      <li>
+        <a href="https://ppc.world/news/vyruchka-vk-ot-onlayn-reklamy-krupnogo-biznesa-uvelichilas-na-4/" target="_blank" rel="noopener">Выручка VK от рекламы крупного бизнеса выросла на 4%</a> - финансовый отчет без продуктового изменения
+      </li>
+      <li>
+        <a href="https://adindex.ru/news/digital/2026/05/22/345183.phtml" target="_blank" rel="noopener">М.Видео и Яндекс создадут единую ритейл-медиа-экосистему</a> - партнерское соглашение без изменения рекламного инструмента
+      </li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">SUMMARY</div>
+    <p>
+      Авито автоматизирует подбор аудитории: алгоритм работает по тексту объявления без ручных настроек. Особенно важно для тех, кто масштабирует размещение на платформе или ведет много позиций.
+    </p>
+    <p>
+      Яндекс снижает порог входа в ритейл-медиа: визуальный редактор без backend-разработки открывает канал для небольших магазинов, которым раньше интеграция была недоступна.
+    </p>
+    <p>
+      Кнопка "Купить в 1 клик" в Яндекс Поиске теперь без посредников - магазинам на KIT стоит проверить настройки и включить ее сразу.
+    </p>
+    <p>
+      CTV в экосистеме Яндекса развивается сразу по нескольким направлениям: атрибуция показов в AppMetrica плюс кешбэк до 12% за первый запуск создают короткое окно для тестирования нового канала с минимальным финансовым риском.
+    </p>
+  </div>
+
+  <div class="footer">
+    <strong>AdTech-дайджест: рекламные кабинеты РФ</strong><br>
+    Выпуск 24 мая 2026 за период 23-24 мая
+  </div>
+
+</div>
+</body>
+</html>
