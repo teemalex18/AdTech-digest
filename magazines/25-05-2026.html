@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ - 25 мая 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #1e293b;
+      line-height: 1.65;
+      font-size: 16px;
+      padding: 24px 16px;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    .header {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 32px 36px 28px;
+      margin-bottom: 20px;
+    }
+
+    .header-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 10px;
+    }
+
+    .header-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 8px;
+    }
+
+    .header-period {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    /* SUMMARY */
+    .summary {
+      background: #ffffff;
+      border-radius: 10px;
+      border-left: 4px solid #2563eb;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      font-size: 15px;
+      color: #334155;
+      line-height: 1.7;
+    }
+
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 32px 0 14px;
+    }
+
+    /* CARDS */
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 24px 28px;
+      margin-bottom: 14px;
+    }
+
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+
+    .card-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1e293b;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card-title a:hover {
+      color: #2563eb;
+    }
+
+    .card-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .card-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .badge.ozon { background: #fff7ed; color: #c2410c; }
+    .badge.google { background: #f0fdf4; color: #15803d; }
+
+    .card-row {
+      margin-bottom: 12px;
+    }
+
+    .card-row-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 4px;
+    }
+
+    .card-row-text {
+      font-size: 15px;
+      color: #334155;
+    }
+
+    /* CARD CONCLUSION */
+    .card-conclusion {
+      background: #f8faff;
+      border-left: 3px solid #bfdbfe;
+      border-radius: 0 6px 6px 0;
+      padding: 12px 16px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* NOT INCLUDED */
+    .not-included-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .not-included-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 14px;
+      color: #475569;
+    }
+
+    .not-included-list li:last-child {
+      border-bottom: none;
+    }
+
+    .not-included-list a {
+      color: #1e293b;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .not-included-list a:hover {
+      color: #2563eb;
+    }
+
+    .not-included-reason {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    /* TAKEAWAY / SUMMARY */
+    .takeaway {
+      background: #0f172a;
+      color: #cbd5e1;
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-top: 32px;
+      margin-bottom: 20px;
+    }
+
+    .takeaway-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #475569;
+      margin-bottom: 18px;
+    }
+
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .takeaway ul li {
+      font-size: 14px;
+      color: #94a3b8;
+      padding: 9px 0;
+      border-bottom: 1px solid #1e293b;
+      line-height: 1.6;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .takeaway ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #2563eb;
+    }
+
+    .takeaway ul li:last-child {
+      border-bottom: none;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #94a3b8;
+      padding: 20px 0 8px;
+    }
+
+    .footer strong {
+      display: block;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      body { padding: 12px 10px; }
+      .header { padding: 24px 20px; }
+      .card { padding: 18px 18px; }
+      .header-title { font-size: 18px; }
+      .takeaway { padding: 20px 18px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-label">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-title">Рекламные кабинеты: обновления платформ</div>
+    <div class="header-period">Выпуск 25 мая 2026 за период 22-25 мая</div>
+  </header>
+
+  <!-- РЕЗЮМЕ -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>Авито Реклама, Google, Ozon</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section-title">Главное</div>
+
+  <!-- Карточка 1: Авито -->
+  <div class="card primary">
+    <div class="card-title">
+      <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-avtotargeting/" target="_blank" rel="noopener">В Авито Рекламе появился автотаргетинг</a>
+    </div>
+    <div class="card-meta">
+      <span>ppc.world</span>
+      <span><span class="badge">Авито Реклама</span></span>
+      <span>22 мая 2026</span>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Что изменилось</div>
+      <div class="card-row-text">Авито Реклама запустила автотаргетинг. Алгоритм сам подбирает аудиторию для показов, анализируя текст объявления, креативы и поведение пользователей на платформе. Ручная настройка больше не обязательна.</div>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Как использовать</div>
+      <div class="card-row-text">Доступно в кампаниях с оплатой за клик (CPC). Можно включить для новых и уже запущенных кампаний прямо в кабинете. Инструмент необязательный - ручные настройки остаются.</div>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Кому полезно</div>
+      <div class="card-row-text">Рекламодателям с большим количеством кампаний - экономит время на настройку. Новичкам на платформе - снижает порог входа без потери охвата.</div>
+    </div>
+
+    <div class="card-conclusion">
+      Проверьте активные CPC-кампании на Авито: автотаргетинг может расширить охват там, где текущие ручные настройки ограничивали показы. При включении стоит мониторить качество трафика первые 1-2 недели.
+    </div>
+  </div>
+
+  <!-- Карточка 2: Google -->
+  <div class="card primary">
+    <div class="card-title">
+      <a href="https://ppc.world/news/google-nachal-vstraivat-reklamu-v-ii-otvety-poiska/" target="_blank" rel="noopener">Google начал встраивать рекламу в ИИ-ответы поиска</a>
+    </div>
+    <div class="card-meta">
+      <span>ppc.world</span>
+      <span><span class="badge google">Google</span></span>
+      <span>22 мая 2026</span>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Что изменилось</div>
+      <div class="card-row-text">Google тестирует рекламу внутри ИИ-ответов поиска (Gemini). Объявления помечаются меткой Ad и появляются в двух форматах: конверсационные юниты (Gemini адаптирует креатив под конкретный запрос) и featured answers (реклама внутри списка рекомендаций).</div>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Возможности формата</div>
+      <div class="card-row-text">Дополнительно тестируются ИИ-шопинг-объявления, где Gemini сам подбирает товары и объясняет их релевантность запросу, а также бизнес-агент - чат-бот внутри объявления, который отвечает на вопросы на основе данных сайта рекламодателя.</div>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Статус</div>
+      <div class="card-row-text">Тестирование ведется только в США, на десктопе и мобайле. Сроки расширения не объявлены.</div>
+    </div>
+
+    <div class="card-conclusion">
+      Пока это не затрагивает российский рынок, но задает вектор: реклама перемещается внутрь ИИ-ответа, а не размещается рядом с ним. Стоит следить за появлением аналогичных форматов в кабинете Google Ads и в Яндекс Директе.
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Карточка 3: Ozon Blogger -->
+  <div class="card secondary">
+    <div class="card-title">
+      <a href="https://ppc.world/news/blogery-vkontakte-i-maksa-teper-mogut-zarabatyvat-na-rekomendaciyah-tovarov-s-ozon-blogger/" target="_blank" rel="noopener">Ozon Blogger расширился на ВКонтакте и Макс</a>
+    </div>
+    <div class="card-meta">
+      <span>ppc.world, AdIndex</span>
+      <span><span class="badge ozon">Ozon</span></span>
+      <span>25 мая 2026</span>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Что изменилось</div>
+      <div class="card-row-text">Реферальная программа Ozon Blogger стала доступна блогерам из ВКонтакте и Макса. Ранее работала только с Telegram. Блогеры выбирают товары из каталога, рекомендуют их в постах, видео и коротких форматах, получают доход с каждой продажи.</div>
+    </div>
+
+    <div class="card-row">
+      <div class="card-row-label">Условия участия</div>
+      <div class="card-row-text">Требуется статус самозанятого (ИП - позже). Минимальной аудитории нет - можно подать заявку с любым числом подписчиков. Маркировка рекламы - автоматическая со стороны Ozon. Запущено 25 мая 2026.</div>
+    </div>
+
+    <div class="card-conclusion">
+      Для рекламодателей на Ozon - новый канал нативного трафика с оплатой за результат. Для агентств с базой VK-блогеров - дополнительный инструмент монетизации без порога по аудитории.
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="card secondary" style="padding: 16px 24px;">
+    <ul class="not-included-list">
+      <li>
+        <a href="https://yandex.ru/adv/news/reklama-max-v-direct" target="_blank" rel="noopener">Реклама в МАКС стала доступна в Директе (бета)</a>
+        <span class="not-included-reason"> - вне окна дат, первая публикация 20.05</span>
+      </li>
+      <li>
+        <a href="https://ppc.world/news/internet-magaziny-teper-mogut-za-neskolko-dney-zapuskatsya-v-yandeks-riteyl-media-i-zarabatyvat/" target="_blank" rel="noopener">Яндекс Ритейл Медиа: новый способ интеграции для быстрого запуска</a>
+        <span class="not-included-reason"> - вне окна дат, первая публикация 21.05</span>
+      </li>
+      <li>
+        <a href="https://ppc.world/news/vk-predstavil-ii-servis-marketingovyh-issledovaniy-on-sokraschaet-ves-cikl-do-neskolkih-dney/" target="_blank" rel="noopener">VK AI Researcher: автоматизация маркетинговых исследований</a>
+        <span class="not-included-reason"> - инструмент исследований без изменения рекламного кабинета</span>
+      </li>
+      <li>
+        <a href="https://news.inhouse-marketing.ru/2026/05/22/google-zapystil-obnovlenie-algoritma-may-2026-core-update/" target="_blank" rel="noopener">Google May 2026 Core Update</a>
+        <span class="not-included-reason"> - SEO-обновление алгоритмов, не рекламный кабинет</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Итоги выпуска</div>
+    <ul>
+      <li>Авито Реклама упростила запуск CPC-кампаний: автотаргетинг снимает необходимость вручную настраивать аудитории. Инструмент необязательный, но стоит протестировать на текущих кампаниях - может дать дополнительный охват.</li>
+      <li>Google встраивает рекламу непосредственно в ИИ-ответы поиска. Пока тестирование только в США, но формат принципиально новый - объявление становится частью контента, а не соседом рядом с ним. Следить за появлением аналогов в российских платформах.</li>
+      <li>Ozon Blogger вышел за пределы Telegram в VK и Макс. Для продавцов на маркетплейсе - новый канал с оплатой за результат и без ограничений по размеру аудитории блогера.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <strong>AdTech-дайджест: рекламные кабинеты РФ</strong>
+    Выпуск 25 мая 2026 за период 22-25 мая
+  </footer>
+
+</div>
+</body>
+</html>
