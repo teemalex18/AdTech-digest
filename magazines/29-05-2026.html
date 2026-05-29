@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 29 мая 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f2f5;
+      color: #1e293b;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 32px auto;
+      padding: 0 16px 48px;
+    }
+
+    .header {
+      background: #1e293b;
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .header-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+      color: #f1f5f9;
+    }
+    .header-meta {
+      font-size: 0.875rem;
+      color: #94a3b8;
+    }
+
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+      padding: 18px 24px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+    .summary p + p { margin-top: 6px; }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 28px 0 12px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .card-title a { color: #1e293b; }
+    .card-title a:hover { color: #2563eb; text-decoration: underline; }
+    .card-meta {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      margin-bottom: 14px;
+    }
+    .card-meta span { margin-right: 10px; }
+    .card-body { font-size: 0.9rem; color: #475569; }
+    .card-body p + p { margin-top: 8px; }
+    .card-body strong { color: #1e293b; font-weight: 600; }
+
+    .card-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #94a3b8;
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+    .card-label:first-child { margin-top: 0; }
+
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: 16px;
+      font-size: 0.875rem;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    .not-included {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 18px 24px;
+      margin-bottom: 14px;
+    }
+    .not-included ul { list-style: none; padding: 0; }
+    .not-included li {
+      font-size: 0.875rem;
+      color: #475569;
+      padding: 7px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .not-included li:last-child { border-bottom: none; }
+    .not-included a { color: #475569; }
+    .not-included a:hover { color: #2563eb; text-decoration: underline; }
+    .not-included .reason { color: #94a3b8; }
+
+    .takeaway {
+      background: #1e293b;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 28px;
+    }
+    .takeaway-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 16px;
+    }
+    .takeaway ul { list-style: none; padding: 0; }
+    .takeaway li {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      padding: 8px 0 8px 18px;
+      border-bottom: 1px solid #334155;
+      position: relative;
+    }
+    .takeaway li:last-child { border-bottom: none; }
+    .takeaway li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 6px;
+      height: 6px;
+      background: #2563eb;
+      border-radius: 50%;
+    }
+
+    .footer {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+    .footer strong { color: #64748b; }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 0 12px 36px; }
+      .header { padding: 20px 20px; border-radius: 10px; }
+      .card { padding: 16px 18px; }
+      .not-included { padding: 14px 18px; }
+      .takeaway { padding: 18px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+      <div class="header-meta">Выпуск 29 мая 2026 за период 28-29 мая</div>
+    </div>
+
+    <div class="summary">
+      <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Яндекс Директ, Click.ru, Авито</strong>.</p>
+      <p>Недоступные источники: ppc.world.</p>
+    </div>
+
+    <div class="section-title">Главное</div>
+
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/master-otchetov-perekhod-na-novyy-interfeys-drevovidnye-tablitsy-statistika-po-nedeystvitelnomu-trafiku-i-nastroyki-tseley-v-otchetakh" target="_blank">
+          Яндекс Директ: Мастер отчётов переходит на новый интерфейс - до 8 июня надо пересоздать шаблоны
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>Яндекс Реклама</span>
+        <span>Яндекс Директ</span>
+        <span>29 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Что меняется и когда</span>
+        <p>Старый Мастер отчётов закрывается в два этапа: <strong>8 июня</strong> он перестанет открываться самостоятельно и начнёт показывать только ссылки на новый интерфейс. <strong>22 июня</strong> сохранённые отчёты автоматически переедут в новый формат. Шаблоны из старого интерфейса нужно пересоздать вручную в разделе «Мои отчёты» до этого срока.</p>
+        <span class="card-label">Новые возможности</span>
+        <p><strong>Древовидные таблицы</strong> позволяют объединять несколько группировок (кампании, регионы, аудитории) в одном отчёте без переключения между видами.</p>
+        <p><strong>Статистика по недействительному трафику</strong> - новый отдельный отчёт в Библиотеке показывает клики и конверсии, отфильтрованные антифродом. Раньше эти данные были разбросаны по разным разделам.</p>
+        <p><strong>Управление целями</strong>: теперь можно менять порядок столбцов метрик и видеть цели из всех доступных аккаунтов в рамках менеджерского кабинета.</p>
+        <span class="card-label">Кому важно</span>
+        <p>Всем, кто работает с Директом: специалистам по контексту, аналитикам, руководителям рекламных направлений. Дедлайн по миграции шаблонов - 8 июня.</p>
+        <div class="card-conclusion">Главное практическое действие: до 8 июня пересохранить нужные шаблоны в новом Мастере отчётов. Статистика по недействительному трафику и древовидные таблицы расширяют аналитику без дополнительных инструментов.</div>
+      </div>
+    </div>
+
+    <div class="section-title">Остальные обновления</div>
+
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://click.ru/news.861.html" target="_blank">
+          Click.ru: новый сервис выплат подрядчикам - агентства получат 3% с оборота клиентов
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>Click.ru</span>
+        <span>Click.ru</span>
+        <span>28 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Что изменилось</span>
+        <p>В мастер-аккаунте Click.ru появился инструмент для выплат физлицам, самозанятым и ИП. Клиенты агентства платят <strong>1% комиссии</strong> за проведение платежей через сервис, а агентство-держатель мастер-аккаунта получает <strong>3% с каждой такой выплаты</strong>. Тестовый период: <strong>18 мая - 17 июля 2026</strong>.</p>
+        <span class="card-label">Как работает</span>
+        <p>Платёжный инструмент встроен в единый бюджет рядом с рекламными кабинетами. Сервис автоматически проверяет статус самозанятого перед переводом и формирует закрывающие документы для бухгалтерии.</p>
+        <div class="card-conclusion">Дополнительный доход для агентств без роста рекламного оборота. Актуально для тех, чьи клиенты регулярно нанимают фрилансеров и платят через единый аккаунт Click.ru.</div>
+      </div>
+    </div>
+
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/kategoriya-spectexnika-na-avito-stala-novoj-zonoj-rosta-dlya-reklamnyx-agentstv/" target="_blank">
+          Авито: категория «Спецтехника» - 1,2 млн ежедневных пользователей и высокий чек
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>Click.ru</span>
+        <span>Авито</span>
+        <span>29 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Что за сегмент</span>
+        <p><strong>1,2 млн</strong> ежедневных пользователей в разделе продажи и аренды техники, <strong>250 000</strong> активных объявлений. 72% техники оценивается от 7 млн рублей - аудитория преимущественно B2B. <strong>65%</strong> покупателей готовы оформить сделку онлайн, <strong>11%</strong> техники продаётся исключительно через Авито.</p>
+        <span class="card-label">Кому подходит</span>
+        <p>Агентствам с клиентами из строительства, логистики, сельского хозяйства и дорожной отрасли. Рекомендуется делить кампании по сценарию (аренда, продажа, запчасти) и типу покупателя.</p>
+        <div class="card-conclusion">Сегмент с высоким чеком и небольшой конкуренцией в digital - потенциально недооценённый канал для B2B-клиентов агентств.</div>
+      </div>
+    </div>
+
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/avito-rabota-pokazala-vozmozhnosti-kategorii-dlya-reklamnyx-agentstv/" target="_blank">
+          Авито Работа: платное продвижение вакансий собирает 39% просмотров при 5% объявлений
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>Click.ru</span>
+        <span>Авито</span>
+        <span>28 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Возможности платформы</span>
+        <p><strong>17,4 млн</strong> пользователей в месяц, <strong>1,5 млн</strong> активных вакансий, <strong>370 000</strong> работодателей. Продвигаемые вакансии составляют всего <strong>5%</strong> объявлений, но собирают <strong>39% просмотров</strong> и <strong>42% контактов</strong>. Профессиональные профили работодателя дают на 64% больше откликов.</p>
+        <span class="card-label">Кому полезно</span>
+        <p>Агентствам с клиентами в ритейле, транспорте и логистике. Платформа поддерживает интеграцию с Click.ru для единого управления бюджетами нескольких клиентов.</p>
+        <div class="card-conclusion">Платное продвижение на Авито Работа работает непропорционально: 5% оплачиваемых позиций собирают почти половину контактов. Аргумент для включения в рекомендации клиентам из HR и найма.</div>
+      </div>
+    </div>
+
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="not-included">
+      <ul>
+        <li>
+          <a href="https://yandex.ru/adv/news/neyroobyavleniya-zapusk-dlya-vsego-saita-razdela-spiska-stranits" target="_blank">Яндекс Директ: нейрообъявления теперь генерируются сразу для всего сайта, раздела или списка страниц</a>
+          <span class="reason"> - вне окна дат, первая публикация 26.05</span>
+        </li>
+        <li>
+          <a href="https://yandex.ru/adv/news/vesenniy-daydzhest-reklamy-v-messendzherakh" target="_blank">Яндекс Директ: весенний дайджест рекламы в мессенджерах - новые фильтры, подбор по описанию и похожие аудитории каналов</a>
+          <span class="reason"> - вне окна дат, первая публикация 27.05</span>
+        </li>
+        <li>
+          <a href="https://news.inhouse-marketing.ru/2026/05/22/avito-reklama-zapyskaet-avtotargeting/" target="_blank">Авито Реклама запускает автотаргетинг</a>
+          <span class="reason"> - вне окна дат, первая публикация 22.05</span>
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/tendencies/2026/05/29/345486.phtml" target="_blank">«Сбер» готовится стать совладельцем Ozon</a>
+          <span class="reason"> - инвестиционная сделка без изменения рекламного кабинета или условий размещения</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="takeaway">
+      <div class="takeaway-title">SUMMARY</div>
+      <ul>
+        <li>Мастер отчётов в Директе закрывается 8 июня - это не апгрейд по желанию, а обязательная миграция. Агентствам нужно проверить, какие шаблоны сохранены в старом интерфейсе, и пересоздать их до дедлайна.</li>
+        <li>Новый отчёт по недействительному трафику в Директе впервые собирает данные антифрода в одном месте. Полезно для верификации качества трафика перед отчётом клиенту.</li>
+        <li>Click.ru добавил платёжный инструмент для подрядчиков: агентство зарабатывает 3% с фрилансерских выплат клиентов. Небольшой, но пассивный доход при работе с компаниями, которые регулярно нанимают физлиц.</li>
+        <li>Авито в двух сегментах (спецтехника и рекрутинг) показывает непропорциональную отдачу от платного продвижения при низкой digital-конкуренции. Стоит включить в питч для клиентов из B2B и HR.</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p><strong>AdTech-дайджест: рекламные кабинеты РФ</strong></p>
+      <p>Выпуск 29 мая 2026 за период 28-29 мая</p>
+    </div>
+
+  </div>
+</body>
+</html>
