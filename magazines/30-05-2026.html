@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ - 30 мая 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f2f5;
+      color: #1e293b;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 32px auto;
+      padding: 0 16px 48px;
+    }
+
+    .header {
+      background: #1e293b;
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .header-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+      color: #f1f5f9;
+    }
+    .header-meta {
+      font-size: 0.875rem;
+      color: #94a3b8;
+    }
+
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+      padding: 18px 24px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+    .summary p + p { margin-top: 6px; }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 28px 0 12px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .card-title a { color: #1e293b; }
+    .card-title a:hover { color: #2563eb; text-decoration: underline; }
+    .card-meta {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      margin-bottom: 14px;
+    }
+    .card-meta span { margin-right: 10px; }
+    .card-body { font-size: 0.9rem; color: #475569; }
+    .card-body p + p { margin-top: 8px; }
+    .card-body strong { color: #1e293b; font-weight: 600; }
+
+    .card-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #94a3b8;
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+    .card-label:first-child { margin-top: 0; }
+
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: 16px;
+      font-size: 0.875rem;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    .not-included {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 18px 24px;
+      margin-bottom: 14px;
+    }
+    .not-included ul { list-style: none; padding: 0; }
+    .not-included li {
+      font-size: 0.875rem;
+      color: #475569;
+      padding: 7px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .not-included li:last-child { border-bottom: none; }
+    .not-included a { color: #475569; }
+    .not-included a:hover { color: #2563eb; text-decoration: underline; }
+    .not-included .reason { color: #94a3b8; }
+
+    .takeaway {
+      background: #1e293b;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 28px;
+    }
+    .takeaway-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 16px;
+    }
+    .takeaway ul { list-style: none; padding: 0; }
+    .takeaway li {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      padding: 8px 0 8px 18px;
+      border-bottom: 1px solid #334155;
+      position: relative;
+    }
+    .takeaway li:last-child { border-bottom: none; }
+    .takeaway li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 6px;
+      height: 6px;
+      background: #2563eb;
+      border-radius: 50%;
+    }
+
+    .footer {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+    .footer strong { color: #64748b; }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 0 12px 36px; }
+      .header { padding: 20px 20px; border-radius: 10px; }
+      .card { padding: 16px 18px; }
+      .not-included { padding: 14px 18px; }
+      .takeaway { padding: 18px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+      <div class="header-meta">Выпуск 30 мая 2026 за период 29-30 мая</div>
+    </div>
+
+    <div class="summary">
+      <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Авито Реклама, ВКонтакте, MAX</strong>.</p>
+    </div>
+
+    <div class="section-title">Главное</div>
+
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-targeting-po-brendam/" target="_blank">
+          Авито Реклама: новый таргетинг «Каталог брендов» - объявления для тех, кто ищет конкретные марки
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>ppc.world</span>
+        <span>Авито Реклама</span>
+        <span>29 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Что появилось</span>
+        <p>В рекламном кабинете Авито появился новый тип таргетинга - <strong>«Каталог брендов»</strong>. Инструмент показывает объявления пользователям, которые ищут и просматривают конкретные бренды на платформе: поиск по бренду, просмотр объявлений с фильтром по марке, взаимодействие с разделом конкретного производителя.</p>
+        <span class="card-label">Как устроен</span>
+        <p>Каталог организован иерархически: категория - подкатегория - сегмент - конкретные бренды. Таргетинг настраивается на любом уровне. На старте доступны две категории: <strong>мода</strong> (обувь, одежда, аксессуары) и <strong>электроника</strong> (смартфоны, ноутбуки, техника).</p>
+        <span class="card-label">Кому полезно</span>
+        <p>Брендам, конкурирующим за аудиторию на вторичном рынке. Рекламодателям в fashion и consumer electronics, которые хотят перехватить потенциальных покупателей в момент, когда те уже выбирают в категории. Подходит и для performance, и для brandformance-кампаний.</p>
+        <div class="card-conclusion">Таргетинг по брендам работает на аудитории с выраженным намерением - она уже выбирает, а не просто листает. Инструмент актуален для рекламодателей, чьих клиентов присутствуют в fashion или электронике и хотят получать трафик с явным спросом.</div>
+      </div>
+    </div>
+
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/vo-vkontakte-obnovilis-algoritmy-rekomendaciy-kontent-teper-srazu-vyvodyat-na-shirokuyu-auditoriyu/" target="_blank">
+          ВКонтакте обновил алгоритмы рекомендаций - контент теперь сразу выводят на широкую аудиторию
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>ppc.world</span>
+        <span>ВКонтакте</span>
+        <span>29 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Что изменилось</span>
+        <p>VK обновила алгоритмы рекомендаций. Теперь контент сразу выводится на широкую аудиторию - без постепенного «прогрева» малым охватом. Алгоритм в реальном времени анализирует тематику, профиль, смысл постов и оценивает вероятность подписки и реакций пользователей.</p>
+        <span class="card-label">Результаты по данным VK</span>
+        <p>Оригинальные авторы фиксируют <strong>в 5 раз больше просмотров</strong> постов и на <strong>22% больше новых подписчиков</strong>. Начинающие авторы - на <strong>42% больше реакций</strong> и на <strong>54% больше подписчиков</strong>. Рекомендации начинают работать с первых публикаций, вне зависимости от размера аудитории.</p>
+        <span class="card-label">Что это значит для рекламы</span>
+        <p>Для брендов и агентств, использующих промо-посты в VK, изменился охватный механизм платформы. Новые посты с сильным контентом могут быстрее выходить на широкую аудиторию через рекомендации, а не только через подписчиков.</p>
+        <div class="card-conclusion">Обновление влияет и на органику, и на промо. Агентствам стоит пересмотреть контентную стратегию для ведения групп в VK: при наличии оригинального контента охват через рекомендации теперь формируется быстрее.</div>
+      </div>
+    </div>
+
+    <div class="section-title">Остальные обновления</div>
+
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-publichnyy-api-dlya-peredachi-dannyh-v-sistemy-analitiki/" target="_blank">
+          В Авито Рекламе появился публичный API для автоматической передачи данных в аналитику
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>ppc.world</span>
+        <span>Авито Реклама</span>
+        <span>29 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Что появилось</span>
+        <p>Авито Реклама запустила публичный API для автоматической передачи данных из рекламного кабинета в сторонние системы аналитики. Раньше выгрузка данных из Авито требовала ручного экспорта отчетов.</p>
+        <span class="card-label">Кому подходит</span>
+        <p>Рекламодателям и агентствам, которые агрегируют данные из нескольких платформ в BI-инструменты (DataLens, Power BI, Google Looker Studio). Особенно актуально для агентств с несколькими Авито-клиентами.</p>
+        <div class="card-conclusion">Два обновления Авито в один день - таргетинг по брендам и публичный API - говорят о том, что платформа последовательно доращивает рекламный кабинет. Для агентств это шаг к полноценной интеграции Авито в единый аналитический стек.</div>
+      </div>
+    </div>
+
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/dolya-maksa-v-byudzhetah-inflyuens-marketinga-mozhet-dostich-30-k-tretemu-kvartalu/" target="_blank">
+          Доля MAX в бюджетах инфлюенс-маркетинга может достичь 30% к третьему кварталу
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>ppc.world</span>
+        <span>MAX</span>
+        <span>29-30 мая 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Динамика</span>
+        <p>По данным ppc.world, платформа MAX занимала около <strong>0,3% бюджетов</strong> инфлюенс-маркетинга три месяца назад. К третьему кварталу 2026 года доля может вырасти до <strong>30%</strong>.</p>
+        <span class="card-label">Почему важно следить</span>
+        <p>Реклама в MAX также становится доступна в Яндекс Директе через бета-тестирование, что открывает возможности для размещения через привычный интерфейс перформанс-кабинета. Быстрый рост платформы означает, что ранний выход сюда может дать преимущество по стоимости контакта до насыщения рынка.</p>
+        <div class="card-conclusion">MAX - уже не экспериментальный канал. Темп роста до 30% к Q3 означает, что при планировании бюджетов на осень платформу стоит рассматривать как отдельную строку медиаплана, а не опцию.</div>
+      </div>
+    </div>
+
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="not-included">
+      <ul>
+        <li>
+          <a href="https://yandex.ru/adv/news/reklama-max-v-direct" target="_blank">Реклама в МАКС стала доступна в Яндекс Директе в рамках бета-тестирования</a>
+          <span class="reason"> - вне окна дат, первая публикация 18.05</span>
+        </li>
+        <li>
+          <a href="https://yandex.ru/adv/news/keshbek-do-12-za-pervyy-zapusk-auktsionnoy-videoreklamy-na-ctv" target="_blank">Кешбэк до 12% за первый запуск аукционной видеорекламы на CTV</a>
+          <span class="reason"> - вне окна дат, первая публикация 18.05</span>
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/tendencies/2026/05/29/345486.phtml" target="_blank">«Сбер» готовится стать совладельцем Ozon</a>
+          <span class="reason"> - инвестиционная сделка без изменений в рекламном инструменте или условиях размещения</span>
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/tendencies/2026/05/29/345482.phtml" target="_blank">Wildberries готовит запуск продаж товаров из Индии и Южной Кореи</a>
+          <span class="reason"> - международная экспансия маркетплейса, без изменений в рекламном кабинете</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="takeaway">
+      <div class="takeaway-title">SUMMARY</div>
+      <ul>
+        <li>Авито за один день добавила два рекламных инструмента: таргетинг по брендам и публичный API. Первый позволяет точнее захватывать аудиторию с выраженным спросом, второй - автоматизировать сбор данных. Платформа последовательно закрывает пробелы в кабинете.</li>
+        <li>ВКонтакте изменил логику рекомендаций в пользу оригинального контента - охват теперь формируется с первых постов, а не после набора подписчиков. Для брендов с активным контент-маркетингом в VK это меняет тактику публикаций.</li>
+        <li>MAX быстро становится значимым каналом: прирост с 0,3% до потенциальных 30% бюджетов инфлюенс-маркетинга за квартал - сигнал к включению платформы в медиапланы второго полугодия.</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p><strong>AdTech-дайджест: рекламные кабинеты РФ</strong></p>
+      <p>Выпуск 30 мая 2026 за период 29-30 мая</p>
+    </div>
+
+  </div>
+</body>
+</html>
