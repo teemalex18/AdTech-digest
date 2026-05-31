@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ - 31 мая 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f2f5;
+      color: #1e293b;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 32px auto;
+      padding: 0 16px 48px;
+    }
+
+    .header {
+      background: #1e293b;
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .header-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+      color: #f1f5f9;
+    }
+    .header-meta {
+      font-size: 0.875rem;
+      color: #94a3b8;
+    }
+
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+      padding: 18px 24px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin: 28px 0 12px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .card-title a { color: #1e293b; }
+    .card-title a:hover { color: #2563eb; text-decoration: underline; }
+    .card-meta {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      margin-bottom: 14px;
+    }
+    .card-meta span { margin-right: 10px; }
+    .card-body { font-size: 0.9rem; color: #475569; }
+    .card-body p + p { margin-top: 8px; }
+    .card-body strong { color: #1e293b; font-weight: 600; }
+
+    .card-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #94a3b8;
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+    .card-label:first-child { margin-top: 0; }
+
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: 16px;
+      font-size: 0.875rem;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    .not-included {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 18px 24px;
+      margin-bottom: 14px;
+    }
+    .not-included ul { list-style: none; padding: 0; }
+    .not-included li {
+      font-size: 0.875rem;
+      color: #475569;
+      padding: 7px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .not-included li:last-child { border-bottom: none; }
+    .not-included a { color: #475569; }
+    .not-included a:hover { color: #2563eb; text-decoration: underline; }
+    .not-included .reason { color: #94a3b8; }
+
+    .takeaway {
+      background: #1e293b;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 28px;
+    }
+    .takeaway-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 16px;
+    }
+    .takeaway ul { list-style: none; padding: 0; }
+    .takeaway li {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      padding: 8px 0 8px 18px;
+      border-bottom: 1px solid #334155;
+      position: relative;
+    }
+    .takeaway li:last-child { border-bottom: none; }
+    .takeaway li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 6px;
+      height: 6px;
+      background: #2563eb;
+      border-radius: 50%;
+    }
+
+    .footer {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+    .footer strong { color: #64748b; }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 0 12px 36px; }
+      .header { padding: 20px 20px; border-radius: 10px; }
+      .card { padding: 16px 18px; }
+      .not-included { padding: 14px 18px; }
+      .takeaway { padding: 18px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+      <div class="header-meta">Выпуск 31 мая 2026 за период 30-31 мая</div>
+    </div>
+
+    <div class="summary">
+      <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">1</span> релевантное обновление. Затронуты платформы: <strong>Яндекс Директ</strong>.</p>
+    </div>
+
+    <div class="section-title">Главное</div>
+
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/akciya-perezagruzka-direct" target="_blank">
+          Яндекс Директ запустил акцию «Перезагрузка»: +100% к бюджету для тех, кто давно не рекламировался
+        </a>
+      </div>
+      <div class="card-meta">
+        <span>Яндекс Реклама</span>
+        <span>Яндекс Директ</span>
+        <span>май 2026</span>
+      </div>
+      <div class="card-body">
+        <span class="card-label">Условия акции</span>
+        <p>Яндекс запустил бонусную акцию для возвращающихся рекламодателей: к первому пополнению бюджета будет начислено <strong>+100%</strong>. Условие участия — наличие ранее запускавшихся кампаний в Директе и последующий перерыв в размещении.</p>
+        <span class="card-label">Почему важно</span>
+        <p>Удвоение бюджета фактически снижает реальную стоимость размещения вдвое для первого пополнения. Это редкий по масштабу бонус от Яндекса, прямо влияющий на экономику возобновляемых кампаний.</p>
+        <span class="card-label">Кому полезно</span>
+        <p>Агентствам с «замороженными» аккаунтами клиентов и рекламодателям, которые делали паузу в Директе. Актуально и для тех, кто тестировал другие платформы и рассматривает возврат.</p>
+        <div class="card-conclusion">
+          Если в портфеле есть приостановленные Директ-аккаунты, сейчас хороший момент для перезапуска. Стоит проверить условия акции на официальной странице и уточнить сроки действия до планирования бюджетов.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="not-included">
+      <ul>
+        <li>
+          <a href="https://www.sostav.ru/" target="_blank">Duolingo превратил увольнение маскота в рекламную кампанию с реальными вакансиями</a>
+          <span class="reason"> - PR-кампания бренда без изменений в рекламном инструменте или условиях размещения</span>
+        </li>
+        <li>
+          <a href="https://yandex.ru/adv/news/neyroobyavleniya-zapusk-dlya-vsego-saita-razdela-spiska-stranits" target="_blank">Нейрообъявления Яндекс Директ: запуск сразу для всего сайта или раздела</a>
+          <span class="reason"> - вне окна дат, первая публикация 26.05.2026, покрыто в выпуске 29-05-2026</span>
+        </li>
+        <li>
+          <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-targeting-po-brendam/" target="_blank">Авито Реклама: таргетинг по брендам и публичный API</a>
+          <span class="reason"> - первая публикация 29.05.2026, покрыто в выпуске 30-05-2026</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="takeaway">
+      <div class="takeaway-title">SUMMARY</div>
+      <ul>
+        <li>Период 30-31 мая оказался тихим для обновлений рекламных кабинетов: основные площадки не публиковали новых продуктовых изменений. Исключение — акция «Перезагрузка» от Яндекс Директ.</li>
+        <li>Акция напрямую влияет на стоимость размещения: +100% к бюджету при первом пополнении снижает реальный CPM и CPC вдвое для первой кампании после перерыва. Стоит проверить приостановленные аккаунты в портфеле до окончания акции.</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p><strong>AdTech-дайджест: рекламные кабинеты РФ</strong></p>
+      <p>Выпуск 31 мая 2026 за период 30-31 мая</p>
+    </div>
+
+  </div>
+</body>
+</html>
