@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 01.06.2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    /* Header */
+    header {
+      background: #0f172a;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    header .issue-line {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      font-weight: 400;
+    }
+
+    /* Summary */
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      border-left: 4px solid #2563eb;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      font-size: 0.96rem;
+      color: #334155;
+      line-height: 1.75;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+    .summary .unavailable {
+      margin-top: 10px;
+      font-size: 0.86rem;
+      color: #94a3b8;
+    }
+
+    /* Section title */
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #64748b;
+      margin: 28px 0 12px;
+    }
+
+    /* Card base */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 14px;
+      border: 1px solid #e2e8f0;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #cbd5e1;
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.45;
+    }
+    .card h3 a {
+      color: #1e293b;
+      text-decoration: none;
+    }
+    .card h3 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .card-meta {
+      font-size: 0.82rem;
+      color: #64748b;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .card-meta span {
+      background: #f1f5f9;
+      padding: 2px 9px;
+      border-radius: 4px;
+    }
+    .card-meta .platform {
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-weight: 500;
+    }
+    .card-body dt {
+      font-weight: 600;
+      font-size: 0.86rem;
+      color: #475569;
+      margin-top: 14px;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .card-body dd {
+      font-size: 0.94rem;
+      color: #334155;
+      margin-left: 0;
+      line-height: 1.65;
+    }
+    .card-conclusion {
+      margin-top: 18px;
+      background: #eff6ff;
+      border-left: 3px solid #93c5fd;
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.93rem;
+      color: #1e40af;
+      line-height: 1.6;
+    }
+
+    /* Not included */
+    .not-included-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .not-included-list li {
+      font-size: 0.91rem;
+      color: #475569;
+      padding: 10px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .not-included-list li:last-child {
+      border-bottom: none;
+    }
+    .not-included-list a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .not-included-list a:hover {
+      text-decoration: underline;
+    }
+    .not-included-reason {
+      display: block;
+      color: #94a3b8;
+      font-size: 0.84rem;
+      margin-top: 2px;
+    }
+
+    /* Takeaway / SUMMARY block */
+    .takeaway {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 32px;
+      margin-bottom: 20px;
+    }
+    .takeaway h2 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #60a5fa;
+      margin-bottom: 18px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+    .takeaway ul li {
+      font-size: 0.94rem;
+      line-height: 1.7;
+      padding: 10px 0;
+      border-bottom: 1px solid #1e293b;
+      color: #cbd5e1;
+      padding-left: 18px;
+      position: relative;
+    }
+    .takeaway ul li:last-child {
+      border-bottom: none;
+    }
+    .takeaway ul li::before {
+      content: ">";
+      color: #60a5fa;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.84rem;
+      color: #94a3b8;
+      padding: 12px 0 4px;
+    }
+    footer p { margin-bottom: 4px; }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      header { padding: 22px 18px; }
+      header h1 { font-size: 1.2rem; }
+      .card { padding: 18px 16px; }
+      .wrapper { padding: 14px 12px 32px; }
+      .takeaway { padding: 22px 18px; }
+      .summary { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header>
+      <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+      <p class="issue-line">Выпуск 1 июня 2026 за период 29 мая - 1 июня</p>
+    </header>
+
+    <!-- Резюме -->
+    <section class="summary">
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Яндекс Директ, РСЯ, ВКонтакте, Магнит Ads, Авито Реклама</strong>.
+      <p class="unavailable">Недоступные источники: ppc.world.</p>
+    </section>
+
+    <!-- Главное -->
+    <h2 class="section-title">Главное</h2>
+
+    <div class="card primary">
+      <h3><a href="https://adindex.ru/news/digital/2026/06/1/345522.phtml">Магнит Ads и Авито Реклама запустили совместное рекламное решение</a></h3>
+      <div class="card-meta">
+        <span class="platform">Магнит Ads, Авито Реклама</span>
+        <span>AdIndex</span>
+        <span>01.06.2026</span>
+      </div>
+      <dl class="card-body">
+        <dt>Что изменилось</dt>
+        <dd>Две крупные платформы объединили аудитории: рекламодатели теперь могут запускать кампании через кабинет Магнит Ads с показом рекламы пользователям Авито. Совокупный охват - 92 млн человек, использующих оба сервиса.</dd>
+        <dt>Как работает</dt>
+        <dd>Кампании настраиваются в кабинете Магнит Ads, реклама показывается на Авито. При клике пользователь переходит в приложение Магнит или к бренду. Аналитика замыкается на реальных покупках по карте M+ - видна прямая связь между рекламным контактом и продажей на полке.</dd>
+        <dt>Кому полезно</dt>
+        <dd>Брендам из FMCG и ритейла, крупным рекламодателям и агентствам с клиентами в категории товаров повседневного спроса.</dd>
+      </dl>
+      <div class="card-conclusion">Первый российский инструмент с закрытым контуром "показ в Авито - покупка в Магните". Для брендов FMCG это возможность подтвердить эффективность охватной рекламы через данные о реальных покупках, а не только по кликам.</div>
+    </div>
+
+    <div class="card primary">
+      <h3><a href="https://blog.click.ru/market-news/s-1-iyulya-rsya-perestanet-rabotat-s-fizlicami/">РСЯ прекращает работу с физлицами с 1 июля 2026</a></h3>
+      <div class="card-meta">
+        <span class="platform">РСЯ (Яндекс)</span>
+        <span>Click.ru</span>
+        <span>01.06.2026</span>
+      </div>
+      <dl class="card-body">
+        <dt>Что изменилось</dt>
+        <dd>С 1 июля 2026 года Яндекс прекращает выплаты физлицам-партнёрам РСЯ. Затрагивает только резидентов России. Приём новых регистраций от физлиц остановлен ещё в марте 2026.</dd>
+        <dt>Что нужно сделать</dt>
+        <dd>До 30 июня перейти на самозанятость (налог 6%, автоматические чеки в ФНС) или ИП на УСН (от 6%). Оба варианта снижают налоговую нагрузку по сравнению с НДФЛ 13-22%.</dd>
+        <dt>Кому важно</dt>
+        <dd>Владельцам сайтов и приложений, монетизирующим трафик через РСЯ как физлица. До дедлайна остается менее 30 дней.</dd>
+      </dl>
+      <div class="card-conclusion">Срок поджимает: физлицам-партнёрам РСЯ нужно перейти на самозанятость или ИП до 30 июня. Агентствам, работающим с владельцами сайтов-партнёров, стоит проверить их статус сейчас.</div>
+    </div>
+
+    <!-- Остальные обновления -->
+    <h2 class="section-title">Остальные обновления</h2>
+
+    <div class="card secondary">
+      <h3><a href="https://yandex.ru/adv/news/master-otchetov-perekhod-na-novyy-interfeys-drevovidnye-tablitsy-statistika-po-nedeystvitelnomu-trafiku-i-nastroyki-tseley-v-otchetakh">Яндекс Директ: Мастер отчётов переходит на новый интерфейс</a></h3>
+      <div class="card-meta">
+        <span class="platform">Яндекс Директ</span>
+        <span>Яндекс Реклама</span>
+        <span>29.05.2026</span>
+      </div>
+      <dl class="card-body">
+        <dt>Дедлайны</dt>
+        <dd>8 июня - в интерфейсе Директа останутся только ссылки на новый Мастер отчётов. 22 июня - автоматический редирект со старого интерфейса.</dd>
+        <dt>Новые возможности</dt>
+        <dd>Древовидные таблицы для объединения данных в одном отчёте. Отдельный раздел статистики по недействительному трафику. Настройка порядка столбцов с целями. Для управляющих аккаунтов - статистика целей по дочерним аккаунтам.</dd>
+      </dl>
+      <div class="card-conclusion">До 8 июня стоит проверить и настроить все рабочие отчёты в новом интерфейсе, пока доступны обе версии и можно сверить данные.</div>
+    </div>
+
+    <div class="card secondary">
+      <h3><a href="https://www.sostav.ru/publication/avtoram-vkontakte-stala-dostupna-rasshirennaya-statistika-lichnykh-profilej-i-ikh-prodvizheniya-84253.html">ВКонтакте: продвижение личных страниц запущено из профиля</a></h3>
+      <div class="card-meta">
+        <span class="platform">ВКонтакте</span>
+        <span>Sostav</span>
+        <span>01.06.2026</span>
+      </div>
+      <dl class="card-body">
+        <dt>Что изменилось</dt>
+        <dd>Пользователи теперь могут запускать рекламное продвижение прямо со страницы профиля через кнопку "Продвижение". Создавать отдельное сообщество для этого больше не нужно.</dd>
+        <dt>Возможности</dt>
+        <dd>Цели: прирост подписчиков, охват публикаций, входящие сообщения, переходы на сайт. Расширенная статистика по всем типам контента - постам, клипам, историям, видео.</dd>
+        <dt>Кому подходит</dt>
+        <dd>Авторам, фрилансерам, специалистам и малому бизнесу, которые ведут личный бренд в ВКонтакте.</dd>
+      </dl>
+      <div class="card-conclusion">ВКонтакте развивает личные профили как самостоятельный рекламный инструмент. Агентствам, ведущим авторов и специалистов, стоит протестировать новый формат продвижения.</div>
+    </div>
+
+    <!-- Не вошло в выпуск -->
+    <h2 class="section-title">Не вошло в выпуск</h2>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://yandex.ru/adv/news/neyroobyavleniya-zapusk-dlya-vsego-saita-razdela-spiska-stranits">Яндекс: нейрообъявления теперь запускаются для всего сайта</a>
+          <span class="not-included-reason">вне окна дат, первая публикация 26.05</span>
+        </li>
+        <li>
+          <a href="https://www.cossa.ru/news/348838/">VK обновила алгоритмы для авторов ВКонтакте</a>
+          <span class="not-included-reason">вне окна дат, первая публикация 28.05</span>
+        </li>
+        <li>
+          <a href="https://news.inhouse-marketing.ru/2026/05/22/avito-reklama-zapyskaet-avtotargeting/">Авито Реклама запускает автотаргетинг</a>
+          <span class="not-included-reason">вне окна дат, первая публикация 22.05</span>
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/digital/2026/06/1/345531.phtml">AliExpress СНГ прокомментировала партнерство с Wildberries</a>
+          <span class="not-included-reason">PR без изменений в рекламном инструменте</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- SUMMARY -->
+    <section class="takeaway">
+      <h2>Summary</h2>
+      <ul>
+        <li>Магнит Ads и Авито открыли первый российский инструмент с закрытым контуром от охвата до покупки. Для FMCG и ритейла это новый способ обосновать бюджет на охватную рекламу.</li>
+        <li>Физлицам-партнёрам РСЯ осталось менее 30 дней: до 30 июня нужно перейти на самозанятость или ИП, иначе выплаты прекратятся.</li>
+        <li>Яндекс Директ отключает старый Мастер отчётов 8 июня. Если в агентстве настроены регулярные отчёты, пора перенести их в новый интерфейс.</li>
+        <li>ВКонтакте добавила продвижение из личных профилей без создания сообщества - новая точка входа для работы с авторами и личными брендами.</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+      <p>Выпуск 1 июня 2026 за период 29 мая - 1 июня</p>
+    </footer>
+
+  </div>
+</body>
+</html>
