@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест 3 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 20px 16px;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      background: #1e293b;
+      color: #fff;
+      padding: 28px 32px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .header .issue-line {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: #374151;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .card h3 a {
+      color: #1e293b;
+      text-decoration: none;
+    }
+    .card h3 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 20px;
+      background: #f1f5f9;
+      color: #475569;
+    }
+    .badge.platform {
+      background: #eff6ff;
+      color: #2563eb;
+    }
+    .badge.date {
+      background: #f8fafc;
+      color: #94a3b8;
+    }
+    .card-body {
+      font-size: 0.9rem;
+      color: #374151;
+    }
+    .field {
+      margin-bottom: 10px;
+    }
+    .field-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      margin-bottom: 3px;
+    }
+    .field-value {
+      color: #374151;
+    }
+    .card-conclusion {
+      margin-top: 14px;
+      padding: 10px 14px;
+      background: #f8fafc;
+      border-left: 3px solid #2563eb;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      color: #374151;
+      font-style: italic;
+    }
+    .not-included-list {
+      list-style: none;
+      padding: 0;
+    }
+    .not-included-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.88rem;
+      color: #475569;
+    }
+    .not-included-list li:last-child {
+      border-bottom: none;
+    }
+    .not-included-list a {
+      color: #1e293b;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .not-included-list a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .takeaway {
+      background: #1e293b;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 28px;
+    }
+    .takeaway h2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .takeaway ul li {
+      padding-left: 18px;
+      position: relative;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: #e2e8f0;
+    }
+    .takeaway ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #2563eb;
+    }
+    .footer {
+      margin-top: 24px;
+      padding: 20px 32px;
+      background: #1e293b;
+      border-radius: 12px;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.82rem;
+    }
+    .footer strong {
+      display: block;
+      color: #94a3b8;
+      margin-bottom: 4px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .header, .takeaway, .footer { padding: 20px 18px; }
+      .card { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+      <div class="issue-line">Выпуск 3 июня 2026 за период 2-3 июня</div>
+    </header>
+
+    <div class="summary">
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">6</span> релевантных обновлений. Затронуты платформы: <strong>Яндекс Директ, VK Реклама, РСЯ, ВКонтакте, Яндекс Маркет</strong>.
+    </div>
+
+    <div class="section-title">Главное</div>
+
+    <div class="card primary">
+      <h3><a href="https://ppc.world/news/direkt-zapustil-akciyu-dlya-prodvizheniya-v-makse-i-telegram-mozhno-vernut-10-byudzheta/">Яндекс Директ: кешбэк 10% за рекламу в Максе и Telegram</a></h3>
+      <div class="card-meta">
+        <span class="badge platform">Яндекс Директ</span>
+        <span class="badge date">3 июня 2026</span>
+        <span class="badge">ppc.world</span>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <div class="field-label">Что изменилось</div>
+          <div class="field-value">Акция действует с 1 июня по 31 августа 2026. Рекламодатели возвращают 10% от бюджета на продвижение в Telegram и MAX через Единую перформанс-кампанию. Кешбэк зачисляется на счёт в Директе в сентябре 2026.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Условия</div>
+          <div class="field-value">Минимальный бюджет - 100 000 руб. Каждый аккаунт участвует один раз. Нужно подать заявку через форму Яндекса: указать логин Директа и рекламируемый объект (сайт, Telegram-канал или канал в MAX). Яндекс устанавливает персональный ориентир по инвестициям на июнь-август.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Кому полезно</div>
+          <div class="field-value">Рекламодателям с активными кампаниями в мессенджерах или тем, кто планирует их запустить этим летом.</div>
+        </div>
+      </div>
+      <div class="card-conclusion">Акция уже идёт с 1 июня. Если мессенджеры в плане на лето - подать заявку стоит сейчас.</div>
+    </div>
+
+    <div class="card primary">
+      <h3><a href="https://ppc.world/news/v-vk-reklame-poyavilas-premium-podpiska-dlya-pryamyh-reklamodateley/">VK Реклама: премиум-подписка с бенчмарками для прямых рекламодателей</a></h3>
+      <div class="card-meta">
+        <span class="badge platform">VK Реклама</span>
+        <span class="badge date">2 июня 2026</span>
+        <span class="badge">ppc.world</span>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <div class="field-label">Что изменилось</div>
+          <div class="field-value">В кабинете VK Рекламы появилась платная подписка для прямых рекламодателей. Включает ежемесячные отчёты с рыночными бенчмарками (CPM, CPC, CTR, CPA), конкурентный анализ раз в квартал (5-10 конкурентов, 10 рабочих дней на подготовку), приоритетную поддержку через отдельный канал и ускоренную модерацию.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Кому доступно</div>
+          <div class="field-value">Только прямым рекламодателям. Ориентирована на малый и средний бизнес, команды с активной оптимизацией бюджетов и тех, кто запускает кампании часто. Активируется в кабинете, автопродление через месяц.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Сроки</div>
+          <div class="field-value">Первые бенчмарки появляются через месяц после подключения. Конкурентная аналитика - через три месяца.</div>
+        </div>
+      </div>
+      <div class="card-conclusion">Полезно агентствам и командам, которые регулярно сверяют собственные ставки с рынком. Стоимость подписки - в кабинете.</div>
+    </div>
+
+    <div class="card primary">
+      <h3><a href="https://ppc.world/news/komanda-rsya-predstavila-birzhevuyu-model-monetizacii-kanalov-v-makse/">РСЯ: биржевая модель монетизации каналов в MAX</a></h3>
+      <div class="card-meta">
+        <span class="badge platform">РСЯ / MAX</span>
+        <span class="badge date">3 июня 2026</span>
+        <span class="badge">ppc.world</span>
+        <span class="badge">Яндекс Реклама</span>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <div class="field-label">Что изменилось</div>
+          <div class="field-value">Авторы каналов с 1000 и более подписчиков теперь могут устанавливать собственный CPM. Рекламодатели просматривают доступные каналы и выбирают размещение напрямую - без аукционных ограничений.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Как работает</div>
+          <div class="field-value">Биржевая и аукционная модели работают параллельно. Приоритет у биржевых размещений, оставшиеся слоты заполняются автоматически через аукцион. Управление - в личном кабинете РСЯ.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Кому полезно</div>
+          <div class="field-value">Авторам каналов - предсказуемый доход без зависимости от аукционных колебаний. Рекламодателям - возможность фиксировать CPM на конкретном канале.</div>
+        </div>
+      </div>
+      <div class="card-conclusion">Для рекламодателей в мессенджерах появился инструмент прямого контроля над ценой размещения.</div>
+    </div>
+
+    <div class="section-title">Остальные обновления</div>
+
+    <div class="card secondary">
+      <h3><a href="https://blog.click.ru/market-news/s-1-iyulya-rsya-perestanet-rabotat-s-fizlicami/">РСЯ прекращает сотрудничество с физлицами - дедлайн 30 июня</a></h3>
+      <div class="card-meta">
+        <span class="badge platform">РСЯ</span>
+        <span class="badge">click.ru</span>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <div class="field-label">Что изменилось</div>
+          <div class="field-value">С 1 июля 2026 РСЯ не будет работать с партнёрами, зарегистрированными как физические лица. Новых физлиц сеть не принимает с марта 2026. Действующим партнёрам нужно перерегистрироваться до 30 июня.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Что делать</div>
+          <div class="field-value">Перейти на самозанятость (6% налог, отчётность через приложение «Мой налог») или ИП на УСН (от 6%). Оба формата дают ускоренные выплаты и упрощённый налоговый учёт.</div>
+        </div>
+      </div>
+      <div class="card-conclusion">До дедлайна - меньше месяца. Нужно проверить статус всех партнёров в РСЯ прямо сейчас.</div>
+    </div>
+
+    <div class="card secondary">
+      <h3><a href="https://ppc.world/news/vo-vkontakte-poyavilas-rasshirennaya-statistika-i-prodvizhenie-dlya-lichnyh-profiley/">ВКонтакте: статистика и продвижение в личных профилях</a></h3>
+      <div class="card-meta">
+        <span class="badge platform">ВКонтакте</span>
+        <span class="badge date">2 июня 2026</span>
+        <span class="badge">ppc.world</span>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <div class="field-label">Что изменилось</div>
+          <div class="field-value">В личных профилях появился аналитический дашборд: охваты, демография аудитории, активность в разбивке по типам контента (посты, клипы, сторис, видео). Под постами и клипами - кнопка продвижения с тремя целями: привлечение подписчиков, продвижение контента, трафик и заявки.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Условия</div>
+          <div class="field-value">Пока только в мобильном приложении (веб-версия - позже). Требуются верификация аккаунта и двухфакторная аутентификация. Для продвижения постов - от 3000 подписчиков.</div>
+        </div>
+      </div>
+      <div class="card-conclusion">Авторы с личными страницами теперь могут запускать таргет без перехода в VK Рекламу.</div>
+    </div>
+
+    <div class="card secondary">
+      <h3><a href="https://ppc.world/news/v-yandeks-markete-poyavilsya-novyy-razdel-s-videoobzorami-tovarov/">Яндекс Маркет: персональная лента видеообзоров товаров</a></h3>
+      <div class="card-meta">
+        <span class="badge platform">Яндекс Маркет</span>
+        <span class="badge date">3 июня 2026</span>
+        <span class="badge">ppc.world</span>
+        <span class="badge">AdIndex</span>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <div class="field-label">Что изменилось</div>
+          <div class="field-value">На Яндекс Маркете появился новый раздел с видеообзорами, персонализированный под интересы пользователя. Видеоконтент выделен как отдельный формат просмотра товаров.</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Почему важно</div>
+          <div class="field-value">Новый формат создаёт дополнительную точку контакта с покупателем на маркетплейсе. Продавцы с видеоматериалами получают новый канал органической видимости без дополнительных вложений.</div>
+        </div>
+      </div>
+      <div class="card-conclusion">Продавцам, уже использующим видеоконтент на Маркете, стоит отследить охваты в новом разделе.</div>
+    </div>
+
+    <div class="section-title">Не вошло в выпуск</div>
+
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://blog.click.ru/market-news/na-ozon-poyavilas-partnerskaya-programma-dlya-avtorov-vkontakte-i-max/">Ozon: партнерская программа для авторов ВКонтакте и MAX</a> - маркетплейсовый функционал для авторов, без изменений рекламного кабинета
+        </li>
+        <li>
+          <a href="https://ppc.world/news/prosmotry-mediakontenta-teper-budut-privyazyvat-k-nomeru-telefona-polzovatelya-postanovlenie-podpisano/">Просмотры медиаконтента будут привязывать к номеру телефона</a> - законодательное изменение, прямого влияния на рекламный кабинет нет
+        </li>
+        <li>
+          <a href="https://www.sostav.ru/publication/reklamnaya-vyruchka-rutube-v-pervom-kvartale-vyrosla-pochti-v-tri-raza-84327.html">Rutube: рекламная выручка выросла почти в три раза в первом квартале</a> - отраслевая статистика, изменений в рекламном инструменте нет
+        </li>
+      </ul>
+    </div>
+
+    <div class="takeaway">
+      <h2>SUMMARY</h2>
+      <ul>
+        <li>Яндекс Директ запустил кешбэк 10% на рекламу в мессенджерах - акция уже идёт с 1 июня. Если кампании в MAX или Telegram в плане на лето, заявку нужно подать сейчас, пока не закончился июнь.</li>
+        <li>VK Реклама добавила платный инструмент с рыночными бенчмарками. Первые данные появятся через месяц после подключения - стоит оценить стоимость и решить до запуска следующего цикла кампаний.</li>
+        <li>РСЯ ввела биржевую монетизацию в MAX параллельно с аукционом. Рекламодатели получили возможность фиксировать CPM на конкретных каналах напрямую.</li>
+        <li>Дедлайн для физлиц в РСЯ - 30 июня. До него меньше месяца. Нужно срочно проверить статус всех партнёров в сети и инициировать перерегистрацию, если она ещё не сделана.</li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <strong>AdTech-дайджест: рекламные кабинеты РФ</strong>
+      Выпуск 3 июня 2026 за период 2-3 июня
+    </footer>
+
+  </div>
+</body>
+</html>
