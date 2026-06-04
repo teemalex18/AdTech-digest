@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ -- 4 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      background: #f4f5f7;
+      color: #1a1a2e;
+    }
+
+    a { color: #1a6ef5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #a8b2d8;
+    }
+
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-left: 4px solid #7b8cde;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .summary p {
+      font-size: 15px;
+      color: #444;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 32px 0 14px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .card.primary {
+      border-left: 4px solid #1a6ef5;
+    }
+    .card.secondary {
+      border-left: 4px solid #d0d4e8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .badge-platform { background: #eef2ff; color: #3d5af1; }
+    .badge-date     { background: #f3f4f6; color: #666; }
+    .badge-new      { background: #e6f9f0; color: #0d7a45; }
+    .badge-promo    { background: #fff4e6; color: #c05200; }
+    .badge-urgent   { background: #fff0f0; color: #c0392b; }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card h2 a { color: #1a1a2e; }
+    .card h2 a:hover { color: #1a6ef5; text-decoration: underline; }
+
+    .card-source {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-source a { color: #1a6ef5; }
+
+    .card-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin: 14px 0 4px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    .card-conclusion {
+      background: #f7f9ff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #2d3a6e;
+      border-left: 3px solid #7b8cde;
+    }
+
+    .not-included {
+      background: #fafafa;
+      border: 1px solid #e4e6ee;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .not-included ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+    .not-included ul li { margin-bottom: 6px; }
+    .not-included ul li a { color: #1a6ef5; }
+
+    .takeaway {
+      background: #1a1a2e;
+      color: #e8ecff;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-top: 10px;
+    }
+    .takeaway .section-title {
+      color: #7b8cde;
+      margin-top: 0;
+    }
+    .takeaway p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #c9d1f0;
+    }
+    .takeaway p:last-child { margin-bottom: 0; }
+
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 21px; }
+      .card h2  { font-size: 16px; }
+      .wrapper  { padding: 16px 12px 48px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 4 июня 2026 за период 3-4 июня</div>
+  </div>
+
+  <!-- Резюме выпуска -->
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">6</span> релевантных обновлений.
+      Затронуты платформы: <strong>Яндекс Директ, МАКС, Авито Реклама, ОРД VK</strong>.
+    </p>
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section-title">Главное</div>
+
+  <!-- Карточка 1: Директ кешбэк МАКС/Telegram -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-platform">МАКС</span>
+      <span class="badge badge-promo">Акция</span>
+      <span class="badge badge-date">3 июня 2026</span>
+    </div>
+    <h2>
+      <a href="https://ppc.world/news/direkt-zapustil-akciyu-dlya-prodvizheniya-v-makse-i-telegram-mozhno-vernut-10-byudzheta/" target="_blank">
+        Директ запустил акцию: 10% кешбэк за рекламу в МАКС и Telegram
+      </a>
+    </h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/direkt-zapustil-akciyu-dlya-prodvizheniya-v-makse-i-telegram-mozhno-vernut-10-byudzheta/" target="_blank">ppc.world</a>,
+      официально: <a href="https://yandex.ru/adv/news/keshbek-10-procent-direct" target="_blank">Яндекс Реклама</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>С 1 июня по 31 августа 2026 года рекламодатели могут вернуть 10% от бюджета, потраченного на рекламные посты в МАКС и Telegram через Директ. Для участия нужно заполнить форму заявки и запустить кампании.</p>
+
+    <div class="card-section-label">Условия участия</div>
+    <p>Минимальный бюджет за период -- 100 000 рублей. В заявке указывается логин Директа и рекламируемый объект: сайт, Telegram-канал или канал в МАКС. Акция действует только для кампаний с автоподбором каналов и оплатой за клики в Единых перформанс-кампаниях.</p>
+    <p>Кешбэк начислится в сентябре на баланс Директа и доступен для следующих кампаний. Участвовать можно только один раз.</p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>Всем, кто ведет кампании в Директе и рассматривает мессенджеры как рекламный канал. Особенно актуально для первого тестирования МАКС: три летних месяца с гарантированным возвратом части бюджета снижают цену входа.</p>
+
+    <div class="card-conclusion">
+      Акция снижает стоимость тестирования МАКС. Если мессенджер уже в плане -- сейчас лучший момент: кешбэк работает до 31 августа, а кампании можно начать в любой момент после подачи заявки.
+    </div>
+  </div>
+
+  <!-- Карточка 2: Биржевая модель МАКС -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">РСЯ / МАКС</span>
+      <span class="badge badge-new">Новая модель</span>
+      <span class="badge badge-date">3 июня 2026</span>
+    </div>
+    <h2>
+      <a href="https://ppc.world/news/komanda-rsya-predstavila-birzhevuyu-model-monetizacii-kanalov-v-makse/" target="_blank">
+        РСЯ добавила биржевую модель монетизации для каналов в Максе
+      </a>
+    </h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/komanda-rsya-predstavila-birzhevuyu-model-monetizacii-kanalov-v-makse/" target="_blank">ppc.world</a>,
+      официально: <a href="https://yandex.ru/adv/news/v-maks-poyavilas-birzhevaya-model-monetizatsii" target="_blank">Яндекс Реклама</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>Каналы в МАКС с аудиторией от 1 000 подписчиков теперь могут самостоятельно устанавливать CPM -- стоимость за тысячу просмотров. Раньше цену определял только аукцион. Авторы выбирают: биржевая модель, аукционная или обе одновременно.</p>
+
+    <div class="card-section-label">Как работает гибридный режим</div>
+    <p>При одновременном использовании двух моделей биржевые объявления получают приоритет в размещении. Остаток инвентаря автоматически заполняется через аукцион. Это делает доход каналов более предсказуемым и дает рекламодателям доступ к инвентарю с фиксированной ценой.</p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>Появляется premium-слой инвентаря с фиксированными ценами. Для брендовых кампаний, где важен контроль над стоимостью показа, это новая точка входа в МАКС.</p>
+
+    <div class="card-conclusion">
+      Биржевая модель выгодна обеим сторонам: каналы стабилизируют доход, рекламодатели получают предсказуемый CPM. Особенно актуально для охватных кампаний с фиксированным бюджетом на показы.
+    </div>
+  </div>
+
+  <!-- Карточка 3: Мастер отчетов дедлайн -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-urgent">Дедлайн</span>
+      <span class="badge badge-date">4 июня 2026</span>
+    </div>
+    <h2>
+      <a href="https://blog.click.ru/market-news/yandeks-direkt-nazval-sroki-polnogo-perexoda-na-novyj-master-otchetov/" target="_blank">
+        Яндекс Директ объявил сроки закрытия старого Мастера отчетов
+      </a>
+    </h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/yandeks-direkt-nazval-sroki-polnogo-perexoda-na-novyj-master-otchetov/" target="_blank">Click.ru</a>,
+      официально: <a href="https://yandex.ru/adv/news/master-otchetov-perekhod-na-novyy-interfeys-drevovidnye-tablitsy-statistika-po-nedeystvitelnomu-trafiku-i-nastroyki-tseley-v-otchetakh" target="_blank">Яндекс Реклама</a>
+    </div>
+
+    <div class="card-section-label">Ключевые даты</div>
+    <p><strong>8 июня</strong> -- старый интерфейс переходит в режим ссылок на новую версию. Работать в нем больше нельзя.</p>
+    <p><strong>22 июня</strong> -- старый Мастер отчетов отключается полностью. Все старые ссылки на отчеты перестают работать.</p>
+
+    <div class="card-section-label">Что нового в интерфейсе</div>
+    <p>Древовидные таблицы для работы с большими объемами данных. Статистика по недействительному трафику собрана в одном месте. Настройка порядка столбцов с целями. Поддержка управляющего аккаунта. AI-помощник для построения отчетов прямо в Директе.</p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>Если у вас есть сохраненные ссылки или закладки на старые отчеты -- пересоздайте их в новом Мастере отчетов до 22 июня. Для агентств важно: ссылки на отчеты, которые переданы клиентам, перестанут работать после 22 июня.</p>
+
+    <div class="card-conclusion">
+      До 8 июня -- четыре дня. Кто еще не перешел на новый Мастер отчетов, стоит сделать это сейчас, а не в последний момент перед 22-м.
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Карточка 4: eLama Авито бонус -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Авито Реклама</span>
+      <span class="badge badge-platform">eLama</span>
+      <span class="badge badge-promo">Акция</span>
+      <span class="badge badge-date">4 июня 2026</span>
+    </div>
+    <h2>
+      <a href="https://ppc.world/news/novye-reklamodateli-avito-reklamy-smogut-poluchit-50-k-byudzhetu-akciyu-zapustila-elama/" target="_blank">
+        Новые рекламодатели Авито Рекламы получат +50% к бюджету через eLama
+      </a>
+    </h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/novye-reklamodateli-avito-reklamy-smogut-poluchit-50-k-byudzhetu-akciyu-zapustila-elama/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Условия акции</div>
+    <p>50 бонусных рублей за каждые 100 рублей, потраченные в июне через eLama в Авито Рекламе. Максимальный бонус -- 100 000 рублей. Бонусы зачисляются с 30 июня по 10 июля и доступны для кампаний в июле.</p>
+
+    <div class="card-section-label">Кому доступно</div>
+    <p>Только новым клиентам Авито Рекламы через eLama: юридическим лицам и ИП, которые не тратили средства в Авито Рекламе последние 180 дней. Агентствам и реселлерам акция не доступна. Крайний срок подачи заявки -- 30 июня.</p>
+
+    <div class="card-conclusion">
+      Хорошая точка входа в Авито Рекламу для прямых рекламодателей. Бонус делает первый месяц эффективно дешевле на 50%, максимальная выгода -- 100 000 рублей дополнительного бюджета на июль.
+    </div>
+  </div>
+
+  <!-- Карточка 5: ОРД VK автопродление -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">ОРД VK</span>
+      <span class="badge badge-new">Новая опция</span>
+      <span class="badge badge-date">4 июня 2026</span>
+    </div>
+    <h2>
+      <a href="https://ppc.world/news/v-ord-vk-poyavilas-novaya-opciya-avtoprodlenie-tarifov/" target="_blank">
+        В ОРД VK появилась опция автопродления тарифа
+      </a>
+    </h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/v-ord-vk-poyavilas-novaya-opciya-avtoprodlenie-tarifov/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>В кабинете ОРД VK появилась опция автоматического продления тарифа. Система продлевает тариф, если на балансе достаточно средств. Функция отключена по умолчанию. Включить можно в разделе управления оплатой через кнопку "Выбрать тариф".</p>
+
+    <div class="card-conclusion">
+      Полезно для тех, кто регулярно работает с ОРД VK и хочет не отслеживать срок тарифа вручную. Достаточно поддерживать баланс -- система сделает остальное сама.
+    </div>
+  </div>
+
+  <!-- Карточка 6: МАКС в РСЯ для блогеров -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">РСЯ / МАКС</span>
+      <span class="badge badge-new">Новая площадка</span>
+      <span class="badge badge-date">3 июня 2026</span>
+    </div>
+    <h2>
+      <a href="https://yandex.ru/adv/news/monetiziruyte-svoy-kanal-v-max-s-rsya-dlya-blogerov" target="_blank">
+        МАКС добавлен в список площадок РСЯ для монетизации блогеров
+      </a>
+    </h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/monetiziruyte-svoy-kanal-v-max-s-rsya-dlya-blogerov" target="_blank">Яндекс Реклама</a> (официально)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>МАКС добавлен к площадкам РСЯ для блогеров. Теперь монетизировать каналы через рекламную сеть Яндекса можно в пяти мессенджерах и платформах: Telegram, VK, YouTube, RUTUBE и МАКС.</p>
+
+    <div class="card-section-label">Как использовать</div>
+    <p>Авторы с каналами в МАКС могут подключить монетизацию через РСЯ без прямой работы с рекламодателями. Для рекламодателей, покупающих инвентарь через РСЯ, это расширение охвата в МАКС.</p>
+
+    <div class="card-conclusion">
+      Вместе с биржевой моделью (карточка 2) это второй шаг Яндекса по развитию инвентаря в МАКС за один день. Для агентств, работающих с РСЯ-закупкой: инвентарь МАКС теперь доступен через привычный интерфейс.
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li>
+        <a href="https://blog.click.ru/market-news/avito-reklama-predstavila-publichnyj-api/" target="_blank">Авито Реклама представила публичный API</a>
+        -- API-интеграция без изменений интерфейса рекламного кабинета.
+      </li>
+      <li>
+        <a href="https://adindex.ru/news/digital/2026/06/4/345611.phtml" target="_blank">МАКС начал тестировать прямые трансляции в каналах</a>
+        -- новая функция мессенджера в тестировании, рекламный формат пока не объявлен.
+      </li>
+      <li>
+        <a href="https://blog.click.ru/market-news/na-ozon-poyavilas-partnerskaya-programma-dlya-avtorov-vkontakte-i-max/" target="_blank">На Ozon появилась партнерская программа для авторов ВКонтакте и MAX</a>
+        -- вне окна дат, первая публикация 2 июня.
+      </li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <p>
+      <strong style="color:#e8ecff;">МАКС -- главная тема двух дней.</strong>
+      Яндекс продвигает мессенджер по трем направлениям одновременно: акция с кешбэком для рекламодателей, биржевая модель для паблишеров и добавление в РСЯ для блогеров. Три новости за 48 часов -- это не случайность, а скоординированное развитие платформы.
+    </p>
+    <p>
+      <strong style="color:#e8ecff;">Самое срочное: Мастер отчетов.</strong>
+      8 июня -- уже через четыре дня -- старый интерфейс переходит в режим ссылок. 22 июня отключится полностью. Кто ведет клиентские кабинеты с сохраненными закладками или шаблонами с ссылками на отчеты, должен пересоздать их в новом МО до конца этой недели.
+    </p>
+    <p>
+      <strong style="color:#e8ecff;">Авито через eLama -- только в июне.</strong>
+      Бонус в 50% доступен новым прямым рекламодателям. Агентствам и реселлерам недоступен. Заявка до 30 июня. Если в плане есть работа с Авито -- этот месяц выгоднее остальных.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 4 июня 2026 за период 3-4 июня
+  </div>
+
+</div>
+</body>
+</html>
