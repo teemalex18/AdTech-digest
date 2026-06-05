@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — 5 июня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 15px;
+    line-height: 1.65;
+    padding: 24px 16px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #1e293b;
+    color: #fff;
+    padding: 28px 32px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  .header h1 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: -0.2px;
+  }
+  .header .issue-line {
+    font-size: 13px;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px 8px 8px 4px;
+    padding: 16px 22px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.75;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 12px;
+    margin-top: 28px;
+  }
+  .section-title:first-of-type {
+    margin-top: 0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 4px 10px 10px 4px;
+    border: 1px solid #e2e8f0;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .card h3 a {
+    color: #1e293b;
+    text-decoration: none;
+  }
+  .card h3 a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  .card-meta {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .badge {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.7;
+  }
+
+  .card-conclusion {
+    background: #f8fafc;
+    border-left: 3px solid #2563eb;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 13.5px;
+    color: #334155;
+    line-height: 1.65;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 4px 0;
+    margin-bottom: 0;
+  }
+  .not-included-item {
+    padding: 11px 22px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+  }
+  .not-included-item:last-child {
+    border-bottom: none;
+  }
+  .not-included-item a {
+    color: #1e293b;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .not-included-item a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  .not-included-item .reason {
+    color: #94a3b8;
+    font-size: 13px;
+  }
+
+  /* TAKEAWAY */
+  .takeaway {
+    background: #1e293b;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .takeaway h2 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 18px;
+  }
+  .takeaway ul {
+    list-style: none;
+    padding: 0;
+  }
+  .takeaway ul li {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 10px 0;
+    border-bottom: 1px solid #2d3f55;
+    color: #cbd5e1;
+  }
+  .takeaway ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8;
+    padding: 14px 0 6px;
+    line-height: 1.8;
+  }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    body { padding: 12px 10px; }
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 16px 16px; }
+    .summary { padding: 14px 16px; }
+    .card h3 { font-size: 15px; }
+    .not-included-item { padding: 10px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 5 июня 2026 за период 4-5 июня</div>
+  </div>
+
+  <!-- РЕЗЮМЕ -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления.
+    Затронуты платформы: <strong>Яндекс Директ, Авито Реклама, Дзен, ОРД VK</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3>
+      <a href="https://yandex.ru/adv/news/master-otchetov-perekhod-na-novyy-interfeys-drevovidnye-tablitsy-statistika-po-nedeystvitelnomu-trafiku-i-nastroyki-tseley-v-otchetakh">
+        Яндекс Директ назвал сроки полного перехода на новый Мастер отчетов
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">Яндекс Директ</span>
+      <span>4 июня 2026</span>
+      <span>Яндекс Реклама, click.ru</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что изменилось</div>
+      <p>С 8 июня старый интерфейс будет показывать только ссылки на новую версию. С 22 июня переход становится полным: все ссылки на отчеты открываются в обновленном интерфейсе, доступ к старому закрывается.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что появилось в новом интерфейсе</div>
+      <p>Древовидные таблицы для работы с большими наборами данных. Консолидированная статистика по недействительному трафику. Настраиваемый порядок столбцов с целями. Для аккаунтов с управляемым доступом теперь доступны цели по всем подключенным аккаунтам сразу.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> До 8 июня есть несколько дней, чтобы освоить новый интерфейс без спешки. После 22 июня возврата нет. Стоит заранее проверить сохраненные шаблоны отчетов и привычные маршруты в кабинете.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3>
+      <a href="https://ppc.world/news/novye-reklamodateli-avito-reklamy-smogut-poluchit-50-k-byudzhetu-akciyu-zapustila-elama/">
+        eLama: новые рекламодатели Авито получат +50% бонусов на первый бюджет
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">Авито Реклама</span>
+      <span>4 июня 2026</span>
+      <span>ppc.world</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Условия акции</div>
+      <p>За каждые потраченные 100 рублей в июне начисляется 50 бонусов, то есть фактически 50% возврат. Максимальный бонус составляет 100 000 рублей. Акция действует с 1 по 30 июня 2026 года.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Кому доступно</div>
+      <p>Новые юридические лица и ИП без расходов на Авито Рекламу за последние 180 дней, размещающие рекламу собственного бизнеса. Посредники не участвуют. Минимальный стартовый бюджет — 5 000 рублей. При бюджете от 30 000 рублей — бесплатная настройка кампании от менеджера.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Если клиент или собственный бизнес не пробовал Авито Рекламу, июнь подходящий момент: половина первого бюджета вернется бонусами. Заявку нужно подать до 30 июня.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3>
+      <a href="https://ppc.world/news/dzen-perehodit-na-novuyu-ii-arhitekturu-algoritmy-budut-ocenivat-ekspertnost-a-ne-tolko-kliki/">
+        Дзен переходит на архитектуру &quot;Кортекс&quot;: алгоритмы будут оценивать экспертность
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">Дзен</span>
+      <span>5 июня 2026</span>
+      <span>ppc.world</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что изменилось</div>
+      <p>Дзен переходит на новую ИИ-архитектуру &quot;Кортекс&quot;. Алгоритмы теперь оценивают качество и экспертность публикации, а не только кликабельность. Система анализирует смысл текста и учитывает, как материал обсуждается в мессенджерах.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Возможности для медиа</div>
+      <p>Запущен ИИ Студия: адаптация текстов под мобильные форматы, персонализированная генерация заголовков, аналитика динамики канала и эффективности материалов.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Логика распределения трафика в Дзене меняется принципиально. Контент, заточенный на кликбейт, может потерять в охвате. Рекламодателям, работающим через РСЯ с Дзен-инвентарем, стоит отслеживать динамику показателей.
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3>
+      <a href="https://ppc.world/news/v-ord-vk-poyavilas-novaya-opciya-avtoprodlenie-tarifov/">
+        В ОРД VK появилась опция автопродления тарифа
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">ОРД VK</span>
+      <span>4 июня 2026</span>
+      <span>ppc.world</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что добавили</div>
+      <p>В системе маркировки рекламы ОРД ВКонтакте появилась опция автоматического продления тарифа при достаточном балансе. По умолчанию отключена, активируется вручную через страницу управления платежами.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Как использовать</div>
+      <p>Выбрать тариф и включить &quot;Подключить автопродление&quot;. Отключить можно до начала следующего расчетного периода.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Полезно для агентств с несколькими аккаунтами в ОРД: снижает риск непреднамеренного перерыва в маркировке при смене тарифного периода.
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="not-included-list">
+    <div class="not-included-item">
+      <a href="https://news.inhouse-marketing.ru/2026/05/22/avito-reklama-zapyskaet-avtotargeting/">Авито Реклама запускает автотаргетинг</a>
+      <span class="reason"> — вне окна дат, первая публикация 22 мая</span>
+    </div>
+    <div class="not-included-item">
+      <a href="https://yandex.ru/adv/news/neyroobyavleniya-zapusk-dlya-vsego-saita-razdela-spiska-stranits">Нейрообъявления для всего сайта, раздела или списка страниц</a>
+      <span class="reason"> — вне окна дат, опубликовано 26 мая</span>
+    </div>
+    <div class="not-included-item">
+      <a href="https://yandex.ru/adv/news/chto-novogo-v-yandeks-reklame-etoy-vesnoy">Что нового в Яндекс Рекламе этой весной</a>
+      <span class="reason"> — обзорный сборник обновлений мая, опубликован 4 июня как дайджест</span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li>Переход на новый Мастер отчетов идет в два этапа: 8 июня и 22 июня. Специалистам, работающим с шаблонными отчетами и регулярными выгрузками, стоит освоить новый интерфейс до дедлайна, а не в последний день.</li>
+      <li>Акция eLama на Авито Рекламе закрывается 30 июня. 50% возврат бонусами на первый бюджет — реальный стимул для тех, кто рассматривал первый тест на платформе, но откладывал.</li>
+      <li>Дзен меняет алгоритм принципиально: экспертность вместо кликов. Для рекламодателей с размещениями через РСЯ и Дзен-инвентарь это сигнал отследить, как изменится качество трафика.</li>
+      <li>Автопродление в ОРД VK — удобная функция для агентств с несколькими клиентами: устраняет риск случайного разрыва в маркировке из-за истекшего тарифа.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 5 июня 2026 за период 4-5 июня
+  </div>
+
+</div>
+</body>
+</html>
