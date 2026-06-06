@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — 6 июня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 15px;
+    line-height: 1.65;
+    padding: 24px 16px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #1e293b;
+    color: #fff;
+    padding: 28px 32px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  .header h1 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: -0.2px;
+  }
+  .header .issue-line {
+    font-size: 13px;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px 8px 8px 4px;
+    padding: 16px 22px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.75;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 12px;
+    margin-top: 28px;
+  }
+  .section-title:first-of-type {
+    margin-top: 0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 4px 10px 10px 4px;
+    border: 1px solid #e2e8f0;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .card h3 a {
+    color: #1e293b;
+    text-decoration: none;
+  }
+  .card h3 a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  .card-meta {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .badge {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section p {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.7;
+  }
+
+  .card-conclusion {
+    background: #f8fafc;
+    border-left: 3px solid #2563eb;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 13.5px;
+    color: #334155;
+    line-height: 1.65;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 4px 0;
+    margin-bottom: 0;
+  }
+  .not-included-item {
+    padding: 11px 22px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+  }
+  .not-included-item:last-child {
+    border-bottom: none;
+  }
+  .not-included-item a {
+    color: #1e293b;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .not-included-item a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  .not-included-item .reason {
+    color: #94a3b8;
+    font-size: 13px;
+  }
+
+  /* TAKEAWAY */
+  .takeaway {
+    background: #1e293b;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .takeaway h2 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 18px;
+  }
+  .takeaway ul {
+    list-style: none;
+    padding: 0;
+  }
+  .takeaway ul li {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 10px 0;
+    border-bottom: 1px solid #2d3f55;
+    color: #cbd5e1;
+  }
+  .takeaway ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8;
+    padding: 14px 0 6px;
+    line-height: 1.8;
+  }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    body { padding: 12px 10px; }
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 16px 16px; }
+    .summary { padding: 14px 16px; }
+    .card h3 { font-size: 15px; }
+    .not-included-item { padding: 10px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 6 июня 2026 за период 5-6 июня</div>
+  </div>
+
+  <!-- РЕЗЮМЕ -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений.
+    Затронуты платформы: <strong>Яндекс Директ, МАКС, Яндекс Маркет, AppMetrica</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3>
+      <a href="https://yandex.ru/adv/news/reklama-max-v-direct">
+        Реклама в МАКС стала доступна через Яндекс Директ: бета-запуск и кешбэк 10%
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">Яндекс Директ / МАКС</span>
+      <span>июнь 2026</span>
+      <span>Яндекс Реклама</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что изменилось</div>
+      <p>Через Директ теперь можно публиковать рекламные посты не только в телеграм-каналах, но и в мессенджере МАКС. Оплата за клики, автоподбор каналов из РСЯ по тематикам и географии. Запуск в формате бета-тестирования.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Финансовые условия</div>
+      <p>С 1 июня по 31 августа действует акция: 10% кешбэк за рекламу в МАКС и Telegram через Директ. Для участия нужно подтвердить участие и запустить кампании в указанный период.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Кому полезно</div>
+      <p>Рекламодателям, работающим с мессенджерной рекламой через Директ, и тем, кто хочет расширить охват за пределы Telegram.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Новая площадка в Директе с возвратом части бюджета до конца лета - разумный момент для теста. Стоит запустить хотя бы одну кампанию в МАКС, пока акция активна, и сравнить стоимость клика с Telegram.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3>
+      <a href="https://ppc.world/news/v-vk-podtverdili-chto-messendzher-maks-udalili-iz-app-store/">
+        МАКС удален из App Store: iOS-аудитория мессенджера перестала расти
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">МАКС</span>
+      <span>4 июня 2026</span>
+      <span>ppc.world</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что произошло</div>
+      <p>Apple удалила приложение МАКС из App Store 3 июня из-за требований санкционного регулирования. Пользователи iPhone не могут установить приложение через магазин и получают сообщение о недоступности в регионе. VK подтвердили ситуацию и направили запрос в Apple.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что работает, что нет</div>
+      <p>Существующие установки продолжают работать, но push-уведомления недоступны. Новые пользователи iPhone не могут установить приложение через App Store. Android, RuStore, Google Play, Huawei AppGallery и прямая загрузка с max.ru работают без ограничений.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что проверить</div>
+      <p>При планировании рекламных кампаний в МАКС учитывать, что iOS-сегмент аудитории больше не растет. VK работает над решением, сроки не названы.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Перед запуском рекламы в МАКС стоит сверить ожидания по охвату с реальной долей iOS в целевой аудитории. Для Android-ориентированных категорий ограничение менее критично.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3>
+      <a href="https://ppc.world/news/v-yandeks-markete-poyavilsya-novyy-razdel-s-videoobzorami-tovarov/">
+        Яндекс Маркет запустил персонализированный раздел с видеообзорами товаров
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">Яндекс Маркет</span>
+      <span>3 июня 2026</span>
+      <span>ppc.world</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Возможности формата</div>
+      <p>В приложении Яндекс Маркет появился новый раздел с персонализированной лентой видеообзоров. Лента формируется на основе просмотренных товаров, истории заказов и подписок пользователя. В разделе объединены видео от продавцов и обычных покупателей.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Как использовать продавцам</div>
+      <p>Продавцы загружают видеообзоры через личный кабинет. Наиболее просматриваемые материалы попадают в персонализированную ленту. Механика бесплатная. Покупатели, чьи видео привели к продажам, получают вознаграждение по реферальной программе.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Доступность</div>
+      <p>Сейчас только в мобильном приложении Маркета. Веб-версия в разработке.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Бесплатный органический формат продвижения для продавцов на Маркете. Видеообзор от продавца может повысить конверсию по конкретному товару и дать дополнительный охват без рекламного бюджета.
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3>
+      <a href="https://yandex.ru/adv/news/atribuciya-pokazov-na-ctv-i-desktopah-v-appmetrica">
+        AppMetrica добавила атрибуцию рекламных показов на CTV и десктопах
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">AppMetrica</span>
+      <span>июнь 2026</span>
+      <span>Яндекс Реклама</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что добавили</div>
+      <p>В AppMetrica появилась возможность отслеживать, как рекламные показы на Smart TV (CTV) и десктопах влияют на установки мобильных приложений и последующие конверсии. Атрибуция строится по межплатформенным цепочкам взаимодействия.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Кому полезно</div>
+      <p>Рекламодателям, которые одновременно размещают рекламу приложений на CTV (видеореклама на телевизорах) и в мобильных каналах и хотят видеть объединенную картину конверсионного пути.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Если в медиаплане есть CTV-инвентарь через Директ, теперь можно замерить его реальный вклад в установки приложений. Это снимает "черный ящик" вокруг телевизионного канала в мобильных кампаниях.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <h3>
+      <a href="https://yandex.ru/adv/news/akciya-perezagruzka-direct">
+        Яндекс Директ запустил акцию "Перезагрузка": удвоение бюджета для неактивных рекламодателей
+      </a>
+    </h3>
+    <div class="card-meta">
+      <span class="badge">Яндекс Директ</span>
+      <span>июнь 2026</span>
+      <span>Яндекс Реклама</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Условия</div>
+      <p>Акция направлена на рекламодателей, которые ранее запускали кампании в Директе, но прекратили продвижение. При возобновлении кампаний Яндекс добавит 100% к бюджету, то есть фактически удвоит первоначальный вложенный бюджет.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Как использовать</div>
+      <p>Актуально для клиентов, которые делали паузу в размещении. Уточненные условия - пороги бюджета и сроки - доступны в личном кабинете при наличии соответствующего статуса.</p>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод.</strong> Удобный момент для реактивации "спящих" клиентов: удвоенный стартовый бюджет снижает финансовый барьер для возврата в Директ. Стоит проверить, попадают ли подходящие аккаунты под условия акции.
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included-list">
+    <div class="not-included-item">
+      <a href="https://ppc.world/news/putin-obratil-vnimanie-na-neobosnovannoe-ispolzovanie-latinicy-v-reklame/">Путин обратил внимание на необоснованное использование латиницы в рекламе</a>
+      <span class="reason"> - политическое заявление, изменений в требованиях рекламных кабинетов не последовало</span>
+    </div>
+    <div class="not-included-item">
+      <a href="https://ppc.world/news/v-minfine-podtverdili-plany-o-povyshenii-nds-do-22-na-zarubezhnye-internet-zakazy/">В Минфине подтвердили планы о повышении НДС до 22% на зарубежные интернет-заказы</a>
+      <span class="reason"> - регуляторная тема, затрагивает e-commerce, не изменение рекламного кабинета</span>
+    </div>
+    <div class="not-included-item">
+      <a href="https://ppc.world/news/google-nachal-testirovat-profili-v-poiske-dlya-brendov-i-avtorov-kontenta/">Google начал тестировать профили в Поиске для брендов и авторов контента</a>
+      <span class="reason"> - зарубежная платформа, вне основного охвата дайджеста</span>
+    </div>
+    <div class="not-included-item">
+      <a href="https://yandex.ru/adv/news/letnie-predlozheniya-dlya-medijnoj-reklamy">Летние предложения для медийной рекламы Яндекс: скидки до 70%</a>
+      <span class="reason"> - первая публикация 14 мая, вне окна дат</span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li>МАКС стал полноценным рекламным каналом в Директе. Размещение пока в бете, но кешбэк 10% до конца августа снижает порог входа. Разумно запустить тестовую кампанию сейчас, пока акция активна и конкуренция в канале невысокая.</li>
+      <li>При этом iOS-охват МАКС ограничен: App Store удалил приложение из-за санкционных требований. Новые пользователи iPhone не могут установить мессенджер. Перед планированием МАКС-кампаний стоит оценить долю iOS в своей аудитории.</li>
+      <li>Яндекс Маркет дает продавцам бесплатный инструмент видеопродвижения: загруженные обзоры попадают в персонализированную ленту покупателей. Для продавцов на Маркете это точка для теста без рекламных расходов.</li>
+      <li>AppMetrica закрыла пробел в аналитике: атрибуция показов на CTV и десктопах теперь позволяет связать телевизионную рекламу с установками мобильных приложений. Актуально для тех, кто совмещает OTT и мобильное продвижение.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 6 июня 2026 за период 5-6 июня
+  </div>
+
+</div>
+</body>
+</html>
