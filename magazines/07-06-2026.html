@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 7 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eef2f7;
+      color: #1a2332;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 28px 16px 40px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a2332;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 30px;
+      margin-bottom: 20px;
+    }
+    .header-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #64b5f6;
+      margin-bottom: 8px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #90a4ae;
+    }
+
+    /* Summary */
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin-bottom: 32px;
+      font-size: 15px;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* Section title */
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card-inner {
+      padding: 20px 24px;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 2px 8px;
+    }
+    .tag.platform {
+      background: #eff6ff;
+      color: #2563eb;
+    }
+    .tag.source {
+      background: #f1f5f9;
+      color: #64748b;
+    }
+    .tag.date {
+      background: #f1f5f9;
+      color: #94a3b8;
+    }
+    .card h2 {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+    .card h2 a {
+      color: #1a2332;
+      text-decoration: none;
+    }
+    .card h2 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .card-body {
+      font-size: 14.5px;
+      color: #374151;
+    }
+    .card-body dt {
+      font-weight: 600;
+      color: #1a2332;
+      margin-top: 12px;
+      margin-bottom: 2px;
+    }
+    .card-body dt:first-child {
+      margin-top: 0;
+    }
+    .card-body dd {
+      margin-left: 0;
+    }
+
+    /* Card conclusion — единый стиль для primary и secondary */
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    /* Not included */
+    .not-included-box {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 16px 22px;
+    }
+    .not-included-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-included-box li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.5;
+    }
+    .not-included-box li:last-child {
+      border-bottom: none;
+    }
+    .not-included-box a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .not-included-box a:hover {
+      text-decoration: underline;
+    }
+    .reason {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    /* SUMMARY block */
+    .takeaway {
+      background: #1a2332;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 30px;
+      margin-top: 8px;
+      margin-bottom: 28px;
+    }
+    .takeaway-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64b5f6;
+      margin-bottom: 18px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+    .takeaway li {
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 14.5px;
+      line-height: 1.6;
+      display: flex;
+      gap: 10px;
+    }
+    .takeaway li:last-child {
+      border-bottom: none;
+    }
+    .takeaway li::before {
+      content: "•";
+      color: #64b5f6;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+      padding: 4px 0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 14px 10px 32px; }
+      .header { padding: 22px 18px; }
+      .header h1 { font-size: 18px; }
+      .card h2 { font-size: 15px; }
+      .card-inner { padding: 16px 16px; }
+      .takeaway { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-label">AdTech-дайджест</div>
+      <h1>Рекламные кабинеты РФ</h1>
+      <div class="header-meta">Выпуск 7 июня 2026 за период 6-7 июня</div>
+    </div>
+
+    <!-- Резюме -->
+    <div class="summary">
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>Яндекс Директ, VK ОРД</strong>.
+    </div>
+
+    <!-- Главное -->
+    <div class="section">
+      <div class="section-title">Главное</div>
+
+      <!-- Карточка 1: Мастер отчетов -->
+      <div class="card primary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">Яндекс Директ</span>
+            <span class="tag source">Яндекс Реклама (офиц.)</span>
+            <span class="tag date">29 мая 2026</span>
+          </div>
+          <h2><a href="https://yandex.ru/adv/news/master-otchetov-perekhod-na-novyy-interfeys-drevovidnye-tablitsy-statistika-po-nedeystvitelnomu-trafiku-i-nastroyki-tseley-v-otchetakh" target="_blank">Яндекс Директ: переход на новый Мастер отчетов. Дедлайн 8 июня</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что изменилось</dt>
+              <dd>Яндекс завершает миграцию на обновленный Мастер отчетов. 8 июня из интерфейса Директа убирают ссылки на старый вариант. 22 июня старые адреса начнут автоматически перенаправлять на новый.</dd>
+
+              <dt>Новые возможности</dt>
+              <dd>Древовидные таблицы для работы с большими выборками данных. Отдельный отчет по недействительному трафику: клики и конверсии, отфильтрованные антифрод-системой. Настройка порядка столбцов для целей. В мастер-аккаунтах доступны цели субаккаунтов.</dd>
+
+              <dt>Кому важно</dt>
+              <dd>Всем, кто работает с кабинетами Директа. Сохраненные ссылки на старые отчеты перестанут открываться уже с 8 июня.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Сегодня стоит проверить закладки и ссылки на отчеты: с завтрашнего дня они не будут работать. Новый интерфейс Мастера отчетов лучше освоить до конца недели.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 2: Кешбэк 10% за мессенджеры -->
+      <div class="card primary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">Яндекс Директ</span>
+            <span class="tag source">Яндекс Реклама (офиц.)</span>
+            <span class="tag date">2 июня 2026</span>
+          </div>
+          <h2><a href="https://yandex.ru/adv/news/keshbek-10-procent-direct" target="_blank">Кешбэк 10% за рекламу в мессенджерах через Директ</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что за акция</dt>
+              <dd>Яндекс возвращает 10% от потраченного бюджета на счет в Директе. Акция действует с 1 июня по 31 августа 2026, кешбэк зачисляется в сентябре.</dd>
+
+              <dt>Условия</dt>
+              <dd>Минимальный порог участия: 100 000 руб. Платформы: Telegram и VK MAX одновременно или по отдельности. Формат: единые перф-кампании с автовыбором канала, оплата за клики. Бонусные средства из других акций в расчет не входят. Нельзя совмещать с другими акциями Директа. Один рекламодатель — одно участие.</dd>
+
+              <dt>Как подключить</dt>
+              <dd>Заполнить регистрационную форму с логином Директа и объектом продвижения. Персональные целевые показатели формируются по истории инвестиций.</dd>
+            </dl>
+            <div class="card-conclusion">
+              При бюджете от 100 000 руб. кешбэк составит от 10 000 руб. на счет в Директе. Стоит зарегистрироваться заранее, если планируется запуск в Telegram или MAX до конца лета.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Остальные обновления -->
+    <div class="section">
+      <div class="section-title">Остальные обновления</div>
+
+      <!-- Карточка 3: VK ОРД -->
+      <div class="card secondary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">VK ОРД</span>
+            <span class="tag source">ppc.world</span>
+            <span class="tag date">4 июня 2026</span>
+          </div>
+          <h2><a href="https://ppc.world/news/v-ord-vk-poyavilas-novaya-opciya-avtoprodlenie-tarifov/" target="_blank">В ОРД VK появилось автопродление тарифов</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что появилось</dt>
+              <dd>В кабинете ОРД VK добавили опцию автопродления тарифа. Если на балансе достаточно средств, система продлит подписку автоматически. По умолчанию опция выключена.</dd>
+
+              <dt>Как активировать</dt>
+              <dd>Раздел управления платежами, выбор тарифа, включить «Подключить автопродление». Отключить можно в любой момент до следующего списания.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Нужно включить вручную, если важна непрерывность сервиса. Без этой настройки доступ прервется при нулевом балансе.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 4: Комбинаторные объявления -->
+      <div class="card secondary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">Яндекс Директ</span>
+            <span class="tag source">Яндекс Реклама (офиц.)</span>
+            <span class="tag date">4 июня 2026</span>
+          </div>
+          <h2><a href="https://yandex.ru/adv/news/chto-novogo-v-yandeks-reklame-etoy-vesnoy" target="_blank">Комбинаторные объявления вышли из беты в Яндекс Директе</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что изменилось</dt>
+              <dd>Функция стала доступна всем рекламодателям. Система автоматически формирует сочетания заголовков, текстов, изображений и видео, подбирая наиболее эффективные комбинации.</dd>
+
+              <dt>Кому подходит</dt>
+              <dd>Рекламодателям с большим количеством вариантов креативов, которые хотят сократить ручную работу при тестировании форматов.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Если не использовали из-за статуса беты, сейчас доступно для подключения в кабинете.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 5: CTV кешбэк -->
+      <div class="card secondary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">Яндекс</span>
+            <span class="tag source">Яндекс Реклама (офиц.)</span>
+            <span class="tag date">4 июня 2026</span>
+          </div>
+          <h2><a href="https://yandex.ru/adv/news/keshbek-do-12-za-pervyy-zapusk-auktsionnoy-videoreklamy-na-ctv" target="_blank">Кешбэк до 12% за первый запуск видеорекламы на Connected TV</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что за акция</dt>
+              <dd>Яндекс предлагает кешбэк до 12% (базовая ставка 5-10% плюс 2% бонус) за первый запуск аукционной видеорекламы на Connected TV. Аудитория CTV на платформе: 5,8 млн устройств, среднее время просмотра 4 ч. 11 мин. в сутки.</dd>
+
+              <dt>Кому подходит</dt>
+              <dd>Брендам и агентствам без опыта размещения на CTV. Кешбэк снижает стоимость первого эксперимента для клиентов с бюджетами на видеорекламу.</dd>
+            </dl>
+            <div class="card-conclusion">
+              CTV-сегмент в России пока меньше мобайла, но растет. Акция с кешбэком позволяет протестировать канал с частичным возвратом бюджета.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Не вошло в выпуск -->
+    <div class="section">
+      <div class="section-title">Не вошло в выпуск</div>
+      <div class="not-included-box">
+        <ul>
+          <li>
+            <a href="https://ppc.world/news/dzen-perehodit-na-novuyu-ii-arhitekturu-algoritmy-budut-ocenivat-ekspertnost-a-ne-tolko-kliki/" target="_blank">Дзен переходит на новую ИИ-архитектуру: алгоритмы будут оценивать экспертность</a>
+            <span class="reason"> — изменение алгоритма контентной платформы, не рекламного кабинета</span>
+          </li>
+          <li>
+            <a href="https://ppc.world/news/v-yandeks-markete-poyavilsya-novyy-razdel-s-videoobzorami-tovarov/" target="_blank">В Яндекс Маркете появился новый раздел с видеообзорами товаров</a>
+            <span class="reason"> — контентный функционал, не изменение условий размещения рекламы</span>
+          </li>
+          <li>
+            <a href="https://ppc.world/news/v-makse-poyavitsya-servis-beskontaktnoy-oplaty-cherez-sbp/" target="_blank">В Максе появится сервис бесконтактной оплаты через СБП</a>
+            <span class="reason"> — платежный функционал мессенджера, не рекламный кабинет</span>
+          </li>
+          <li>
+            <a href="https://ppc.world/news/google-nachal-testirovat-profili-v-poiske-dlya-brendov-i-avtorov-kontenta/" target="_blank">Google начал тестировать профили в Поиске для брендов и авторов контента</a>
+            <span class="reason"> — зарубежная платформа, функция в стадии тестирования</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="takeaway">
+      <div class="takeaway-title">SUMMARY</div>
+      <ul>
+        <li>Самое срочное: с 8 июня Яндекс убирает из интерфейса ссылки на старый Мастер отчетов. Если у команды есть сохраненные закладки на отчеты, сегодня их нужно обновить.</li>
+        <li>Акция с кешбэком 10% за рекламу в Telegram и MAX через Директ действует до 31 августа. Порог входа — 100 000 руб., совмещение с другими акциями Директа не предусмотрено. Стоит учесть это при планировании бюджетов на лето.</li>
+        <li>ОРД VK: автопродление тарифа выключено по умолчанию. Если работа с маркировкой идет через VK, нужно зайти в настройки и включить опцию, иначе сервис прервется при нулевом балансе.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+      <p>Выпуск 7 июня 2026 за период 6-7 июня</p>
+    </div>
+
+  </div>
+</body>
+</html>
