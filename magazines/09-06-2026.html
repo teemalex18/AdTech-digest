@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ - 9 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eef2f7;
+      color: #1a2332;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 28px 16px 40px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a2332;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 30px;
+      margin-bottom: 20px;
+    }
+    .header-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #64b5f6;
+      margin-bottom: 8px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #90a4ae;
+    }
+
+    /* Summary */
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin-bottom: 32px;
+      font-size: 15px;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* Section title */
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card-inner {
+      padding: 20px 24px;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 2px 8px;
+    }
+    .tag.platform {
+      background: #eff6ff;
+      color: #2563eb;
+    }
+    .tag.source {
+      background: #f1f5f9;
+      color: #64748b;
+    }
+    .tag.date {
+      background: #f1f5f9;
+      color: #94a3b8;
+    }
+    .card h2 {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+    .card h2 a {
+      color: #1a2332;
+      text-decoration: none;
+    }
+    .card h2 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .card-body {
+      font-size: 14.5px;
+      color: #374151;
+    }
+    .card-body dt {
+      font-weight: 600;
+      color: #1a2332;
+      margin-top: 12px;
+      margin-bottom: 2px;
+    }
+    .card-body dt:first-child {
+      margin-top: 0;
+    }
+    .card-body dd {
+      margin-left: 0;
+    }
+
+    /* Card conclusion - единый стиль для primary и secondary */
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    /* Not included */
+    .not-included-box {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 16px 22px;
+    }
+    .not-included-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-included-box li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.5;
+    }
+    .not-included-box li:last-child {
+      border-bottom: none;
+    }
+    .not-included-box a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .not-included-box a:hover {
+      text-decoration: underline;
+    }
+    .reason {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    /* SUMMARY block */
+    .takeaway {
+      background: #1a2332;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 30px;
+      margin-top: 8px;
+      margin-bottom: 28px;
+    }
+    .takeaway-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64b5f6;
+      margin-bottom: 18px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+    .takeaway li {
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 14.5px;
+      line-height: 1.6;
+      display: flex;
+      gap: 10px;
+    }
+    .takeaway li:last-child {
+      border-bottom: none;
+    }
+    .takeaway li::before {
+      content: "•";
+      color: #64b5f6;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+      padding: 4px 0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 14px 10px 32px; }
+      .header { padding: 22px 18px; }
+      .header h1 { font-size: 18px; }
+      .card h2 { font-size: 15px; }
+      .card-inner { padding: 16px 16px; }
+      .takeaway { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-label">AdTech-дайджест</div>
+      <h1>Рекламные кабинеты РФ</h1>
+      <div class="header-meta">Выпуск 9 июня 2026 за период 8-9 июня</div>
+    </div>
+
+    <!-- Резюме -->
+    <div class="summary">
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>МАКС, VK Реклама, Яндекс Вебмастер</strong>. Недоступные источники: AdIndex.
+    </div>
+
+    <!-- Главное -->
+    <div class="section">
+      <div class="section-title">Главное</div>
+
+      <!-- Карточка 1: Рынок МАКС 55x -->
+      <div class="card primary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">МАКС</span>
+            <span class="tag source">ppc.world / Telega.in + АРИР</span>
+            <span class="tag date">9 июня 2026</span>
+          </div>
+          <h2><a href="https://ppc.world/news/rynok-reklamy-v-makse-vyros-v-55-raz-za-polgoda/" target="_blank">Рынок рекламы в МАКС вырос в 55 раз за полгода</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что показало исследование</dt>
+              <dd>Первая публичная оценка рынка рекламы в МАКС от Telega.in и АРИР: ежемесячный объем вырос с 2 до 110 млн рублей, число активных рекламодателей - с 200 до 5 000 компаний. Прогноз на конец 2026 года - от 2 до 5 млрд рублей в зависимости от темпов роста.</dd>
+
+              <dt>Кто рекламируется</dt>
+              <dd>Образование и онлайн-курсы занимают 33% рынка, блогеры - 26%, недвижимость - 12%, товары для маркетплейсов - 7%. Большинство рекламодателей пока в фазе тестирования: 25% ведут активные тесты, 14% только планируют первый запуск, и лишь 4% размещают системно.</dd>
+
+              <dt>Главные барьеры</dt>
+              <dd>Нехватка публичных кейсов называет главным тормозом 47% участников. Среди дополнительных причин - недостаточно развитая аналитика платформы и малое число коммерческих каналов.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Рынок МАКС ещё не насыщен: системных рекламодателей единицы, конкуренция за аудиторию невысокая. Для агентств и брендов с нишевыми аудиториями - это раннее окно входа с относительно низкими ставками.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 2: VK Реклама Premium -->
+      <div class="card primary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">VK Реклама</span>
+            <span class="tag source">Click.ru</span>
+            <span class="tag date">9 июня 2026</span>
+          </div>
+          <h2><a href="https://blog.click.ru/market-news/v-vk-reklame-poyavilas-premium-podpiska-dlya-biznesa/" target="_blank">В VK Рекламе появилась премиум-подписка для бизнеса</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что включает подписка</dt>
+              <dd>Ежемесячные отраслевые бенчмарки по CPM, CPC и CTR, конкурентный анализ по введенным ID компаний-соперников, ускоренная модерация рекламных материалов и экспертная проверка креативов перед запуском.</dd>
+
+              <dt>Условия</dt>
+              <dd>Стоимость отображается в рекламном кабинете. Подписка возобновляется автоматически каждые 30 дней. Первые бенчмарки становятся доступны через 1 месяц использования. Конкурентный анализ требует 5-10 ID компаний и обрабатывается 10 рабочих дней.</dd>
+
+              <dt>Кому подходит</dt>
+              <dd>Малый и средний бизнес, а также компании, которые запускают кампании в VK регулярно и хотят ориентиров для сравнения своих показателей с рынком.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Полезен командам без накопленной статистики по CPM и CTR в VK: бенчмарки дают быстрый рыночный ориентир для обоснования бюджетов и поиска точек роста. Первые данные появятся через месяц после подключения.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Остальные обновления -->
+    <div class="section">
+      <div class="section-title">Остальные обновления</div>
+
+      <!-- Карточка 3: Яндекс Вебмастер тег менеджер -->
+      <div class="card secondary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">Яндекс Вебмастер</span>
+            <span class="tag source">Яндекс Реклама (офиц.)</span>
+            <span class="tag date">9 июня 2026</span>
+          </div>
+          <h2><a href="https://yandex.ru/adv/news/podtverzhdenie-prav-cherez-menedzher-tegov" target="_blank">В Яндекс Вебмастере появился новый способ подтверждения прав на сайт - через менеджер тегов</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что изменилось</dt>
+              <dd>Теперь права на сайт можно подтвердить через системы управления тегами - Яндекс Тег Менеджер или Google Tag Manager - без ручной вставки кода на сервер. Новый способ добавляется к уже существующим вариантам верификации.</dd>
+
+              <dt>Что проверить</dt>
+              <dd>Актуально при добавлении нового домена к Яндекс Директу или при перезапуске кампаний на новом сайте. Позволяет пройти верификацию без участия разработчиков, если на сайте уже установлен один из поддерживаемых менеджеров тегов.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Небольшое, но практичное обновление: подтверждение прав через GTM или Яндекс TM ускоряет старт рекламы на новых доменах и снижает зависимость от технических ресурсов.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Не вошло в выпуск -->
+    <div class="section">
+      <div class="section-title">Не вошло в выпуск</div>
+      <div class="not-included-box">
+        <ul>
+          <li>
+            <a href="https://news.inhouse-marketing.ru/2026/05/22/avito-reklama-zapyskaet-avtotargeting/" target="_blank">Авито Реклама запускает автотаргетинг</a>
+            <span class="reason"> - вне окна дат, первая публикация 22 мая 2026</span>
+          </li>
+          <li>
+            <a href="https://magnetto.pro/media/news/magnettopro-snizhaet-komissiyu-s-15-do-10-na-pervoe-popolnenie-v-aprele/" target="_blank">Magnetto.pro снижает комиссию с 15% до 10% на первое пополнение</a>
+            <span class="reason"> - промоакция апреля, вне окна дат</span>
+          </li>
+          <li>
+            <a href="https://blog.click.ru/marketplejsy/reklama-click-out-na-marketpleysah/" target="_blank">Реклама click-out на маркетплейсах: подробный гайд</a>
+            <span class="reason"> - обучающее руководство без новой функции или изменения условий</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="takeaway">
+      <div class="takeaway-title">SUMMARY</div>
+      <ul>
+        <li>Первое публичное исследование МАКС дает рынку точку отсчета: 110 млн рублей в месяц и 5 000 активных рекламодателей - это уже не эксперимент. При этом 75% участников ещё в фазе тестирования, конкуренция невысокая. Для агентств - это аргумент в пользу раннего входа, пока ставки и пороги не выросли.</li>
+        <li>VK Реклама запустила платный аналитический продукт с бенчмарками CPM/CPC/CTR по отрасли. Полезен командам без накопленной исторической статистики - даёт ориентиры для переговоров о бюджетах и оценки эффективности кампаний.</li>
+        <li>Подтверждение прав на сайт через Tag Manager в Яндексе снижает зависимость от разработчиков при запуске рекламы на новых доменах. Стоит взять на заметку при онбординге новых клиентов или запуске посадочных.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      AdTech-дайджест: рекламные кабинеты РФ<br>
+      Выпуск 9 июня 2026 за период 8-9 июня
+    </div>
+
+  </div>
+</body>
+</html>
