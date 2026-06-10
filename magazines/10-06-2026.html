@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ - 10 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eef2f7;
+      color: #1a2332;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 28px 16px 40px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a2332;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 30px;
+      margin-bottom: 20px;
+    }
+    .header-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #64b5f6;
+      margin-bottom: 8px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #90a4ae;
+    }
+
+    /* Summary */
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin-bottom: 32px;
+      font-size: 15px;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* Section title */
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card-inner {
+      padding: 20px 24px;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 2px 8px;
+    }
+    .tag.platform {
+      background: #eff6ff;
+      color: #2563eb;
+    }
+    .tag.source {
+      background: #f1f5f9;
+      color: #64748b;
+    }
+    .tag.date {
+      background: #f1f5f9;
+      color: #94a3b8;
+    }
+    .card h2 {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+    .card h2 a {
+      color: #1a2332;
+      text-decoration: none;
+    }
+    .card h2 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .card-body {
+      font-size: 14.5px;
+      color: #374151;
+    }
+    .card-body dt {
+      font-weight: 600;
+      color: #1a2332;
+      margin-top: 12px;
+      margin-bottom: 2px;
+    }
+    .card-body dt:first-child {
+      margin-top: 0;
+    }
+    .card-body dd {
+      margin-left: 0;
+    }
+
+    /* Card conclusion - единый стиль для primary и secondary */
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    /* Not included */
+    .not-included-box {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 16px 22px;
+    }
+    .not-included-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-included-box li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.5;
+    }
+    .not-included-box li:last-child {
+      border-bottom: none;
+    }
+    .not-included-box a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .not-included-box a:hover {
+      text-decoration: underline;
+    }
+    .reason {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    /* SUMMARY block */
+    .takeaway {
+      background: #1a2332;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 30px;
+      margin-top: 8px;
+      margin-bottom: 28px;
+    }
+    .takeaway-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #64b5f6;
+      margin-bottom: 18px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+    .takeaway li {
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 14.5px;
+      line-height: 1.6;
+      display: flex;
+      gap: 10px;
+    }
+    .takeaway li:last-child {
+      border-bottom: none;
+    }
+    .takeaway li::before {
+      content: "•";
+      color: #64b5f6;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+      padding: 4px 0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 14px 10px 32px; }
+      .header { padding: 22px 18px; }
+      .header h1 { font-size: 18px; }
+      .card h2 { font-size: 15px; }
+      .card-inner { padding: 16px 16px; }
+      .takeaway { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-label">AdTech-дайджест</div>
+      <h1>Рекламные кабинеты РФ</h1>
+      <div class="header-meta">Выпуск 10 июня 2026 за период 9-10 июня</div>
+    </div>
+
+    <!-- Резюме -->
+    <div class="summary">
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>VK Реклама, ОРД VK, Google</strong>. Недоступные источники: ppc.world.
+    </div>
+
+    <!-- Главное -->
+    <div class="section">
+      <div class="section-title">Главное</div>
+
+      <!-- Карточка 1: VK Реклама - продвижение каналов -->
+      <div class="card primary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">VK Реклама</span>
+            <span class="tag source">Sostav.ru, AdIndex</span>
+            <span class="tag date">10 июня 2026</span>
+          </div>
+          <h2><a href="https://www.sostav.ru" target="_blank">VK Реклама расширила возможности продвижения каналов</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что изменилось</dt>
+              <dd>В рекламном кабинете VK Реклама появился единый инструмент для продвижения каналов. Обновление объединяет управление кампаниями для каналов в одном интерфейсе и расширяет доступные опции таргетинга и размещения.</dd>
+
+              <dt>Кому подходит</dt>
+              <dd>Владельцам каналов ВКонтакте, блогерам и агентствам, которые ведут продвижение каналов через VK Рекламу - особенно при работе с несколькими каналами одновременно.</dd>
+
+              <dt>Что проверить</dt>
+              <dd>Обновленный раздел продвижения каналов уже доступен в рекламном кабинете VK Реклама.</dd>
+            </dl>
+            <div class="card-conclusion">
+              VK продолжает укреплять экосистему каналов как рекламного инвентаря. Единый инструмент снижает операционную нагрузку при управлении кампаниями для нескольких каналов.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 2: ОРД VK - автопродление тарифов -->
+      <div class="card primary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">ОРД VK</span>
+            <span class="tag source">Click.ru</span>
+            <span class="tag date">10 июня 2026</span>
+          </div>
+          <h2><a href="https://blog.click.ru/market-news/v-ord-vk-dobavili-avtoprodlenie-tarifov/" target="_blank">В ОРД VK добавили автопродление тарифов</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что изменилось</dt>
+              <dd>Оператор рекламных данных VK добавил автоматическое продление тарифного плана. При истечении текущего тарифа система подключит следующий, если на счете достаточно средств. По умолчанию функция отключена - активируется вручную в настройках оплаты.</dd>
+
+              <dt>Контекст</dt>
+              <dd>ОРД VK перешел на платные тарифы в мае 2026. Сбой в оплате или истечение тарифа без продления грозит перерывом в маркировке и нарушением обязательного требования.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Для тех, кто маркирует рекламу через ОРД VK: стоит зайти в настройки и включить автопродление - это снимает риск технического нарушения из-за ручного пропуска даты оплаты.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Остальные обновления -->
+    <div class="section">
+      <div class="section-title">Остальные обновления</div>
+
+      <!-- Карточка 3: Google Consent Mode v2 -->
+      <div class="card secondary">
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="tag platform">Google Analytics / Google Ads</span>
+            <span class="tag source">Cossa</span>
+            <span class="tag date">10 июня 2026</span>
+          </div>
+          <h2><a href="https://www.cossa.ru/blogs/zaley_cash/349081/" target="_blank">Дедлайн 15 июня: проверьте настройки Consent Mode для Google</a></h2>
+          <div class="card-body">
+            <dl>
+              <dt>Что меняется</dt>
+              <dd>Google Consent Mode v2 становится обязательным стандартом. Без корректной передачи четырех сигналов согласия (ad_storage, analytics_storage, ad_user_data, ad_personalization) алгоритмы Google Ads перестают учитывать часть конверсий и аудиторий при оптимизации кампаний.</dd>
+
+              <dt>Кому актуально</dt>
+              <dd>Сайтам с международной аудиторией, а также тем, кто использует Google Analytics 4 совместно с Google Ads - независимо от основного рынка размещения рекламы.</dd>
+            </dl>
+            <div class="card-conclusion">
+              Если GA4 и Google Ads подключены на вашем сайте - до 15 июня нужно проверить корректность передачи сигналов согласия. Без них автостратегии будут работать с неполными данными о конверсиях.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Не вошло в выпуск -->
+    <div class="section">
+      <div class="section-title">Не вошло в выпуск</div>
+      <div class="not-included-box">
+        <ul>
+          <li>
+            <a href="https://blog.click.ru/market-news/rsya-zapustila-birzhevuyu-model-monetizacii-dlya-kanalov-v-maks/" target="_blank">РСЯ запустила биржевую модель монетизации для каналов в МАКС</a>
+            <span class="reason"> - вне окна дат, первая публикация 08.06</span>
+          </li>
+          <li>
+            <a href="https://adindex.ru/news/right/2026/06/10/345813.phtml" target="_blank">Минцифры объявило о снятии ограничений с Roblox</a>
+            <span class="reason"> - регуляторное решение, не затрагивает рекламные кабинеты</span>
+          </li>
+          <li>
+            <a href="https://www.cossa.ru/news/348989/" target="_blank">Рынок рекламы в МАКС вырос в 55 раз за полгода</a>
+            <span class="reason"> - аналитика рынка без изменений в рекламном инструменте</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="takeaway">
+      <div class="takeaway-title">SUMMARY</div>
+      <ul>
+        <li>VK Реклама планомерно расширяет инструментарий: новый единый интерфейс для продвижения каналов упрощает работу с несколькими каналами одновременно. Для агентств с клиентами-каналовладельцами - повод проверить обновления в кабинете.</li>
+        <li>ОРД VK стал платным с мая - автопродление тарифов снижает операционный риск при маркировке. Функция отключена по умолчанию, включается вручную. Рекомендуется активировать для всех активных аккаунтов.</li>
+        <li>Для проектов с международным трафиком или использующих GA4 вместе с Google Ads: дедлайн по Consent Mode v2 - 15 июня. После него стратегии будут оптимизироваться без части данных о конверсиях.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      AdTech-дайджест: рекламные кабинеты РФ<br>
+      Выпуск 10 июня 2026 за период 9-10 июня
+    </div>
+
+  </div>
+</body>
+</html>
