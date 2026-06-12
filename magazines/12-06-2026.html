@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 12 июня 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f2f5;
+      color: #1a1a1a;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 820px;
+      margin: 32px auto;
+      padding: 0 16px 40px;
+    }
+
+    /* Header */
+    .header {
+      background: #0f172a;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .header .subtitle {
+      color: #94a3b8;
+      font-size: 0.88rem;
+    }
+
+    /* Summary */
+    .summary {
+      background: #fff;
+      border-radius: 10px;
+      border-left: 4px solid #2563eb;
+      padding: 18px 24px;
+      margin-bottom: 20px;
+      font-size: 0.93rem;
+      color: #374151;
+      line-height: 1.65;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.08em;
+    }
+    .unavailable {
+      margin-top: 8px;
+      color: #9ca3af;
+      font-size: 0.82rem;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #6b7280;
+      margin: 28px 0 10px;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      padding: 24px;
+      margin-bottom: 14px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #111827;
+      line-height: 1.4;
+    }
+    .card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .card-title a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .meta-tag {
+      font-size: 0.76rem;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+    .meta-tag.platform { background: #eff6ff; color: #1d4ed8; }
+    .meta-tag.source   { background: #f3f4f6; color: #6b7280; }
+    .meta-tag.date     { background: #f3f4f6; color: #6b7280; }
+
+    .card-body {
+      font-size: 0.9rem;
+      color: #374151;
+    }
+    .card-body dl { margin: 0; }
+    .card-body dt {
+      font-weight: 600;
+      font-size: 0.82rem;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 12px;
+      margin-bottom: 3px;
+    }
+    .card-body dd {
+      margin-left: 0;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    /* Conclusion */
+    .card-conclusion {
+      background: #f8faff;
+      border-left: 3px solid #bfdbfe;
+      border-radius: 6px;
+      padding: 11px 14px;
+      margin-top: 16px;
+      font-size: 0.87rem;
+      color: #374151;
+      line-height: 1.55;
+    }
+    .card-conclusion strong {
+      color: #1e40af;
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.73rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* Missed items */
+    .missed-list {
+      padding: 4px 0;
+    }
+    .missed-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .missed-item:last-child {
+      border-bottom: none;
+    }
+    .missed-item a {
+      color: #2563eb;
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .missed-item a:hover {
+      text-decoration: underline;
+    }
+    .missed-reason {
+      color: #9ca3af;
+      font-size: 0.8rem;
+      margin-top: 2px;
+    }
+
+    /* Takeaway */
+    .takeaway {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-top: 28px;
+    }
+    .takeaway h2 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #64748b;
+      margin-bottom: 18px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+    .takeaway li {
+      display: flex;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid #1e293b;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+    .takeaway li:last-child {
+      border-bottom: none;
+    }
+    .takeaway li::before {
+      content: '';
+      flex-shrink: 0;
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 28px 0 8px;
+      color: #9ca3af;
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+    .footer .footer-brand {
+      font-weight: 600;
+      color: #6b7280;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { margin: 12px auto; }
+      .header { padding: 22px 20px; border-radius: 10px; }
+      .header h1 { font-size: 1.2rem; }
+      .card { padding: 18px 16px; }
+      .takeaway { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="subtitle">Выпуск 12 июня 2026 за период 11-12 июня</div>
+  </header>
+
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>Chrome (Google), Яндекс Директ, Adfox</strong>.
+    <div class="unavailable">Недоступные источники: ppc.world.</div>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <div class="card-title">
+      <a href="https://adindex.ru/news/digital/2026/06/11/345858.phtml">Google Chrome 150 отключит блокировщики рекламы в конце июня</a>
+    </div>
+    <div class="card-meta">
+      <span class="meta-tag platform">Google Chrome</span>
+      <span class="meta-tag source">AdIndex</span>
+      <span class="meta-tag date">11 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <dl>
+        <dt>Что произошло</dt>
+        <dd>Google переводит Chrome на Manifest V3. С выходом Chrome 150 в конце июня 2026 года браузер прекратит поддержку расширений на Manifest V2 - к ним относятся uBlock Origin и большинство популярных блокировщиков рекламы. Временное исключение сделано только для Enterprise. Остальным пользователям предложены Firefox и Chromium-форки как альтернативы.</dd>
+        <dt>Почему важно</dt>
+        <dd>У миллионов пользователей Chrome исчезнут инструменты блокировки рекламы. Это увеличит видимую аудиторию для медийки, видео и контекста. Вероятна корректировка CPM по мере изменения объёма доступного инвентаря.</dd>
+        <dt>Кому следить</dt>
+        <dd>Всем, кто ведёт кампании с оплатой за охват в Chrome-трафике. Особенно актуально для CPM-закупок, видеорекламы и паблишеров с монетизацией через баннеры.</dd>
+      </dl>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод</strong>
+      С конца июня охват в Chrome вырастет органически. Следите за динамикой CPM и CTR в первые недели после выхода Chrome 150 - возможны заметные изменения в статистике кампаний.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-title">
+      <a href="https://yandex.ru/adv/news/gostinitsy-turisticheskie-servisy-pervye-pozitsii-bloka-otelej">Яндекс Директ: гостиницы и туристические сервисы теперь в тематическом блоке отелей поиска</a>
+    </div>
+    <div class="card-meta">
+      <span class="meta-tag platform">Яндекс Директ</span>
+      <span class="meta-tag source">Яндекс Реклама</span>
+      <span class="meta-tag date">11 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <dl>
+        <dt>Что изменилось</dt>
+        <dd>Гостиницы, хостелы, санатории, апартаменты, глэмпинги, базы отдыха и агрегаторы теперь могут занимать первые позиции в тематическом блоке отелей в поиске Яндекс. Настройка ведётся через Единые перфоманс-кампании в Директ Pro (профессиональный режим). Данные об организации автоматически берутся из профиля в Яндекс Бизнесе.</dd>
+        <dt>Охват формата</dt>
+        <dd>Тематический блок появляется в ответ на более чем 80% запросов по теме отелей. Каждый второй такой запрос заканчивается кликом по блоку. На десктопе - до 3 объявлений, на мобильном - до 7, на карте - до 10.</dd>
+        <dt>Акция до 31 августа</dt>
+        <dd>Промокод YNDXHOTEL даёт +50% к пополнению счёта (минимальное пополнение 5 000 руб., максимальный бонус 10 000 руб.).</dd>
+      </dl>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод</strong>
+      Если в портфеле есть клиенты из туристической вертикали - проверьте готовность их профиля в Яндекс Бизнесе и запустите тест до конца августа, пока действует бонус к пополнению.
+    </div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <div class="card-title">
+      <a href="https://yandex.ru/adv/news/obnovleniya-adfox-obnovlennyj-interfejs-nastroek-monetizacii-nacelivanie-bez-cookie-vtr-i-novye-otchety">Adfox: большое обновление монетизации, отчётности и таргетинга</a>
+    </div>
+    <div class="card-meta">
+      <span class="meta-tag platform">Adfox</span>
+      <span class="meta-tag source">Яндекс Реклама</span>
+      <span class="meta-tag date">11 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <dl>
+        <dt>Что изменилось</dt>
+        <dd>Сразу несколько обновлений: переработан интерфейс настроек монетизации с группировкой по форматам РСЯ и Header Bidding; прогноз выполнения кампаний заменил показатель "Соответствие плану" - теперь с цветовой индикацией (зелёный / оранжевый / красный); добавлены отчёты по частотному распределению пользователей и охвату кампании; в конструктор отчётов добавлен VTR; конструктор отчётов теперь работает на мобильных устройствах.</dd>
+        <dt>Дедлайн по API</dt>
+        <dd>Запущен Statistics API v2. Поддержка API v1 прекращается 1 августа 2026 - все интеграции необходимо перевести на v2 заранее.</dd>
+        <dt>Нацеливание без cookie</dt>
+        <dd>Новые методы таргетинга: через параметры URL и идентификаторы устройств - для работы в средах без cookie и в WebView.</dd>
+      </dl>
+    </div>
+    <div class="card-conclusion">
+      <strong>Вывод</strong>
+      Если используете Adfox через API - миграция на v2 обязательна до 1 августа. Для работы с монетизацией рекомендуется ознакомиться с обновлённым интерфейсом.
+    </div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="card secondary">
+    <div class="missed-list">
+      <div class="missed-item">
+        <a href="https://blog.click.ru/market-news/v-vk-reklame-poyavilas-premium-podpiska-dlya-biznesa/">VK Реклама: запущена платная премиум-подписка для рекламодателей</a>
+        <div class="missed-reason">Первая публикация 9 июня, вне окна дат. Включает ежемесячные бенчмарки CPM/CPC/CTR, ускоренную модерацию и квартальный анализ конкурентов.</div>
+      </div>
+      <div class="missed-item">
+        <a href="https://blog.click.ru/market-news/v-ord-vk-dobavili-avtoprodlenie-tarifov/">В ОРД VK добавили автопродление тарифов</a>
+        <div class="missed-reason">Первая публикация 10 июня, вне окна дат.</div>
+      </div>
+      <div class="missed-item">
+        <a href="https://yandex.ru/adv/news/reklama-v-messendzherakh-direct-vozmozhnost-vybora-kanalov-v-maks">Яндекс Директ: выбор каналов МАКС для рекламы в мессенджерах</a>
+        <div class="missed-reason">Первая публикация 8 июня, вне окна дат.</div>
+      </div>
+      <div class="missed-item">
+        <a href="https://www.cossa.ru/news/348989/">Рынок рекламы в MAX вырос в 55 раз за полгода - исследование Telega.in и АРИР</a>
+        <div class="missed-reason">8 июня, вне окна дат. Исследование рынка без изменения рекламного кабинета.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li>С конца июня рекламодателям в Chrome-трафике стоит ожидать органического роста видимости объявлений. Следите за CPM и показателями охвата после выхода Chrome 150 - возможны заметные изменения в статистике кампаний.</li>
+      <li>Туристическая вертикаль в Яндексе получила новый инструмент с высоким охватом. Блок отелей появляется в 80% релевантных запросов - протестируйте до конца августа, пока действует бонус к пополнению.</li>
+      <li>Если работаете с Adfox через Statistics API v1 - миграция на v2 становится обязательной задачей: поддержка v1 закрывается 1 августа 2026.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <span class="footer-brand">AdTech-дайджест: рекламные кабинеты РФ</span>
+    Выпуск 12 июня 2026 за период 11-12 июня
+  </footer>
+
+</div>
+</body>
+</html>
