@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ | 13 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .header {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 20px;
+    }
+
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .header-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 8px;
+    }
+
+    .header-meta {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      font-size: 15px;
+      color: #334155;
+      line-height: 1.7;
+    }
+
+    .summary p + p {
+      margin-top: 6px;
+    }
+
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 12px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      padding: 24px 26px;
+      margin-bottom: 14px;
+    }
+
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+
+    .card-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card-title a:hover {
+      color: #2563eb;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .badge.platform {
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .badge.date {
+      background: #f8fafc;
+      color: #64748b;
+    }
+
+    .badge.source {
+      background: #f1f5f9;
+      color: #475569;
+    }
+
+    .card-field {
+      margin-bottom: 14px;
+    }
+
+    .card-field-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #94a3b8;
+      margin-bottom: 4px;
+    }
+
+    .card-field-value {
+      font-size: 15px;
+      color: #334155;
+      line-height: 1.65;
+    }
+
+    .card-field-value ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    .card-field-value li {
+      margin-bottom: 4px;
+    }
+
+    .card-conclusion {
+      margin-top: 16px;
+      padding: 12px 16px;
+      background: #f8fafc;
+      border-left: 3px solid #93c5fd;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.65;
+    }
+
+    .missed-card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #e2e8f0;
+      padding: 18px 26px;
+      margin-bottom: 14px;
+    }
+
+    .missed-list {
+      list-style: none;
+    }
+
+    .missed-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.55;
+    }
+
+    .missed-list li:last-child {
+      border-bottom: none;
+    }
+
+    .missed-list a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .missed-list a:hover {
+      text-decoration: underline;
+    }
+
+    .takeaway {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 32px;
+      margin-bottom: 20px;
+    }
+
+    .takeaway-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #60a5fa;
+      margin-bottom: 16px;
+    }
+
+    .takeaway-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .takeaway-list li {
+      font-size: 15px;
+      color: #cbd5e1;
+      line-height: 1.65;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .takeaway-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      background: #3b82f6;
+      border-radius: 50%;
+    }
+
+    .footer {
+      background: #0f172a;
+      color: #64748b;
+      border-radius: 12px;
+      padding: 20px 28px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer p + p {
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 12px 8px; }
+      .header { padding: 22px 20px; }
+      .header-title { font-size: 18px; }
+      .card { padding: 18px 16px; }
+      .missed-card { padding: 14px 16px; }
+      .takeaway { padding: 22px 20px; }
+      .footer { padding: 16px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header">
+    <div class="header-label">Дайджест</div>
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 13 июня 2026 за период 12-13 июня</div>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>Яндекс (Adfox), VK (ОРД), MAX</strong>.</p>
+    <p>Недоступные источники: AdIndex, ppc.world.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <article class="card primary">
+    <div class="card-title">
+      <a href="https://yandex.ru/adv/news/obnovleniya-adfox-obnovlennyj-interfejs-nastroek-monetizacii-nacelivanie-bez-cookie-vtr-i-novye-otchety" target="_blank">Adfox: обновлены монетизация, отчетность и интерфейс</a>
+    </div>
+    <div class="card-meta">
+      <span class="badge platform">Яндекс / Adfox</span>
+      <span class="badge date">11 июня 2026</span>
+      <span class="badge source">Яндекс Реклама (официально)</span>
+    </div>
+
+    <div class="card-field">
+      <div class="card-field-label">Что изменилось</div>
+      <div class="card-field-value">
+        Яндекс опубликовал дайджест обновлений Adfox. Изменения сразу в нескольких частях платформы:
+        <ul>
+          <li>Новый интерфейс монетизации: РСЯ и внешние сети управляются в одном разделе</li>
+          <li>Метрика "Прогноз выполнения" для кампаний с цветовой индикацией рисков</li>
+          <li>Аудиторные отчеты по частоте и охвату, сегменты Яндекс Крипты для таргетинга</li>
+          <li>Новый API v2 статистики, работает параллельно со старым до августа 2026</li>
+          <li>Конструктор отчетов теперь доступен на мобильных устройствах</li>
+          <li>Обновленный раздел недокрутов с иерархией суперкампания / флайт</li>
+          <li>Автоматизация отчетности в ЕРИР с массовой отправкой актов</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-field">
+      <div class="card-field-label">Почему важно</div>
+      <div class="card-field-value">Одно из самых крупных обновлений Adfox за последнее время. Затрагивает монетизацию, аналитику, интерфейс недокрутов и операционную работу с ЕРИР. Срок поддержки старого API ограничен: переход на v2 нужно завершить до августа 2026.</div>
+    </div>
+
+    <div class="card-field">
+      <div class="card-field-label">Кому полезно</div>
+      <div class="card-field-value">Паблишерам на Adfox, программатик-специалистам и командам, у которых есть интеграция через Adfox API.</div>
+    </div>
+
+    <div class="card-conclusion">
+      Если есть интеграция через API, миграция на v2 приоритетна до августа. Остальные изменения, прежде всего новый интерфейс монетизации и аудиторные отчеты, стоит проверить в кабинете в ближайшее время.
+    </div>
+  </article>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <article class="card secondary">
+    <div class="card-title">
+      <a href="https://blog.click.ru/market-news/v-ord-vk-dobavili-avtoprodlenie-tarifov/" target="_blank">ОРД VK: появилось автопродление тарифов</a>
+    </div>
+    <div class="card-meta">
+      <span class="badge platform">VK / ОРД</span>
+      <span class="badge date">10 июня 2026</span>
+      <span class="badge source">Click.ru</span>
+    </div>
+
+    <div class="card-field">
+      <div class="card-field-label">Что изменилось</div>
+      <div class="card-field-value">В ОРД VK добавлена возможность автоматического продления тарифа. По умолчанию функция отключена. Для активации нужно перейти в раздел управления оплатой, выбрать тариф и включить опцию. Отключить можно в любой момент до следующего списания.</div>
+    </div>
+
+    <div class="card-field">
+      <div class="card-field-label">Кому полезно</div>
+      <div class="card-field-value">Агентствам и рекламодателям, которые используют ОРД VK для маркировки рекламы. Особенно актуально для команд с большим объемом кампаний, где ручное продление создает операционный риск.</div>
+    </div>
+
+    <div class="card-conclusion">
+      Небольшое, но полезное изменение. Прерывание доступа к ОРД влечет технические проблемы с маркировкой. Стоит включить автопродление и убедиться, что на балансе достаточно средств.
+    </div>
+  </article>
+
+  <article class="card secondary">
+    <div class="card-title">
+      <a href="https://www.cossa.ru/news/348989/" target="_blank">Рынок рекламы в MAX вырос в 55 раз за полгода</a>
+    </div>
+    <div class="card-meta">
+      <span class="badge platform">MAX</span>
+      <span class="badge date">8 июня 2026</span>
+      <span class="badge source">Cossa / Telega.in + АРИР</span>
+    </div>
+
+    <div class="card-field">
+      <div class="card-field-label">Что показало исследование</div>
+      <div class="card-field-value">Первое публичное исследование рекламного рынка MAX. С октября 2025 по март 2026 объем вырос в 55 раз. Крупнейшие категории: образование (33,4%), блогеры (25,5%), недвижимость (11,8%). Половина рекламодателей тратит менее 10 млн рублей в год. Прогноз на конец 2026: 2-2,5 млрд рублей.</div>
+    </div>
+
+    <div class="card-field">
+      <div class="card-field-label">Барьеры для входа</div>
+      <div class="card-field-value">Главные трудности по данным опроса: нехватка кейсов (48%), сложность подбора каналов (43%).</div>
+    </div>
+
+    <div class="card-conclusion">
+      Цифра 55 раз отражает эффект низкой базы, но тренд реальный. Средние бюджеты невелики, рынок ещё не насыщен. Для рекламодателей в образовании или недвижимости MAX сейчас - канал с относительно низкой конкуренцией.
+    </div>
+  </article>
+
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="missed-card">
+    <ul class="missed-list">
+      <li>
+        <a href="https://news.inhouse-marketing.ru/2026/05/25/vk-tech-zapystil-servis-dlia-avtomatizacii-marketingovyh-issledovanii-vk-ai-researcher/" target="_blank">VK Tech запустил VK AI Researcher для автоматизации маркетинговых исследований</a>
+        - вне окна дат, первая публикация 25 мая; инструмент для исследований, не рекламный кабинет
+      </li>
+      <li>
+        <a href="https://news.inhouse-marketing.ru/2026/05/25/kompaniia-vk-predstavila-finansovye-rezyltaty-za-i-kvartal-2026-goda/" target="_blank">VK: финансовые результаты за I квартал 2026 года</a>
+        - вне окна дат, финансовая отчетность компании без продуктовых изменений
+      </li>
+      <li>
+        <a href="https://magnetto.pro/media/news/Besplatnyj-webinar-reklama-v-max/" target="_blank">Вебинар: реклама в MAX, как бизнесу стартовать</a>
+        - анонс мероприятия, не продуктовое обновление
+      </li>
+      <li>
+        <a href="https://new-retail.ru/business/e_commerce/stoit_li_proizvoditelyam_tovarov_ukhodit_s_marketpleysov_v_2026_godu_i_kak_effektivno_na_nikh_rabota/" target="_blank">Стоит ли производителям уходить с маркетплейсов в 2026 году</a>
+        - аналитика рынка без изменений рекламного инструмента
+      </li>
+    </ul>
+  </div>
+
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Adfox выпустил комплексное обновление: новый интерфейс монетизации, метрика прогноза выполнения, аудиторные отчеты, API v2. Командам с интеграцией через API нужно завершить переход до августа 2026.</li>
+      <li>ОРД VK добавил автопродление тарифов. Операционно полезная мелочь для агентств: снижает риск прерывания маркировки из-за забытого продления.</li>
+      <li>Первое публичное исследование рынка MAX дает ориентиры: 55-кратный рост с низкой базы, невысокие средние бюджеты, конкуренция ещё не высокая. Полезно для планирования экспериментов с каналом, особенно в образовании и недвижимости.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 13 июня 2026 за период 12-13 июня</p>
+  </footer>
+
+</div>
+</body>
+</html>
