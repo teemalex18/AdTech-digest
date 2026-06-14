@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ - 14 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      background: #f4f5f7;
+      color: #1a1a2e;
+    }
+
+    a { color: #1a6ef5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #a8b2d8;
+    }
+
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-left: 4px solid #7b8cde;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .summary p {
+      font-size: 15px;
+      color: #444;
+    }
+    .stat {
+      display: inline-block;
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+      background: #f0f2ff;
+      border-radius: 6px;
+      padding: 1px 8px;
+    }
+    .summary-note {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 32px 0 14px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .card.primary {
+      border-left: 4px solid #1a6ef5;
+    }
+    .card.secondary {
+      border-left: 4px solid #d0d4e8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .badge-platform { background: #eef2ff; color: #3d5af1; }
+    .badge-date { background: #f3f4f6; color: #666; }
+    .badge-new { background: #e6f9f0; color: #0d7a45; }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card h2 a {
+      color: #1a1a2e;
+    }
+    .card h2 a:hover {
+      color: #1a6ef5;
+      text-decoration: none;
+    }
+    .card-source {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-source a { color: #1a6ef5; }
+
+    .card-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin: 14px 0 4px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    .card-verdict {
+      background: #f7f9ff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #2d3a6e;
+      border-left: 3px solid #7b8cde;
+    }
+
+    .not-included {
+      background: #fafafa;
+      border: 1px solid #e4e6ee;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .not-included ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+    .not-included ul li {
+      margin-bottom: 8px;
+    }
+    .not-included ul li:last-child { margin-bottom: 0; }
+    .not-included a { color: #555; }
+    .not-included a:hover { color: #1a6ef5; text-decoration: underline; }
+
+    .takeaway {
+      background: #1a1a2e;
+      color: #e8ecff;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
+    .takeaway .section-title {
+      color: #7b8cde;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    .takeaway p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #c9d1f0;
+    }
+    .takeaway p:last-child { margin-bottom: 0; }
+
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 21px; }
+      .card h2 { font-size: 16px; }
+      .wrapper { padding: 16px 12px 48px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 14 июня 2026 за период 13-14 июня</div>
+  </div>
+
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">7</span> релевантных обновлений.
+      Затронуты платформы: <strong>Wildberries, MAX, VK Реклама, Яндекс Реклама, Telegram Ads</strong>.
+    </p>
+    <p class="summary-note">Недоступные источники: AdIndex, ppc.world.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">Новый формат</span>
+      <span class="badge badge-date">13-14 июня 2026</span>
+    </div>
+    <h2><a href="https://magnetto.pro" target="_blank">Wildberries запустил медийную рекламу для брендов</a></h2>
+    <div class="card-source">Источник: <a href="https://magnetto.pro" target="_blank">Magnetto.pro</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>Wildberries запустил медийный рекламный инструмент для брендов. До этого маркетплейс предлагал преимущественно перформанс-форматы для продвижения карточек товаров.</p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>Медийные форматы открывают возможность для имиджевых кампаний внутри платформы с коммерческой аудиторией. Это новый инвентарь без необходимости выводить пользователя за периметр маркетплейса.</p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>Брендам с присутствием на Wildberries, решающим охватные и имиджевые задачи. Агентствам в ecom-сегменте стоит заранее запросить форматы и условия размещения.</p>
+
+    <div class="card-verdict">
+      Запуск медийной рекламы на Wildberries открывает новый канал для брендинга там, где уже сосредоточена покупательская аудитория. Стоит запросить медиакит и сопоставить условия с внешними охватными инструментами.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">MAX</span>
+      <span class="badge badge-new">Новый таргетинг</span>
+      <span class="badge badge-date">13-14 июня 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news" target="_blank">MAX: в рекламном кабинете появился выбор каналов для показов</a></h2>
+    <div class="card-source">Источник: <a href="https://yandex.ru/adv/news" target="_blank">Яндекс Реклама</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>В рекламном кабинете мессенджера MAX добавлена возможность выбирать конкретные каналы для размещения рекламы. Раньше показы распределялись по всему инвентарю без контроля контентного окружения.</p>
+
+    <div class="card-section-label">Возможности</div>
+    <p>Выбор каналов позволяет таргетировать аудиторию по тематике контента, управлять brand safety и исключать нерелевантное окружение. Формат приближается к размещению в тематических медиа.</p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>Рекламодателям с требованиями к контентному окружению и brand safety. Особенно актуально для брендов, выбирающих площадки с нулевой терпимостью к нежелательному контексту.</p>
+
+    <div class="card-verdict">
+      Таргетинг по каналам в MAX - шаг от массового охвата к управляемому размещению. Для рекламодателей с требованиями к контексту это существенное расширение возможностей кабинета.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Реклама</span>
+      <span class="badge badge-new">Новый продукт</span>
+      <span class="badge badge-date">13-14 июня 2026</span>
+    </div>
+    <h2><a href="https://click.ru/blog" target="_blank">VK Реклама запустила премиум-подписку</a></h2>
+    <div class="card-source">Источник: <a href="https://click.ru/blog" target="_blank">Click.ru</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>VK Ads запустила новый тарифный уровень - премиум-подписку с расширенными возможностями. Это изменение тарифной модели платформы, которое затрагивает условия работы агентств и крупных рекламодателей.</p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>Появление премиум-уровня разделяет рекламодателей по условиям работы с платформой. Состав подписки и ценообразование могут влиять на доступный функционал и итоговую стоимость размещения.</p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>Агентствам и рекламодателям с регулярными и крупными размещениями в VK Рекламе - оценить, соответствует ли текущий объем условиям нового уровня.</p>
+
+    <div class="card-verdict">
+      Стоит изучить условия премиум-подписки VK Ads и сопоставить с текущими расходами. Для крупных клиентов смена тарифа может изменить доступный набор инструментов или стоимость размещения.
+    </div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Реклама</span>
+      <span class="badge badge-date">13-14 июня 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news" target="_blank">Яндекс Реклама: 10% кэшбэк на рекламу в мессенджерах</a></h2>
+    <div class="card-source">Источник: <a href="https://yandex.ru/adv/news" target="_blank">Яндекс Реклама</a></div>
+
+    <div class="card-section-label">Условия акции</div>
+    <p>Яндекс Реклама запустила акцию: 10% кэшбэк на рекламные размещения в мессенджерах. Акция снижает фактическую стоимость рекламы в этом инвентаре.</p>
+
+    <div class="card-verdict">
+      Если в планах есть тест мессенджеров или наращивание бюджета в этом формате, сейчас удобный момент. Уточните сроки действия и условия получения кэшбэка в личном кабинете.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Telegram Ads</span>
+      <span class="badge badge-date">13-14 июня 2026</span>
+    </div>
+    <h2><a href="https://magnetto.pro" target="_blank">Telegram Ads расширил список стран для таргетинга</a></h2>
+    <div class="card-source">Источник: <a href="https://magnetto.pro" target="_blank">Magnetto.pro</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>Telegram Ads расширил список стран, доступных для геотаргетинга. Рекламодатели получают доступ к аудиториям в новых географиях без выхода за пределы платформы.</p>
+
+    <div class="card-verdict">
+      Актуально для рекламодателей с аудиторией за пределами России или ведущих кампании на международный рынок через Telegram.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Реклама</span>
+      <span class="badge badge-date">13-14 июня 2026</span>
+    </div>
+    <h2><a href="https://click.ru/blog" target="_blank">VK Реклама: автопродление тарифных планов</a></h2>
+    <div class="card-source">Источник: <a href="https://click.ru/blog" target="_blank">Click.ru</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>VK Реклама ввела автоматическое продление тарифных планов. Подписка будет продлеваться без ручного подтверждения по истечении срока.</p>
+
+    <div class="card-verdict">
+      Проверьте настройки тарифа в VK Ads, чтобы контролировать момент продления или смены тарифного уровня.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-date">13-14 июня 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news" target="_blank">Яндекс Реклама: подтверждение прав на сайт через тег-менеджер</a></h2>
+    <div class="card-source">Источник: <a href="https://yandex.ru/adv/news" target="_blank">Яндекс Реклама</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>В Яндекс Рекламе добавлен новый способ верификации прав на сайт - через системы управления тегами. Раньше подтверждение требовало прямого доступа к коду сайта.</p>
+
+    <div class="card-verdict">
+      Упрощает подключение для рекламодателей, у которых есть доступ к GTM или аналогичной системе управления тегами, но нет прямого доступа к исходному коду сайта.
+    </div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://cossa.ru" target="_blank">MAX: рост рынка рекламы в мессенджере в 55 раз</a> - аналитическое исследование без изменений в рекламном кабинете или условиях размещения</li>
+      <li><a href="https://cossa.ru" target="_blank">Рост стоимости конверсий на 26%</a> - рыночная аналитика без практического изменения на стороне платформ</li>
+      <li><a href="https://yandex.ru/adv/news" target="_blank">Adfox: новые инструменты монетизации и отчетности</a> - инструментарий для паблишеров и монетизаторов инвентаря, вне профиля рекламного кабинета для рекламодателя</li>
+      <li><a href="https://yandex.ru/adv/news" target="_blank">Яндекс Реклама: новые позиции в блоках бронирования отелей</a> - формат узкой вертикали travel, не актуален для большинства рекламодателей</li>
+    </ul>
+  </div>
+
+  <div class="takeaway">
+    <div class="section-title">SUMMARY</div>
+    <p><strong>Wildberries открывает медийный инвентарь.</strong> Крупнейший маркетплейс России запустил охватные форматы для брендов внутри своей экосистемы. Новый инвентарь стоит рассматривать отдельно от классических перформанс-инструментов площадки и сопоставить с внешними охватными каналами по условиям.</p>
+    <p><strong>MAX становится управляемее.</strong> Выбор каналов для показов дает рекламодателям контроль над контентным окружением. Для брендов с требованиями к brand safety это важная доработка кабинета мессенджера.</p>
+    <p><strong>VK Реклама меняет тарифную структуру.</strong> Премиум-подписка и автопродление тарифов требуют ревизии условий от агентств и рекламодателей с постоянными размещениями в VK Ads. Стоит проверить параметры до автоматического списания.</p>
+    <p><strong>Яндекс стимулирует освоение мессенджеров.</strong> 10% кэшбэк снижает порог входа в инвентарь MAX. Актуально для тех, кто откладывал тест размещений в мессенджере.</p>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 14 июня 2026 за период 13-14 июня
+  </div>
+
+</div>
+</body>
+</html>
