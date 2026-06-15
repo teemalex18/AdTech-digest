@@ -1,6 +1,6 @@
 """
 Новые рецепты.
-Источники: vkusnyblog (RSS) + say7 (HTML).
+Источники: vkusnyblog (RSS) + say7 (HTML) + Белькович.
 
 Настройки:
   TG_BOT_TOKEN  — токен бота
@@ -14,6 +14,9 @@
 import datetime
 import os
 import re
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8")
 
 import feedparser
 import requests
@@ -128,11 +131,66 @@ def fetch_say7(since):
     return recipes
 
 
+
+def fetch_belkovich(since):
+    """Парсит рецепты из Telegram-канала iambelkovich."""
+    url = "https://t.me/s/iambelkovich"
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"[belkovich] Ошибка загрузки канала: {e}")
+        return []
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    posts = soup.find_all("div", class_="tgme_widget_message_wrap")
+    recipes = []
+
+    for post in posts:
+        # Текст поста
+        text_div = post.find("div", class_="tgme_widget_message_text")
+        if not text_div:
+            continue
+        text = text_div.get_text("\n", strip=True)
+        if "Ингредиенты" not in text:
+            continue
+
+        # Дата — ищем time с атрибутом datetime
+        time_tag = post.find("time", attrs={"datetime": True})
+        if not time_tag:
+            continue
+        try:
+            pub_date = datetime.date.fromisoformat(time_tag["datetime"][:10])
+        except ValueError:
+            continue
+        if pub_date < since:
+            continue
+
+        # Заголовок — первая непустая строка
+        title = next((l.strip() for l in text.splitlines() if l.strip()), "")
+        if not title:
+            continue
+
+        # Ссылка из data-post
+        msg_div = post.find("div", attrs={"data-post": True})
+        if not msg_div:
+            continue
+        post_url = "https://t.me/" + msg_div["data-post"]
+
+        recipes.append({
+            "source": "Рецепты Бельковича",
+            "title": title,
+            "url": post_url,
+            "date": pub_date,
+        })
+
+    return recipes
+
 def format_message(recipes, since):
     today = datetime.date.today()
 
     lines = [
-        f"Новые рецепты за {since.strftime('%d.%m')} - {today.strftime('%d.%m.%Y')} для любименькой Чуни Муни",
+        f"Новые рецепты за {since.strftime('%d.%m')} - {today.strftime('%d.%m.%Y')}",
         "",
     ]
 
@@ -180,6 +238,7 @@ def main():
     recipes = []
     recipes += fetch_vkusnyblog(since)
     recipes += fetch_say7(since)
+    recipes += fetch_belkovich(since)
 
     recipes.sort(key=lambda r: r["date"], reverse=True)
 
