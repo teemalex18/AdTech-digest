@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — Выпуск 15 июня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  .header {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .header-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 8px;
+  }
+
+  .header-period {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 6px;
+  }
+
+  .summary {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .summary p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.7;
+  }
+
+  .summary p + p {
+    margin-top: 8px;
+  }
+
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  .error-sources {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 10px;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 28px 0 12px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+  }
+
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    font-size: 12px;
+    color: #64748b;
+    align-items: center;
+  }
+
+  .card-meta .platform {
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .card-body dt {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-top: 14px;
+    margin-bottom: 4px;
+  }
+
+  .card-body dd {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.65;
+  }
+
+  .card-conclusion {
+    background: #f8fafc;
+    border-left: 3px solid #bfdbfe;
+    padding: 10px 14px;
+    margin-top: 16px;
+    border-radius: 0 6px 6px 0;
+    font-size: 13.5px;
+    color: #334155;
+    line-height: 1.6;
+  }
+
+  .card-conclusion strong {
+    color: #1e40af;
+    font-weight: 600;
+  }
+
+  .not-included {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+  }
+
+  .not-included ul {
+    list-style: none;
+    margin-top: 4px;
+  }
+
+  .not-included li {
+    font-size: 13.5px;
+    color: #475569;
+    padding: 9px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+
+  .not-included li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .not-included a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .not-included a:hover {
+    text-decoration: underline;
+  }
+
+  .not-included .reason {
+    color: #94a3b8;
+  }
+
+  .takeaway {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 28px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .takeaway h2 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #60a5fa;
+    margin-bottom: 18px;
+  }
+
+  .takeaway ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .takeaway li {
+    font-size: 14px;
+    color: #e2e8f0;
+    padding: 10px 0 10px 18px;
+    position: relative;
+    line-height: 1.65;
+    border-bottom: 1px solid #334155;
+  }
+
+  .takeaway li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .takeaway li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #60a5fa;
+    border-radius: 50%;
+  }
+
+  .footer {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px 28px;
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+  }
+
+  .footer p { margin-bottom: 4px; }
+  .footer p:last-child { margin-bottom: 0; }
+
+  @media (max-width: 600px) {
+    .wrapper { padding: 16px 12px; }
+    .header { padding: 24px 18px; }
+    .header h1 { font-size: 18px; }
+    .card { padding: 18px 16px; }
+    .card-title { font-size: 15px; }
+    .takeaway { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header">
+    <div class="header-label">Мониторинг рекламных кабинетов</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-period">Выпуск 15 июня 2026 за период 12-15 июня</div>
+  </header>
+
+  <section class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>Яндекс Директ, Avito Реклама, VK Реклама, MAX</strong>.</p>
+    <p class="error-sources">Недоступные источники: AdIndex (ошибка подключения).</p>
+  </section>
+
+  <div class="section-title">Главное</div>
+
+  <article class="card primary">
+    <h2 class="card-title"><a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс Директ обновил механику бюджетов: перенос остатка и недельный формат</a></h2>
+    <div class="card-meta">
+      <span class="platform">Яндекс Директ</span>
+      <span>ppc.world, Яндекс Реклама</span>
+      <span>Июнь 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>Директ обновил логику работы с бюджетами: неизрасходованный остаток теперь переносится, добавлена поддержка недельного формата. Изменение затрагивает все активные кампании.</dd>
+      <dt>Почему важно</dt>
+      <dd>Перенос остатка означает, что недорасход за один период автоматически учитывается в следующем. Раньше неизрасходованные деньги сгорали. Недельный формат упрощает планирование для кампаний с цикличностью спроса.</dd>
+      <dt>Кому полезно</dt>
+      <dd>Всем рекламодателям в Директе, особенно тем, кто управляет несколькими кампаниями с разными темпами расхода.</dd>
+    </dl>
+    <div class="card-conclusion"><strong>Вывод:</strong> проверьте бюджетные настройки в активных кампаниях после обновления. Новая механика переноса остатка может изменить фактический расход там, где раньше был регулярный недорасход.</div>
+  </article>
+
+  <article class="card primary">
+    <h2 class="card-title"><a href="https://ads.avito.ru" target="_blank" rel="noopener">Avito Реклама запустила авто-таргетинг</a></h2>
+    <div class="card-meta">
+      <span class="platform">Avito Реклама</span>
+      <span>Inhouse Marketing</span>
+      <span>Июнь 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>Avito Ads запустил авто-таргетинг: система автоматически определяет аудиторию без ручных настроек на стороне рекламодателя.</dd>
+      <dt>Как использовать</dt>
+      <dd>Функция снижает порог входа в таргетированную рекламу на Авито. Подходит для быстрого старта без экспертизы в настройке аудиторий. Для сложных кампаний ручной таргетинг остается доступным.</dd>
+      <dt>Кому полезно</dt>
+      <dd>Малому и среднему бизнесу, который размещается на Авито, но раньше не использовал таргетированную рекламу на платформе.</dd>
+    </dl>
+    <div class="card-conclusion"><strong>Вывод:</strong> актуально для тестирования Авито как рекламного канала. Авто-таргетинг позволяет запустить первую кампанию быстро и без глубоких настроек.</div>
+  </article>
+
+  <article class="card primary">
+    <h2 class="card-title"><a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс: скидка 15% на приоритетное размещение до 17 июля</a></h2>
+    <div class="card-meta">
+      <span class="platform">Яндекс Реклама</span>
+      <span>Яндекс Реклама (официально)</span>
+      <span>Июнь 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Условия акции</dt>
+      <dd>Временная скидка 15% при апгрейде до приоритетного размещения. Акция действует до 17 июля 2026.</dd>
+      <dt>Кому подходит</dt>
+      <dd>Рекламодателям, которые рассматривали переход на приоритетное размещение, но откладывали решение. Дедлайн фиксированный.</dd>
+    </dl>
+    <div class="card-conclusion"><strong>Вывод:</strong> если переход на приоритетное размещение был в планах, решение нужно принять до 17 июля. После акции условия вернутся к стандартным.</div>
+  </article>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <article class="card secondary">
+    <h2 class="card-title"><a href="https://ads.vk.com" target="_blank" rel="noopener">VK Реклама: авто-продление тарифов и расширение продвижения в каналах</a></h2>
+    <div class="card-meta">
+      <span class="platform">VK Реклама</span>
+      <span>Click.ru, Cossa</span>
+      <span>Июнь 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>В VK Рекламе добавлено авто-продление тарифов: рекламный кабинет продлевает тариф автоматически без ручного подтверждения. Параллельно расширены возможности продвижения в каналах для MAX, ВКонтакте и Дзена.</dd>
+      <dt>Что проверить</dt>
+      <dd>Авто-продление включается в настройках тарифа. Это исключает риск прерывания рекламы из-за истечения срока. Стоит проверить, активировано ли оно для текущих аккаунтов.</dd>
+    </dl>
+    <div class="card-conclusion"><strong>Вывод:</strong> включите авто-продление в кабинете VK Рекламы, если ведете постоянные кампании. Это снимает необходимость следить за датой истечения тарифа вручную.</div>
+  </article>
+
+  <article class="card secondary">
+    <h2 class="card-title"><a href="https://max.ru" target="_blank" rel="noopener">MAX тестирует прямые эфиры в каналах</a></h2>
+    <div class="card-meta">
+      <span class="platform">MAX</span>
+      <span>Click.ru</span>
+      <span>Июнь 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>Мессенджер MAX начал тестирование прямых трансляций в каналах. Лайвстримы потенциально откроют новый инвентарь для рекламных интеграций на платформе.</dd>
+      <dt>Статус</dt>
+      <dd>Функция на стадии тестирования, коммерческие форматы пока не объявлены. Брендам, работающим с авторами и медиаканалами в MAX, стоит следить за официальными анонсами.</dd>
+    </dl>
+    <div class="card-conclusion"><strong>Вывод:</strong> пока ориентируйтесь на выход из беты. Лайвстримы в MAX могут стать перспективным форматом для нативных интеграций.</div>
+  </article>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс KIT: магазины могут принимать сервисные заявки вместе с товарами</a> <span class="reason">- нишевое обновление для товарной выдачи без изменений в рекламном кабинете</span></li>
+      <li><a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Adfox: обновление инструментов монетизации и отчетности</a> <span class="reason">- инструмент для издателей, не для рекламодателей; нет деталей по конкретным изменениям</span></li>
+      <li><a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс: отели получают возможность занять позиции в топ-блоке</a> <span class="reason">- узкая вертикаль, нет деталей по условиям подключения</span></li>
+      <li><a href="https://magnetto.pro" target="_blank" rel="noopener">Magnetto.pro: снижение комиссии при первом пополнении</a> <span class="reason">- анонс апрельского предложения, первая публикация вне окна дат</span></li>
+      <li><a href="https://ppc.world" target="_blank" rel="noopener">MAX: рекламный рынок вырос в 55 раз за полгода</a> <span class="reason">- аналитика рынка без практического изменения в кабинете</span></li>
+      <li><a href="https://cossa.ru" target="_blank" rel="noopener">Google Chrome: отключение блокировщиков рекламы до конца июня</a> <span class="reason">- изменение браузерной технологии, не рекламного кабинета</span></li>
+    </ul>
+  </div>
+
+  <section class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li>Яндекс Директ меняет базовую логику бюджетов: перенос остатка и недельный формат требуют ревизии настроек активных кампаний. Особенно важно проверить кампании с историей регулярного недорасхода.</li>
+      <li>Avito снижает порог входа через авто-таргетинг. Для рекламодателей, которые ещё не тестировали Авито как канал, сейчас удобный момент для первого запуска без сложных настроек.</li>
+      <li>Яндекс дает конкретный дедлайн для выгодного апгрейда: скидка 15% на приоритетное размещение действует до 17 июля. Решение стоит принять в ближайшие недели.</li>
+      <li>VK Реклама постепенно консолидирует управление рекламой в экосистеме. Авто-продление тарифов - практичная мера для агентств с большим количеством активных аккаунтов.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 15 июня 2026 за период 12-15 июня</p>
+  </footer>
+
+</div>
+</body>
+</html>
