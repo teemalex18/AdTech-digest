@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 16 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #f4f5f7;
+      color: #1a1a2e;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+    }
+
+    .header h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .header .issue-line {
+      font-size: 0.88rem;
+      color: #94a3b8;
+    }
+
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 22px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: #374151;
+    }
+
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #6b7280;
+      margin-bottom: 12px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+
+    .card h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #111827;
+      line-height: 1.4;
+    }
+
+    .card h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card h2 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .card-meta {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-bottom: 14px;
+    }
+
+    .card-meta span + span::before {
+      content: ' · ';
+    }
+
+    .card-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #6b7280;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    .card p {
+      font-size: 0.93rem;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin-bottom: 6px;
+    }
+
+    .card ul li {
+      font-size: 0.93rem;
+      color: #374151;
+      margin-bottom: 4px;
+    }
+
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: 14px;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+
+    .missed-card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid #e5e7eb;
+      padding: 16px 24px;
+      margin-bottom: 16px;
+    }
+
+    .missed-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .missed-list li {
+      font-size: 0.88rem;
+      color: #6b7280;
+      padding: 8px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .missed-list li:last-child {
+      border-bottom: none;
+    }
+
+    .missed-list a {
+      color: #374151;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .missed-list a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .takeaway {
+      background: #1a1a2e;
+      color: #e5e7eb;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 32px;
+    }
+
+    .takeaway h3 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+
+    .takeaway ul {
+      padding-left: 18px;
+    }
+
+    .takeaway ul li {
+      font-size: 0.93rem;
+      color: #d1d5db;
+      margin-bottom: 10px;
+      line-height: 1.55;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px 0 16px;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { margin: 12px auto; }
+      .header { padding: 20px 18px; border-radius: 10px; }
+      .header h1 { font-size: 1.15rem; }
+      .card { padding: 16px 18px; }
+      .takeaway { padding: 20px 18px; border-radius: 10px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 16 июня 2026 за период 15-16 июня</div>
+  </div>
+
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>Яндекс Директ, Яндекс Метрика, Макс, Telegram Ads</strong>.
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h2><a href="https://ppc.world/news/direkt-obnovit-tekstovo-graficheskie-obyavleniya-do-kombinatornyh-v-edinoy-perfomans-kampanii/">Яндекс Директ: ТГО переходят в комбинаторный формат в ЕПК</a></h2>
+    <div class="card-meta">
+      <span>Яндекс Директ</span><span>ppc.world</span><span>16 июня 2026</span>
+    </div>
+
+    <div class="card-label">Что меняется</div>
+    <p>Все текстово-графические объявления в Единых перфоманс-кампаниях переходят в комбинаторный формат. Рекламодатель загружает несколько заголовков, описаний, изображений и видео, система сама собирает комбинации и подбирает лучшую под каждый показ.</p>
+
+    <div class="card-label">Сроки</div>
+    <ul>
+      <li><strong>30 июня</strong> - ТГО становятся доступны только для чтения; новые объявления создаются только в комбинаторном формате</li>
+      <li><strong>Июль</strong> - существующие ТГО автоматически конвертируются в комбинаторные; статистика и настройки сохраняются</li>
+    </ul>
+
+    <div class="card-label">Что проверить заранее</div>
+    <p>Дополнительные заголовки в комбинаторных объявлениях недоступны. Если суммарная длина заголовков превышает 56 символов, при конвертации сохраняется только первый заголовок.</p>
+
+    <div class="card-label">Результаты из кейсов</div>
+    <p>В среднем в 5 раз больше уникальных комбинаций. По данным Яндекса: +24% CVR и -4% CPA; +63% лидов и -23% CPL; +29% лидов и -17% CPL.</p>
+
+    <div class="card-conclusion">До 30 июня нужно создать хотя бы одно комбинаторное объявление в ЕПК и проверить длину заголовков - иначе автоконвертация в июле может изменить их неожиданно.</div>
+  </div>
+
+  <div class="card primary">
+    <h2><a href="https://ppc.world/news/direkt-obnovlyaet-rabotu-byudzhetov-v-kampaniyah/">Яндекс Директ: бюджеты становятся недельными, с 6 июля - перенос остатка</a></h2>
+    <div class="card-meta">
+      <span>Яндекс Директ</span><span>ppc.world</span><span>15 июня 2026</span>
+    </div>
+
+    <div class="card-label">Два изменения с разными датами</div>
+    <ul>
+      <li><strong>22 июня</strong> - дневные бюджеты в кампаниях с ручным управлением автоматически конвертируются в недельные (умножаются на 7 или на число активных дней при расписании)</li>
+      <li><strong>6 июля</strong> - для кликовых кампаний включается перенос остатка: до 30% неизрасходованного бюджета переходит на следующую неделю. Расходы за неделю могут достигать 130% от заданного бюджета</li>
+    </ul>
+
+    <div class="card-label">Как работает перенос</div>
+    <p>Пример: при недельном бюджете 10 000 руб. и расходе 7 000 руб. - остаток 3 000 руб. переходит на следующую неделю и расходуется до запуска текущего бюджета. Аккаунтовые бюджеты остаются жестким лимитом и переноса не получают.</p>
+
+    <div class="card-conclusion">Изменения применяются автоматически без действий с вашей стороны. Стоит заранее пересмотреть рабочие лимиты - в "тяжелые" недели расходы могут превысить плановый бюджет на 30%.</div>
+  </div>
+
+  <div class="card primary">
+    <h2><a href="https://ppc.world/news/v-yandeks-metrike-poyavilis-celi-po-parametram-sobytiy-multiceli-i-edinyy-razdel-dlya-raboty-s-celyami-i-konversiyami/">Яндекс Метрика: цели по параметрам событий, мультицели и единый раздел</a></h2>
+    <div class="card-meta">
+      <span>Яндекс Метрика</span><span>ppc.world</span><span>16 июня 2026</span>
+    </div>
+
+    <div class="card-label">Три новых возможности</div>
+    <ul>
+      <li><strong>Цели по параметрам событий</strong> - можно задать конкретный параметр как условие срабатывания (например, отслеживать только отправку форм определенного типа)</li>
+      <li><strong>Мультицели</strong> - объединяют несколько условий через OR: удобно когда целевое действие достигается разными путями на сайте</li>
+      <li><strong>Единый раздел "Цели и конверсии"</strong> - два прежних раздела объединены в одном интерфейсе с режимами: Графики, Показатели, Управление</li>
+    </ul>
+
+    <div class="card-label">Дополнительно</div>
+    <p>История изменений целей (чтобы объяснить скачки в конверсиях), архив с возможностью восстановить историческую статистику, теги для фильтрации. Все функции уже доступны.</p>
+
+    <div class="card-conclusion">Мультицели особенно полезны для e-commerce и сервисов со сложными воронками: раньше каждый вариант целевого действия нужно было учитывать как отдельную цель.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h2><a href="https://blog.click.ru/market-news/v-max-nachali-testirovat-pryamye-translyacii-v-kanalax/">Мессенджер Макс: тестирование прямых трансляций в каналах</a></h2>
+    <div class="card-meta">
+      <span>Макс</span><span>Click.ru</span><span>15 июня 2026</span>
+    </div>
+
+    <div class="card-label">Как устроено</div>
+    <p>Макс запустил тест live-стримов в каналах. Первыми подключились "ТВ Центр" и "World of Warships". Планируется открыть для всех каналов с аудиторией от 10 000 подписчиков.</p>
+    <p>Трансляции работают через интеграцию с VK Video: владелец канала добавляет бота-администратора, выбирает запуск трансляции, указывает канал и вставляет ссылку на стрим. Подписчики получают уведомление о начале, у аватара канала появляется специальный индикатор.</p>
+
+    <div class="card-label">Кому подходит</div>
+    <p>Брендам с каналами в Максе с аудиторией 10k+. Пока это закрытый тест с ограниченным числом участников.</p>
+
+    <div class="card-conclusion">Пока закрытый тест, но это первый шаг к live-форматам как новому рекламному инвентарю внутри экосистемы Макс.</div>
+  </div>
+
+  <div class="card secondary">
+    <h2><a href="https://adindex.ru/news/tendencies/2026/06/16/345911.phtml">Telegram Ads: рекламные бюджеты выросли на 11% за май</a></h2>
+    <div class="card-meta">
+      <span>Telegram Ads</span><span>AdIndex</span><span>16 июня 2026</span>
+    </div>
+
+    <div class="card-label">Данные за май 2026</div>
+    <p>Рекламные расходы бизнеса в Telegram выросли на 11% по сравнению с апрелем. CTR за тот же период вырос на 22%, а CPC снизился на 10%.</p>
+
+    <div class="card-label">Почему это важно</div>
+    <p>Рост конкуренции не привел к удорожанию трафика - платформа стала работать эффективнее при тех же бюджетах. Это меняет логику планирования на Q3 2026.</p>
+
+    <div class="card-conclusion">Telegram укрепляется как перформанс-канал: CTR растет при снижении CPC - хороший момент для тестирования или масштабирования кампаний.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="missed-card">
+    <ul class="missed-list">
+      <li><a href="https://yandex.ru/adv/news/v-maks-poyavilas-birzhevaya-model-monetizatsii">В МАКС появилась биржевая модель монетизации</a> - вне окна дат, первая публикация 2 июня</li>
+      <li><a href="https://yandex.ru/adv/news/reklama-v-messendzherakh-direct-vozmozhnost-vybora-kanalov-v-maks">Выбор каналов в МАКС для рекламы в мессенджерах</a> - вне окна дат, первая публикация 8 июня</li>
+      <li><a href="https://adindex.ru/news/digital/2026/06/16/345910.phtml">Electronic Arts запустила платформу для рекламодателей</a> - международная игровая платформа, не влияет на российские рекламные кабинеты</li>
+    </ul>
+  </div>
+
+  <div class="takeaway">
+    <h3>SUMMARY</h3>
+    <ul>
+      <li><strong>Срочно до 30 июня:</strong> создать комбинаторные объявления в ЕПК. Проверить длину заголовков - если суммарно более 56 символов, автоконвертация сохранит только первый. Кейсы Яндекса показывают реальный рост эффективности, так что переход оправдан.</li>
+      <li><strong>С 22 июня</strong> дневные бюджеты в ручных кампаниях станут недельными автоматически. Стоит пересчитать рабочие лимиты у клиентов со строгими месячными бюджетами - особенно после включения переноса остатка с 6 июля.</li>
+      <li><strong>Метрика:</strong> мультицели снимают проблему раздельного учета альтернативных путей до конверсии. Имеет смысл пересмотреть структуру целей в аккаунтах с комплексными воронками.</li>
+      <li><strong>Telegram</strong> дешевеет на фоне роста: CTR +22% и CPC -10% при +11% к бюджетам - признак зрелости платформы. Если Telegram еще не в медиамиксе, это хороший момент для входа.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div>AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 16 июня 2026 за период 15-16 июня</div>
+  </footer>
+
+</div>
+</body>
+</html>
