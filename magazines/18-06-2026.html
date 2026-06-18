@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 18 июня 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      background: #f4f5f7;
+      color: #1a1a2e;
+    }
+
+    a { color: #1a6ef5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #a8b2d8;
+    }
+
+    /* Summary block */
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-left: 4px solid #7b8cde;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .summary p {
+      font-size: 15px;
+      color: #444;
+    }
+    .stat {
+      display: inline-block;
+      background: #f0f2ff;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+      margin: 0 2px;
+    }
+
+    /* Section headings */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 32px 0 14px;
+    }
+
+    /* News card */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .card.primary {
+      border-left: 4px solid #1a6ef5;
+    }
+    .card.secondary {
+      border-left: 4px solid #d0d4e8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .badge-platform {
+      background: #eef2ff;
+      color: #3d5af1;
+    }
+    .badge-date {
+      background: #f3f4f6;
+      color: #666;
+    }
+    .badge-new {
+      background: #e6f9f0;
+      color: #0d7a45;
+    }
+    .badge-warning {
+      background: #fff4e0;
+      color: #b45309;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card-source {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-source a {
+      color: #1a6ef5;
+    }
+
+    .card-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin: 14px 0 4px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+    .card ul {
+      margin: 6px 0 8px 20px;
+      font-size: 15px;
+      color: #333;
+    }
+    .card ul li {
+      margin-bottom: 4px;
+    }
+
+    .card-verdict {
+      background: #f7f9ff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #2d3a6e;
+      border-left: 3px solid #7b8cde;
+    }
+
+    /* Not included block */
+    .not-included {
+      background: #fafafa;
+      border: 1px solid #e4e6ee;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .not-included ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+    .not-included ul li {
+      margin-bottom: 6px;
+    }
+
+    /* Takeaway block */
+    .takeaway {
+      background: #1a1a2e;
+      color: #e8ecff;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-top: 10px;
+    }
+    .takeaway .section-title {
+      color: #7b8cde;
+      margin-top: 0;
+    }
+    .takeaway p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #c9d1f0;
+    }
+    .takeaway p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 21px; }
+      .card h2 { font-size: 16px; }
+      .wrapper { padding: 16px 12px 48px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 18 июня 2026 за период 17-18 июня</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">5</span> релевантных обновлений.
+      Затронуты платформы: <strong>Яндекс Директ, Яндекс Метрика, VK Реклама, Wildberries</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Новая стратегия</span>
+      <span class="badge badge-date">18 июня 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/v-direkte-poyavilas-vozmozhnost-optimizirovat-reklamu-v-telegram-i-makse-na-celevye-deystviya/" target="_blank">В Яндекс Директе появилась оптимизация рекламы в Telegram и MAX на конверсии</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/v-direkte-poyavilas-vozmozhnost-optimizirovat-reklamu-v-telegram-i-makse-na-celevye-deystviya/" target="_blank">ppc.world</a>,
+      подтверждено официально: <a href="https://yandex.ru/adv/news/reklamu-v-messendzherah-mozhno-optimizirovat-na-konversii" target="_blank">Яндекс Реклама</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Кампании с автоматическим выбором каналов в Telegram и MAX теперь можно запустить с двумя стратегиями оптимизации на целевые действия:
+    </p>
+    <ul>
+      <li><strong>Максимум конверсий</strong> - алгоритм показывает рекламу в каналах с наибольшей вероятностью совершения целевого действия на сайте. Оплата за клик.</li>
+      <li><strong>Максимум кликов с ограничением CPC</strong> - теперь можно задать лимит бюджета и среднюю стоимость клика одновременно.</li>
+    </ul>
+    <p>Для запуска нужен счетчик Метрики с настроенными целями.</p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Раньше реклама в Telegram через Директ работала только с оптимизацией на охват и клики. Теперь - на конверсии на сайте. Это первый шаг к полноценной performance-кампании в Telegram внутри экосистемы Яндекса.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Агентствам с Telegram-клиентами. Рекламодателям с настроенными конверсионными целями в Метрике, которые хотят расширить охват в мессенджерах.
+    </p>
+
+    <div class="card-verdict">
+      Базовое условие - Метрика с целями. Без этого стратегия не запустится. При запуске дать алгоритму несколько недель на обучение и не менять настройки в этот период.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Метрика</span>
+      <span class="badge badge-new">Новая функция</span>
+      <span class="badge badge-date">18 июня 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/v-yandeks-metrike-poyavilis-avtoceli-dlya-internet-magazinov-pokupka-i-sozdanie-zakaza/" target="_blank">Яндекс Метрика добавила автоматические цели для интернет-магазинов</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/v-yandeks-metrike-poyavilis-avtoceli-dlya-internet-magazinov-pokupka-i-sozdanie-zakaza/" target="_blank">ppc.world</a>,
+      подтверждено официально: <a href="https://yandex.ru/adv/news/avtotseli-dlya-internet-magazinov-fiksatsiya-pokupok-v-metrike" target="_blank">Яндекс Реклама</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В Метрике появились два типа автоцелей для e-commerce:
+    </p>
+    <ul>
+      <li><strong>«Создание заказа»</strong> - фиксирует момент оформления заказа независимо от способа оплаты. Рекомендован как универсальный.</li>
+      <li><strong>«Покупка»</strong> - фиксирует успешную онлайн-оплату. Подходит магазинам с одним сценарием оплаты.</li>
+    </ul>
+    <p>
+      Автоцели работают поверх ручной разметки: если разметка исправна - дублируют событие как страховка. Если сломана или отсутствует - фиксируют покупку самостоятельно.
+    </p>
+    <p>
+      В июле 2026 Яндекс планирует расширить отслеживание на весь путь покупки.
+    </p>
+
+    <div class="card-section-label">Как использовать</div>
+    <p>
+      Активировать в настройках Метрики для аккаунтов с включенным e-commerce. Затем использовать как цели в стратегиях оптимизации Директа. Разработчик не нужен.
+    </p>
+
+    <div class="card-verdict">
+      Стоит активировать сейчас - даже при исправной ручной разметке. Ручная разметка ломается при обновлениях сайта, а автоцели устраняют эту точку отказа без технических ресурсов.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-warning">Срочно: с 22 июня</span>
+      <span class="badge badge-date">18 июня 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/direct-yandex/direkt-obnovlyaet-logiku-raboty-byudzhetov/" target="_blank">Яндекс Директ переходит на недельные бюджеты: что меняется с 22 июня</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/direct-yandex/direkt-obnovlyaet-logiku-raboty-byudzhetov/" target="_blank">Click.ru</a>
+    </div>
+
+    <div class="card-section-label">Что меняется и когда</div>
+    <p><strong>С 22 июня 2026:</strong> кампании с ручными ставками и общий баланс аккаунта переходят с дневных бюджетов на недельные. Дневной бюджет умножается на 7 (или на количество активных дней для кампаний с расписанием). Пересчет происходит автоматически.</p>
+    <p><strong>С 6 июля 2026:</strong> включается перенос остатков. Если кампания не потратила запланированное - остаток (до 30% от недельного лимита) переносится на следующую неделю. Максимальный расход за неделю составит 130% от заданного бюджета. Остатки не накапливаются несколько недель подряд.</p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Переход применяется ко всем кампаниям с ручными ставками автоматически. До 22 июня стоит сверить пересчитанные недельные лимиты с месячным планом - особенно если бюджеты жестко ограничены.
+    </p>
+
+    <div class="card-verdict">
+      До 22 июня проверить дневные бюджеты и скорректировать планирование. После 6 июля учитывать возможный перерасход до 130% при недельном финансовом контроле.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Реклама</span>
+      <span class="badge badge-new">Новый объект</span>
+      <span class="badge badge-date">17 июня 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/vk-reklama-obedinila-prodvizhenie-kanalov-vkontakte-max-i-dzena-v-odnom-reklamnom-obekte/" target="_blank">VK Реклама объединила продвижение каналов ВКонтакте, MAX и Дзена в одном объекте</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/vk-reklama-obedinila-prodvizhenie-kanalov-vkontakte-max-i-dzena-v-odnom-reklamnom-obekte/" target="_blank">Click.ru</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В VK Рекламе появился новый объект продвижения - «Каналы». Через него продвигают каналы сразу на трех платформах:
+    </p>
+    <ul>
+      <li><strong>ВКонтакте</strong> - оптимизация на подписку</li>
+      <li><strong>MAX</strong> - оптимизация на клики (подписочная оптимизация запланирована)</li>
+      <li><strong>Дзен</strong> - подписки, продвижение статей и видео, оптимизация на дочитывание</li>
+    </ul>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Владельцам контент-каналов с аудиторией в экосистеме VK. Брендам, которые строят аудиторию одновременно во ВКонтакте и Дзене.
+    </p>
+
+    <div class="card-verdict">
+      Удобно для агентств, ведущих медиа-каналы клиентов на нескольких площадках VK. В MAX подписочная оптимизация пока недоступна - следить за обновлениями.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">Новый инструмент</span>
+      <span class="badge badge-date">18 июня 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/na-wildberries-poyavilas-brend-zona-dlya-stranic-prodavcov/" target="_blank">Wildberries запустила «Бренд-зону» для страниц продавцов</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/na-wildberries-poyavilas-brend-zona-dlya-stranic-prodavcov/" target="_blank">Click.ru</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Продавцы на Wildberries могут создавать фирменные страницы - «Бренд-зоны». Доступны: логотип и описание бренда, подборки товаров, баннеры, акционные материалы, удобная навигация внутри страницы. Создается в разделе «Рост продаж» личного кабинета.
+    </p>
+
+    <div class="card-section-label">Данные эффективности</div>
+    <p>
+      По данным анализа RWB (сентябрь 2025 - февраль 2026, 5+ млн карточек товаров):
+    </p>
+    <ul>
+      <li>средний чек заказов из бренд-зон в 2 раза выше, чем из поиска</li>
+      <li>конверсия в корзину на 5% выше</li>
+      <li>конверсия в покупку на 3% выше</li>
+    </ul>
+
+    <div class="card-verdict">
+      Инструмент нишевый - актуален для брендов с широким ассортиментом и устоявшимся присутствием на WB. Метрики убедительные: стоит протестировать тем, у кого уже выстроен узнаваемый бренд на маркетплейсе.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://blog.click.ru/market-news/yandeks-direkt-dobavil-vozmozhnost-vybora-konkretnyx-kanalov-v-maks-dlya-reklamy/" target="_blank">Яндекс Директ добавил выбор конкретных каналов в МАКС</a> - вне окна дат, первая публикация 16.06.</li>
+      <li><a href="https://ppc.world/news/v-yandeks-metrike-poyavilis-celi-po-parametram-sobytiy-multiceli-i-edinyy-razdel-dlya-raboty-s-celyami-i-konversiyami/" target="_blank">Новые возможности Метрики: цели по параметрам событий, мультицели</a> - вне окна дат, первая публикация 16.06.</li>
+      <li>Яндекс Директ: текстово-графические объявления в ЕПК становятся комбинаторными - вне окна дат, первая публикация 16.06.</li>
+      <li>Бюджеты рекламодателей в Telegram выросли на 11% за май - статистика без изменений в рекламном кабинете.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">SUMMARY</div>
+    <p>
+      <strong style="color:#e8ecff;">Самое срочное - изменение логики бюджетов в Директе.</strong>
+      С 22 июня дневные бюджеты автоматически пересчитаются в недельные, с 6 июля - включается перенос остатков с возможным перерасходом до 130%. До 22 июня нужно сверить лимиты с финансовым планом.
+    </p>
+    <p>
+      <strong style="color:#e8ecff;">Telegram стал полноценным performance-каналом в Директе.</strong>
+      Теперь Telegram и MAX можно оптимизировать на конверсии на сайте - раньше это было невозможно. Базовое условие: настроенные цели в Метрике. Агентствам с Telegram-клиентами стоит протестировать в первую очередь.
+    </p>
+    <p>
+      <strong style="color:#e8ecff;">Автоцели для e-commerce в Метрике активируются без разработчика.</strong>
+      Это страховка, которая защищает от потери конверсий при сбоях ручной разметки. Для интернет-магазинов с рекламой в Директе - рутинное действие с высокой ценностью.
+    </p>
+    <p>
+      <strong style="color:#e8ecff;">VK и Wildberries развивают инструменты удержания аудитории внутри экосистем.</strong>
+      Объект «Каналы» в VK Рекламе и «Бренд-зона» на WB - это не прямая performance-реклама, но важный слой для брендов, строящих аудиторию на этих платформах.
+    </p>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ &nbsp;|&nbsp; Выпуск 18 июня 2026 за период 17-18 июня
+  </div>
+
+</div>
+</body>
+</html>
