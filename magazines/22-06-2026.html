@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ - 22 июня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .header {
+    background: #1e293b;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 36px;
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 8px;
+  }
+
+  .header .release-line {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.8;
+  }
+
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  .summary .unavailable {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+  }
+
+  .section-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #64748b;
+    margin: 28px 0 12px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.45;
+  }
+
+  .card h2 a {
+    color: #1e293b;
+    text-decoration: none;
+    border-bottom: 1px solid #cbd5e1;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .card h2 a:hover {
+    color: #2563eb;
+    border-color: #2563eb;
+  }
+
+  .card-meta {
+    font-size: 0.78rem;
+    color: #64748b;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .card-meta span {
+    background: #f1f5f9;
+    padding: 2px 9px;
+    border-radius: 4px;
+  }
+
+  .card-body h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: #64748b;
+    margin-top: 14px;
+    margin-bottom: 5px;
+  }
+
+  .card-body p {
+    font-size: 0.93rem;
+    color: #374151;
+    line-height: 1.65;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 18px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.6;
+  }
+
+  .not-included {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .not-included ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .not-included ul li {
+    font-size: 0.9rem;
+    color: #374151;
+    padding: 9px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.55;
+  }
+
+  .not-included ul li:last-child {
+    border-bottom: none;
+  }
+
+  .not-included a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .not-included a:hover {
+    text-decoration: underline;
+  }
+
+  .not-included .reason {
+    color: #94a3b8;
+    font-size: 0.82rem;
+  }
+
+  .takeaway {
+    background: #1e293b;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+  }
+
+  .takeaway h2 {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #64748b;
+    margin-bottom: 18px;
+  }
+
+  .takeaway ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .takeaway ul li {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    padding: 10px 0 10px 18px;
+    border-bottom: 1px solid #334155;
+    position: relative;
+    color: #e2e8f0;
+  }
+
+  .takeaway ul li:last-child {
+    border-bottom: none;
+  }
+
+  .takeaway ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2563eb;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding: 16px 0 8px;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 12px 8px; }
+    .header { padding: 24px 20px; }
+    .header h1 { font-size: 1.2rem; }
+    .card { padding: 18px 16px; }
+    .takeaway { padding: 20px 18px; }
+    .not-included { padding: 16px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="release-line">Выпуск 22 июня 2026 за период 19-22 июня</div>
+  </div>
+
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Яндекс Директ, Дзен (РСЯ), MAX</strong>.
+    <div class="unavailable">Недоступные источники: AdIndex.</div>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h2><a href="https://ppc.world/news/v-obyavleniyah-tovarnoy-galerei-yandeksa-teper-pokazyvayutsya-harakteristiki-tovarov/" target="_blank">В Товарной галерее Яндекса теперь показываются характеристики товаров</a></h2>
+    <div class="card-meta">
+      <span>Яндекс Директ</span>
+      <span>ppc.world</span>
+      <span>22 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <h3>Что изменилось</h3>
+      <p>В объявлениях Товарной галереи Директа система автоматически выбирает и отображает характеристики товаров: технические параметры, особенности и условия покупки. Данные берутся из трёх источников: фида (до 10 характеристик на товар), анализа сайта и конкурентных товаров. При совпадении источников приоритет отдаётся фиду.</p>
+      <h3>Почему важно</h3>
+      <p>Платформа фиксирует в среднем +4% к конверсиям. Функция включается автоматически, без дополнительных настроек со стороны рекламодателя.</p>
+      <h3>Кому полезно</h3>
+      <p>E-commerce, ритейл, любой бизнес с товарным фидом в Товарной галерее Яндекса.</p>
+    </div>
+    <div class="card-conclusion">Стоит проверить качество фида прямо сейчас: система отдаёт приоритет его данным перед анализом сайта. Неполные или устаревшие характеристики в фиде снизят эффект от обновления.</div>
+  </div>
+
+  <div class="card primary">
+    <h2><a href="https://yandex.ru/adv/news/tovarnye-obyavleniya-dlya-prilozheniy-dostupny-dlya-retargetinga" target="_blank">Товарные объявления для продвижения приложений теперь доступны для ретаргетинга</a></h2>
+    <div class="card-meta">
+      <span>Яндекс Директ</span>
+      <span>Яндекс Реклама (официально)</span>
+      <span>22 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <h3>Что изменилось</h3>
+      <p>Товарные объявления для продвижения приложений теперь поддерживают ретаргетинг. Доступны два сценария: по сегменту (возврат неактивных пользователей) и по офферу (показ конкретных товаров, которые пользователь просматривал или добавил в корзину).</p>
+      <h3>Результаты тестов</h3>
+      <p>Sportmaster в тестовых кампаниях зафиксировал снижение CPA в 3,4 раза. Платформа рекомендует давать кампании полную свободу обучения на старте и тестировать широкие категории до детальной сегментации.</p>
+      <h3>Кому подходит</h3>
+      <p>Мобильные приложения с каталогом товаров, маркетплейсы и ритейл с app-каналом продаж.</p>
+    </div>
+    <div class="card-conclusion">Сценарий по офферу особенно интересен для приложений с большим каталогом: пользователь возвращается не просто в приложение, а к конкретному товару, который уже привлёк его внимание.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h2><a href="https://yandex.ru/adv/news/monetizatsiya-kanalov-v-dzene-teper-dostupna-v-rsya-dlya-blogerov" target="_blank">Монетизация каналов Дзена через РСЯ открыта для блогеров</a></h2>
+    <div class="card-meta">
+      <span>Дзен / РСЯ</span>
+      <span>Яндекс Реклама (официально)</span>
+      <span>19 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <h3>Что изменилось</h3>
+      <p>Яндекс добавил Дзен в список платформ для монетизации через РСЯ. Блогеры с аудиторией от 1000 подписчиков могут размещать партнёрские материалы в постах, статьях и описаниях видео. Премиум-контент монетизировать нельзя.</p>
+      <h3>Как подключить</h3>
+      <p>Регистрация в РСЯ, добавление канала, верификация кодом, модерация до суток.</p>
+    </div>
+    <div class="card-conclusion">Для агентств, работающих с блогерами на Дзене: новый инструмент монетизации может повлиять на условия переговоров об интеграциях и изменить доступный инвентарь на платформе.</div>
+  </div>
+
+  <div class="card secondary">
+    <h2><a href="https://blog.click.ru/market-news/samozanyatye-teper-mogut-rabotat-na-platforme-dlya-partnerov-max/" target="_blank">Самозанятые получили доступ к Платформе для партнеров MAX</a></h2>
+    <div class="card-meta">
+      <span>MAX</span>
+      <span>Click.ru</span>
+      <span>22 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <h3>Что изменилось</h3>
+      <p>Платформа для партнеров MAX открыта для самозанятых. Более 16 млн россиян в этом статусе теперь могут использовать каналы, чат-боты и мини-приложения для продвижения своих услуг. Регистрация через business.max.ru с подтверждением через Госуслуги.</p>
+      <h3>Кому подходит</h3>
+      <p>Самозанятые специалисты и малый бизнес, для которых MAX становится новым каналом привлечения клиентов.</p>
+    </div>
+    <div class="card-conclusion">MAX последовательно расширяет аудиторию рекламодателей. Для агентств это потенциально новый сегмент клиентов, которым нужна помощь с инструментами цифрового продвижения.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li>
+        <a href="https://blog.click.ru/market-news/na-wildberries-poyavilas-brend-zona-dlya-stranic-prodavcov/" target="_blank">Wildberries запустила «Бренд-зону» для страниц продавцов</a>
+        <span class="reason"> - вне окна, первая публикация 18 июня</span>
+      </li>
+      <li>
+        <a href="https://news.inhouse-marketing.ru/2026/05/22/avito-reklama-zapyskaet-avtotargeting/" target="_blank">Авито Реклама запускает автотаргетинг</a>
+        <span class="reason"> - вне окна, первая публикация 22 мая</span>
+      </li>
+      <li>
+        <a href="https://ppc.world/news/reklamnyy-rynok-rossii-v-pervom-kvartale-prevysil-220-mlrd-rubley-no-tempy-rosta-zamedlilis-akar/" target="_blank">Рекламный рынок России в Q1 превысил 220 млрд рублей</a>
+        <span class="reason"> - аналитика рынка без практического изменения в рекламном кабинете</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li>Характеристики в Товарной галерее работают автоматически, но качество результата зависит от фида. Аудит фида стоит поставить в приоритет для всех e-commerce клиентов на Директе.</li>
+      <li>Ретаргетинг по офферу для приложений - значимое расширение для app-маркетинга. Если ведёте кампании на мобильные приложения с каталогом, тест стоит запустить сейчас, пока конкуренция в этом инструменте невысокая.</li>
+      <li>Монетизация Дзена через РСЯ напрямую не меняет рекламные кабинеты, но влияет на экосистему: блогеры получают финансовый стимул расти на платформе, что постепенно увеличит инвентарь для размещения.</li>
+      <li>Открытие MAX для самозанятых расширяет аудиторию платформы. Для агентств это сигнал: в ближайшие месяцы может вырасти спрос на настройку инструментов MAX со стороны небольших клиентов.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 22 июня 2026 за период 19-22 июня
+  </div>
+
+</div>
+</body>
+</html>
