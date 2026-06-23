@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 23 июня 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+
+    .header {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 32px 36px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    .header .issue-line {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      padding: 18px 22px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 28px;
+      font-size: 0.97rem;
+      color: #334155;
+      line-height: 1.7;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      margin: 28px 0 14px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+    .card h2 a {
+      color: #0f172a;
+    }
+    .card h2 a:hover {
+      color: #2563eb;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 0.8rem;
+      color: #64748b;
+      margin-bottom: 14px;
+    }
+    .card-body dt {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #64748b;
+      margin-top: 12px;
+      margin-bottom: 3px;
+    }
+    .card-body dd {
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.6;
+    }
+    .card-conclusion {
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.9rem;
+      color: #1e40af;
+      line-height: 1.6;
+      margin-top: 14px;
+    }
+
+    .not-included-block {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 24px;
+      margin-bottom: 14px;
+    }
+    .not-included-block ul {
+      list-style: none;
+      padding: 0;
+    }
+    .not-included-block ul li {
+      font-size: 0.9rem;
+      color: #475569;
+      padding: 7px 0;
+      border-bottom: 1px solid #f1f5f9;
+      line-height: 1.5;
+    }
+    .not-included-block ul li:last-child {
+      border-bottom: none;
+    }
+    .not-included-block ul li a {
+      color: #475569;
+      font-weight: 500;
+    }
+    .not-included-block ul li a:hover {
+      color: #2563eb;
+    }
+
+    .takeaway {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 28px 32px;
+      border-radius: 12px;
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
+    .takeaway h2 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+    .takeaway ul {
+      list-style: none;
+      padding: 0;
+    }
+    .takeaway ul li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      padding: 8px 0;
+      border-bottom: 1px solid #1e293b;
+      color: #cbd5e1;
+    }
+    .takeaway ul li:last-child {
+      border-bottom: none;
+    }
+    .takeaway ul li strong {
+      color: #f8fafc;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #94a3b8;
+      padding: 20px 0 32px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { margin: 16px auto; }
+      .header { padding: 22px 20px; }
+      .header h1 { font-size: 1.15rem; }
+      .card { padding: 18px 16px; }
+      .takeaway { padding: 22px 18px; }
+      .not-included-block { padding: 16px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <p class="issue-line">Выпуск 23 июня 2026 за период 22-23 июня</p>
+  </header>
+
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>WB Media, Яндекс Директ, Яндекс Тег Менеджер, MAX</strong>.
+  </div>
+
+  <h2 class="section-title">Главное</h2>
+
+  <div class="card primary">
+    <h2><a href="https://ppc.world/news/rwb-media-zapuskaet-reklamnuyu-set-iz-edinogo-kabineta-mozhno-zapuskat-reklamu-na-wildberries-riv-gosh-funampsun-i-eapteke/" target="_blank">RWB Media открыла единый рекламный кабинет для WB, RIV GOSh, FUN&amp;SUN и ЕАПТЕКИ</a></h2>
+    <div class="card-meta">
+      <span>ppc.world, Sostav</span>
+      <span>WB Media</span>
+      <span>23 июня 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>RWB Media запустила рекламную сеть в тестовом режиме: из единого кабинета можно разместить баннеры на площадках Wildberries, RIV GOSh, FUN&amp;SUN и ЕАПТЕКИ. Одновременно в кабинете WB Media появилась CPC-модель оплаты для медийных баннеров: теперь рядом с CPM работает аукцион с оплатой за клик.</dd>
+      <dt>Форматы и условия</dt>
+      <dd>Статические, HTML5 и текстово-графические баннеры. Доступно продавцам WB, агентствам, юрлицам и ИП. Встроена автоматическая маркировка рекламы через ОРД. Кабинет работает в тестовом режиме.</dd>
+      <dt>Почему важно</dt>
+      <dd>Раньше для размещения на каждой из этих платформ нужны были отдельные инструменты. Теперь единый кабинет объединяет ритейл-аудиторию нескольких крупных игроков. CPC-модель снижает риск: платишь только за клики заинтересованных пользователей, а не за показы вслепую.</dd>
+    </dl>
+    <div class="card-conclusion">
+      Вывод: агентствам и e-commerce-специалистам стоит зайти в тестовый режим. Единый кабинет дает доступ к ритейл-аудитории WB и партнеров из одного места с гибкой моделью оплаты.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h2><a href="https://yandex.ru/adv/news/tovarnye-obyavleniya-dlya-prilozheniy-dostupny-dlya-retargetinga" target="_blank">Товарные объявления в Яндекс Директе теперь работают для ретаргетинга в приложениях</a></h2>
+    <div class="card-meta">
+      <span>Яндекс Реклама</span>
+      <span>Яндекс Директ</span>
+      <span>22 июня 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>Товарные объявления для продвижения приложений получили поддержку ретаргетинга. До этого формат работал только на привлечение новых пользователей. Теперь можно возвращать тех, кто уже установил приложение, но не завершил покупку.</dd>
+      <dt>Как использовать</dt>
+      <dd>Доступны два сценария: ретаргетинг по сегменту (показ объявлений неактивным пользователям) и ретаргетинг по офферам (показ товаров, которые пользователь смотрел или добавил в корзину). Для запуска нужен товарный фид с диплинками и трекер событий из приложения с передачей идентификаторов товаров.</dd>
+      <dt>Кому полезно</dt>
+      <dd>E-commerce-приложениям с каталогом товаров. В тестах Спортмастера CPA в ретаргетинговых кампаниях оказалась в 3,4 раза ниже, чем в остальных.</dd>
+    </dl>
+    <div class="card-conclusion">
+      Вывод: если у вас e-commerce-приложение с товарным фидом, ретаргетинг через товарные объявления прямой способ снизить CPA на возврат пользователей к незавершенным покупкам.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h2><a href="https://yandex.ru/adv/news/sabkonteynery-i-novye-nastrojki-triggerov-v-yandeks-teg-menedzhere" target="_blank">В Яндекс Тег Менеджере появились сабконтейнеры и новые настройки триггеров</a></h2>
+    <div class="card-meta">
+      <span>Яндекс Реклама</span>
+      <span>Яндекс Тег Менеджер</span>
+      <span>23 июня 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>В каждом контейнере теперь можно создать до 10 сабконтейнеров по 10 тегов в каждом. Каждый сабконтейнер публикуется независимо: изменения в одном не затрагивают другие, и у каждого свой режим предпросмотра для тестирования.</dd>
+      <dt>Возможности</dt>
+      <dd>Удобно делить теги по направлениям, командам или проектам: маркетолог, аналитик, разработчик и внешнее агентство работают в отдельных пространствах без конфликтов при публикации. Дополнительно появились новые настройки триггеров: счетчик событий (срабатывание на N-е событие) и ограничение числа активаций тега на пользователя, страницу или период.</dd>
+      <dt>Кому подходит</dt>
+      <dd>В первую очередь крупным командам с несколькими специалистами на одном сайте. Но и небольшим агентствам удобно разделить теги по рекламным каналам или задачам клиента.</dd>
+    </dl>
+    <div class="card-conclusion">
+      Вывод: сабконтейнеры снимают частую боль при командной работе с тегами. Изменения в одном направлении больше не блокируют публикацию другого.
+    </div>
+  </div>
+
+  <h2 class="section-title">Остальные обновления</h2>
+
+  <div class="card secondary">
+    <h2><a href="https://blog.click.ru/" target="_blank">Самозанятые получили доступ к Платформе для партнеров MAX</a></h2>
+    <div class="card-meta">
+      <span>Click.ru</span>
+      <span>MAX</span>
+      <span>22 июня 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>До этого Платформа для партнеров MAX была доступна только юридическим лицам и ИП. Теперь к ней могут подключиться самозанятые.</dd>
+      <dt>Что проверить</dt>
+      <dd>Если среди ваших контрагентов или фрилансеров есть самозанятые, работающие с рекламой в MAX, они теперь могут подключиться к платформе напрямую без оформления ИП.</dd>
+    </dl>
+    <div class="card-conclusion">
+      Вывод: расширение доступа для самозанятых снижает барьер входа на платформу MAX и может упростить работу небольших агентств с фрилансерами.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <h2><a href="https://www.cossa.ru/news/349285/" target="_blank">Букмекеры и АРИР утвердили отраслевые рекомендации по добросовестной рекламе</a></h2>
+    <div class="card-meta">
+      <span>Cossa</span>
+      <span>Букмекерская реклама</span>
+      <span>22 июня 2026</span>
+    </div>
+    <dl class="card-body">
+      <dt>Что изменилось</dt>
+      <dd>Букмекерские компании при участии АРИР подписали отраслевые рекомендации о добросовестной рекламе. Документ устанавливает стандарты рекламных коммуникаций для сегмента.</dd>
+      <dt>Кому важно</dt>
+      <dd>Агентствам и специалистам, работающим с букмекерскими клиентами: рекомендации могут влиять на требования к формулировкам, креативам и условиям размещения.</dd>
+    </dl>
+    <div class="card-conclusion">
+      Вывод: рекомендации носят отраслевой характер. Стоит изучить документ заранее, если ведете букмекерские кампании, чтобы не переделывать материалы под новые требования.
+    </div>
+  </div>
+
+  <h2 class="section-title">Не вошло в выпуск</h2>
+  <div class="not-included-block">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/novye-vozmozhnosti-yandeks-metriki-tseli-parametry-multitseli" target="_blank">Яндекс Метрика: мультицели и новые инструменты работы с конверсиями</a> - первая публикация 16.06.2026, вне окна дат</li>
+      <li><a href="https://ppc.world/news/rutube-vozglavil-reyting-platform-dlya-monetizacii-kontenta-v-rossii-avtory-zarabatyvayut-do-150-rubley-za-1000-prosmotrov/" target="_blank">Rutube возглавил рейтинг платформ для монетизации контента</a> - аналитика рейтингов без изменений в рекламном кабинете</li>
+      <li><a href="https://ppc.world/news/reklamnyy-rynok-rossii-v-pervom-kvartale-prevysil-220-mlrd-rubley-no-tempy-rosta-zamedlilis-akar/" target="_blank">Рекламный рынок России Q1 2026 превысил 220 млрд рублей</a> - отраслевая аналитика АКАР без практического изменения</li>
+      <li><a href="https://adindex.ru/news/digital/2026/06/23/346129.phtml" target="_blank">TikTok представил ИИ-агента для создания рекламы</a> - международная платформа, не российский рекламный кабинет</li>
+    </ul>
+  </div>
+
+  <div class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li><strong>RWB Media</strong> объединяет Wildberries, RIV GOSh, FUN&amp;SUN и ЕАПТЕКУ в единый кабинет. Для агентств это новый канал с доступом к ритейл-аудитории нескольких платформ из одного места. Одновременный запуск CPC-модели для баннеров меняет логику закупки: можно не выкупать тысячи показов, а платить только за клики.</li>
+      <li><strong>Ретаргетинг товарных объявлений для приложений</strong> открывает прямой инструмент возврата пользователей к незавершенным покупкам. Актуально для всех, кто продвигает e-commerce-приложение с каталогом товаров. Результат Спортмастера в тестах (CPA в 3,4 раза ниже) дает ориентир по потенциалу.</li>
+      <li><strong>Сабконтейнеры в ЯТМ</strong> актуальны для команд, где над одним сайтом работают несколько специалистов. Теперь у каждого свое рабочее пространство без риска конфликтов при публикации тегов.</li>
+      <li><strong>Самозанятые на MAX</strong> и <strong>рекомендации по букмекерской рекламе</strong> носят точечный характер, но требуют внимания от тех, кто работает с этими сегментами.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 23 июня 2026 за период 22-23 июня</p>
+  </footer>
+
+</div>
+</body>
+</html>
