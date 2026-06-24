@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — 24 июня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #f1f5f9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 16px 48px;
+  }
+  .header {
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 28px 32px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+  .header .issue-line {
+    font-size: 0.88rem;
+    color: #94a3b8;
+  }
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    padding: 16px 22px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 28px;
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 28px 0 12px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .card.secondary {
+    border-left: 4px solid #cbd5e1;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .card-meta {
+    font-size: 0.77rem;
+    color: #64748b;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card-meta .platform {
+    font-weight: 600;
+    color: #1e40af;
+    background: #eff6ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .card-meta .date {
+    color: #94a3b8;
+  }
+  .card-meta .source {
+    color: #64748b;
+  }
+  .card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 14px;
+    line-height: 1.45;
+  }
+  .card h3 a {
+    color: #0f172a;
+    text-decoration: none;
+    border-bottom: 1px solid #e2e8f0;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .card h3 a:hover {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+  }
+  .card-body {
+    font-size: 0.9rem;
+    color: #334155;
+  }
+  .card-field {
+    margin-bottom: 10px;
+  }
+  .card-field .label {
+    font-size: 0.73rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-top: 14px;
+    font-size: 0.87rem;
+    color: #1e3a5f;
+    line-height: 1.55;
+  }
+  .not-included-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .not-included-item {
+    font-size: 0.88rem;
+    color: #475569;
+  }
+  .not-included-item a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-item a:hover {
+    text-decoration: underline;
+  }
+  .not-included-item .reason {
+    color: #94a3b8;
+    margin-left: 4px;
+  }
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-top: 32px;
+  }
+  .takeaway h2 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .takeaway li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .takeaway li:last-child {
+    border-bottom: none;
+  }
+  .takeaway li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3b82f6;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .footer {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 0.78rem;
+    color: #94a3b8;
+    line-height: 1.8;
+  }
+  @media (max-width: 600px) {
+    .wrapper { margin: 10px auto; padding: 0 12px 28px; }
+    .header { padding: 20px 18px; border-radius: 8px; }
+    .header h1 { font-size: 1.15rem; }
+    .card { padding: 16px 16px; }
+    .takeaway { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 24 июня 2026 за период 23-24 июня</div>
+  </div>
+
+  <!-- РЕЗЮМЕ -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений.
+    Затронуты платформы: <strong>Яндекс Директ, RWB Медиа / Wildberries, ВКонтакте, Яндекс Тег Менеджер, МАКС</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <div class="card-meta">
+      <span class="platform">Wildberries / RWB Медиа</span>
+      <span class="date">23 июня 2026</span>
+      <span class="source">ppc.world</span>
+    </div>
+    <h3>
+      <a href="https://ppc.world/news/rwb-media-zapuskaet-reklamnuyu-set-iz-edinogo-kabineta-mozhno-zapuskat-reklamu-na-wildberries-riv-gosh-funampsun-i-eapteke/" target="_blank">
+        RWB Медиа запускает рекламную сеть: единый кабинет для Wildberries, РИВ ГОШ, FUN&amp;SUN и ЕАПТЕКА
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что изменилось</span>
+        RWB Медиа запустила в бета-режиме рекламную сеть на базе кабинета WB Media. Из одного интерфейса можно размещать баннеры на четырех площадках одновременно: Wildberries, РИВ ГОШ, FUN&amp;SUN и ЕАПТЕКА.
+      </div>
+      <div class="card-field">
+        <span class="label">Возможности</span>
+        Форматы: статичные баннеры, HTML5, текстово-графические. Модель закупки - CPM. Таргетинг: платформа, гео, демография, интересы, аудиторные сегменты, частота, расписание. Встроенная автоматическая маркировка рекламы.
+      </div>
+      <div class="card-field">
+        <span class="label">Кому подходит</span>
+        Рекламодатели, агентства, ИП и юрлица, продавцы Wildberries.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Первая попытка объединить рекламный инвентарь нескольких ритейлеров в одном кабинете. Пока бета, но стоит зарегистрировать тестовый доступ - особенно тем, кто работает с FMCG и beauty-сегментами. Следить за выходом из беты и расширением сети партнеров.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-meta">
+      <span class="platform">Яндекс Директ</span>
+      <span class="date">23 июня 2026</span>
+      <span class="source">ppc.world / Яндекс Реклама</span>
+    </div>
+    <h3>
+      <a href="https://ppc.world/news/tovarnye-obyavleniya-v-direkte-teper-mozhno-ispolzovat-dlya-retargetinga-pri-prodvizhenii-mobilnyh-prilozheniy/" target="_blank">
+        Товарные объявления в Директе - ретаргетинг для мобильных приложений
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что изменилось</span>
+        Товарные объявления теперь доступны для ретаргетинга в кампаниях на продвижение мобильных приложений. Два механизма: сегментный ретаргетинг (показ по пользователям, которые давно не открывали приложение) и офферный ретаргетинг в бета (автогенерация объявлений из фида для тех, кто смотрел товары или добавил в корзину, но не купил).
+      </div>
+      <div class="card-field">
+        <span class="label">Что нужно</span>
+        Фид с трекинговыми ссылками и диплинками, настроенная передача событий из приложения через трекер.
+      </div>
+      <div class="card-field">
+        <span class="label">Результаты теста</span>
+        Спортмастер + ProKontekst: ДРР в тестовых кампаниях оказался в 3,4 раза ниже, чем в остальных.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Ретаргетинг через товарные объявления в приложениях давно ждали. ДРР в 3,4 раза ниже - весомый аргумент для приоритетного запуска. Если есть мобильное приложение с фидом, тестировать в первую очередь.
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <div class="card-meta">
+      <span class="platform">Яндекс Тег Менеджер</span>
+      <span class="date">23 июня 2026</span>
+      <span class="source">ppc.world / Яндекс Реклама</span>
+    </div>
+    <h3>
+      <a href="https://ppc.world/news/v-yandeks-teg-menedzhere-poyavilis-sabkonteynery-dlya-parallelnoy-raboty-nad-tegami/" target="_blank">
+        Яндекс Тег Менеджер: сабконтейнеры для параллельной работы команд
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что изменилось</span>
+        Появились сабконтейнеры - до 10 изолированных рабочих пространств внутри одного контейнера (до 10 тегов, триггеров и переменных в каждом). Маркетологи, аналитики, разработчики и подрядчики могут работать параллельно без конфликтов и публиковать изменения независимо.
+      </div>
+      <div class="card-field">
+        <span class="label">Новые настройки тегов</span>
+        Счетчик событий для триггеров (например, показ попапа после третьего просмотра страницы) и лимиты активации тега на пользователя, страницу или временной период.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Полезно для агентств и крупных клиентов, где одним контейнером пользуются несколько подрядчиков. Снижает риск конфликтов при деплое тегов и упрощает тестирование через изолированный превью.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <div class="card-meta">
+      <span class="platform">ВКонтакте</span>
+      <span class="date">23 июня 2026</span>
+      <span class="source">ppc.world</span>
+    </div>
+    <h3>
+      <a href="https://ppc.world/news/v-kanalah-vkontakte-poyavilis-videosoobscheniya-zakreplennye-posty-i-repost-v-istoriyu/" target="_blank">
+        ВКонтакте: видеосообщения, закрепленные посты и репосты в историю в каналах
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что появилось</span>
+        Видеокружки в каналах (как в чатах), закрепление до 20 публикаций под названием канала, репосты постов канала в личные истории для привлечения новых подписчиков. Сообщения канала теперь показываются в папке "Все" наравне с чатами.
+      </div>
+      <div class="card-field">
+        <span class="label">Рекламный контекст</span>
+        VK Реклама позволяет продвигать каналы одновременно в МАКС, ВКонтакте и Дзене. Новые форматы контента внутри канала повышают органическое вовлечение, которое усиливает отдачу от платного продвижения.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Для тех, кто продвигает каналы через VK Рекламу: новые форматы увеличивают удержание аудитории. Рост органики работает как мультипликатор к платному продвижению.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <div class="card-meta">
+      <span class="platform">Яндекс Директ / МАКС</span>
+      <span class="date">23-24 июня 2026</span>
+      <span class="source">Яндекс Реклама</span>
+    </div>
+    <h3>
+      <a href="https://yandex.ru/adv/news/reklama-v-messendzherah-direct-vozmozhnost-vybora-kanalov-v-maks" target="_blank">
+        Реклама в МАКС через Директ: выбор каналов, оптимизация на конверсии и кешбэк 10%
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что изменилось</span>
+        В рекламе в мессенджерах через Директ появилась возможность выбирать конкретные каналы в МАКС для размещения. Добавлена оптимизация кампаний на конверсии. Параллельно действует кешбэк 10% на рекламу в мессенджерах.
+      </div>
+      <div class="card-field">
+        <span class="label">Кому полезно</span>
+        Рекламодателям, работающим с размещением в Telegram- и МАКС-каналах через Яндекс Директ и ищущим более точечный контроль над плейсментами.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Три обновления сразу: таргетинг по конкретным каналам, оптимизация на конверсии и кешбэк - хороший момент для первого запуска или расширения объема в МАКС.
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="card secondary">
+    <div class="not-included-list">
+      <div class="not-included-item">
+        <a href="https://magnetto.pro/media/news/magnettopro-snizhaet-komissiyu-s-15-do-10-na-pervoe-popolnenie-v-aprele/" target="_blank">Magnetto.pro снижает комиссию с 15% до 10% на первое пополнение</a>
+        <span class="reason">- акция опубликована в апреле 2026, вне окна дат</span>
+      </div>
+      <div class="not-included-item">
+        <a href="https://ppc.world/news/rutube-vozglavil-reyting-platform-dlya-monetizacii-kontenta-v-rossii-avtory-zarabatyvayut-do-150-rubley-za-1000-prosmotrov/" target="_blank">RuTube возглавил рейтинг платформ монетизации контента в России</a>
+        <span class="reason">- монетизация контента для авторов, не рекламный кабинет</span>
+      </div>
+      <div class="not-included-item">
+        <a href="https://ppc.world/news/telegram-testiruet-rasshirennyy-tekstovyy-redaktor-s-tablicami-i-formulami/" target="_blank">Telegram тестирует расширенный текстовый редактор с таблицами и формулами</a>
+        <span class="reason">- функция мессенджера, изменений в рекламном кабинете Telegram Ads нет</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li>RWB Медиа объединила инвентарь Wildberries, РИВ ГОШ, FUN&amp;SUN и ЕАПТЕКА в один кабинет - первая в России кросс-сетевая баннерная платформа на базе ритейлеров. Пока бета, но стоит зафиксировать и следить за запуском.</li>
+      <li>Ретаргетинг через товарные объявления Директа для мобильных приложений - значимое расширение: ДРР в 3,4 раза ниже у первых тестировщиков, формат доступен уже сейчас. Приоритет - у тех, у кого есть фид и мобильное приложение.</li>
+      <li>Яндекс Тег Менеджер с сабконтейнерами станет удобнее для командной работы - меньше конфликтов при одновременном деплое тегов несколькими специалистами.</li>
+      <li>Три обновления для рекламы в МАКС сразу - выбор каналов, оптимизация на конверсии и кешбэк 10% - делают сейчас оптимальным моментом для первого запуска или наращивания объема в мессенджерах.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 24 июня 2026 за период 23-24 июня
+  </div>
+
+</div>
+</body>
+</html>
