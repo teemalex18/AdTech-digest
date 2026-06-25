@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ — 25 июня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #f1f5f9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 16px 48px;
+  }
+  .header {
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 28px 32px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+  .header .issue-line {
+    font-size: 0.88rem;
+    color: #94a3b8;
+  }
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    padding: 16px 22px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 28px;
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 28px 0 12px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .card.secondary {
+    border-left: 4px solid #cbd5e1;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .card-meta {
+    font-size: 0.77rem;
+    color: #64748b;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card-meta .platform {
+    font-weight: 600;
+    color: #1e40af;
+    background: #eff6ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .card-meta .platform.urgent {
+    color: #9f1239;
+    background: #fff1f2;
+  }
+  .card-meta .date {
+    color: #94a3b8;
+  }
+  .card-meta .source {
+    color: #64748b;
+  }
+  .card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 14px;
+    line-height: 1.45;
+  }
+  .card h3 a {
+    color: #0f172a;
+    text-decoration: none;
+    border-bottom: 1px solid #e2e8f0;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .card h3 a:hover {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+  }
+  .card-body {
+    font-size: 0.9rem;
+    color: #334155;
+  }
+  .card-field {
+    margin-bottom: 10px;
+  }
+  .card-field .label {
+    font-size: 0.73rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-top: 14px;
+    font-size: 0.87rem;
+    color: #1e3a5f;
+    line-height: 1.55;
+  }
+  .not-included-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .not-included-item {
+    font-size: 0.88rem;
+    color: #475569;
+  }
+  .not-included-item a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-item a:hover {
+    text-decoration: underline;
+  }
+  .not-included-item .reason {
+    color: #94a3b8;
+    margin-left: 4px;
+  }
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-top: 32px;
+  }
+  .takeaway h2 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .takeaway li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .takeaway li:last-child {
+    border-bottom: none;
+  }
+  .takeaway li::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3b82f6;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .footer {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 0.78rem;
+    color: #94a3b8;
+    line-height: 1.8;
+  }
+  @media (max-width: 600px) {
+    .wrapper { margin: 10px auto; padding: 0 12px 28px; }
+    .header { padding: 20px 18px; border-radius: 8px; }
+    .header h1 { font-size: 1.15rem; }
+    .card { padding: 16px 16px; }
+    .takeaway { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 25 июня 2026 за период 24-25 июня</div>
+  </div>
+
+  <!-- РЕЗЮМЕ -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений.
+    Затронуты платформы: <strong>Яндекс Реклама, Яндекс Директ, РСЯ, Яндекс Метрика</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <div class="card-meta">
+      <span class="platform">Яндекс Реклама</span>
+      <span class="date">25 июня 2026</span>
+      <span class="source">Яндекс Реклама (официально), AdIndex, Sostav, ppc.world</span>
+    </div>
+    <h3>
+      <a href="https://yandex.ru/adv/news/maksimalnyy-ohvat-i-gibkoe-upravlenie-kampaniey-s-prime-bannerom" target="_blank">
+        Яндекс запустил единый медийный формат «Прайм-баннер»
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что изменилось</span>
+        Яндекс объединил охватные медийные форматы в один продукт - Прайм-баннер. Размещение на аукционной основе на ключевых площадках экосистемы: Поиск, Браузер, Погода, Маркет, Почта, Кинопоиск, Музыка.
+      </div>
+      <div class="card-field">
+        <span class="label">Условия и форматы</span>
+        Минимальный бюджет - 300 руб. CPM от 150 руб. Размеры: 1080x450, 2832x600, 940x1524. Более 600 опций таргетинга, включая сегменты Яндекс Метрики и Аудиторий без дополнительных наценок.
+      </div>
+      <div class="card-field">
+        <span class="label">Возможности управления</span>
+        Настройка кросс-частоты показов, черные списки площадок, выбор типа устройств (мобильные, десктоп, все). Замер эффекта через Brand Lift, Search Lift, Visit Lift, Target Lift.
+      </div>
+      <div class="card-field">
+        <span class="label">Кому подходит</span>
+        Бренд-менеджерам и специалистам по медийной рекламе, ведущим охватные кампании в Яндексе. Единая точка управления вместо разрозненных форматов.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Прайм-баннер - консолидация охватной медийки Яндекса в единое размещение. CPM от 150 руб. и отсутствие наценки на сегменты Метрики делают его привлекательным для тех, кто уже работает с данными Яндекс Метрики.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-meta">
+      <span class="platform urgent">Срочно: дедлайн 30 июня</span>
+      <span class="platform">Яндекс Директ</span>
+      <span class="date">24 июня 2026</span>
+      <span class="source">Click.ru</span>
+    </div>
+    <h3>
+      <a href="https://blog.click.ru/market-news/yandeks-direkt-perevedet-obyavleniya-v-epk-na-kombinatornyj-format-etim-letom/" target="_blank">
+        Яндекс Директ переводит ТГО в ЕПК на комбинаторный формат - переход обязательный
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что меняется</span>
+        Текстово-графические объявления (ТГО) в Единых перформанс-кампаниях заменяются комбинаторным форматом. Переход двухэтапный и обязательный для всех.
+      </div>
+      <div class="card-field">
+        <span class="label">Сроки</span>
+        30 июня - последний день для создания новых ТГО. Существующие объявления продолжают показываться в штатном режиме.<br>
+        Июль 2026 - все оставшиеся ТГО конвертируются автоматически. Статистика и настройки сохраняются.
+      </div>
+      <div class="card-field">
+        <span class="label">Почему важно</span>
+        Комбинаторный формат позволяет загружать несколько вариантов заголовков, текстов, изображений и видео - система составляет и тестирует комбинации самостоятельно. По данным Яндекса, это дает в среднем на 50% больше конверсий по сравнению с одним-двумя объявлениями в группе.
+      </div>
+      <div class="card-field">
+        <span class="label">Что проверить</span>
+        Протестировать комбинаторные объявления в текущих кампаниях до 30 июня. После этой даты создание ТГО будет недоступно.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      До конца недели последний шанс протестировать ТГО в управляемом режиме. В июле Директ переведет все кампании автоматически. Лучше сделать тест сейчас, пока переход под контролем.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-meta">
+      <span class="platform urgent">Срочно: дедлайн 30 июня</span>
+      <span class="platform">РСЯ</span>
+      <span class="date">25 июня 2026</span>
+      <span class="source">ppc.world</span>
+    </div>
+    <h3>
+      <a href="https://ppc.world/news/rsya-napomnila-o-prekraschenii-sotrudnichestva-s-fizlicami-do-1-iyulya-nuzhno-pereyti-na-samozanyatost-ili-ip/" target="_blank">
+        РСЯ прекращает работу с физлицами с 1 июля - переоформление до 30 июня
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что изменилось</span>
+        Рекламная сеть Яндекса прекращает сотрудничество с физлицами-резидентами России. С 1 июля 2026 года партнерский договор без переоформления статуса прекращается автоматически.
+      </div>
+      <div class="card-field">
+        <span class="label">Варианты перехода</span>
+        Самозанятость: налог 6% вместо 13-22% НДФЛ, РСЯ автоматически формирует и передает чеки в налоговое приложение.<br>
+        ИП на УСН: тот же налог 6%, расширенный набор возможностей для ведения бизнеса.
+      </div>
+      <div class="card-field">
+        <span class="label">Кому важно</span>
+        Всем, кто монетизирует сайты, блоги или приложения через РСЯ как физлицо. Дедлайн - 30 июня 2026.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Жесткий дедлайн: 30 июня. Если в команде или у клиентов есть партнеры РСЯ без юридического оформления, нужно решить вопрос до конца недели.
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <div class="card-meta">
+      <span class="platform">Яндекс Директ</span>
+      <span class="date">25 июня 2026</span>
+      <span class="source">Click.ru / Яндекс Реклама</span>
+    </div>
+    <h3>
+      <a href="https://blog.click.ru/market-news/yandeks-direkt-zapustil-ii-strategiyu-dlya-inflyuens-reklamy-v-messendzherax/" target="_blank">
+        Яндекс Директ запустил ИИ-стратегию для рекламы в мессенджерах
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Как работает</span>
+        Рекламодатель задает бюджет и целевое действие (покупка, заявка, регистрация). Алгоритм Yandex Neuro Ads самостоятельно подбирает каналы в Telegram и МАКС, рассчитывает ставки и оптимизирует размещение в реальном времени. Система обучается индивидуально для каждого рекламодателя.
+      </div>
+      <div class="card-field">
+        <span class="label">Кому подходит</span>
+        Рекламодателям, которые хотят охват в Telegram и МАКС без ручного подбора каналов и переговоров с владельцами. Достаточно задать бюджет и целевое действие.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      ИИ-алгоритмы уже управляют 85% бюджетов в Директе. Теперь эта логика распространяется на мессенджерную рекламу. Автоматизация убирает ручной труд по подбору и согласованию размещений.
+    </div>
+  </div>
+
+  <div class="card secondary">
+    <div class="card-meta">
+      <span class="platform">Яндекс Метрика</span>
+      <span class="date">25 июня 2026</span>
+      <span class="source">Click.ru, Яндекс Реклама</span>
+    </div>
+    <h3>
+      <a href="https://blog.click.ru/market-news/v-yandeks-metrike-poyavilis-multiceli-i-novye-instrumenty-dlya-raboty-s-konversiyami/" target="_blank">
+        В Яндекс Метрике появились мультицели и обновленные инструменты конверсий
+      </a>
+    </h3>
+    <div class="card-body">
+      <div class="card-field">
+        <span class="label">Что изменилось</span>
+        В Метрике появились мультицели - возможность объединять несколько целей в одну составную. Одна мультицель как единый ориентир для алгоритма Директа вместо набора разрозненных отдельных целей.
+      </div>
+      <div class="card-field">
+        <span class="label">Почему важно</span>
+        Упрощает настройку кампаний для сложных воронок с несколькими микроконверсиями. Единая составная цель понятнее и для системы оптимизации, и для внутренней отчетности.
+      </div>
+    </div>
+    <div class="card-conclusion">
+      Полезно для агентств и команд, где несколько KPI ведут к одной бизнес-цели. Не нужно выбирать одну цель из нескольких или строить сложные составные счетчики вручную.
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="card secondary">
+    <div class="not-included-list">
+      <div class="not-included-item">
+        <a href="https://adindex.ru/news/right/2026/06/24/346213.phtml" target="_blank">Рекламу криптовалют могут запретить в России</a>
+        <span class="reason">- законодательная инициатива, решение не принято.</span>
+      </div>
+      <div class="not-included-item">
+        <a href="https://www.sostav.ru/publication/reklama-v-makse-analitiki-predstavili-tsifry-po-auditorii-cpv-i-vovlechennosti-84813.html" target="_blank">Реклама в Максе: аналитики представили данные по аудитории, CPV и вовлеченности</a>
+        <span class="reason">- аналитическое исследование без новых инструментов размещения.</span>
+      </div>
+      <div class="not-included-item">
+        <a href="https://ppc.world/news/apple-udalila-prilozheniya-vk-iz-app-store-polzovateli-ne-smogut-poluchat-push-uvedomleniya/" target="_blank">Apple удалила приложения VK из App Store</a>
+        <span class="reason">- техническое событие, рекламные кабинеты VK не затронуты напрямую.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <h2>Summary</h2>
+    <ul>
+      <li>До 30 июня два обязательных действия: протестировать комбинаторный формат в ЕПК (30 июня - последний день для создания ТГО) и переоформить статус для партнеров РСЯ, работающих как физлица. Оба дедлайна жесткие.</li>
+      <li>Прайм-баннер - крупное структурное изменение в медийке Яндекса: единый охватный формат на весь экосистемный трафик, CPM от 150 руб. без наценки на сегменты Метрики. Для бренд-кампаний стоит запускать тесты уже сейчас.</li>
+      <li>ИИ-оптимизация в Директе теперь охватывает мессенджеры: Telegram и МАКС подключены к той же автоматизации, что управляет 85% рекламных бюджетов Директа. Ручной подбор каналов становится необязательным.</li>
+      <li>Мультицели в Метрике - практичное обновление для агентств с несколькими KPI на кампанию. Единая составная цель упрощает настройку и аналитику.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 25 июня 2026 за период 24-25 июня
+  </div>
+
+</div>
+</body>
+</html>
