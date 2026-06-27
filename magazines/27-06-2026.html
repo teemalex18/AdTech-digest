@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 27 июня 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* Header */
+.header {
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: 12px;
+  padding: 32px 36px;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.header .issue-line {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Summary */
+.summary {
+  background: #fff;
+  border-radius: 10px;
+  border-left: 4px solid #2563eb;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.75;
+}
+.stat {
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 1.08em;
+}
+
+/* Section title */
+.section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #64748b;
+  margin: 28px 0 12px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 22px 26px;
+  margin-bottom: 16px;
+}
+.card.primary {
+  border-left: 4px solid #2563eb;
+}
+.card.secondary {
+  border-left: 4px solid #cbd5e1;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.card h3 a {
+  color: #1e293b;
+  text-decoration: none;
+}
+.card h3 a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.card-meta span {
+  font-size: 0.78rem;
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 2px 9px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.card-section {
+  margin-bottom: 12px;
+}
+.card-section:last-of-type {
+  margin-bottom: 0;
+}
+.card-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #94a3b8;
+  margin-bottom: 3px;
+}
+.card-section p {
+  font-size: 0.93rem;
+  color: #374151;
+}
+
+.card-conclusion {
+  background: #eff6ff;
+  border-left: 3px solid #93c5fd;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-top: 16px;
+  font-size: 0.89rem;
+  color: #1e40af;
+  line-height: 1.6;
+}
+
+/* Exclusions list */
+.exclusion-list {
+  list-style: none;
+  padding: 0;
+}
+.exclusion-list li {
+  padding: 9px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.5;
+}
+.exclusion-list li:last-child {
+  border-bottom: none;
+}
+.exclusion-list a {
+  color: #334155;
+  font-weight: 500;
+  text-decoration: none;
+}
+.exclusion-list a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.exclusion-list .reason {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* Takeaway / SUMMARY */
+.takeaway {
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.takeaway .takeaway-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+.takeaway ul {
+  list-style: none;
+  padding: 0;
+}
+.takeaway ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #1e293b;
+  font-size: 0.92rem;
+  color: #e2e8f0;
+  line-height: 1.65;
+}
+.takeaway ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  padding: 12px 0 36px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .wrapper { padding: 0 12px; }
+  .header { padding: 24px 20px; }
+  .header h1 { font-size: 1.15rem; }
+  .card { padding: 18px 16px; }
+  .takeaway { padding: 22px 20px; }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <header class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 27 июня 2026 за период 26-27 июня</div>
+  </header>
+
+  <!-- Резюме -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>MAX, Яндекс Метрика, Яндекс Директ</strong>.
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1: MAX comments -->
+  <div class="card primary">
+    <h3><a href="https://ppc.world" target="_blank" rel="noopener">MAX тестирует комментарии в публичных каналах</a></h3>
+    <div class="card-meta">
+      <span>MAX</span>
+      <span>ppc.world, Sostav</span>
+      <span>26 июня 2026</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что изменилось</div>
+      <p>Мессенджер MAX запустил тест функции комментариев в публичных каналах. На первом этапе доступно авторам с аудиторией от 100 подписчиков.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Возможности для рекламодателей</div>
+      <p>Комментарии меняют динамику взаимодействия с аудиторией: активные обсуждения под постами - это сигнал живости канала. Каналы с комментариями в целом показывают лучшие метрики вовлеченности, что делает их привлекательнее для нативной и брендовой интеграции.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Кому полезно</div>
+      <p>Брендам и агентствам, которые размещают или планируют размещение в мессенджерах. Следите за каналами из вашего пула - наличие комментариев станет дополнительным показателем качества площадки.</p>
+    </div>
+    <div class="card-conclusion">
+      Вывод: пока функция на стадии теста, но это сигнал о развитии MAX как рекламной среды. Заложите в медиаплан проверку активности комментариев при выборе каналов.
+    </div>
+  </div>
+
+  <!-- Card 2: Yandex Metrika offline -->
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс Метрика: детальная офлайн-диагностика конверсий</a></h3>
+    <div class="card-meta">
+      <span>Яндекс Метрика</span>
+      <span>Яндекс Реклама (официально), ppc.world</span>
+      <span>26 июня 2026</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что изменилось</div>
+      <p>В Яндекс Метрике появилась детальная диагностика офлайн-конверсий. Рекламодатели теперь видят расширенную аналитику по конверсиям, которые происходят вне онлайн-сессий: звонки, визиты, сделки, переданные через загрузку офлайн-данных.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что проверить</div>
+      <p>В интерфейсе Метрики должен появиться обновленный раздел с офлайн-конверсиями. Стоит сравнить данные с CRM и проверить корректность матчинга, особенно если вы используете офлайн-конверсии как цель в автостратегиях Яндекс Директа.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Кому полезно</div>
+      <p>Рекламодателям с офлайн-бизнесом: авторитейл, недвижимость, медицина, B2B - все, кто передает данные о сделках обратно в Метрику через API или файловую загрузку.</p>
+    </div>
+    <div class="card-conclusion">
+      Вывод: больше данных по офлайн-конверсиям - лучше сигналы для автостратегий. Если офлайн-конверсии уже настроены, проверьте новый отчет и убедитесь, что данные передаются корректно.
+    </div>
+  </div>
+
+  <!-- Card 3: Product ads for apps retargeting -->
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс Директ: товарные объявления для приложений стали доступны в ретаргетинге</a></h3>
+    <div class="card-meta">
+      <span>Яндекс Директ</span>
+      <span>Яндекс Реклама (официально)</span>
+      <span>26-27 июня 2026</span>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Что изменилось</div>
+      <p>Товарные объявления, ранее доступные только для привлечения новых пользователей приложений, теперь можно использовать в ретаргетинговых кампаниях. Формат показывает конкретные товары или позиции из каталога приложения повторной аудитории.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Как использовать</div>
+      <p>Создайте сегмент пользователей, которые установили приложение, но не совершили покупку. Настройте на них товарные объявления с конкретными позициями, которые они просматривали. Это возврат с персонализированным предложением, а не общий ремаркетинг.</p>
+    </div>
+    <div class="card-section">
+      <div class="card-label">Кому подходит</div>
+      <p>Мобильным e-commerce приложениям: маркетплейсы, fashion, FMCG с мобильным каналом продаж. Особенно актуально для приложений с большой базой установок, но невысокой конверсией в покупку.</p>
+    </div>
+    <div class="card-conclusion">
+      Вывод: товарный ретаргетинг для приложений - это точечный инструмент возврата с продуктовым контекстом. Если у вас есть приложение с продуктовым фидом, стоит запустить тест на ушедших пользователях.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="card secondary">
+    <ul class="exclusion-list">
+      <li>
+        <a href="https://yandex.ru/adv/news" target="_blank" rel="noopener">Яндекс запустил Прайм-баннер: единый медийный формат на всех поверхностях</a>
+        <span class="reason"> - рассмотрено в выпуске от 26 июня</span>
+      </li>
+      <li>
+        <a href="https://ppc.world" target="_blank" rel="noopener">Авито Реклама: ретаргетинг по кампаниям и группам объявлений</a>
+        <span class="reason"> - рассмотрено в выпуске от 26 июня</span>
+      </li>
+      <li>
+        <a href="https://ppc.world" target="_blank" rel="noopener">Рекламодатели увеличили расходы в MAX в 37 раз, средний чек вырос в 4,7 раза</a>
+        <span class="reason"> - рыночная тенденция без изменений в рекламном кабинете</span>
+      </li>
+      <li>
+        <a href="https://www.sostav.ru" target="_blank" rel="noopener">YouTube убрал дизлайк из Shorts, заменив лайки на сердечки</a>
+        <span class="reason"> - глобальная платформа, изменение интерфейса не затрагивает российские рекламные кабинеты</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="takeaway-label">Summary</div>
+    <ul>
+      <li>MAX развивается как рекламная площадка: комментарии в каналах - не просто продуктовая функция, а новый критерий качества площадки при выборе размещения. Следите за аудиторными метриками в каналах, которые вы закупаете.</li>
+      <li>Офлайн-диагностика в Метрике делает данные по конверсиям более прозрачными. Для тех, кто оптимизирует Директ по звонкам и офлайн-сделкам, это прямой повод проверить настройку и качество данных.</li>
+      <li>Товарный ретаргетинг для приложений в Директе закрывает важный пробел: теперь мобильный e-commerce может работать с ушедшей аудиторией через персонализированный продуктовый формат, а не только через общий ремаркетинг.</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 27 июня 2026 за период 26-27 июня
+  </footer>
+
+</div>
+</body>
+</html>
