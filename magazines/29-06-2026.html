@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ — 29 июня 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #1a1a2e;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 32px 36px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+    .header .meta {
+      color: #8fa3c2;
+      font-size: 0.9rem;
+    }
+    .summary {
+      background: #fff;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #374151;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 28px 0 14px 0;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+    .card.primary {
+      border-left: 4px solid #2563eb;
+    }
+    .card.secondary {
+      border-left: 4px solid #94a3b8;
+    }
+    .card h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .card h2 a {
+      color: #1a1a2e;
+      text-decoration: none;
+    }
+    .card h2 a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 0.82rem;
+      color: #6b7280;
+      margin-bottom: 14px;
+    }
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .card-body {
+      font-size: 0.93rem;
+      color: #374151;
+    }
+    .card-body dl {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 8px 16px;
+    }
+    .card-body dt {
+      font-weight: 600;
+      color: #6b7280;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding-top: 3px;
+      white-space: nowrap;
+    }
+    .card-body dd {
+      color: #374151;
+    }
+    .card-conclusion {
+      margin-top: 16px;
+      padding: 12px 16px;
+      background: #f0f7ff;
+      border-left: 3px solid #93c5fd;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.9rem;
+      color: #1e40af;
+    }
+    .missed-list {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      padding: 20px 28px;
+    }
+    .missed-list li {
+      list-style: none;
+      padding: 9px 0;
+      border-bottom: 1px solid #f3f4f6;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    .missed-list li:last-child { border-bottom: none; }
+    .missed-list a {
+      color: #374151;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .missed-list a:hover { color: #2563eb; text-decoration: underline; }
+    .takeaway {
+      background: #1a1a2e;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-top: 28px;
+    }
+    .takeaway h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      margin-bottom: 16px;
+    }
+    .takeaway ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+    .takeaway li {
+      padding-left: 20px;
+      position: relative;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+    .takeaway li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 8px;
+      height: 2px;
+      background: #3b82f6;
+    }
+    .footer {
+      text-align: center;
+      padding: 24px 0 8px;
+      font-size: 0.82rem;
+      color: #9ca3af;
+      line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      body { padding: 12px; }
+      .header { padding: 22px 20px; border-radius: 10px; }
+      .card { padding: 18px 20px; }
+      .missed-list { padding: 16px 20px; }
+      .takeaway { padding: 22px 20px; border-radius: 10px; }
+      .card-body dl {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+      .card-body dt { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="meta">Выпуск 29 июня 2026 за период 26-29 июня</div>
+  </header>
+
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Авито Реклама, Яндекс Метрика, VK Макс, Яндекс Реклама</strong>.
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h2><a href="https://ppc.world/news/v-avito-reklame-poyavilsya-retargeting-po-kampaniyam-i-gruppam-obyavleniy/" target="_blank">В Авито Рекламе появился ретаргетинг по кампаниям и группам объявлений</a></h2>
+    <div class="card-meta">
+      <span><span class="badge">Авито Реклама</span></span>
+      <span>ppc.world + AdIndex</span>
+      <span>26 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <dl>
+        <dt>Что изменилось</dt>
+        <dd>В разделе "Аудитории" кабинета Авито Рекламы теперь можно создавать сегменты на основе конкретных кампаний или групп объявлений. Два условия: "Видели объявление" или "Кликнули по объявлению". Требования: кампании должны быть активны последние 30 дней (черновики и запланированные не подходят), минимум 5 000 пользователей в сегменте.</dd>
+        <dt>Как использовать</dt>
+        <dd>Сегмент можно комбинировать с другими аудиториями, включая таксономию Авито. Это позволяет строить сценарии: показывать рекламу тем, кто видел конкретный продукт, но не перешёл на страницу объявления.</dd>
+        <dt>Кому полезно</dt>
+        <dd>Рекламодателям с несколькими кампаниями по разным категориям. Агентствам, которые ведут клиентов с широким ассортиментом на Авито.</dd>
+      </dl>
+    </div>
+    <div class="card-conclusion">Раньше ретаргетинг в Авито работал только по всему аккаунту. Теперь точность выше: можно изолировать аудиторию конкретной кампании и не смешивать сегменты разных продуктов.</div>
+  </div>
+
+  <div class="card primary">
+    <h2><a href="https://yandex.ru/adv/news/detalnye-otchety-po-oflayn-dannym-v-metrike" target="_blank">Яндекс Метрика: в отчётах по офлайн-данным теперь видна судьба каждой конверсии</a></h2>
+    <div class="card-meta">
+      <span><span class="badge">Яндекс Метрика</span></span>
+      <span>Яндекс Реклама (официально) + ppc.world</span>
+      <span>26 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <dl>
+        <dt>Что изменилось</dt>
+        <dd>Обновлены три отчёта: "Звонки, детально", "Чаты, детально", "Офлайн-конверсии". Для каждой записи теперь отображаются идентификаторы привязки (ClientID, UserID, yclid, PurchaseID), цели и доход, статус привязки и причина ошибки при неудачной привязке. Данные фильтруются по идентификаторам и статусу.</dd>
+        <dt>Что ещё</dt>
+        <dd>Анонсирован новый отчёт "Загрузки офлайн-данных" - покажет историю загрузок по батчам с полным статусом каждой операции.</dd>
+        <dt>Кому полезно</dt>
+        <dd>Всем, кто загружает офлайн-конверсии: колл-трекинг, чат-сервисы, CRM-интеграции. Отчёты обновились автоматически, дополнительных настроек не нужно.</dd>
+      </dl>
+    </div>
+    <div class="card-conclusion">Загрузка офлайн-конверсий раньше была "чёрным ящиком": непонятно, почему часть конверсий не привязалась. Теперь причина видна в отчёте - это существенно ускоряет диагностику качества данных.</div>
+  </div>
+
+  <div class="card primary">
+    <h2><a href="https://ppc.world/news/reklamodateli-uvelichili-traty-na-maks-v-37-raz-dannye-elama/" target="_blank">VK Макс: первые рыночные бенчмарки по CPV, охвату и сравнение с Telegram</a></h2>
+    <div class="card-meta">
+      <span><span class="badge">VK Макс</span></span>
+      <span>ppc.world (данные eLama)</span>
+      <span>26 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <dl>
+        <dt>Рост рынка</dt>
+        <dd>С января по май 2026: число клиентов eLama на Максе выросло в 7,5 раза, расходы - в 37 раз, средний чек - в 4,7 раза.</dd>
+        <dt>Ориентиры по стоимости</dt>
+        <dd>CPV по категориям: новости/медиа - около 0,31 руб., видеоигры - 0,40 руб., хобби - 0,41 руб., блоги - 0,64 руб. Медиана стоимости публикации - около 1 400 руб. Дешевле Telegram, но разрыв сокращается.</dd>
+        <dt>Аудитория</dt>
+        <dd>68 млн пользователей 12+, 56% женщины, основной возраст 25-54 года. Engagement rate 20-25% против 15% в Telegram.</dd>
+        <dt>Кейсы</dt>
+        <dd>Недвижимость: лиды на 36% дешевле Telegram. Мобильные приложения: установки в 4 раза дешевле, кликов в 3,5 раза больше. Прирост брендовых запросов в поиске - 40-50%.</dd>
+      </dl>
+    </div>
+    <div class="card-conclusion">Точка входа сейчас относительно недорогая, конкуренция ещё невысока. Если Telegram и ВКонтакте уже в работе, Макс стоит протестировать - особенно для женской аудитории 25-54 лет.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h2><a href="https://adindex.ru/news/marketing/2026/06/29/346372.phtml" target="_blank">Яндекс запустил Прайм-баннер - единый охватный формат с кросс-частотным управлением</a></h2>
+    <div class="card-meta">
+      <span><span class="badge">Яндекс Реклама</span></span>
+      <span>AdIndex + Яндекс Реклама (официально)</span>
+      <span>29 июня 2026</span>
+    </div>
+    <div class="card-body">
+      <dl>
+        <dt>Что это</dt>
+        <dd>Новый единый формат для охватных кампаний в Яндексе. Позволяет управлять показами и частотой сразу на нескольких поверхностях экосистемы из одной кампании. Включает кросс-частотный контроль и гибкое управление настройками показа.</dd>
+        <dt>Кому подходит</dt>
+        <dd>Брендам с задачами медийной охватной рекламы в Яндексе. Удобен тем, кому важно контролировать суммарную частоту контакта с аудиторией, не создавая отдельные кампании для каждой поверхности.</dd>
+      </dl>
+    </div>
+    <div class="card-conclusion">Для охватных медийных кампаний - стоит тестировать как альтернативу нескольким раздельным кампаниям. Упрощает управление частотой и снижает пересечение аудиторий.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="missed-list">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/avtotseli-dlya-internet-magazinov-fiksatsiya-pokupok-v-metrike" target="_blank">Автоцели для интернет-магазинов в Яндекс Метрике</a> - вне окна дат, первая публикация 18 июня</li>
+      <li><a href="https://yandex.ru/adv/news/monetizatsiya-kanalov-v-dzene-teper-dostupna-v-rsya-dlya-blogerov" target="_blank">Монетизация каналов Дзена через РСЯ для блогеров</a> - вне окна дат, первая публикация 19 июня</li>
+      <li><a href="https://blog.click.ru/market-news/yandeks-direkt-zapustil-ii-strategiyu-dlya-inflyuens-reklamy-v-messendzherax/" target="_blank">Яндекс Директ: ИИ-стратегия для инфлюенс-рекламы в мессенджерах</a> - вне окна дат, первая публикация 25 июня</li>
+      <li><a href="https://ppc.world/news/yandeks-predstavil-platformu-dlya-sozdaniya-ii-agentov-v-alise-ai/" target="_blank">Яндекс: платформа для создания ИИ-агентов в Алисе AI</a> - технические инструменты разработчика, не изменение рекламного кабинета</li>
+    </ul>
+  </div>
+
+  <div class="takeaway">
+    <h3>Summary</h3>
+    <ul>
+      <li>Авито Реклама закрыла ключевой пробел: ретаргетинг теперь работает на уровне кампании и группы, а не только по всему аккаунту. Для мультипродуктовых рекламодателей это меняет тактику.</li>
+      <li>Детальная диагностика офлайн-конверсий в Метрике убирает "чёрный ящик" загрузки данных - теперь видно, почему конкретная конверсия не привязалась. Рекомендуем проверить статусы в обновлённых отчётах.</li>
+      <li>eLama подтверждает: Макс как рекламный канал быстро дорожает, но ещё значительно дешевле Telegram при более высоком engagement. Хороший момент для первого теста.</li>
+      <li>Прайм-баннер закрывает задачу единого охватного формата с управлением кросс-частотой по нескольким поверхностям Яндекса из одной кампании.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 29 июня 2026 за период 26-29 июня.
+  </div>
+
+</div>
+</body>
+</html>
