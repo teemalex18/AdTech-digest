@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 30 июня 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 30 июня 2026 за период 29-30 июня</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления.
+    Затронуты платформы: <strong>Яндекс Директ, VK Реклама, Яндекс KIT</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Gorgona -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/yandeks-vnedril-novuyu-model-prognozirovaniya-konversiy-i-upravleniya-stavkami-gorgona/" target="_blank">
+          Яндекс внедрил Gorgona: новая нейросетевая модель прогнозирования конверсий
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 30 июня 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Gorgona заменила предыдущую модель управления ставками. Архитектура на основе многоголовой нейросети. Анализирует более 25 сигналов поведения пользователя - в три раза больше, чем раньше: глубина просмотра страниц, время на сайте, добавления в корзину, отложенные конверсии через несколько визитов. Встроенная прокси-модель отслеживает сдвиги в поведении аудитории в реальном времени без полного переобучения.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Почему важно</div>
+        <div class="card-section-text">
+          По итогам тестов - плюс 10% конверсий при сопоставимых бюджетах. Модель особенно полезна в нишах с длинным циклом принятия решений: недвижимость, авто, сложные B2B-услуги. Работает в кампаниях в Поиске и РСЯ автоматически.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Всем рекламодателям в Яндекс Директ. Действий от специалиста не требуется - модель уже активна.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Gorgona работает в фоне - настройки менять не нужно. Если вы заметили нетипичный рост конверсий за последние дни, вероятно, это эффект новой модели. Рекомендуется проверить динамику в кабинете и зафиксировать базовые показатели для сравнения.
+      </div>
+    </div>
+
+    <!-- Card 2: TGA -> Combinatorial -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/14-iyulya-direkt-nachnet-obnovlyat-tekstovo-graficheskie-obyavleniya-do-kombinatornyh/" target="_blank">
+          Директ переводит текстово-графические объявления в комбинаторные: новые ТГО уже закрыты, автоперевод с 14 июля
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world, Яндекс Реклама</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 30 июня 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          С 30 июня в Единой перформанс-кампании нельзя создавать новые текстово-графические объявления - только комбинаторные. С 14 июля Директ начнет автоматически переводить все действующие ТГО в комбинаторный формат. Процесс двухэтапный: сначала неархивные объявления (включая приостановленные и черновики), затем архивные. Каждый аккаунт проходит конвертацию в течение нескольких минут.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что сохраняется</div>
+        <div class="card-section-text">
+          Статистика, нумерация, настройки объявлений. Доп. заголовки не переносятся. Показы не прерываются во время конвертации. Существующие объявления сохраняют лимиты: 3 неархивных и 10 всего на группу - даже если они превышают стандарт комбинаторных.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому важно</div>
+        <div class="card-section-text">
+          Всем специалистам и агентствам, работающим с Яндекс Директ. Особенно тем, кто до сих пор создавал новые ТГО вручную - это уже невозможно.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Переход автоматический, вмешательство не нужно. Проверьте заранее, что в ваших группах объявлений достаточно заголовков и описаний для корректной сборки комбинаторных вариантов. При конвертации на аккаунте появится временное уведомление о режиме "только чтение".
+      </div>
+    </div>
+
+    <!-- Card 3: VK Ads MAX Assistant -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/v-chat-bote-vk-reklamy-v-makse-poyavilsya-assistent-reklamodatelya-dlya-upravleniya-kampaniyami-bez-perehoda-v-kabinet/" target="_blank">
+          VK Реклама запустила ассистент рекламодателя в чат-боте MAX
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> VK Реклама / MAX</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 30 июня 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Возможности ассистента</div>
+        <div class="card-section-text">
+          Ассистент работает прямо в мессенджере MAX и не требует открывать рекламный кабинет. Что умеет: уведомления о статусах кампаний (низкий баланс, отклонение модерации, новые акции), редактирование объявлений при отклонении прямо в чате, настройка автопополнения баланса, рекомендации по улучшению кампаний с кнопками быстрого действия, отслеживание бонусов программы лояльности.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Как подключить</div>
+        <div class="card-section-text">
+          Настройки VK Рекламы - Общие - Подключить бот MAX. Авторизация через QR-код. Если бот уже был подключен, ассистент появится автоматически.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому подходит</div>
+        <div class="card-section-text">
+          Всем клиентам VK Рекламы с профилем в MAX. Особенно удобно при ведении нескольких кампаний одновременно и для оперативного реагирования на статусы.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        VK движется к управлению рекламой через мессенджер. Ассистент пока закрывает базовые сценарии: уведомления и мелкие правки. Для агентств с несколькими кабинетами - полезная точка оперативного контроля без входа в браузер.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 4: Yandex KIT referral -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/referralnaya-programma-yandex-kit-nachnite-zarabatyvat" target="_blank">
+          Яндекс KIT запустил реферальную программу для агентств и партнеров
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс KIT</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 29 июня 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Яндекс KIT β запустил реферальную программу: партнеры и агентства получают вознаграждение за каждый запущенный интернет-магазин, привлеченный на платформу. Вознаграждение привязано к объему инвестиций этого магазина в продвижение.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Интересно для агентств, работающих с e-commerce клиентами на KIT: появляется дополнительный источник дохода, связанный с рекламными бюджетами подключенных магазинов.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-retargeting-po-kampaniyam-i-gruppam-obyavleniy/" target="_blank">Авито Реклама: ретаргетинг по кампаниям и группам объявлений</a>
+          - вне окна дат, первая публикация 26 июня.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/v-otchetah-yandeks-metriki-poyavilas-detalnaya-diagnostika-po-oflayn-dannym/" target="_blank">Яндекс Метрика: детальная диагностика по офлайн-данным в отчетах</a>
+          - вне окна дат, первая публикация 26 июня.
+        </li>
+        <li>
+          <a href="https://blog.click.ru/market-news/v-yandeks-metrike-poyavilis-novye-avtoceli-dlya-internet-magazinov/" target="_blank">Яндекс Метрика: новые автоцели для интернет-магазинов</a>
+          - вне окна дат, первая публикация 26 июня.
+        </li>
+        <li>
+          <a href="https://blog.click.ru/market-news/reklamnyj-rynok-rossii-vyros-na-5-v-nachale-2026-goda-akar/" target="_blank">Рекламный рынок России вырос на 5% в начале 2026 года (АКАР)</a>
+          - аналитика рынка без практического изменения в рекламном кабинете.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Gorgona уже активна во всех кампаниях в Поиске и РСЯ - действий не нужно, но стоит зафиксировать базовые конверсионные метрики, чтобы оценить эффект.</li>
+      <li>С 30 июня ТГО в ЕПК нельзя создавать. 14 июля начнется автоматический перевод существующих объявлений - специалистам важно убедиться, что в группах достаточно материалов для комбинаторного формата.</li>
+      <li>VK Реклама продолжает развивать управление кампаниями через MAX: ассистент уже доступен и полезен для оперативного мониторинга без открытия браузерного кабинета.</li>
+      <li>Три важных обновления Авито и Метрики (ретаргетинг, офлайн-диагностика, автоцели) вышли 26 июня и не попали в этот выпуск - они будут актуальны для проверки на следующей неделе.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 30 июня 2026 за период 29-30 июня</p>
+  </footer>
+
+</div>
+</body>
+</html>
