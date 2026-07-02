@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 2 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 2 июля 2026 за период 1-2 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления.
+    Затронуты платформы: <strong>Авито Реклама, Яндекс Ритм, Яндекс KIT</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Avito Avi Pro -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/avito-otkryl-dostup-k-ii-assistentu-avi-pro-dlya-500-000-prodavcov-on-analiziruet-voronku-prodazh-i-pokazyvaet-chto-tormozit-prodazhi/" target="_blank">
+          Авито открыл ИИ-ассистента Ави Pro половине профессиональных продавцов площадки
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Авито Реклама</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 2 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Доступ к мультиагентному ИИ-ассистенту Ави Pro открыт для 500 000 продавцов - это половина всех профессиональных продавцов платформы. До конца лета доступ получат все. Ассистент встроен прямо в личный кабинет Авито Pro и бесплатен.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что умеет</div>
+        <div class="card-section-text">
+          Анализирует статистику и позиции объявлений в поиске, генерирует и улучшает описания карточек, дает персональные рекомендации по продвижению и отвечает на справочные вопросы. Работает сразу с двумя слоями данных - общей статистикой площадки и историей конкретного продавца, поэтому находит точечные узкие места в воронке продаж, а не общие советы.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Продавцам и агентствам, которые ведут объявления на Авито и хотят получать рекомендации по продвижению без ручного разбора статистики каждой карточки.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Подключать ничего не нужно - ассистент уже в кабинете. По данным Авито, каждое второе сгенерированное описание не требует правок, поэтому стоит проверить его рекомендации по продвижению на активных карточках уже сейчас.
+      </div>
+    </div>
+
+    <!-- Card 2: Avito targeting expecting parents -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-targeting-na-polzovateley-ozhidayuschih-rebenka/" target="_blank">
+          В Авито Рекламе появился таргетинг на пользователей, ожидающих ребенка
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Авито Реклама</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 1 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          В Авито Аудиториях появилась новая опция таргетинга - на пользователей, которые ожидают ребенка. Раньше найти этот сегмент точечно было нельзя.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому подходит</div>
+        <div class="card-section-text">
+          Категориям детских товаров, детской мебели и техники для дома, а также услугам для семей с детьми.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Стоит протестировать сегмент отдельной кампанией и сравнить его эффективность с уже используемыми аудиториями, прежде чем переносить на него бюджет.
+      </div>
+    </div>
+
+    <!-- Card 3: Yandex Ritm geo -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/yandeks-ritm-zapustil-geotargeting-dlya-kompaniy-iz-sfery-uslug/" target="_blank">
+          Яндекс Ритм запустил геотаргетинг для компаний из сферы услуг
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Ритм</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 1 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Компании из сферы услуг теперь могут бесплатно настраивать показы своих постов по городам и регионам, а не только на всю аудиторию сервиса целиком.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Полезно локальному бизнесу и сетям с географически привязанными услугами - можно точнее показывать контент аудитории конкретного города без дополнительных затрат.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 4: Yandex KIT beta -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/polzovateli-yandex-kit-beta-mogut-importirovat-otsenki-i-otzyvy-s-yandeks-marketa" target="_blank">
+          Яндекс KIT бета: импорт отзывов с Маркета и планы платформы на третий квартал
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама (официально)</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс KIT / Яндекс Маркет</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 1-2 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          С 1 июля продавцы на платформе Яндекс KIT β могут автоматически переносить оценки и отзывы покупателей с Яндекс Маркета - достаточно подключить интеграцию, вручную собирать отзывы больше не нужно.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Планы на третий квартал</div>
+        <div class="card-section-text">
+          2 июля Яндекс подвел итоги второго квартала и анонсировал ближайшие обновления KIT β: импорт отзывов уже с Ozon, функцию предзаказа, инструмент сравнения цен и возможность редактировать заказ после оформления.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Интернет-магазинам, которые ведут продажи на Яндекс KIT и параллельно размещаются на Яндекс Маркете или Ozon.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Перенос отзывов с Маркета можно включить уже сейчас, если магазин работает на KIT. Импорт отзывов с Ozon и сравнение цен стоит держать в поле зрения на третий квартал.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://ppc.world/news/yandeks-vnedril-novuyu-model-prognozirovaniya-konversiy-i-upravleniya-stavkami-gorgona/" target="_blank">Яндекс внедрил Gorgona - новую модель прогнозирования конверсий и управления ставками</a>
+          - вне окна дат, первая публикация 30.06.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/v-chat-bote-vk-reklamy-v-makse-poyavilsya-assistent-reklamodatelya-dlya-upravleniya-kampaniyami-bez-perehoda-v-kabinet/" target="_blank">VK Реклама запустила ассистента рекламодателя в чат-боте MAX</a>
+          - вне окна дат, первая публикация 30.06.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/14-iyulya-direkt-nachnet-obnovlyat-tekstovo-graficheskie-obyavleniya-do-kombinatornyh/" target="_blank">Директ начнет обновлять текстово-графические объявления до комбинаторных с 14 июля</a>
+          - вне окна дат, первая публикация 30.06.
+        </li>
+        <li>
+          <a href="https://yandex.ru/adv/news/tovarnye-obyavleniya-dlya-prilozheniy-dostupny-dlya-retargetinga" target="_blank">Товарные объявления для продвижения приложений в Директе стали доступны для ретаргетинга</a>
+          - вне окна дат, первая публикация 22.06.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / ЧТО ЭТО ЗНАЧИТ -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Авито усиливает поддержку продавцов ИИ-инструментами сразу с двух сторон: Ави Pro разбирает воронку продаж и подсказывает, что поправить в карточке, а новый таргетинг на ожидающих ребенка расширяет точность настройки кампаний без роста бюджета. Агентствам стоит протестировать оба инструмента на активных клиентах в ближайшую неделю.</li>
+      <li>Яндекс Ритм убрал барьер для локального размещения - бесплатный геотаргетинг актуален для сетевого сервисного бизнеса, которому раньше приходилось показываться на всю аудиторию сервиса целиком.</li>
+      <li>Яндекс KIT продолжает расти как отдельная торговая платформа для продавцов: интеграция с Маркетом уже работает, с Ozon - в планах на третий квартал. Для магазинов, торгующих на нескольких площадках сразу, это повод присмотреться к KIT как к единой точке управления.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 2 июля 2026 за период 1-2 июля.
+  </div>
+
+</div>
+</body>
+</html>
