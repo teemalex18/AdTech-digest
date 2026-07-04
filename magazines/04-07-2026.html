@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 4 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+  .card-section-text ul {
+    margin: 4px 0 0 18px;
+    padding: 0;
+  }
+  .card-section-text li {
+    margin-bottom: 4px;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 4 июля 2026 за период 3-4 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений.
+    Затронуты платформы: <strong>Яндекс Директ, Ozon, Wildberries, Авито Реклама, eLama, VK</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Yandex Prime-banner -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/yandeks-obedinit-oxvatnuyu-reklamu-v-edinyj-format/" target="_blank">
+          Яндекс объединяет охватную рекламу в единый формат: первым запустился Прайм-баннер
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Click.ru</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 3 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Яндекс анонсировал новый тип кампаний, который объединит охватные инструменты Директа: рекламодатели смогут управлять частотой контактов с аудиторией сразу на онлайн- и офлайн-площадках. Первый элемент новой системы - медийный формат "Прайм-баннер", который объединяет заметные рекламные позиции более чем на 20 сервисах экосистемы: Поиск, Браузер, Погода, Маркет, Go, Почта, Кинопоиск, Музыка, Афиша, Студия Алисы AI и Ритм.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Возможности формата</div>
+        <div class="card-section-text">
+          Более 600 вариантов таргетинга, включая интересы, отдельные сервисы и типы устройств. Оплата по аукционной модели. Формат учитывает пересечение аудитории между сервисами и контролирует общее число показов одному пользователю. Эффект на бизнес-метрики можно оценить через Lift-исследования Директа.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому подходит</div>
+        <div class="card-section-text">
+          Бренд-рекламодателям и медиапланерам, которым нужен контролируемый охват и узнаваемость на площадках Яндекса, а не только performance-задачи.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Прайм-баннер - только первый элемент будущей единой системы охватной рекламы Директа. Медиапланерам стоит протестировать формат и заранее свериться, не пересекается ли его аудитория с уже запущенными охватными кампаниями на тех же сервисах.
+      </div>
+    </div>
+
+    <!-- Card 2: marketplace product card verification -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://adindex.ru/news/right/2026/07/3/346895.phtml" target="_blank">
+          Утвержден единый механизм проверки сведений в карточках товаров на маркетплейсах
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> AdIndex</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> маркетплейсы (Ozon, Wildberries, Яндекс Маркет и другие)</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 3 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Правительство утвердило единые правила проверки информации в карточках товаров, работ и услуг на маркетплейсах. Операторы площадок обязаны проверять достоверность сведений от продавцов до публикации карточки - в течение 3 рабочих дней, используя данные из 12 государственных информационных систем и реестров. Предусмотрена и повторная проверка - не реже раза в 10 рабочих дней.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что проверить</div>
+        <div class="card-section-text">
+          В первую очередь под проверку попадают категории, от которых зависят здоровье и безопасность потребителей: лекарства, медицинские изделия, БАДы. Карточки, размещенные до 1 октября 2026 года, должны быть проверены в течение 180 дней после вступления постановления в силу.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Продавцам и агентствам, ведущим карточки в чувствительных категориях, стоит уже сейчас проверить полноту и достоверность данных - иначе публикация карточки может задержаться на площадке.
+      </div>
+    </div>
+
+    <!-- Card 3: New Retail digest Ozon/WB/Avito -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://new-retail.ru/business/e_commerce/daydzhest_e_com_samye_vazhnye_obnovleniya_dlya_raboty_na_marketpleysakh_v_iyune_26/" target="_blank">
+          Ozon пересобирает сетку комиссий, Wildberries и Авито Реклама обновили рекламный инвентарь
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> New Retail (совместно с Easy Commerce)</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Ozon, Wildberries, Авито Реклама</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 3 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          <ul>
+            <li>Ozon сокращает число ценовых диапазонов для расчета комиссии на схемах FBO, FBS и Ozon Fresh с шести до трех. Для товаров дороже 300 рублей будет действовать единая ставка, а на realFBS диапазоны отменяются полностью - комиссия перестанет зависеть от цены товара.</li>
+            <li>Wildberries открыл продавцам бренд-зоны с баннерами и подборками товаров в личном кабинете (вкладка "Рост продаж"), а также тестирует формат текстово-графических баннеров в мобильном приложении.</li>
+            <li>Авито Реклама добавила таргетинги "Кредитование для бизнеса", "Микрозаймы" и "Каталог брендов" - для показа рекламы пользователям, уже взаимодействовавшим с конкретными брендами на площадке.</li>
+            <li>Магнит ADS запустил совместное с Авито Рекламой продвижение брендов с привязкой к офлайн-продажам сети.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому важно</div>
+        <div class="card-section-text">
+          Менеджерам по рекламе на маркетплейсах: продавцам Ozon - для пересчета юнит-экономики, специалистам по Авито Рекламе - для тестирования новых сегментов таргетинга.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Продавцам Ozon стоит уже сейчас пересчитать комиссии под новую сетку диапазонов, особенно на realFBS. В Авито Рекламе имеет смысл протестировать таргетинги на финансовые продукты и работу с узнаваемыми брендами.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 4: eLama marketplace tools -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://elama.ru/blog/5-novyh-instrumentov-na-marketpleyse-elama-dlya-prodvizheniya-v-max-avito-reklame-seo-i-analiza-trendov/" target="_blank">
+          На маркетплейсе eLama появилось 5 новых инструментов для продвижения в MAX, Авито Рекламе и SEO
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> eLama</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> eLama, MAX, Авито Реклама</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 3 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Среди новых инструментов - "Лэнс" для анализа рекламных креативов конкурентов в Авито Рекламе (клиентам eLama доступен бесплатно, экономия 1495 рублей в месяц) и MaxMetrics для аналитики каналов и мониторинга упоминаний брендов в мессенджере MAX (бесплатно, экономия 2500 рублей в месяц). Также добавлен MaxMarket - конструктор интернет-магазина внутри MAX.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Инструменты доступны бесплатно только через маркетплейс eLama - агентствам, уже работающим с Авито Рекламой и MAX, стоит проверить список и подключить нужные, не оплачивая аналоги отдельно.
+      </div>
+    </div>
+
+    <!-- Card 5: VK Clips Shops feed -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/v-klipah-vkontakte-poyavilas-otdelnaya-lenta-s-shopsami/" target="_blank">
+          В Клипах ВКонтакте появилась отдельная лента с шопсами
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> ВКонтакте (VK Клипы)</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 3 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Команда ВКонтакте выделила товарные клипы - обзоры, распаковки, рекомендации - в отдельный раздел "Шопсы" рядом с "Трендами" и "Подписками". Из ролика можно сразу перейти к товару и покупке.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Товарный контент в Клипах становится заметнее за счет отдельной ленты. Брендам и продавцам, ведущим блогерские интеграции, стоит проверить, что карточки товаров в собственных клипах оформлены и ведут к покупке.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://ppc.world/news/avito-otkryl-dostup-k-ii-assistentu-avi-pro-dlya-500-000-prodavcov-on-analiziruet-voronku-prodazh-i-pokazyvaet-chto-tormozit-prodazhi/" target="_blank">Авито открыл доступ к ИИ-ассистенту Ави Pro для 500 000 продавцов</a>
+          - вне окна дат, первая публикация 2 июля.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/vk-zapustit-sobstvennyy-neyropoisk-iskat-informaciyu-vnutri-servisov-mozhno-budet-s-pomoschyu-ii/" target="_blank">VK запустит собственный нейропоиск внутри своих сервисов</a>
+          - вне окна дат, первая публикация 2 июля.
+        </li>
+        <li>
+          <a href="https://blog.click.ru/market-news/v-tovarnyx-obyavleniyax-direkta-poyavilsya-retargeting/" target="_blank">В товарных объявлениях Директа появился ретаргетинг</a>
+          - вне окна дат, первая публикация 1 июля.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Яндекс Директ: Прайм-баннер - первый шаг к единой охватной системе. Медиапланерам стоит протестировать формат и сверить пересечение аудитории с уже запущенными охватными кампаниями.</li>
+      <li>Маркетплейсы: с вступлением в силу единого механизма проверки карточек товаров продавцам в чувствительных категориях (лекарства, медизделия, БАДы) стоит заранее проверить достоверность и полноту данных.</li>
+      <li>Ozon: новая сетка комиссий (три ценовых диапазона вместо шести, отмена диапазонов на realFBS) требует пересчета юнит-экономики уже сейчас, до вступления изменений в силу.</li>
+      <li>Авито Реклама: новые таргетинги на финансовые продукты и узнаваемые бренды, а также бесплатный доступ к "Лэнс" от eLama для анализа креативов конкурентов - стоит протестировать в текущих кампаниях.</li>
+      <li>VK Клипы: с выделением ленты "Шопсы" товарный контент получает больше видимости - проверьте оформление карточек товаров в собственных клипах.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 4 июля 2026 за период 3-4 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
