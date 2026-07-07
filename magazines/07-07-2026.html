@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 7 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+  .card-section-text ul {
+    margin: 4px 0 0 18px;
+    padding: 0;
+  }
+  .card-section-text li {
+    margin-bottom: 4px;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 7 июля 2026 за период 6-7 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">7</span> релевантных обновлений.
+    Затронуты платформы: <strong>Rutube, Яндекс Директ, РСЯ, VK Реклама, Авито Реклама, ОРД МедиаСкаут</strong>.<br>
+    Недоступные источники: AdIndex.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Rutube inventory -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/rutube-uvelichil-bannernyy-inventar-vtroe-s-1-do-3-mlrd-pokazov-v-mesyac/" target="_blank">
+          Rutube увеличил баннерный инвентарь втрое - с 1 до 3 млрд показов в месяц
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world, Telegram-канал Rutube</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Rutube</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 7 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Rutube втрое увеличил баннерный инвентарь - с 1 до 3 млрд показов в месяц. Рост стал возможен благодаря обновлению интерфейса главной страницы и страницы просмотра видео, созданию новых рекламных мест и развитию собственных рекламных технологий. За первое полугодие рекламная выручка площадки выросла на 250%, а средний чек рекламодателей - на 270%.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Возможности формата</div>
+        <div class="card-section-text">
+          Расширение позволяет запускать более масштабные баннерные кампании, наращивать охват и гибче работать с разными рекламными сценариями. На пользовательском опыте изменения не отражаются - все обновления прошли продуктовые тесты.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому подходит</div>
+        <div class="card-section-text">
+          Брендам, которым важны широкий охват, заметность и гибкая настройка частоты показов на видеоплатформе.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Rutube заметно нарастил рекламные мощности и готовит единое управление кампаниями и автоматизацию для рекламодателей с большими каталогами. Медиапланерам стоит присмотреться к площадке для охватных размещений уже сейчас.
+      </div>
+    </div>
+
+    <!-- Card 2: RSYA auto-placement -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/avtorasstanovka-reklamy-open-beta" target="_blank">
+          Авторасстановка рекламы вышла в открытую бету для всех партнеров РСЯ
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама, подтверждено ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> РСЯ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 7 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          После восьми месяцев закрытого тестирования инструмент "Авторасстановка рекламы" стал доступен всем партнерам РСЯ в открытой бета-версии. Он сам анализирует дизайн и контент страницы, подбирает оптимальные места, форматы и количество рекламных блоков и размещает их без ручной настройки - достаточно одного кода вставки.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Возможности инструмента</div>
+        <div class="card-section-text">
+          Поддерживаются баннеры перед контентом и после него, в статье, в ленте и сайдбаре, полноэкранные форматы, Floor Ad и Лента - причем последние два теперь можно совмещать без доработки кода вставки. По итогам закрытого тестирования добавили возможность исключать отдельные страницы и разделы сайта, а также сохранять уже выбранные блоки РСЯ и Adfox.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому подходит</div>
+        <div class="card-section-text">
+          Владельцам сайтов и партнерам РСЯ, которые хотят быстро монетизировать площадку без ручной настройки блоков, особенно тем, кто ведет несколько сайтов.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        По данным Яндекса, партнеры, подключившие инструмент, получают рост дохода до 40%. Стоит протестировать Авторасстановку в первую очередь на сайтах со сложной версткой и большим количеством страниц, где ручная настройка блоков занимает много времени.
+      </div>
+    </div>
+
+    <!-- Card 3: Yandex Direct landing pages -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/lendingi-v-direct-vyhod-iz-bety" target="_blank">
+          Яндекс обновил лендинги в Директе: нейроперсонализация и резервная посадочная страница
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама, подтверждено ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 6 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          С момента запуска беты лендингов в Директе пользователи создали уже более 90 000 страниц. Теперь структура лендинга формируется индивидуально под специфику бизнеса, а нейротехнологии автоматически подбирают изображения по тематике. Появилась возможность создать уникальный адрес страницы и настроить цвета в фирменном стиле компании.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Работа при нестабильном интернете</div>
+        <div class="card-section-text">
+          В Простом старте, Мастере кампаний и ЕПК можно указать лендинг как резервную посадочную страницу - она будет показываться в объявлении вместо основного сайта, если он недоступен, и поможет не терять заявки.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Бизнесу, который использует лендинги как сайт-визитку или резервный вариант посадочной страницы, а также специалистам, для которых важно не терять заявки при перебоях с сайтом.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Резервная посадочная страница - практичный способ подстраховаться от падения основного сайта, а обновленная персонализация ускоряет создание лендингов без участия дизайнера. Стоит проверить эту настройку в активных кампаниях уже сейчас.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 4: ORD MediaScout tariffs -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/ord-mediaskaut-povysit-tarify-s-1-avgusta/" target="_blank">
+          ОРД МедиаСкаут повысит тарифы с 1 августа
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> ОРД МедиаСкаут</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 6 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          С 1 августа МедиаСкаут поднимает три тарифа. Минимальный платеж для тех, кто уже вносил данные, вырастет с 3000 до 5000 рублей без НДС (плюс 66%) - для тех, кто данные не вносил, порог останется на уровне 1000 рублей. Передача креативов саморекламы подорожает с 20 до 30 рублей за 1 МБ (плюс 50%), а передача данных по товарным фидам - с 3 до 7 рублей за 1 МБ (плюс 133%).
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому важно</div>
+        <div class="card-section-text">
+          Рекламодателям и агентствам, которые маркируют рекламу через МедиаСкаут, особенно тем, кто активно работает с товарными фидами - для них рост стоимости самый заметный.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Стоит заранее пересчитать бюджет на маркировку с учетом новых тарифов и сравнить условия с другими ОРД, если основная нагрузка приходится на передачу фидов.
+      </div>
+    </div>
+
+    <!-- Card 5: VK Ads assistant in MAX -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://ads.vk.com/news/assistent-reklamodatelya-v-max" target="_blank">
+          VK Реклама добавила чат-бота ассистента рекламодателя в MAX
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Click.ru, ads.vk.com</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> VK Реклама, MAX</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 7 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          В мессенджере MAX появился чат-бот ассистента рекламодателя VK Рекламы. Через него можно решать часть оперативных задач без входа в личный кабинет: редактировать заблокированные объявления, подключать автоплатежи и проверять бонусы по программе лояльности. Ассистент также анализирует настройки кампаний, дает рекомендации и позволяет применить изменения прямо из сообщения.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Как подключить</div>
+        <div class="card-section-text">
+          Чат-бот доступен бесплатно всем пользователям VK Рекламы. Если MAX уже привязан к рекламному кабинету, новые возможности появляются автоматически, иначе нужно подключить профиль MAX в настройках кабинета.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Удобный инструмент для оперативного управления кампаниями с телефона, особенно когда нужно быстро разблокировать объявление или проверить бонусы, не открывая кабинет.
+      </div>
+    </div>
+
+    <!-- Card 6: Avito Reklama banner retargeting -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/v-avito-reklame-poyavilsya-retargeting-dlya-bannerov/" target="_blank">
+          В Авито Рекламе появился ретаргетинг для баннеров
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Click.ru</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Авито Реклама</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 6 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Авито Реклама добавила возможность настраивать ретаргетинг для баннерных объявлений - теперь рекламодатели могут повторно показывать баннеры пользователям, которые уже взаимодействовали с их объявлениями или профилем на площадке.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Рекламодателям Авито, которые используют баннерные форматы для узнаваемости и хотят возвращать теплую аудиторию без запуска новой кампании с нуля.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Стоит протестировать ретаргетинг на баннерах в текущих кампаниях - это способ повысить отдачу от уже оплаченных показов без увеличения бюджета.
+      </div>
+    </div>
+
+    <!-- Card 7: T-Bank cashback -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://www.unisender.com/ru/blog/news/mozhno-sekonomit-100-keshbek-na-yandeks-direkt-yandeks-biznes-v-t-banke/" target="_blank">
+          100% кэшбэк на Яндекс Директ и Яндекс Бизнес в Т-Банке
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Unisender</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ, Яндекс Бизнес</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 6 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Т-Банк запустил акцию с полным возвратом расходов на рекламу в Яндекс Директе и Яндекс Бизнесе для держателей бизнес-карты банка.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Малому и среднему бизнесу, который оплачивает рекламу картой Т-Банка и хочет сократить расходы на продвижение.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Агентствам и рекламодателям, работающим с клиентами Т-Банка, стоит проверить условия акции - это прямая экономия бюджета на размещение без изменения самих кампаний.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://ppc.world/news/vstupil-v-silu-zakon-o-zaprete-avtorizacii-na-saytah-cherez-inostrannye-servisy-shtrafy-do-700-000-rubley/" target="_blank">Вступил в силу закон о запрете авторизации на сайтах через иностранные сервисы</a>
+          - общая правовая норма, не изменение рекламного кабинета.
+        </li>
+        <li>
+          <a href="https://elama.ru/blog/5-novyh-instrumentov-na-marketpleyse-elama-dlya-prodvizheniya-v-max-avito-reklame-seo-i-analiza-trendov/" target="_blank">5 новых инструментов на маркетплейсе eLama для продвижения в Max, Авито Рекламе и SEO</a>
+          - вне окна дат, первая публикация 3 июля.
+        </li>
+        <li>
+          <a href="https://blog.click.ru/market-news/metrika-dobavila-podrobnye-otchety-po-oflajn-konversiyam/" target="_blank">Метрика добавила подробные отчеты по офлайн-конверсиям</a>
+          - вне окна дат, первая публикация 26 июня.
+        </li>
+        <li>
+          <a href="https://www.cossa.ru/news/349586/" target="_blank">Авторы ВКонтакте заработали 1,4 млрд рублей с помощью VK AdBlogger с начала года</a>
+          - вне окна дат, первая публикация 3 июля.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Rutube и РСЯ одновременно нарастили рекламные мощности: утроенный баннерный инвентарь Rutube и Авторасстановка рекламы для всех партнеров РСЯ с ростом дохода до 40% - повод пересмотреть охватные размещения на этих площадках.</li>
+      <li>Яндекс Директ: резервная посадочная страница на базе лендинга - простой способ не терять заявки при перебоях с основным сайтом, стоит включить в действующих кампаниях.</li>
+      <li>ОРД МедиаСкаут поднимает тарифы с 1 августа, сильнее всего дорожает передача товарных фидов (плюс 133%) - агентствам стоит пересчитать бюджет на маркировку заранее.</li>
+      <li>VK Реклама и Авито Реклама расширили операционные возможности: чат-бот в MAX ускоряет рутинные задачи, а ретаргетинг для баннеров в Авито позволяет возвращать теплую аудиторию без нового бюджета.</li>
+      <li>Акция Т-Банка со 100% кэшбэком на Яндекс Директ и Яндекс Бизнес - короткое окно возможности сэкономить бюджет для клиентов банка.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 7 июля 2026 за период 6-7 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
