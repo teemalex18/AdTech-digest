@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 8 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+  .card-section-text ul {
+    margin: 4px 0 0 18px;
+    padding: 0;
+  }
+  .card-section-text li {
+    margin-bottom: 4px;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 8 июля 2026 за период 7-8 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления.
+    Затронуты платформы: <strong>Rutube, MAX, Авито</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Rutube blogger marketplace + new formats -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/rutube-anonsiroval-prodazhi-reklamy-u-blogerov-pokupat-integracii-mozhno-budet-napryamuyu-cherez-platformu/" target="_blank">
+          Rutube запустит прямые продажи рекламы у блогеров и добавил новые форматы
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world, Telegram-канал Rutube</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Rutube</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 8 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Rutube анонсировал запуск прямых продаж рекламных интеграций у блогеров через платформу - без посредников, а пакетные предложения дадут скидку при совмещении с другими размещениями. Направление заработает осенью 2026 года, партнером выступит агентство JAMI LUP. Одновременно площадка представила новые рекламные форматы: брендинг главной страницы и отдельных разделов (редизайн интерфейса, баннерные позиции, pop-up, видеореклама, редакционное продвижение, включая Smart TV), а также интерактивные механики, где бренды становятся частью игрового процесса.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому подходит</div>
+        <div class="card-section-text">
+          Брендам и агентствам, которые работают с инфлюенс-маркетингом на видеоплатформах, и рекламодателям, которым нужны имиджевые размещения с высокой заметностью.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Осенний запуск маркетплейса интеграций у блогеров стоит уже сейчас закладывать в медиапланы на четвертый квартал - Rutube формирует полноценную рекламную экосистему вокруг блогеров и брендированных форматов.
+      </div>
+    </div>
+
+    <!-- Card 2: MAX mini-app for partners -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/platforma-dlya-partnerov-maksa-teper-dostupna-v-formate-mini-prilozheniya/" target="_blank">
+          "Платформа для партнеров" Макса теперь доступна в формате мини-приложения
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world, пресс-служба VK</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> MAX</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 8 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Сервис для бизнеса в мессенджере MAX стал полноценным мини-приложением - предприниматели могут решать задачи прямо в мессенджере, без перехода на внешние сайты. Доступны автоматизация работы с клиентами через чат-ботов, запуск онлайн-витрины или сайта для прямых продаж, создание каналов для продвижения бренда, готовые интеграции с CRM и чат-бот платформами, консультации поддержки.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Как найти</div>
+        <div class="card-section-text">
+          Через поиск в MAX, в меню настроек профиля или напрямую по ссылке max.ru/business_bot.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        MAX последовательно наращивает статус коммерческой платформы - агентствам, которые ведут клиентов в мессенджере, стоит проверить, какие из новых инструментов мини-приложения закрывают их текущие задачи.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 3: Avito profile access without password -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://www.unisender.com/ru/blog/news/avito-razreshil-davat-dostup-k-profilyu-bez-peredachi-parolya/" target="_blank">
+          Авито разрешил давать доступ к профилю без передачи пароля
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Unisender</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Авито</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 7 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Пользователи Авито теперь могут открывать доступ к своему профилю без передачи логина и пароля.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Агентствам и фрилансерам, которые ведут объявления и рекламу клиентов на Авито, а также продавцам, которые хотят делегировать управление аккаунтом без риска потерять к нему контроль.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Раньше делегирование доступа к Авито требовало передачи пароля - теперь агентства могут получать доступ к клиентским профилям безопаснее и без лишних рисков.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://yandex.ru/adv/news/lendingi-v-direct-vyhod-iz-bety" target="_blank">Яндекс обновил лендинги в Директе: нейроперсонализация и резервная посадочная страница</a>
+          - вне окна дат, первая публикация 6 июля.
+        </li>
+        <li>
+          <a href="https://blog.click.ru/market-news/v-avito-reklame-poyavilsya-retargeting-dlya-bannerov/" target="_blank">В Авито Рекламе появился ретаргетинг для баннеров</a>
+          - вне окна дат, первая публикация 6 июля.
+        </li>
+        <li>
+          <a href="https://www.unisender.com/ru/blog/news/mozhno-sekonomit-100-keshbek-na-yandeks-direkt-yandeks-biznes-v-t-banke/" target="_blank">100% кэшбэк на Яндекс Директ и Яндекс Бизнес в Т-Банке</a>
+          - вне окна дат, первая публикация 6 июля.
+        </li>
+        <li>
+          <a href="https://blog.click.ru/market-news/metrika-dobavila-podrobnye-otchety-po-oflajn-konversiyam/" target="_blank">Метрика добавила подробные отчеты по офлайн-конверсиям</a>
+          - вне окна дат, первая публикация 26 июня.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Rutube и MAX синхронно расширяют коммерческие возможности своих платформ: Rutube готовит маркетплейс рекламы у блогеров на осень, а MAX выпустил полноценное мини-приложение для бизнеса - обеим площадкам стоит уделить внимание заранее.</li>
+      <li>Новые форматы Rutube (брендинг, интерактив, размещения на Smart TV) подходят прежде всего для имиджевых и охватных кампаний - формат стоит держать в поле зрения к запуску осенью.</li>
+      <li>Обновление доступа к профилю Авито снимает операционный риск для агентств, управляющих клиентскими аккаунтами - можно сразу перейти на безопасное делегирование вместо передачи пароля.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 8 июля 2026 за период 7-8 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
