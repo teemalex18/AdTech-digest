@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 10 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+  .card-section-text ul {
+    margin: 4px 0 0 18px;
+    padding: 0;
+  }
+  .card-section-text li {
+    margin-bottom: 4px;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 10 июля 2026 за период 09-10 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений.
+    Затронуты платформы: <strong>Яндекс Директ, РСЯ, ПромоСтраницы, Яндекс Товары</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Combinatorial ads format -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/s-14-iyulya-direkt-nachnet-perevod-obyavlenij-v-kombinatornyj-format/" target="_blank">
+          С 14 июля Директ начнёт автоматический перевод объявлений в комбинаторный формат
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Click.ru, подтверждено Яндекс Рекламой</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 10 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          С 30 июня новые текстово-графические объявления в Единой перфоманс-кампании создаются только в комбинаторном формате, а старые можно было лишь редактировать. С 14 июля Директ начинает автоматический перевод неактивных объявлений - остановленных и сохранённых в черновиках, а затем архивных. Процесс займёт несколько недель, дата старта для каждого кабинета выбирается случайно.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что проверить</div>
+        <div class="card-section-text">
+          Показы не останавливаются, а статус, номер, настройки и накопленная статистика объявлений сохраняются. Но во время обновления конкретного кабинета кампании, группы и объявления будут временно доступны только для просмотра - редактировать их в этот момент нельзя.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Стоит заранее проверить черновики и остановленные объявления в аккаунтах клиентов и предупредить их, что в момент автообновления кабинет ненадолго уйдёт в режим "только просмотр".
+      </div>
+    </div>
+
+    <!-- Card 2: Gorgona conversion model -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/yandeks-dobavil-model-gorgona-dlya-bolee-tochnogo-prognoza-konversij/" target="_blank">
+          Яндекс запустил модель Gorgona для более точного прогноза конверсий
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Click.ru</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ, РСЯ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 9 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Новая модель прогнозирования конверсий и управления ставками оценивает не отдельные действия пользователя, а весь путь на сайте: в расчёт попадают более 25 сигналов - втрое больше, чем раньше. Среди них глубина просмотра, время визита, добавление товара в корзину и другие промежуточные действия.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что проверить</div>
+        <div class="card-section-text">
+          По тестам Яндекса Gorgona приносит рекламодателям в среднем на 10% больше конверсий при сопоставимом бюджете. Эффект заметнее всего в нишах с длинным циклом сделки - недвижимости, автомобилях, электронике, туризме, где пользователь возвращается на сайт несколько раз перед решением. Модель работает на Поиске и в РСЯ.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        В нишах с долгим циклом сделки есть смысл перезапустить тестирование ставок и бюджетов - автоматика точнее оценивает намерение пользователя и может высвободить часть бюджета.
+      </div>
+    </div>
+
+    <!-- Card 3: PromoStranicy conversion accounting -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/promostranicy-obnovili-princip-ucheta-konversiy/" target="_blank">
+          ПромоСтраницы изменили принцип учёта конверсий
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> ПромоСтраницы</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 10 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Конверсия теперь по умолчанию учитывается по дате дочитывания статьи, а не по дате совершения целевого действия. В отчёте по конверсиям стали видны все цели выбранного счётчика Метрики, а не только выбранная.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Почему важно</div>
+        <div class="card-section-text">
+          Раньше при разрыве в датах - например, пользователь дочитал статью второго числа, а заявку оставил седьмого - конверсия целиком отображалась седьмым числом, что искажало оценку конкретной кампании и креатива. Новая логика приближает метрики ПромоСтраниц к Директу, где конверсия привязана к дате клика по объявлению.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Исторические отчёты по ПромоСтраницам пересчитаются по новой логике - сравнивать показатели "до" и "после" изменения нужно осторожно, а между Директом и ПромоСтраницами теперь проще сопоставлять эффективность.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 4: Yandex Tovary market comparison -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/v-yandeks-tovarakh-dobavilos-sravnenie-pokazatelej-magazina-so-srednimi-dannymi-po-rynku" target="_blank">
+          В Яндекс Товарах появилось сравнение показателей магазина со средними по рынку
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама, подтверждено ppc.world и Cossa</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Товары</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 9 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          В кабинете Яндекс Товаров появился новый раздел аналитики "Средние показатели по рынку" - можно сравнить свои показы, клики и позиции в поиске с медианой похожих магазинов и найти точки роста органического трафика и конверсии.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Интернет-магазинам и агентствам, которые ведут продвижение в Яндекс Товарах и готовят отчётность перед клиентами по позициям в поиске.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Появился готовый бенчмарк для отчётов - можно показывать клиенту не только динамику, но и позицию магазина относительно рынка.
+      </div>
+    </div>
+
+    <!-- Card 5: Dynamic search placements -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/prodvizhenie-na-dinamicheskikh-mestah-po-ssylke-na-glavnuyu" target="_blank">
+          Директ упростил запуск Динамических мест на Поиске
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама, подтверждено ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 9 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Для запуска продвижения на Динамических местах на Поиске (бета) теперь достаточно указать ссылку на главную страницу сайта. Новая технология расширенного сопоставления страниц сама подбирает релевантную посадочную под запрос пользователя.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому полезно</div>
+        <div class="card-section-text">
+          Небольшим рекламодателям и агентствам, которые раньше отказывались от формата из-за трудоёмкой подготовки фида посадочных страниц.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Настройка кампании занимает меньше времени - формат стоит попробовать тем, кто раньше считал Динамические места слишком сложными в запуске.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://ppc.world/news/vo-vkontakte-rasskazali-o-rezultatah-novoy-rekomendatelnoy-sistemy-i-zapustili-novyy-format-monetizacii/" target="_blank">Во ВКонтакте рассказали о результатах новой рекомендательной системы и запустили новый формат монетизации</a>
+          - монетизация авторского контента через подписку, не изменение рекламного кабинета.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/elama-i-avito-reklama-zapustili-besplatnyy-kurs-po-reklame-na-avito/" target="_blank">eLama и Авито Реклама запустили бесплатный курс по Авито Рекламе</a>
+          - образовательный курс, без новой функции в кабинете.
+        </li>
+        <li>
+          <a href="https://blog.click.ru/market-news/vk-reklama-dobavila-assistenta-v-max/" target="_blank">VK Реклама добавила ассистента в MAX</a>
+          - вне окна дат, первая публикация 7 июля.
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/digital/2026/07/10/347064.phtml" target="_blank">Google научит пользователей различать ИИ-рекламу на сайтах</a>
+          - изменение глобального Google Ads, ограниченная применимость на рынке РФ.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Директ входит в переходный период: с 14 июля стартует автоматический перевод объявлений в комбинаторный формат, а модель Gorgona меняет логику прогноза конверсий - агентствам стоит заранее проверить черновики в кабинетах клиентов и перепроверить ставки в кампаниях со сложным циклом сделки.</li>
+      <li>Яндекс продолжает облегчать отчётность: бенчмарк по рынку в Яндекс Товарах и более точный учёт конверсий в ПромоСтраницах дают более честную базу для разговора с клиентом об эффективности.</li>
+      <li>Запуск Динамических мест на Поиске упростился до одной ссылки - это снижает порог входа для небольших рекламодателей, ранее отказывавшихся от формата.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 10 июля 2026 за период 09-10 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
