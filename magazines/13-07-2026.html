@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 13 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 13 июля 2026 за период 10-13 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">6</span> релевантных обновлений.
+    Затронуты платформы: <strong>Яндекс Директ, VK Реклама, Rutube, Яндекс ПромоСтраницы, Авито Реклама</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Combinatorial ads -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/obnovlenie-tekstovo-graficheskih-obyavleniy-do-kombinatornyh-protsess-i-osobennosti" target="_blank">
+          Завтра, 14 июля, Директ начинает принудительный перевод текстово-графических объявлений в комбинаторные
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама, подтверждено Click.ru</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 10 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          С 14 июля начинается автоматическое обновление текстово-графических объявлений в Единой перформанс-кампании до комбинаторного формата. Сначала конвертируются все неархивные объявления, включая остановленные и черновики, затем архивные - на это уйдет несколько недель. День конвертации каждого аккаунта система определяет в случайном порядке.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что важно проверить</div>
+        <div class="card-section-text">
+          Действий от специалиста не требуется - перевод идет автоматически, показы не прерываются. В момент конвертации кампания на несколько минут становится доступна только для чтения, о чем появится уведомление в интерфейсе.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Кому важно</div>
+        <div class="card-section-text">
+          Всем рекламодателям и агентствам, у которых остались активные текстово-графические объявления в Директе.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Процесс необратим и стартует завтра. Стоит заранее убедиться, что в группах объявлений достаточно заголовков и текстов для корректной сборки комбинаторных вариантов, и предупредить клиентов о временном режиме "только чтение" в момент конвертации их аккаунта.
+      </div>
+    </div>
+
+    <!-- Card 2: VK recommendations + monetization -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://vk.com/press/authors-fund-growth" target="_blank">
+          ВКонтакте перестроил рекомендации в пользу авторов и запустил платные скрытые посты
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ВКонтакте, подтверждено ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> VK Реклама / сообщества ВКонтакте</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 10 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Рекомендательная система теперь быстрее выводит на широкую аудиторию контент от оригинальных авторов - тех, кто публикует собственные материалы, а не заимствует чужие. За первые шесть месяцев 2026 года число таких авторов выросло на 63%, среднесуточные просмотры их публикаций - в 3,9 раза, реакции аудитории - на 11-14%. Новые паблики набирают первую тысячу подписчиков в среднем за 12 дней.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Новый формат монетизации</div>
+        <div class="card-section-text">
+          В каналах появилась возможность закрывать блюром часть фото или все изображение в публикации: обычный подписчик видит интригующий текст и размытую картинку, а те, кто оформил платную поддержку канала, могут снять блюр и увидеть контент полностью.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Брендам и медиа с каналами во ВКонтакте стоит делать ставку на уникальный контент от первого лица - алгоритм теперь заметно быстрее выводит такие публикации в ленту. Скрытые посты - рабочий инструмент для тех, кто уже монетизирует канал через подписку.
+      </div>
+    </div>
+
+    <!-- Card 3: Rutube CTV -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://adindex.ru/news/digital/2026/07/13/347127.phtml" target="_blank">
+          Rutube запустил рекламную сеть для Smart TV
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> AdIndex</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Rutube</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 13 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Rutube создал собственную рекламную сеть для телевизоров Smart TV: размещения теперь доступны не только внутри видеосервиса, но и на главных экранах телевизоров и в партнерских приложениях. На старте сеть охватывает LG Smart TV, Haier EVO TV, 24ТВ и TopDevice. По оценке площадки, подключение партнерского инвентаря увеличивает потенциальный охват кампаний до 40%.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Доступные форматы</div>
+        <div class="card-section-text">
+          Полноэкранные видеоролики при переключении каналов, видеореклама в стриминговом и VOD-контенте, баннеры на главных экранах, всплывающие сообщения и интеграции в разделах поиска. В зависимости от площадки объявления могут сопровождаться QR-кодом с переходом на сайт бренда.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Расширение CTV-инвентаря стоит рассматривать брендам, которые уже используют видеорекламу Rutube и хотят нарастить охват на экранах телевизоров, а не только внутри мобильного и десктопного плеера.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 4: Dynamic placements -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/prodvizhenie-na-dinamicheskikh-mestah-po-ssylke-na-glavnuyu" target="_blank">
+          Директ упростил запуск Динамических мест на Поиске
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама, подтверждено ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 10 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Теперь для запуска Динамических мест на Поиске достаточно добавить ссылку на главную страницу сайта - новая технология расширенного сопоставления страниц сама подбирает релевантную страницу для показа под конкретный запрос.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Стоит попробовать тем, кто раньше не использовал формат из-за трудоемкости подготовки отдельных страниц под каждый запрос.
+      </div>
+    </div>
+
+    <!-- Card 5: PromoStranicy conversions -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/promostranicy-obnovili-princip-ucheta-konversiy/" target="_blank">
+          ПромоСтраницы изменили принцип учета конверсий
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world, официально блог ПромоСтраниц</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс ПромоСтраницы</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 10 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Конверсия теперь учитывается по дате дочитывания статьи, а не по дате совершения целевого действия. В отчете по конверсиям при этом стали отображаться все цели выбранного счетчика. Например: если пользователь дочитал статью 2 числа, а оставил заявку 7-го, конверсия теперь отображается 2-м числом, а не 7-м.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Почему важно</div>
+        <div class="card-section-text">
+          Логика учета стала сопоставима с Яндекс Директом, где конверсия привязывается к дате клика по объявлению - рекламодателям проще сравнивать эффективность разных инструментов между собой.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        При сверке отчетов за переходный период стоит учитывать сдвиг дат - старые сравнения "было/стало" по конверсиям ПромоСтраниц могут выглядеть иначе из-за смены точки отсчета.
+      </div>
+    </div>
+
+    <!-- Card 6: Avito World Cup targeting -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://www.cossa.ru/blogs/zaley_cash/349721/" target="_blank">
+          Авито Реклама запустила таргет-пак "болельщики ЧМ-2026"
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Cossa</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Авито Реклама</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 13 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          В кабинете Авито Рекламы появился таргет-пак "Чемпионат мира: футбольные болельщики старше 18 лет" с тремя сегментами: базовая футбольная аудитория, аудитория с интересом к тематическим предложениям и акциям, а также мобильные болельщики. Пак подключается на уровне группы объявлений за пару кликов.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Точнее общего таргетинга "интерес к спорту" и имеет смысл тестировать до 19 июля, пока идут полуфиналы и финал турнира и спрос на вовлеченную футбольную аудиторию на пике.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://adindex.ru/news/digital/2026/07/8/347003.phtml" target="_blank">Flowwow запустил кабинет для продвижения товаров продавцов</a>
+          - вне окна дат, первая публикация 8 июля.
+        </li>
+        <li>
+          <a href="https://adindex.ru/news/digital/2026/07/7/346980.phtml" target="_blank">HeadHunter объединил рекламные продукты под брендом "hh реклама"</a>
+          - вне окна дат, первая публикация 7 июля.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/evrosoyuz-vvel-sankcii-protiv-vk-i-razrabotchika-messendzhera-maks/" target="_blank">Евросоюз ввел санкции против VK и разработчика мессенджера MAX</a>
+          - регуляторная новость, не меняет условия размещения в рекламных кабинетах.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/elama-i-avito-reklama-zapustili-besplatnyy-kurs-po-reklame-na-avito/" target="_blank">eLama и Авито Реклама запустили бесплатный курс по Авито Рекламе</a>
+          - обучающий курс без изменений в функционале кабинета.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Главное для всех, кто ведет Директ: завтра, 14 июля, стартует принудительный и необратимый перевод текстово-графических объявлений в комбинаторные - стоит заранее проверить объем заголовков и текстов в группах объявлений.</li>
+      <li>ВКонтакте усиливает ставку на авторский контент и подписочную модель: брендам с каналами стоит пересмотреть контент-стратегию и присмотреться к формату скрытых постов как инструменту монетизации.</li>
+      <li>Rutube расширяет инвентарь на экраны Smart TV - дополнительная точка охвата для видеокампаний, если бюджет позволяет тестировать CTV.</li>
+      <li>Смена логики учета конверсий в ПромоСтраницах - не просто техническая деталь: при сверке эффективности за последние недели важно учитывать, что даты в отчетах теперь считаются иначе.</li>
+      <li>Точечный таргетинг Авито на футбольных болельщиков актуален только до 19 июля - решение о тесте стоит принимать оперативно.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 13 июля 2026 за период 10-13 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
