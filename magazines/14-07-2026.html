@@ -1,0 +1,351 @@
+<title>AdTech-дайджест: рекламные кабинеты РФ, 14 июля 2026</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --secondary-accent: #64748b;
+    --secondary-soft: #f8fafc;
+    --header-bg: #111827;
+    --header-text: #f9fafb;
+    --border: #e5e7eb;
+    --conclusion-bg: #eef2ff;
+    --conclusion-border: #6366f1;
+    --conclusion-text: #3730a3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --card-bg: #191c22;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --accent-soft: #1e293b;
+      --secondary-accent: #94a3b8;
+      --secondary-soft: #1a1d24;
+      --header-bg: #05070a;
+      --header-text: #f9fafb;
+      --border: #2a2e37;
+      --conclusion-bg: #1e2247;
+      --conclusion-border: #818cf8;
+      --conclusion-text: #c7d2fe;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1115;
+    --card-bg: #191c22;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #60a5fa;
+    --accent-soft: #1e293b;
+    --secondary-accent: #94a3b8;
+    --secondary-soft: #1a1d24;
+    --header-bg: #05070a;
+    --header-text: #f9fafb;
+    --border: #2a2e37;
+    --conclusion-bg: #1e2247;
+    --conclusion-border: #818cf8;
+    --conclusion-text: #c7d2fe;
+  }
+  :root[data-theme="light"] {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --secondary-accent: #64748b;
+    --secondary-soft: #f8fafc;
+    --header-bg: #111827;
+    --header-text: #f9fafb;
+    --border: #e5e7eb;
+    --conclusion-bg: #eef2ff;
+    --conclusion-border: #6366f1;
+    --conclusion-text: #3730a3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.digest-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 18px;
+    padding: 32px 28px;
+    margin-bottom: 20px;
+  }
+  header.digest-header h1 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    letter-spacing: -0.01em;
+  }
+  header.digest-header .period {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1em;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    border-left: 4px solid var(--accent);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+  }
+  .summary p {
+    margin: 0;
+  }
+  .summary .unavailable {
+    display: block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.92em;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .stat { color: #60a5fa; }
+  }
+  :root[data-theme="dark"] .stat { color: #60a5fa; }
+  :root[data-theme="light"] .stat { color: #2563eb; }
+
+  .section-title {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 32px 4px 14px;
+    letter-spacing: -0.01em;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--secondary-accent);
+  }
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 1.12em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+  }
+  .card h3 a:hover {
+    color: var(--accent);
+  }
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.9em;
+    margin-bottom: 14px;
+  }
+  .card .meta span {
+    white-space: nowrap;
+  }
+  .card p {
+    margin: 0 0 10px;
+  }
+  .card p:last-of-type {
+    margin-bottom: 0;
+  }
+  .card .field-label {
+    font-weight: 600;
+  }
+  .card-conclusion {
+    margin-top: 14px;
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    color: var(--conclusion-text);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 0.96em;
+  }
+  .card.secondary .card-conclusion {
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    color: var(--conclusion-text);
+  }
+
+  .skip-list {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 22px;
+  }
+  .skip-list ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .skip-list li {
+    margin-bottom: 10px;
+  }
+  .skip-list li:last-child {
+    margin-bottom: 0;
+  }
+  .skip-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-list a:hover {
+    text-decoration: underline;
+  }
+  .skip-reason {
+    color: var(--muted);
+  }
+
+  .summary-block {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-top: 32px;
+  }
+  .summary-block h2 {
+    margin: 0 0 14px;
+    font-size: 1.05em;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.85em;
+  }
+  .summary-block ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .summary-block li {
+    margin-bottom: 10px;
+  }
+  .summary-block li:last-child {
+    margin-bottom: 0;
+  }
+
+  footer.digest-footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9em;
+    margin-top: 32px;
+    padding: 0 8px;
+  }
+  footer.digest-footer p {
+    margin: 4px 0;
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px 40px; }
+    header.digest-header { padding: 24px 18px; }
+    .card, .summary, .skip-list, .summary-block { padding: 16px 16px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="digest-header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <p class="period">Выпуск 14 июля 2026 за период 13-14 июля.</p>
+  </header>
+
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>Яндекс Директ, RUTUBE, Telegram</strong>.
+    </p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news/novye-targetingi-dlya-aukcionnoj-videoreklamy-na-connected-tv" target="_blank" rel="noopener">Яндекс Директ впятеро увеличил число таргетингов для видеорекламы на Connected TV</a></h3>
+    <div class="meta"><span>Яндекс Реклама, ppc.world</span> · <span>Яндекс Директ</span> · <span>14 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> Для аукционной видеорекламы на Connected TV стало доступно более 80 таргетингов по интересам, привычкам и поведению в интернете: в пять раз больше, чем раньше.</p>
+    <p><span class="field-label">Почему важно.</span> Точнее находить нужную аудиторию среди зрителей Connected TV и меньше тратить бюджет на нерелевантные показы.</p>
+    <p><span class="field-label">Кому полезно.</span> Медиапланерам и байерам, которые закупают видеорекламу на CTV-инвентаре Яндекса.</p>
+    <div class="card-conclusion">Если в кампаниях на Connected TV используются старые таргетинги, стоит пересобрать настройки: новых сегментов стало значительно больше.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news/prodvizhenie-v-direct-cherez-dialog-s-ii-pomoshchnikom" target="_blank" rel="noopener">В Директе можно запускать рекламу через диалог с ИИ-помощником</a></h3>
+    <div class="meta"><span>Яндекс Реклама, ppc.world</span> · <span>Яндекс Директ</span> · <span>14 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> Появилась бета-версия запуска кампаний через чат с ИИ-помощником: он помогает настроить кампанию и подготовить креативы без ручного прохождения по разделам интерфейса.</p>
+    <p><span class="field-label">Кому подходит.</span> Небольшим командам и специалистам, которым нужно быстро запускать типовые кампании.</p>
+    <p><span class="field-label">Что проверить.</span> Функция пока в бета-тестировании, поэтому итоговые настройки кампании лучше перепроверять вручную перед запуском.</p>
+    <div class="card-conclusion">Удобный способ ускорить рутинный запуск кампаний, но на старте разумно держать результаты работы ИИ-помощника под контролем.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://adindex.ru/news/digital/2026/07/13/347127.phtml" target="_blank" rel="noopener">RUTUBE запустил рекламную сеть для Smart TV и утроил баннерный инвентарь</a></h3>
+    <div class="meta"><span>AdIndex, Click.ru (со ссылкой на Kommersant)</span> · <span>RUTUBE</span> · <span>13 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> RUTUBE запустил отдельную рекламную сеть для Smart TV: реклама теперь доступна не только внутри видеосервиса, но и на главных экранах телевизоров и в партнёрских приложениях.</p>
+    <p><span class="field-label">Возможности формата.</span> Полноэкранные ролики при переключении каналов, реклама в стриминге и VOD, баннеры на главных экранах Smart TV, всплывающие сообщения, интеграции в поиске и подборе контента, часть форматов поддерживает QR-код на сайт бренда. Параллельно площадка втрое увеличила баннерный инвентарь: с 1 до 3 млрд показов в месяц.</p>
+    <p><span class="field-label">Почему важно.</span> По данным компании, рекламная выручка RUTUBE за полугодие выросла в 3,5 раза, а средний чек рекламодателей в 3,7 раза.</p>
+    <div class="card-conclusion">RUTUBE заметно наращивает рекламную инфраструктуру, стоит присмотреться к площадке при планировании видео- и CTV-кампаний на второе полугодие.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://blog.click.ru/market-news/etoj-osenyu-rutube-nachnet-prodavat-reklamu-u-blogerov/" target="_blank" rel="noopener">RUTUBE этой осенью начнёт продавать рекламу у блогеров напрямую</a></h3>
+    <div class="meta"><span>Click.ru</span> · <span>RUTUBE</span> · <span>14 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> Платформа анонсировала запуск прямой продажи рекламы у своих блогеров, минуя внешних посредников.</p>
+    <p><span class="field-label">Почему важно.</span> Ещё один канал размещения у RUTUBE в дополнение к баннерам и новой Smart TV-сети.</p>
+    <div class="card-conclusion">Пока это анонс на осень, но агентствам стоит заранее закладывать блогерский инвентарь RUTUBE в медиапланы.</div>
+  </div>
+
+  <div class="card secondary">
+    <h3><a href="https://ppc.world/news/ssylki-telegram-s-domenom-tme-perestali-otkryvatsya-v-brauzerah-po-vsemu-miru/" target="_blank" rel="noopener">Домен t.me на сутки перестал открываться в браузерах, задело ссылки в рекламе</a></h3>
+    <div class="meta"><span>ppc.world, Unisender</span> · <span>Telegram</span> · <span>13-14 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> 13 июля домен t.me получил статус serverHold и перестал открываться в браузерах по всему миру, Telegram начал автоматически подменять короткие ссылки на telegram.me. 14 июля доступ к t.me восстановился.</p>
+    <p><span class="field-label">Что проверить.</span> Если реклама, рассылки или QR-коды ведут на ссылки t.me, стоит убедиться, что они снова открываются, и по возможности использовать прямые диплинки вместо коротких ссылок.</p>
+    <div class="card-conclusion">Разовый сбой без блокировки со стороны регулятора, но повод держать для Telegram-кампаний запасной вариант ссылок.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="skip-list">
+    <ul>
+      <li><a href="https://www.sostav.ru/publication/genius-group-i-adplay-zapuskayut-premium-ads-platformu-premialnoj-tsifrovoj-reklamy-85216.html" target="_blank" rel="noopener">Genius Group и ADPLAY запускают Premium Ads</a> - <span class="skip-reason">маркированный рекламный материал, без независимого подтверждения запуска.</span></li>
+      <li><a href="https://ppc.world/news/obem-segmenta-onlayn-reklamy-v-rossii-v-2025-godu-snizilsya-na-195-erir/" target="_blank" rel="noopener">Объём сегмента онлайн-рекламы в России в 2025 году снизился на 19,5%</a> - <span class="skip-reason">аналитика рынка без практического изменения в рекламных кабинетах.</span></li>
+      <li><a href="https://yandex.ru/adv/news/avtorasstanovka-reklamy-open-beta" target="_blank" rel="noopener">Авторасстановка рекламы в РСЯ вышла в открытую бету для всех партнёров</a> - <span class="skip-reason">вне окна дат, первая публикация 7 июля.</span></li>
+    </ul>
+  </div>
+
+  <div class="summary-block">
+    <h2>Summary</h2>
+    <ul>
+      <li>Яндекс Директ за один день расширил и таргетинг, и способ запуска кампаний: больше настроек для видеорекламы на CTV плюс упрощённый запуск через ИИ-диалог. Команды могут ускорить рутинные задачи, но итог работы ИИ-помощника пока стоит проверять вручную.</li>
+      <li>RUTUBE последовательно строит полноценную рекламную экосистему: Smart TV-сеть, утроенный баннерный инвентарь и анонс прямых продаж у блогеров. Площадка становится всё более серьёзной альтернативой для видео- и CTV-кампаний.</li>
+      <li>Сбой домена t.me был разовым и уже устранён, но это напоминание для рекламодателей в Telegram держать под рукой прямые диплинки вместо коротких ссылок.</li>
+    </ul>
+  </div>
+
+  <footer class="digest-footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 14 июля 2026 за период 13-14 июля.</p>
+  </footer>
+
+</div>
