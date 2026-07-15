@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 15 июля 2026</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --secondary-accent: #64748b;
+    --secondary-soft: #f8fafc;
+    --header-bg: #111827;
+    --header-text: #f9fafb;
+    --border: #e5e7eb;
+    --conclusion-bg: #eef2ff;
+    --conclusion-border: #6366f1;
+    --conclusion-text: #3730a3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --card-bg: #191c22;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --accent-soft: #1e293b;
+      --secondary-accent: #94a3b8;
+      --secondary-soft: #1a1d24;
+      --header-bg: #05070a;
+      --header-text: #f9fafb;
+      --border: #2a2e37;
+      --conclusion-bg: #1e2247;
+      --conclusion-border: #818cf8;
+      --conclusion-text: #c7d2fe;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1115;
+    --card-bg: #191c22;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #60a5fa;
+    --accent-soft: #1e293b;
+    --secondary-accent: #94a3b8;
+    --secondary-soft: #1a1d24;
+    --header-bg: #05070a;
+    --header-text: #f9fafb;
+    --border: #2a2e37;
+    --conclusion-bg: #1e2247;
+    --conclusion-border: #818cf8;
+    --conclusion-text: #c7d2fe;
+  }
+  :root[data-theme="light"] {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --secondary-accent: #64748b;
+    --secondary-soft: #f8fafc;
+    --header-bg: #111827;
+    --header-text: #f9fafb;
+    --border: #e5e7eb;
+    --conclusion-bg: #eef2ff;
+    --conclusion-border: #6366f1;
+    --conclusion-text: #3730a3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.digest-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 18px;
+    padding: 32px 28px;
+    margin-bottom: 20px;
+  }
+  header.digest-header h1 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    letter-spacing: -0.01em;
+  }
+  header.digest-header .period {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1em;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+  }
+  .summary p {
+    margin: 0;
+  }
+  .summary .unavailable {
+    display: block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.92em;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .stat { color: #60a5fa; }
+  }
+  :root[data-theme="dark"] .stat { color: #60a5fa; }
+  :root[data-theme="light"] .stat { color: #2563eb; }
+
+  .section-title {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 32px 4px 14px;
+    letter-spacing: -0.01em;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--secondary-accent);
+  }
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 1.12em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+  }
+  .card h3 a:hover {
+    color: var(--accent);
+  }
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.9em;
+    margin-bottom: 14px;
+  }
+  .card .meta span {
+    white-space: nowrap;
+  }
+  .card p {
+    margin: 0 0 10px;
+  }
+  .card p:last-of-type {
+    margin-bottom: 0;
+  }
+  .card .field-label {
+    font-weight: 600;
+  }
+  .card-conclusion {
+    margin-top: 14px;
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    color: var(--conclusion-text);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 0.96em;
+  }
+  .card.secondary .card-conclusion {
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    color: var(--conclusion-text);
+  }
+
+  .skip-list {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 22px;
+  }
+  .skip-list ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .skip-list li {
+    margin-bottom: 10px;
+  }
+  .skip-list li:last-child {
+    margin-bottom: 0;
+  }
+  .skip-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-list a:hover {
+    text-decoration: underline;
+  }
+  .skip-reason {
+    color: var(--muted);
+  }
+
+  .summary-block {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-top: 32px;
+  }
+  .summary-block h2 {
+    margin: 0 0 14px;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.85em;
+  }
+  .summary-block ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .summary-block li {
+    margin-bottom: 10px;
+  }
+  .summary-block li:last-child {
+    margin-bottom: 0;
+  }
+
+  footer.digest-footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9em;
+    margin-top: 32px;
+    padding: 0 8px;
+  }
+  footer.digest-footer p {
+    margin: 4px 0;
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px 40px; }
+    header.digest-header { padding: 24px 18px; }
+    .card, .summary, .skip-list, .summary-block { padding: 16px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="digest-header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <p class="period">Выпуск 15 июля 2026 за период 14-15 июля.</p>
+  </header>
+
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>Wildberries, Яндекс ПромоСтраницы, Яндекс KIT</strong>.
+    </p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://www.sostav.ru/publication/wildberries-povysit-komissii-dlya-kitajskikh-prodavtsov-85297.html" target="_blank" rel="noopener">Wildberries повысит комиссию для китайских продавцов до 20%</a></h3>
+    <div class="meta"><span>Sostav</span> · <span>Wildberries</span> · <span>15 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> С 22 июля Wildberries повышает комиссию для продавцов из Китая. Для большинства товарных категорий она составит 10%, в отдельных пиковых сегментах до 20%. Площадка уведомила продавцов об изменении пункта 6.6 договора, объяснив решение необходимостью «прозрачности коммерческой деятельности на платформе».</p>
+    <p><span class="field-label">Контекст.</span> В марте ФАС потребовала от Wildberries и Ozon пересмотреть условия работы с продавцами и раскрыть данные о комиссиях. В апреле маркетплейс говорил о планах уравнять комиссии для российских и китайских селлеров, но в мае отложил это решение, и теперь комиссия для Китая вместо выравнивания просто растёт.</p>
+    <p><span class="field-label">Кому важно.</span> Категорийным менеджерам и продавцам, которые работают с китайскими поставщиками на WB, а также агентствам, ведущим рекламные и товарные кампании для таких продавцов: себестоимость размещения на площадке вырастет.</p>
+    <div class="card-conclusion">Рост комиссии для китайских продавцов повышает себестоимость размещения на WB. Стоит заранее пересчитать юнит-экономику товаров этой категории до 22 июля.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://blog.click.ru/market-news/v-promostranicax-obnovilis-otslezhivanie-konversij-i-otchet-po-celyam/" target="_blank" rel="noopener">В ПромоСтраницах изменились отслеживание конверсий и отчёт по целям</a></h3>
+    <div class="meta"><span>Click.ru, со ссылкой на ПромоСтраницы</span> · <span>Яндекс ПромоСтраницы</span> · <span>15 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> Яндекс поменял логику аналитики в ПромоСтраницах. Конверсии теперь по умолчанию привязываются к дате дочитывания рекламной статьи, а не к дате самой покупки или заявки. Логика похожа на Директ, где конверсия считается по дате клика. При необходимости можно вручную вернуться к прежней модели учёта.</p>
+    <p><span class="field-label">Возможности отчёта.</span> В разделе «Отчёт по конверсиям, включая отложенные» теперь видны все цели, настроенные в счётчике, а не только те, что выбраны для оптимизации кампании. Основную цель можно закрепить в начале списка.</p>
+    <p><span class="field-label">Кому полезно.</span> Специалистам, которые оценивают эффективность статей и рекламных кампаний в ПромоСтраницах и сравнивают результаты по разным креативам.</p>
+    <div class="card-conclusion">Новая логика точнее сопоставляет конверсии с конкретной статьёй. При сравнении показателей кампаний до и после обновления стоит учитывать смену модели учёта.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://www.cossa.ru/blogs/zaley_cash/349757/" target="_blank" rel="noopener">Яндекс KIT даёт бонус до 200% на продвижение новым продавцам</a></h3>
+    <div class="meta"><span>Cossa, блог ZaleyCash</span> · <span>Яндекс KIT</span> · <span>15 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> На платформе для интернет-магазинов Яндекс KIT до 30 сентября 2026 года действуют летние бонусы на продвижение. Если запустить магазин в течение 30 дней после регистрации, бюджет на Яндекс Директ увеличивается на 200% при пополнении от 50 тысяч рублей.</p>
+    <p><span class="field-label">Кому подходит.</span> Новым продавцам, которые запускают интернет-магазин на Яндекс KIT и сразу планируют вкладываться в рекламу через Директ.</p>
+    <div class="card-conclusion">Бонус заметно снижает стоимость первых рекламных кампаний для новых магазинов на платформе. Есть смысл успеть запуститься и пополнить бюджет до конца акции 30 сентября.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="skip-list">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/obnovlenie-tekstovo-graficheskih-obyavleniy-do-kombinatornyh-protsess-i-osobennosti" target="_blank" rel="noopener">14 июля стартует обновление текстово-графических объявлений до комбинаторных</a> - <span class="skip-reason">вне окна дат, первая публикация 30 июня.</span></li>
+      <li><a href="https://blog.click.ru/market-news/platforma-dlya-biznesa-max-poyavilas-v-mini-prilozhenii/" target="_blank" rel="noopener">Платформа для бизнеса МАХ появилась в мини-приложении</a> - <span class="skip-reason">техническая интеграция, не изменение рекламного кабинета.</span></li>
+      <li><a href="https://ppc.world/news/obem-segmenta-onlayn-reklamy-v-rossii-v-2025-godu-snizilsya-na-195-erir/" target="_blank" rel="noopener">Объём сегмента онлайн-рекламы в России в 2025 году снизился на 19,5%</a> - <span class="skip-reason">аналитика рынка без практического изменения в рекламных кабинетах.</span></li>
+      <li><a href="https://adindex.ru/news/marketing/2026/07/15/347218.phtml" target="_blank" rel="noopener">Wildberries открыл фан-шоп ПФК ЦСКА на своей платформе</a> - <span class="skip-reason">PR без изменений в рекламном инструменте.</span></li>
+    </ul>
+  </div>
+
+  <div class="summary-block">
+    <h2>Summary</h2>
+    <ul>
+      <li>Wildberries продолжает пересматривать условия для китайских продавцов: рост комиссии до 20% с 22 июля напрямую влияет на себестоимость размещения, юнит-экономику стоит пересчитать заранее.</li>
+      <li>Обновление аналитики в ПромоСтраницах меняет модель учёта конверсий на более точную, но требует аккуратности при сравнении показателей кампаний до и после перехода.</li>
+      <li>Летний бонус Яндекс KIT до 200% на продвижение делает запуск нового магазина на платформе дешевле, но действует только до конца сентября.</li>
+    </ul>
+  </div>
+
+  <footer class="digest-footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 15 июля 2026 за период 14-15 июля.</p>
+  </footer>
+
+</div>
+</body>
+</html>
