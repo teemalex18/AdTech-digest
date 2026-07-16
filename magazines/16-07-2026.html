@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 16 июля 2026</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --secondary-accent: #64748b;
+    --secondary-soft: #f8fafc;
+    --header-bg: #111827;
+    --header-text: #f9fafb;
+    --border: #e5e7eb;
+    --conclusion-bg: #eef2ff;
+    --conclusion-border: #6366f1;
+    --conclusion-text: #3730a3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --card-bg: #191c22;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --accent-soft: #1e293b;
+      --secondary-accent: #94a3b8;
+      --secondary-soft: #1a1d24;
+      --header-bg: #05070a;
+      --header-text: #f9fafb;
+      --border: #2a2e37;
+      --conclusion-bg: #1e2247;
+      --conclusion-border: #818cf8;
+      --conclusion-text: #c7d2fe;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1115;
+    --card-bg: #191c22;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #60a5fa;
+    --accent-soft: #1e293b;
+    --secondary-accent: #94a3b8;
+    --secondary-soft: #1a1d24;
+    --header-bg: #05070a;
+    --header-text: #f9fafb;
+    --border: #2a2e37;
+    --conclusion-bg: #1e2247;
+    --conclusion-border: #818cf8;
+    --conclusion-text: #c7d2fe;
+  }
+  :root[data-theme="light"] {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --secondary-accent: #64748b;
+    --secondary-soft: #f8fafc;
+    --header-bg: #111827;
+    --header-text: #f9fafb;
+    --border: #e5e7eb;
+    --conclusion-bg: #eef2ff;
+    --conclusion-border: #6366f1;
+    --conclusion-text: #3730a3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.digest-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 18px;
+    padding: 32px 28px;
+    margin-bottom: 20px;
+  }
+  header.digest-header h1 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    letter-spacing: -0.01em;
+  }
+  header.digest-header .period {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1em;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+  }
+  .summary p {
+    margin: 0;
+  }
+  .summary .unavailable {
+    display: block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.92em;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .stat { color: #60a5fa; }
+  }
+  :root[data-theme="dark"] .stat { color: #60a5fa; }
+  :root[data-theme="light"] .stat { color: #2563eb; }
+
+  .section-title {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 32px 4px 14px;
+    letter-spacing: -0.01em;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--secondary-accent);
+  }
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 1.12em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+  }
+  .card h3 a:hover {
+    color: var(--accent);
+  }
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.9em;
+    margin-bottom: 14px;
+  }
+  .card .meta span {
+    white-space: nowrap;
+  }
+  .card p {
+    margin: 0 0 10px;
+  }
+  .card p:last-of-type {
+    margin-bottom: 0;
+  }
+  .card .field-label {
+    font-weight: 600;
+  }
+  .card-conclusion {
+    margin-top: 14px;
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    color: var(--conclusion-text);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 0.96em;
+  }
+  .card.secondary .card-conclusion {
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    color: var(--conclusion-text);
+  }
+
+  .skip-list {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 22px;
+  }
+  .skip-list ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .skip-list li {
+    margin-bottom: 10px;
+  }
+  .skip-list li:last-child {
+    margin-bottom: 0;
+  }
+  .skip-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-list a:hover {
+    text-decoration: underline;
+  }
+  .skip-reason {
+    color: var(--muted);
+  }
+
+  .summary-block {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-top: 32px;
+  }
+  .summary-block h2 {
+    margin: 0 0 14px;
+    color: #cbd5e1;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.85em;
+  }
+  .summary-block ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .summary-block li {
+    margin-bottom: 10px;
+  }
+  .summary-block li:last-child {
+    margin-bottom: 0;
+  }
+
+  footer.digest-footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9em;
+    margin-top: 32px;
+    padding: 0 8px;
+  }
+  footer.digest-footer p {
+    margin: 4px 0;
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px 40px; }
+    header.digest-header { padding: 24px 18px; }
+    .card, .summary, .skip-list, .summary-block { padding: 16px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="digest-header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <p class="period">Выпуск 16 июля 2026 за период 15-16 июля.</p>
+  </header>
+
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>Яндекс UrbanAds, MAX</strong>.
+    </p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://ppc.world/news/yandeks-urbanads-otkryl-publichnyy-api-statistiku-bolshe-ne-nuzhno-vygruzhat-vruchnuyu/" target="_blank" rel="noopener">Яндекс UrbanAds открыл публичный API для рекламодателей</a></h3>
+    <div class="meta"><span>ppc.world, по данным пресс-службы Яндекса</span> · <span>Яндекс UrbanAds</span> · <span>16 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> UrbanAds запустил публичный API, через который рекламодатели могут автоматически получать данные о кампаниях, маркетинговые отчёты и отзывы в свои системы аналитики, без ручной выгрузки статистики из личного кабинета. Подключение настраивается в разделе «API-интеграции» на urbanads.yandex.ru: там же можно сгенерировать токен доступа и посмотреть журнал запросов.</p>
+    <p><span class="field-label">Что доступно.</span> Через API можно собирать отчёты по бусту показов и продаж, по продвижению в полках (приоритетное размещение товаров в Поиске и каталоге), а также по охватному продвижению: медийным форматам для роста узнаваемости бренда.</p>
+    <p><span class="field-label">Кому полезно.</span> Агентствам и in-house командам, которые ведут сквозную аналитику по нескольким рекламным каналам и хотят видеть статистику UrbanAds в общей системе отчётности.</p>
+    <div class="card-conclusion">Тем, кто размещается в UrbanAds (сервисы Яндекс Go, Еда, Деливери, Лавка и Маркет под одной рекламной платформой), стоит подключить API уже сейчас: это снимает ручную выгрузку отчётов и ускоряет сведение статистики с другими площадками.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://www.unisender.com/ru/blog/news/max-otkryl-publichnye-kanaly-dlya-vseh-polzovatelej/" target="_blank" rel="noopener">MAX открыл создание публичных каналов для всех пользователей</a></h3>
+    <div class="meta"><span>Unisender, со ссылкой на MAX</span> · <span>MAX</span> · <span>15 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> Раньше публичный канал в MAX могли создать только блогеры от 10 тысяч подписчиков или бизнес через партнёрскую платформу. Теперь это доступно любому пользователю, подтвердившему личность цифровым ID (QR-кодом на основе данных портала Госуслуг, доступным только совершеннолетним). На один цифровой ID можно создать до пяти публичных каналов, для бизнеса через business.max.ru лимит отдельный: до десяти каналов на ИП или юрлицо.</p>
+    <p><span class="field-label">Возможности.</span> Приватный канал можно перевести в публичный без потери подписчиков (обратное преобразование пока недоступно), каналы получили читаемые ссылки формата max.ru/channel_имя и возможность переименования. Функция уже работает на Android и в веб-версии iOS.</p>
+    <p><span class="field-label">Кому подходит.</span> Брендам и малому бизнесу, которые хотят выйти в MAX без статуса крупного блогера или регистрации через партнёрскую платформу.</p>
+    <div class="card-conclusion">Порог входа для публичных каналов в MAX снизился до минимума. Если мессенджер есть в медиаплане, стоит закрепить канал с узнаваемым именем и ссылкой, пока это может сделать любой конкурент.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://blog.click.ru/market-news/gosduma-prinyala-zakon-o-markirovke-ii-kontenta/" target="_blank" rel="noopener">Госдума приняла закон о маркировке ИИ-контента</a></h3>
+    <div class="meta"><span>Click.ru</span> · <span>Регулирование</span> · <span>16 июля 2026</span></div>
+    <p><span class="field-label">Что изменилось.</span> Во втором и третьем чтениях принят закон о добровольной маркировке аудио- и видеоматериалов, созданных с помощью крупных ИИ-моделей. Площадки с ежедневной аудиторией от 500 тысяч пользователей, распространяющие контент на русском языке, обязаны предоставить пользователям технические инструменты для размещения такой отметки. Сама маркировка для авторов остаётся добровольной, формат и порядок её размещения определит соглашение между разработчиком модели и пользователем.</p>
+    <p><span class="field-label">Что проверить.</span> Если в рекламных креативах используются аудио или видео, сгенерированные нейросетями, стоит следить за появлением инструментов маркировки на площадках, где размещается реклама.</p>
+    <div class="card-conclusion">Прямых требований к рекламным кабинетам закон пока не вводит, но крупным площадкам предстоит внедрить инструменты маркировки, поэтому стоит заранее уточнить сроки у используемых сервисов, если в креативах задействован ИИ.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+
+  <div class="skip-list">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/novye-targetingi-dlya-aukcionnoj-videoreklamy-na-connected-tv" target="_blank" rel="noopener">Яндекс Директ увеличил число таргетингов для видеорекламы на Connected TV в 5 раз</a> - <span class="skip-reason">вне окна дат, первая публикация 14 июля.</span></li>
+      <li><a href="https://adindex.ru/news/agencies/2026/07/16/347278.phtml" target="_blank" rel="noopener">Группа Russ покинула Ассоциацию коммуникационных агентств России</a> - <span class="skip-reason">отраслевая новость об ассоциации, без изменения рекламного кабинета.</span></li>
+      <li><a href="https://www.sostav.ru/publication/obem-reklamnykh-uslug-x5-vo-vtorom-kvartale-sostavil-9-6-mlrd-rublej-85331.html" target="_blank" rel="noopener">Объём рекламных услуг X5 во втором квартале составил 9,6 млрд рублей</a> - <span class="skip-reason">аналитика рынка без практического изменения в рекламных кабинетах.</span></li>
+      <li><a href="https://ppc.world/news/prilozheniya-maksa-i-vkontakte-udalili-iz-rossiyskogo-google-play/" target="_blank" rel="noopener">Сервисы VK, в том числе ВКонтакте и Макс, удалили из Google Play</a> - <span class="skip-reason">техническое событие с приложениями, не изменение рекламного кабинета.</span></li>
+    </ul>
+  </div>
+
+  <div class="summary-block">
+    <h2>Summary</h2>
+    <ul>
+      <li>Публичный API UrbanAds снимает ручную выгрузку статистики: специалистам по контекстной и медийной рекламе стоит подключить интеграцию, чтобы свести отчётность с другими каналами.</li>
+      <li>MAX резко снизил порог для запуска публичных каналов. Если мессенджер есть в медиаплане, самое время закрепить узнаваемое имя и ссылку канала, пока это может сделать кто угодно.</li>
+      <li>Закон о маркировке ИИ-контента пока не требует действий от рекламных кабинетов напрямую, но стоит держать в поле зрения появление инструментов маркировки у крупных площадок, если в креативах используется ИИ.</li>
+    </ul>
+  </div>
+
+  <footer class="digest-footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 16 июля 2026 за период 15-16 июля.</p>
+  </footer>
+
+</div>
+</body>
+</html>
