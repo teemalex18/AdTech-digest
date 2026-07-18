@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 18 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 18 июля 2026 за период 17-18 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления.
+    Затронуты платформы: <strong>Яндекс Директ, Telegram Ads, Маркетплейсы, MAX</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Yandex Direct Dynamic places -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/yandeks-uprostit-prodvizhenie-na-dinamicheskix-mestax-v-poiske/" target="_blank">
+          Директ упростит продвижение на Динамических местах: с 20 июля страницы будут подбираться автоматически
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Click.ru, Яндекс Реклама</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 17 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          С 20 июля Яндекс Директ включает по умолчанию расширенное сопоставление страниц для Динамических мест на поиске. Раньше объявление показывалось только при точном совпадении указанного URL со страницей выдачи, поэтому под каждую посадочную страницу или карточку товара приходилось создавать отдельное объявление. Теперь достаточно указать ссылку на главную страницу сайта - система сама подберет наиболее релевантный URL под запрос пользователя.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что это дает</div>
+        <div class="card-section-text">
+          По результатам экспериментов Яндекса, средний объем дополнительных конверсий с Динамических мест вырос с 5% до 10%. Модель оплаты не меняется - платеж идет только за дополнительные клики и конверсии. Если в кампании уже есть объявление с точным совпадением URL, система по-прежнему покажет именно его.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что проверить</div>
+        <div class="card-section-text">
+          В настройках можно исключить отдельные разделы сайта - блог, архивные акции, страницы распродаж - через блок «Расширенное сопоставление URL». Яндекс рекомендует добавлять исключения уже после накопления статистики, а не сразу.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Специалистам, ведущим кампании на Поиске с посадочной на главную страницу, стоит проверить настройки Динамических мест до 20 июля - технология включится автоматически, и часть трафика начнет распределяться без ручного контроля.
+      </div>
+    </div>
+
+    <!-- Card 2: Telegram Ads price drop -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://www.sostav.ru/publication/stoimost-reklamy-v-telegram-snizilas-85374.html" target="_blank">
+          Стоимость рекламы в Telegram снизилась, кликабельность выросла почти на 30%
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Sostav, данные Magnetto.pro</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Telegram Ads</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 17 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Во втором квартале 2026 года средний CPM в Telegram Ads снизился с €1,04 до €0,98, а CPC - с €0,16 до €0,12. При этом CTR объявлений вырос с 0,67% до 0,86%. Данные предоставлены Magnetto.pro.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Почему так вышло</div>
+        <div class="card-section-text">
+          Динамика связана с временным снижением конкуренции: часть крупных рекламодателей пересмотрела медиапланы после мартовских разъяснений ФАС о размещении в Telegram и заняла выжидательную позицию. Освободившееся место заняли рекламодатели среднего бизнеса, увеличившие бюджеты в среднем на 8%.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что проверить</div>
+        <div class="card-section-text">
+          Аналитики называют текущий период одним из наиболее благоприятных для запуска и масштабирования кампаний в Telegram, но ожидают роста цен по мере возвращения крупных брендов.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Пока конкуренция снижена, у среднего и малого бизнеса есть окно для запуска или расширения кампаний в Telegram Ads по более низкой цене клика - стоит учитывать это в медиаплане на ближайшие недели, до возврата крупных рекламодателей.
+      </div>
+    </div>
+
+    <!-- Card 3: FAS marketplace ad clarification -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/v-fas-razyasnili-schitayutsya-li-reklamoy-kartochki-i-otzyvy-na-marketpleysah/" target="_blank">
+          ФАС разъяснила, какие карточки и отзывы на маркетплейсах считаются рекламой
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Маркетплейсы (Ozon, Wildberries, Авито, Яндекс Маркет)</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 17 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          ФАС опубликовала критерии, по которым карточки товаров, отзывы и другие материалы на маркетплейсах и в сервисах объявлений признаются рекламой и требуют маркировки. Главный критерий - привлекает ли материал повышенное внимание к конкретному товару, а не просто информирует о нем.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что требует маркировки</div>
+        <div class="card-section-text">
+          Закрепленные и всплывающие баннеры, визуально выделенные карточки товаров.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что не требует маркировки</div>
+        <div class="card-section-text">
+          Стандартные карточки, оформленные по единым правилам площадки; отзывы покупателей без рекламных призывов; объявления в каталогах и агрегаторах, размещенные единым списком; информация на сайте производителя о собственной продукции.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Селлерам и агентствам, размещающимся на Ozon, Wildberries, Авито и Яндекс Маркете, стоит свериться со списком ФАС и проверить, какие форматы карточек в их кабинетах требуют пометки «Реклама» - это снижает риск штрафа за отсутствие маркировки.
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСТАЛЬНЫЕ ОБНОВЛЕНИЯ -->
+  <div class="section">
+    <div class="section-title">Остальные обновления</div>
+
+    <!-- Card 4: RKN MAX ad volume -->
+    <div class="card secondary">
+      <div class="card-title">
+        <a href="https://blog.click.ru/market-news/rkn-soobshhil-ob-obeme-reklamy-v-max/" target="_blank">
+          РКН впервые раскрыл объем рекламы в MAX: 1 млрд рублей за полугодие
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Click.ru, данные Роскомнадзора</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> MAX</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 17 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Роскомнадзор, оператор Единого реестра интернет-рекламы, впервые опубликовал данные об объеме размещений в мессенджере MAX - около 1 млрд рублей за первое полугодие 2026 года, рост в несколько раз год к году. Для сравнения: реклама во ВКонтакте выросла на 1% до 8,8 млрд рублей, а в Telegram снизилась на 22% до 7,9 млрд рублей.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        MAX быстро набирает рекламный вес на фоне охлаждения Telegram - стоит учитывать это при распределении бюджетов между мессенджерами на второе полугодие. Разместить рекламу в MAX можно через Telega.in, VK Рекламу и РСЯ.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://adindex.ru/news/digital/2026/07/17/347283.phtml" target="_blank">Рейтинг «Технологический Индекс»: реклама в Telegram</a>
+          - исследование рынка провайдеров Telegram-рекламы, без изменений в инструментах.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/yandeks-urbanads-otkryl-publichnyy-api-statistiku-bolshe-ne-nuzhno-vygruzhat-vruchnuyu/" target="_blank">Яндекс UrbanAds открыл публичный API для статистики кампаний</a>
+          - вне окна дат, первая публикация 16 июля.
+        </li>
+        <li>
+          <a href="https://elama.ru/blog/markirovka-reklamy-avito/" target="_blank">Маркировка рекламы на Авито: когда нужна и как оформить</a>
+          - инструкция по оформлению, без новых правил или изменений в кабинете.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Директ с 20 июля начнет автоматически подбирать посадочные страницы на Динамических местах - специалистам стоит заранее проверить, какие разделы сайта нужно исключить из подбора.</li>
+      <li>Реклама в Telegram временно подешевела из-за паузы части крупных рекламодателей - подходящий момент нарастить размещения, пока цена клика ниже обычной.</li>
+      <li>ФАС четко разграничила, какие карточки и отзывы на маркетплейсах требуют маркировки - агентствам и селлерам стоит свериться со списком, чтобы не получить штраф.</li>
+      <li>Рекламные бюджеты в MAX растут кратно на фоне снижения в Telegram - при планировании на второе полугодие стоит пересмотреть баланс между мессенджерами.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 18 июля 2026 за период 17-18 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
