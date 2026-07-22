@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 22 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 22 июля 2026 за период 21-22 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">2</span> релевантных обновления.
+    Затронуты платформы: <strong>Яндекс Директ (РСЯ), Wildberries</strong>.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: RSYA blogger payouts -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/rsya-vyplatila-blogeram-53-mlrd-rubley-za-tri-goda-monetizacii-kanalov/" target="_blank">
+          РСЯ выплатила блогерам 5,3 млрд рублей за три года монетизации каналов
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ (РСЯ)</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 22 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          Яндекс подвел итоги трех лет монетизации блогерских каналов через РСЯ: выплаты авторам достигли 5,3 млрд рублей, а число подключенных площадок за последние 12 месяцев выросло на 33% - с 18 000 до 24 000. Бюджеты рекламодателей в сети увеличились в 4,8 раза год к году. Список поддерживаемых площадок расширился за пределы Telegram и VK: теперь это также Max, Дзен, Rutube и YouTube, а география охватывает Россию, Беларусь, Казахстан, Узбекистан и Турцию.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что проверить</div>
+        <div class="card-section-text">
+          Минимальный порог для канала - 1000 подписчиков, кампании можно запускать от 300 рублей в неделю, система полностью автоматизирована. Каналы с аудиторией от 10 000 подписчиков обязаны зарегистрироваться в РКН - требование действует с января 2025 года и легко упустить при выходе на новые площадки.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Блогерская реклама через РСЯ стала полноценным каналом медиапланирования: низкий порог входа и рост бюджетов делают ее интересной для тестирования, но регистрация в РКН для крупных каналов обязательна и требует отдельного контроля.
+      </div>
+    </div>
+
+    <!-- Card 2: RWB Media Wildberries click-in ads -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/rwb-media-obnovila-kabinet-teper-agentstva-mogut-razmeschat-click-in-reklamu-dlya-sellerov-wildberries/" target="_blank">
+          RWB Медиа обновила кабинет: агентства могут размещать click-in-рекламу для селлеров Wildberries
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Wildberries (RWB Медиа)</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 21 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          В рекламном кабинете RWB Медиа появилось разделение клиентов на две категории: «Селлер или бренд» (click-in) и «Внешний рекламодатель» (click-out). Агентства теперь ведут кампании обоих типов в одном интерфейсе, не переключаясь между разными аккаунтами.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Возможности формата</div>
+        <div class="card-section-text">
+          Для клиентов click-in доступны баннер, видео, реклама в ПВЗ, контекстный баннер и брендовая полка. Для click-out - баннер, видео и реклама в ПВЗ. Агентства могут самостоятельно загружать списки артикулов и формировать товарные подборки для рекламы без участия продавца, а отчеты по кампаниям выгружаются в формате XLSX.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Обновление снимает с агентств необходимость вести отдельные кабинеты для селлеров и внешних рекламодателей на Wildberries, что упрощает администрирование медиакампаний и открывает доступ к более широкому набору форматов, включая брендовую полку.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://ppc.world/news/reklama-v-telegram-stala-deshevle-i-effektivnee-analitiki-podveli-itogi-vtorogo-kvartala-2026-goda/" target="_blank">Реклама в Telegram стала дешевле и эффективнее: итоги второго квартала 2026 года</a>
+          - вне окна дат, первая публикация 20 июля.
+        </li>
+        <li>
+          <a href="https://yandex.ru/adv/news/api-yandeks-kit-novyj-instrument-dlya-avtomatizaczii-raboty-internet-magazina" target="_blank">API Яндекс KIT β: новый инструмент для автоматизации работы интернет-магазина</a>
+          - техническая интеграция для интернет-магазинов, не изменение рекламного кабинета.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Рост монетизации РСЯ (5,3 млрд рублей за три года, бюджеты рекламодателей в 4,8 раза выше год к году) показывает, что блогерская реклама через Яндекс перестала быть нишевым каналом и заслуживает места в общем медиаплане.</li>
+      <li>Низкий порог входа в РСЯ для блогеров (от 300 рублей в неделю и 1000 подписчиков) упрощает тестирование новых каналов, но требует отдельно проверять регистрацию в РКН для площадок от 10 000 подписчиков.</li>
+      <li>Обновленный кабинет RWB Медиа объединяет работу с селлерами Wildberries и внешними рекламодателями в одном интерфейсе - агентствам, ведущим несколько клиентов на WB, стоит пересмотреть текущий процесс размещения.</li>
+      <li>Новые форматы click-in в RWB Медиа, включая брендовую полку и контекстный баннер, расширяют набор инструментов для продвижения на Wildberries и стоят проверки на предмет применимости к текущим кампаниям.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 22 июля 2026 за период 21-22 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
