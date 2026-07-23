@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ | 23 июля 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+  }
+  .header-meta {
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+
+  /* SUMMARY */
+  .summary {
+    background: #fff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card.primary {
+    border-left: 4px solid #2563eb;
+  }
+  .card.secondary {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 14px;
+  }
+  .card-meta-item {
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  .card-meta-item strong {
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .card-section-text {
+    font-size: 0.93rem;
+    color: #334155;
+    line-height: 1.6;
+  }
+
+  .card-conclusion {
+    background: #f0f7ff;
+    border-left: 3px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #1e40af;
+    line-height: 1.5;
+  }
+  .card-conclusion-label {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* NOT INCLUDED */
+  .not-included-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .not-included-list li {
+    font-size: 0.9rem;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    line-height: 1.5;
+  }
+  .not-included-list li:last-child {
+    border-bottom: none;
+  }
+  .not-included-list a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .not-included-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* TAKEAWAY / SUMMARY BLOCK */
+  .takeaway {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .takeaway-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .takeaway-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .takeaway-list li {
+    font-size: 0.93rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding: 8px 0 8px 16px;
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+  }
+  .takeaway-list li:last-child {
+    border-bottom: none;
+  }
+  .takeaway-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    padding-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 600px) {
+    .header, .takeaway { padding: 20px 18px; }
+    .card { padding: 18px 16px; }
+    .header-title { font-size: 1.1rem; }
+    .card-title { font-size: 0.98rem; }
+    body { padding: 12px 10px 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div class="header-meta">Выпуск 23 июля 2026 за период 22-23 июля</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления.
+    Затронуты платформы: <strong>Яндекс Директ, РСЯ</strong>.
+    Недоступные источники: AdIndex.
+  </div>
+
+  <!-- ГЛАВНОЕ -->
+  <div class="section">
+    <div class="section-title">Главное</div>
+
+    <!-- Card 1: Панорама -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://ppc.world/news/direkt-predstavil-novyy-tip-ohvatnoy-reklamy-panorama/" target="_blank">
+          Директ запустил закрытое тестирование охватного формата «Панорама»
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> ppc.world (пресс-служба Яндекса)</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 23 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что нового</div>
+        <div class="card-section-text">
+          «Панорама» - новый тип охватной кампании в Директе, который объединяет прайм-баннер (более 20 сервисов Яндекса) и медийную видеорекламу (Видеосеть Яндекса, 200+ площадок РСЯ, сайты телеканалов и кинотеатров) в рамках одной кампании. Показы идут на десктопах, смартфонах и Connected TV; цифровая наружная реклама подключится позже. Доступный охват - более 120 млн уникальных пользователей в месяц.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Возможности формата</div>
+        <div class="card-section-text">
+          Ключевая особенность - «умный охват»: система видит пересечение аудитории между каналами и распределяет показы так, чтобы не показывать рекламу одному человеку дважды на разных устройствах. Рекламодатель может задать целевую частоту контакта на всю кампанию сразу, а не отдельно по каждому каналу.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что проверить</div>
+        <div class="card-section-text">
+          Формат пока в закрытой бете - к тестированию уже подключились бренды из FMCG, финансов, ритейла, образования и b2b. Наружная реклама в контур пока не входит, доступ стоит запрашивать через менеджера Яндекса.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Крупным рекламодателям с охватными задачами стоит запросить участие в тесте уже сейчас: «Панорама» - первая попытка Яндекса свести медиапланирование по разным каналам в единую кампанию с контролем частоты и без задвоенных показов.
+      </div>
+    </div>
+
+    <!-- Card 2: Адаптация бюджета -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/adaptatsiya-byudzheta-novaya-nastrojka" target="_blank">
+          «Адаптация бюджета» - новая настройка для масштабирования кампаний в Директе
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама (официальный блог)</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> Яндекс Директ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 23 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что изменилось</div>
+        <div class="card-section-text">
+          В кампаниях с автостратегиями появилась настройка «Адаптация бюджета». Рекламодатель задает процент, на который система может сама увеличить недельный бюджет, если кампания использует более 90% бюджета и при этом держит фактический CPA или долю рекламных расходов на уровне цели или ниже. Условие также требует, чтобы за неделю не было изменений, перезапускающих обучение стратегии. Эффект накопительный: при повторном выполнении условий бюджет растет неделя за неделей.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Как это работает на практике</div>
+        <div class="card-section-text">
+          Пример из статьи Яндекса: при бюджете 50 000 руб., целевом CPA 500 руб. и адаптации 20% - неделя 1: расход 50 000 руб., 110 конверсий, CPA 454 руб., бюджет растет до 60 000 руб.; неделя 2: расход 60 000 руб., 125 конверсий, CPA 480 руб., бюджет растет до 72 000 руб.; неделя 3: CPA поднимается до 504 руб. (выше цели) - бюджет больше не растет и остается на уровне 72 000 руб.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Настройка снимает часть ручного контроля за бюджетами сильных кампаний - имеет смысл включить там, где кампания стабильно выбирает весь бюджет и держит CPA ниже целевого, чтобы не терять конверсии из-за жесткого лимита.
+      </div>
+    </div>
+
+    <!-- Card 3: Overlay β -->
+    <div class="card primary">
+      <div class="card-title">
+        <a href="https://yandex.ru/adv/news/noviy-format-overlay-v-rsya" target="_blank">
+          Overlay β приходит в Рекламную сеть Яндекса
+        </a>
+      </div>
+      <div class="card-meta">
+        <span class="card-meta-item"><strong>Источник:</strong> Яндекс Реклама (официальный блог)</span>
+        <span class="card-meta-item"><strong>Площадка:</strong> РСЯ</span>
+        <span class="card-meta-item"><strong>Дата:</strong> 23 июля 2026</span>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Что нового</div>
+        <div class="card-section-text">
+          В РСЯ вышел формат Overlay β - баннер поверх части экрана (рекомендованный размер - около 75% площади), который не создает у пользователя ощущения перехода на другой сайт. Формат дополняет мобильную линейку для сайтов: Fullscreen, FloorAd и TopAd.
+        </div>
+      </div>
+      <div class="card-section">
+        <div class="card-section-label">Как использовать</div>
+        <div class="card-section-text">
+          Первой площадкой для теста стал Дзен: команда перебрала несколько вариантов размера и способа закрытия баннера и в итоге вынесла крестик в отдельную плашку - это снизило случайные клики и отказы без потери дохода. Формат уже доступен для подключения владельцам сайтов в РСЯ.
+        </div>
+      </div>
+      <div class="card-conclusion">
+        <div class="card-conclusion-label">Вывод</div>
+        Паблишерам, которые раньше отказывались от полноэкранных форматов из-за высоких отказов, стоит протестировать Overlay β как более щадящую альтернативу для монетизации мобильного трафика.
+      </div>
+    </div>
+  </div>
+
+  <!-- НЕ ВОШЛО В ВЫПУСК -->
+  <div class="section">
+    <div class="section-title">Не вошло в выпуск</div>
+    <div class="card secondary">
+      <ul class="not-included-list">
+        <li>
+          <a href="https://ppc.world/news/rwb-media-obnovila-kabinet-teper-agentstva-mogut-razmeschat-click-in-reklamu-dlya-sellerov-wildberries/" target="_blank">RWB Медиа обновила кабинет: агентства могут размещать click-in-рекламу для селлеров Wildberries</a>
+          - вне окна дат, первая публикация 21 июля.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/rsya-vyplatila-blogeram-53-mlrd-rubley-za-tri-goda-monetizacii-kanalov/" target="_blank">РСЯ выплатила блогерам 5,3 млрд рублей за три года монетизации каналов</a>
+          - статистика выплат за три года, без изменений в инструментах кабинета.
+        </li>
+        <li>
+          <a href="https://ppc.world/news/yandeks-predstavil-ii-hostes-virtualnogo-agenta-dlya-priema-zvonkov-i-bronirovaniy/" target="_blank">Яндекс представил ИИ-хостес - виртуального агента для приема звонков и бронирований</a>
+          - продуктовая новость про прием звонков, не изменение рекламного кабинета.
+        </li>
+        <li>
+          <a href="https://www.sostav.ru/publication/reklamnaya-vyruchka-yandeks-urbanads-za-god-vyrosla-na-21-85526.html" target="_blank">Рекламная выручка «Яндекс UrbanAds» за год выросла на 21%</a>
+          - финансовый отчет площадки, без изменения функционала кабинета.
+        </li>
+        <li>
+          <a href="https://www.sostav.ru/publication/ek-oshtrafovala-google-na-890-mln-za-narushenie-zakona-o-tsifrovykh-rynkakh-85527.html" target="_blank">ЕК оштрафовала Google на 890 млн евро за нарушение закона о цифровых рынках</a>
+          - регуляторная новость в ЕС, не затрагивает условия размещения в российских кабинетах.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUMMARY / TAKEAWAY -->
+  <div class="takeaway">
+    <div class="takeaway-title">Summary</div>
+    <ul class="takeaway-list">
+      <li>Директ впервые сводит охватные форматы разных каналов в одну кампанию с контролем частоты - «Панорама» пока в закрытой бете, крупным брендам стоит заявиться на тест, пока список участников не закрылся.</li>
+      <li>«Адаптация бюджета» снимает рутину ручного пересмотра лимитов - имеет смысл включить на кампаниях, которые стабильно выбирают весь бюджет и держат CPA ниже целевого, чтобы не терять конверсии из-за жесткого потолка.</li>
+      <li>Overlay β дает паблишерам РСЯ менее агрессивную альтернативу полноэкранным форматам - агентствам, работающим с сайтами-партнерами сети, стоит предложить клиентам протестировать формат на мобильном трафике.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>AdTech-дайджест: рекламные кабинеты РФ</p>
+    <p>Выпуск 23 июля 2026 за период 22-23 июля</p>
+  </footer>
+
+</div>
+</body>
+</html>
