@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 28 июля 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 28 июля 2026 за период 27-28 июля.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">1</span> релевантное обновление.
+      Затронута платформа: <strong>Wildberries (WB Продвижение, WB Медиа)</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">Бонус на рекламу</span>
+      <span class="badge badge-date">28 июля 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/sellery-wildberries-poluchili-pervye-podderzhivayuschie-vyplaty-a-na-ozon-sohranyaetsya-strahovka-tovarov-no-podnimaetsya-ee-stoimost/" target="_blank">Wildberries запустил промобонусы на рекламу для уязвимых продавцов на фоне сбоев</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/sellery-wildberries-poluchili-pervye-podderzhivayuschie-vyplaty-a-na-ozon-sohranyaetsya-strahovka-tovarov-no-podnimaetsya-ee-stoimost/" target="_blank">ppc.world</a>,
+      со ссылкой на Telegram-каналы «WB для селлеров» и «RWB Медиа»
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Wildberries направил первые поддерживающие выплаты более чем 88 000 продавцов, в первую очередь малому
+      бизнесу и селлерам с минимальными остатками. Отдельно RWB Медиа объявила, что наиболее уязвимым продавцам
+      с небольшими оборотами начислят промобонусы, которыми можно оплатить до 90% стоимости рекламных кампаний
+      в кабинетах WB Продвижение и WB Медиа.
+    </p>
+
+    <div class="card-section-label">Что еще входит в пакет поддержки</div>
+    <p>
+      Помимо рекламных бонусов, Wildberries ввел бесплатные транзитные поставки на региональные склады и скидки
+      на хранение, зафиксировал индекс локализации, влияющий на стоимость логистики, повысил Скидку WB для
+      покупателей по части категорий (до 52%) и предоставил через WB Банк и WB Финанс кредитные каникулы малому
+      и среднему бизнесу. Поддержку для крупных продавцов площадка рассматривает индивидуально.
+    </p>
+
+    <div class="card-section-label">Что происходит у Ozon</div>
+    <p>
+      Параллельно Ozon сообщил, что сохраняет страхование товаров продавцов от нештатных ситуаций, включая
+      атаки БПЛА, но повышает тариф из-за роста рисков; объем покрытия при этом не меняется.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Агентствам и брендам, которые ведут небольших продавцов на Wildberries и планируют бюджет на продвижение
+      в WB Продвижении и WB Медиа в ближайший период.
+    </p>
+
+    <div class="card-conclusion">
+      Если среди клиентов есть небольшие селлеры Wildberries с нестабильными оборотами, стоит уточнить у площадки,
+      попадают ли они под начисление промобонусов, это может закрыть большую часть расходов на продвижение
+      в ближайший цикл. Рост тарифа на страховку Ozon стоит держать в уме при расчете полной стоимости размещения
+      на площадке.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+  <div class="card secondary">
+    <p style="color:#888; font-size:15px;">
+      За период 27-28 июля 2026 других обновлений рекламных кабинетов, форматов, таргетинга или условий
+      размещения в проверенных источниках не обнаружено. Крупные обновления Директа и РСЯ из предыдущих дней
+      уже вошли в вчерашний выпуск.
+    </p>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://ppc.world/news/maks-raskatal-istorii-na-vseh-polzovateley-android/" target="_blank">Макс раскатал истории на всех пользователей Android</a> - новая функция контента мессенджера, не связана с рекламным кабинетом или размещением.</li>
+      <li><a href="https://seller.ozon.ru/media/news/novyj-tarif-na-strahovanie-tovarov-prezhnij-obuyom-zashity/" target="_blank">Ozon повышает тариф на страхование товаров продавцов</a> - изменение условий страхования, не рекламного размещения.</li>
+      <li><a href="https://ppc.world/news/telegram-ostalsya-liderom-po-chislu-zaregistrirovannyh-reklamnyh-kreativov-vo-vtorom-kvartale-2026-goda/" target="_blank">Telegram остался лидером по числу зарегистрированных рекламных креативов во втором квартале 2026 года</a> - аналитика рынка, без изменения рекламного кабинета.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Wildberries впервые закрывает рекламные расходы уязвимых продавцов бонусами напрямую через RWB Медиа,
+        агентствам стоит быстро проверить клиентскую базу на соответствие условиям, пока действует программа.
+      </li>
+      <li>
+        Общий фон, сбои на площадке и рост тарифа на страховку Ozon, говорит о нестабильной логистике маркетплейсов,
+        это стоит учитывать при планировании рекламных кампаний, привязанных к остаткам и срокам доставки.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 28 июля 2026 за период 27-28 июля.
+  </div>
+
+</div>
+</body>
+</html>
