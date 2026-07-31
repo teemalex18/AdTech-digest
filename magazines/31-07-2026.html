@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 31 июля 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 31 июля 2026 за период 30-31 июля.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">3</span> релевантных обновления.
+      Затронуты платформы: <strong>Яндекс Ритм, MAX, VK Реклама</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Ритм</span>
+      <span class="badge badge-new">Новая настройка таргетинга</span>
+      <span class="badge badge-date">31 июля 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/v-yandeks-ritme-poyavilas-nastrojka-geografii-pokazov-dlya-biznesa-v-sfere-uslug" target="_blank">В Яндекс Ритме появилась настройка географии показов для бизнеса в сфере услуг</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/v-yandeks-ritme-poyavilas-nastrojka-geografii-pokazov-dlya-biznesa-v-sfere-uslug" target="_blank">Яндекс Реклама</a> (официальный блог)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Компании и специалисты в сфере услуг теперь могут настроить географию показов своих публикаций в Яндекс Ритме:
+      посты видят только пользователи в тех городах и регионах, где бизнес реально оказывает услуги. Настройка работает
+      на основе геотаргетинга, а если у бизнеса несколько филиалов, каждый можно зарегистрировать как отдельную единицу
+      со своим регионом показа.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Кафе, рестораны, салоны красоты, частные специалисты и другие локальные сервисы, для которых показ рекламы за
+      пределами зоны обслуживания - это просто слитый бюджет.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Независимый консультант по маркетингу Надежда Божкова называет это одним из самых практичных обновлений для
+      локального бизнеса: сообщение перестает уходить аудитории, которая физически не может стать клиентом, а
+      интеграция с сервисами бронирования убирает лишний шаг на пути к записи.
+    </p>
+
+    <div class="card-conclusion">
+      Локальным сервисным бизнесам с несколькими точками стоит завести каждый филиал отдельной единицей в Ритме
+      и включить геотаргетинг - это прямой способ снизить долю нецелевых показов и стоимость привлечения клиента.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">MAX</span>
+      <span class="badge badge-new">Бесплатный трафик с 1 августа</span>
+      <span class="badge badge-date">31 июля 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/messendzher-maks-ne-budet-rashodovat-mobilnyy-trafik-izmeneniya-nachnut-deystvovat-s-1-avgusta/" target="_blank">Мобильный трафик в MAX станет бесплатным с 1 августа</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/messendzher-maks-ne-budet-rashodovat-mobilnyy-trafik-izmeneniya-nachnut-deystvovat-s-1-avgusta/" target="_blank">ppc.world</a>,
+      со ссылкой на пресс-службу VK
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      МТС, МегаФон, Билайн и Т2 подписали с MAX соглашение: с 1 августа 2026 года использование мессенджера не будет
+      расходовать и тарифицировать интернет-пакет абонентов по четырем направлениям - звонки, сообщения, пересылка
+      файлов и цифровые сервисы.
+    </p>
+
+    <div class="card-section-label">Кого касается</div>
+    <p>
+      Абонентов всех четырех операторов - фактически большей части мобильной аудитории страны.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Обнуление трафика снимает главный барьер для активного использования MAX и должно ускорить рост аудитории
+      мессенджера. Для рекламодателей, которые уже тестируют или планируют размещение в MAX, это сигнал закладывать
+      растущий охват канала в медиаплан.
+    </p>
+
+    <div class="card-conclusion">
+      MAX перестает быть нишевым каналом с ограничениями по трафику. Тем, кто следит за мессенджером как за
+      рекламной площадкой, стоит учитывать: с августа аудитория и вовлеченность там пойдут вверх.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 3 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Реклама</span>
+      <span class="badge badge-date">30 июля 2026</span>
+    </div>
+    <h2><a href="https://www.cossa.ru/news/350052/" target="_blank">Китайские рекламодатели увеличили бюджеты в VK Рекламе в 2,7 раза</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://www.cossa.ru/news/350052/" target="_blank">Cossa</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Бюджеты рекламодателей из Китая в VK Рекламе за первое полугодие 2026 года превысили 2,5 млрд рублей, число
+      таких рекламодателей выросло на 62%. Сильнее всего вырос игровой сегмент (в 2,7 раза), заметно прибавили
+      e-commerce (в 2,3 раза) и B2B-продажи (в 1,5 раза), а бюджеты на видеорекламу выросли в 6,8 раза. Самый
+      популярный формат - универсальное объявление с автоматической адаптацией креативов.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Это не изменение кабинета, а рыночный сигнал: в категориях гейминга, e-commerce и видеорекламы в VK Рекламе
+      становится больше платежеспособных нерезидентов, конкурирующих за один и тот же инвентарь.
+    </p>
+
+    <div class="card-conclusion">
+      Рекламодателям и агентствам в гейминге и e-commerce стоит следить за динамикой ставок в аукционе VK Рекламы:
+      рост бюджетов конкурентов из Китая может постепенно поднимать стоимость размещения в этих категориях.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/kolltreking-v-direkte" target="_blank">Директ запустил бесплатный динамический коллтрекинг</a> - материал уже разобран в выпуске от 30 июля, новых деталей за 31 июля не появилось.</li>
+      <li><a href="https://ppc.world/news/v-vk-reklame-poyavilsya-analiz-kachestva-zayavok-iz-lid-form-bez-ruchnoy-sverki-i-perehoda-v-storonnie-servisy/" target="_blank">VK Реклама научилась оценивать качество заявок из лид-форм</a> - тот же материал уже вошел в выпуск от 30 июля.</li>
+      <li><a href="https://blog.click.ru/market-news/yandeks-direkt-dobavil-avtomaticheskoe-uvelichenie-byudzheta-v-epk/" target="_blank">Яндекс Директ добавил автоматическое увеличение бюджета в ЕПК</a> - вне окна дат, первая публикация 27 июля.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Геотаргетинг в Яндекс Ритме - простое и почти бесплатное по усилиям обновление для локального бизнеса:
+        стоит включить его всем сервисным клиентам с привязкой к конкретным городам или филиалам.
+      </li>
+      <li>
+        Бесплатный трафик в MAX с 1 августа снимает барьер для роста аудитории мессенджера. Тем, кто рассматривает
+        MAX как рекламный канал, есть смысл закладывать увеличение охвата в планы на осень.
+      </li>
+      <li>
+        Приток бюджетов из Китая в VK Рекламу, особенно в гейминге и e-commerce, - повод заранее проверить, не
+        растет ли стоимость размещения в этих категориях для собственных кампаний.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 31 июля 2026 за период 30-31 июля.
+  </div>
+
+</div>
+</body>
+</html>
