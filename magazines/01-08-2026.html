@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 1 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 1 августа 2026 за период 31 июля - 1 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">3</span> релевантных обновления.
+      Затронуты платформы: <strong>Яндекс Директ, VK Реклама, Яндекс Ритм</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Бесплатный коллтрекинг</span>
+      <span class="badge badge-date">31 июля 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/v-yandeks-direkte-poyavilsya-besplatnyj-kolltreking/" target="_blank">В Яндекс Директе появился бесплатный динамический коллтрекинг</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/v-yandeks-direkte-poyavilsya-besplatnyj-kolltreking/" target="_blank">Click.ru</a>,
+      подтверждено в <a href="https://yandex.ru/adv/news/kolltreking-v-direkte" target="_blank">официальном блоге Яндекс Рекламы</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В Директе бесплатно и без подключения сторонних сервисов заработал динамический коллтрекинг: каждому
+      пользователю показывается уникальный подменный номер, а звонок автоматически связывается с конкретной
+      кампанией, объявлением и ключевой фразой. Функция доступна в Простом старте и Единой перформанс-кампании,
+      данные попадают в стандартные отчеты Метрики и в отдельную аналитику звонков внутри кабинета Директа.
+    </p>
+    <p>
+      Подмена номера уже работает на поиске Яндекса, в блоке "Список организаций, отели и галерея услуг" и на
+      десктопе Яндекс Карт. Осенью 2026 года обещают мобильную версию Карт, а также возможность ставить подменные
+      номера прямо на сайте или лендинге, собранном в Директе.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Рекламодателям, у которых основная конверсия происходит по телефону: услуги, недвижимость, авто, локальный
+      бизнес. Раньше такую аналитику давали только платные коллтрекинг-сервисы с отдельной интеграцией.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Для подключения нужен доступ владельца или представителя организации в Яндекс Бизнесе, привязанной к
+      рекламной кампании.
+    </p>
+
+    <div class="card-conclusion">
+      Это прямая экономия на внешнем коллтрекинге и возможность платить за реальные звонки, а не только за клики.
+      Клиентам со звонковой конверсией стоит подключить функцию и добавить звонки в цели оптимизации кампаний.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Реклама</span>
+      <span class="badge badge-new">Новый отчет по CRM</span>
+      <span class="badge badge-date">31 июля 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/target/funkciya-vk-reklamy-ocenka-kachestva-lidov-iz-crm/" target="_blank">VK Реклама научилась оценивать качество лидов по данным из CRM</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/target/funkciya-vk-reklamy-ocenka-kachestva-lidov-iz-crm/" target="_blank">Click.ru</a>,
+      также писал <a href="https://ppc.world/news/v-vk-reklame-poyavilsya-analiz-kachestva-zayavok-iz-lid-form-bez-ruchnoy-sverki-i-perehoda-v-storonnie-servisy/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      С июля 2026 года в рекламный кабинет VK Рекламы можно передавать статусы лидов из CRM: Bitrix24 и amoCRM
+      подключаются через интеграторов WebJack, Albato, Calltouch или Roistat. После настройки в кабинете видно
+      не только число заявок из лид-формы, но и сколько из них дошло до сделки или заказа.
+    </p>
+    <p>
+      Настройка идет через раздел "Конверсии": создается воронка, выбирается сервис интеграции, сохраняется
+      Webhook-адрес и ключ авторизации. Дальше события CRM можно выбрать как целевое действие при запуске рекламы
+      с лид-формой, и статистика по качеству лидов появляется прямо на дашборде.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Рекламодателям и агентствам с длинными воронками продаж, где мало просто посчитать заявки: недвижимость,
+      B2B, услуги. Раньше отчеты рекламной системы и CRM приходилось сверять вручную.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Список поддерживаемых CRM пока ограничен Bitrix24 и amoCRM через конкретных интеграторов, для других систем
+      прямой интеграции нет.
+    </p>
+
+    <div class="card-conclusion">
+      Функция снимает ручную сверку лидов с продажами и позволяет оптимизировать бюджет по реальной ценности
+      заявок, а не по их количеству. Агентствам с лид-формами в VK Рекламе стоит подключить интеграцию с CRM
+      уже сейчас.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 3 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Ритм</span>
+      <span class="badge badge-new">Новая настройка таргетинга</span>
+      <span class="badge badge-date">31 июля 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/v-yandeks-ritme-poyavilas-nastrojka-geografii-pokazov-dlya-biznesa-v-sfere-uslug" target="_blank">В Яндекс Ритме появилась настройка географии показов для бизнеса в сфере услуг</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/v-yandeks-ritme-poyavilas-nastrojka-geografii-pokazov-dlya-biznesa-v-sfere-uslug" target="_blank">Яндекс Реклама</a> (официальный блог)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Компании и специалисты в сфере услуг могут ограничить показ своих публикаций в Ритме конкретными городами
+      и регионами, а не показывать их всей аудитории сервиса. Настройка доступна для категорий "Красота и уход", 
+      "Путешествия и туризм", "Дизайн интерьеров" и недавно добавленной "Кафе и рестораны", можно выбрать до
+      10 городов или регионов, а бизнес с несколькими точками может завести каждый филиал отдельной единицей.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Локальным сервисным бизнесам: салонам красоты, кафе, туристическим и дизайн-студиям, у которых аудитория
+      физически ограничена местом оказания услуги.
+    </p>
+
+    <div class="card-conclusion">
+      Небольшое, но полезное обновление для локального бизнеса: настройка снижает долю показов за пределами
+      зоны обслуживания и, соответственно, стоимость нецелевогоево охвата.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://ppc.world/news/v-chate-s-alisa-ai-razmestili-obyavleniya-bolee-460-000-reklamodateley/" target="_blank">В чате с Алиса AI разместили объявления более 460 000 рекламодателей</a> - вне окна дат, первая публикация 29 июля.</li>
+      <li><a href="https://blog.click.ru/market-news/yandeks-direkt-dobavil-avtomaticheskoe-uvelichenie-byudzheta-v-epk/" target="_blank">Яндекс Директ добавил автоматическое увеличение бюджета в ЕПК</a> - вне окна дат, первая публикация 27 июля.</li>
+      <li><a href="https://yandex.ru/adv/news/ecom-dajdzhest-glavnye-novinki-vtorogo-kvartala-dlya-effektivnogo-prodvizheniya-i-rosta-prodazh" target="_blank">Ecom-дайджест: главные исче тагатавайтьйййявтийяйттегов второго кварталаетвогокварталааетваблааетвавтого</a> - сводный обзор уже опубликованных обиймйййяйтиййяйттов а не отдельная новость.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Бесплатный коллтрекинг в Директе и оценка качества лидов по CRM в VK Рекламе решают одну и ту же задачу
+        с разных сторон: обе платформы подталкивают рекламодателей оптимизировать кампании не по кликам и заявкам,
+        а по реальным звонкам и сделкам.
+      </li>
+      <li>
+        Клиентам со звонковой конверсией и агентствам, ведущим лид-формы в VK Рекламе, стоит подключить обе
+        интеграции уже в блоче ближайших истии ий ийеедели, пока часть конийийиййие иетоййейит эффективность постарым мийийиии метрикам.
+    </div>
+
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+      интеграции уже
+    </div>
+  </div>
