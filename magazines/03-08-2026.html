@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 3 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 3 августа 2026 за период 31 июля - 3 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">6</span> релевантных обновлений.
+      Затронуты платформы: <strong>WB Медиа, Soloway, Яндекс Ритм, МТС DSP</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">WB Медиа</span>
+      <span class="badge badge-new">Новый формат и новые условия оплаты</span>
+      <span class="badge badge-date">1-3 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">WB Медиа обновила рекламный кабинет: новые баннеры и более доступный порог входа</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">AdIndex</a>,
+      условия пополнения также разобраны в блоге <a href="https://www.cossa.ru/blogs/zaley_cash/350089/" target="_blank">ZaleyCash на Cossa</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Wildberries обновила рекламный кабинет WB Медиа сразу по двум направлениям. Появился новый формат
+      "товарные баннеры": изображение берется прямо из карточки товара и автоматически подстраивается под
+      разные места показа, а ссылка ведет в карточку, а не на подборку или страницу бренда. Баннеры доступны
+      на главной, в разделах "Профиль" и "Заказы", на сайте и в приложении. Одновременно с 1 августа сервис
+      ZALEYCASH, через который проходит пополнение кабинета, снизил порог входа: первое пополнение теперь
+      возможно от 10 000 рублей вместо прежней более высокой планки, а на все последующие пополнения
+      минимальной суммы больше нет.
+    </p>
+
+    <div class="card-section-label">Как теперь работает пополнение</div>
+    <p>
+      Бонус по грейду (11-17% от суммы) начисляется одинаково независимо от способа оплаты. Модель списания
+      в кабинете зависит от типа кампании: единая и ручная ставка обычно работают по CPC (плата за клик),
+      медийные форматы и брендовая полка - по CPM (плата за показы), push-уведомления - по CPD (плата за
+      охват). Первую кампанию специалист сервиса настраивает бесплатно.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Малому и среднему бизнесу и агентствам, которые откладывали тест WB Медиа из-за высокого порога входа,
+      и действующим рекламодателям, которым интересен новый формат товарных баннеров.
+    </p>
+
+    <div class="card-conclusion">
+      Перед следующим пополнением клиентских кабинетов WB Медиа стоит свериться с новой сеткой бонусов и
+      проверить, что выбрана верная модель списания под задачу - иначе первый тест легко принять за слитый
+      бюджет.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Soloway</span>
+      <span class="badge badge-new">Новые AI-сегменты</span>
+      <span class="badge badge-date">3 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">Soloway запустил AI-сегменты для рекламодателей финансовой сферы и FMCG</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">AdIndex</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В рекламном кабинете Soloway появились сегменты аудитории на основе больших языковых моделей. Система
+      классифицирует интернет-ресурсы и определяет интерес пользователя в моменте: он попадает в сегмент
+      примерно через 30 минут после посещения релевантных страниц.
+    </p>
+
+    <div class="card-section-label">Какие сегменты доступны</div>
+    <p>
+      Для финансовой сферы - по кредитным продуктам (ипотека, автокредиты, кредитные карты), банковским
+      услугам (дебетовые карты, вклады, РКО), инвестициям (брокерские счета, ИИС, ПИФы), страхованию и
+      финтеху. Для FMCG сегменты формируются по контенту, который изучает пользователь (кулинарные блоги,
+      сервисы сравнения цен, рецептурные сайты), и доходят до конкретных товарных категорий, а не только
+      общей "молочной продукции".
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Это позволяет работать с "горячим" спросом, когда интерес пользователя максимален, а не полагаться на
+      более широкий таргетинг по интересам.
+    </p>
+
+    <div class="card-conclusion">
+      Рекламодателям в финансах и FMCG стоит протестировать новые сегменты Soloway на части бюджета и
+      сравнить стоимость лида с текущими таргетингами, прежде чем расширять на них весь бюджет.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Ритм</span>
+      <span class="badge badge-new">Новая настройка таргетинга</span>
+      <span class="badge badge-date">31 июля 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/v-yandeks-ritme-poyavilas-nastrojka-geografii-pokazov-dlya-biznesa-v-sfere-uslug" target="_blank">В Яндекс Ритме появилась настройка географии показов для бизнеса в сфере услуг</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/v-yandeks-ritme-poyavilas-nastrojka-geografii-pokazov-dlya-biznesa-v-sfere-uslug" target="_blank">Яндекс Реклама</a> (официальный блог)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Компании и специалисты в сфере услуг теперь могут настроить географию показов своих публикаций в
+      Яндекс Ритме: посты видит только аудитория из тех городов и регионов, где бизнес реально оказывает
+      услуги.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Локальным сервисам - салонам красоты, частным специалистам, мастерским и другому бизнесу, для которого
+      показ за пределами зоны обслуживания означает просто слитый бюджет.
+    </p>
+
+    <div class="card-conclusion">
+      Сервисным клиентам с привязкой к конкретным городам стоит включить геотаргетинг в Ритме - это снижает
+      долю нецелевых показов без дополнительных затрат.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">МТС DSP</span>
+      <span class="badge badge-date">3 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">В МТС DSP появился валидатор креативов</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">AdIndex</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Новый инструмент проверяет рекламные материалы на соответствие техническим требованиям еще до загрузки
+      в кабинет. Можно загружать креативы в форматах HTML, PNG/JPEG, видео и баннеры с внешним кодом -
+      по отдельности (до 20 файлов за раз) или пакетно, zip-архивом. Система показывает превью и вердикт по
+      каждому файлу, но не проверяет соответствие юридическим требованиям.
+    </p>
+
+    <div class="card-conclusion">
+      Валидатор экономит время на отбраковке креативов до модерации, но маркировку и юридическую проверку
+      по-прежнему нужно делать отдельно.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс UrbanAds</span>
+      <span class="badge badge-date">3 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">Яндекс UrbanAds открыл публичный API для выгрузки статистики</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">AdIndex</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Рекламная платформа открыла публичный API, который позволяет автоматически получать данные о кампаниях
+      в собственных системах аналитики. Текущая версия поддерживает выгрузку статистики по бусту показов,
+      бусту продаж, продвижению в полках и охватному продвижению, а также работу с отзывами через интерфейс
+      рекламодателя. Настроить интеграцию можно в личном кабинете, в разделе "API-интеграции".
+    </p>
+
+    <div class="card-conclusion">
+      Продавцам и агентствам, которые уже строят сквозную аналитику по нескольким площадкам, стоит
+      подключить API UrbanAds, чтобы не собирать эти данные вручную.
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Buzzoola</span>
+      <span class="badge badge-date">3 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">Buzzoola представила новый формат рекламы In-Stream Overlay</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/marketing/2026/08/3/347711.phtml" target="_blank">AdIndex</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Новый формат для DSP - баннер 728х90 в нижней части видеоплеера, который появляется во время просмотра
+      контента, не прерывая его. По данным компании, кликабельность формата достигает около 1% против
+      0,2-0,4% у стандартных баннеров, а стоимость контакта примерно вдвое ниже, чем у видеорекламы.
+    </p>
+
+    <div class="card-conclusion">
+      Формат стоит протестировать как более дешевую альтернативу preroll там, где важен контакт с аудиторией
+      без риска досмотра "мимо".
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/kolltreking-v-direkte" target="_blank">Директ запустил бесплатный динамический коллтрекинг</a> - вне окна дат, первая публикация 30 июля.</li>
+      <li><a href="https://ppc.world/news/v-vk-reklame-poyavilsya-analiz-kachestva-zayavok-iz-lid-form-bez-ruchnoy-sverki-i-perehoda-v-storonnie-servisy/" target="_blank">VK Реклама научилась оценивать качество заявок из лид-форм</a> - вне окна дат, первая публикация 30 июля.</li>
+      <li><a href="https://adindex.ru/news/digital/2026/07/23/347451.phtml" target="_blank">Яндекс тестирует "Панораму" - единый инструмент охватной рекламы</a> - вне окна дат, тестирование анонсировано 23 июля.</li>
+      <li><a href="https://www.cossa.ru/news/350090/" target="_blank">Билайн Adtech расширяет сеть Digital Indoor за счет партнерства с сетью "Пальчики"</a> - расширение сети размещения через партнерство, а не изменение рекламного кабинета.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        WB Медиа одновременно снижает порог входа и добавляет новый формат - подходящий момент протестировать
+        площадку или пересчитать бюджет пилота с учетом новой сетки бонусов.
+      </li>
+      <li>
+        AI-сегменты Soloway стоит попробовать точечно в финансах и FMCG и сравнить стоимость лида с
+        действующими таргетингами, прежде чем переносить на них весь бюджет.
+      </li>
+      <li>
+        Геотаргетинг в Яндекс Ритме - почти бесплатное по усилиям обновление: имеет смысл включить его всем
+        локальным сервисным клиентам без исключения.
+      </li>
+      <li>
+        Валидатор МТС DSP и API Яндекс UrbanAds не меняют стратегию, но снимают рутину - агентствам с
+        несколькими клиентскими кампаниями стоит подключить их в первую очередь.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 3 августа 2026 за период 31 июля - 3 августа.
+  </div>
+
+</div>
+</body>
+</html>
