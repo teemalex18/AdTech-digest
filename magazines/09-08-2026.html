@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 09 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 09 августа 2026 за период 08-09 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">1</span> релевантное обновление.
+      Затронуты платформы: <strong>Яндекс Директ</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Новый DOOH-инвентарь</span>
+      <span class="badge badge-date">08 августа 2026</span>
+    </div>
+    <h2><a href="https://www.sostav.ru/publication/yandeks-poluchil-prava-na-prodazhu-reklamy-na-pervom-sobstvennom-mediafasade-85943.html" target="_blank">«Яндекс» получил права на продажу рекламы на первом собственном медиафасаде</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://www.sostav.ru/publication/yandeks-poluchil-prava-na-prodazhu-reklamy-na-pervom-sobstvennom-mediafasade-85943.html" target="_blank">Sostav</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      «Яндекс» выкупил права на продажу рекламы на цифровом медиафасаде бизнес-центра «Парк Мира» на проспекте Мира
+      в Москве площадью 600 кв. м. Это первый крупноформатный инвентарь в собственной сети наружной цифровой рекламы
+      компании: раньше «Яндекс» размещал рекламу в основном на экранах партнерских витрин и на крышах такси, а с
+      2024 года тестировал собственные конструкции у пунктов выдачи в Москве и Петербурге. Права на медиафасад
+      закреплены за компанией до 2034 года.
+    </p>
+
+    <div class="card-section-label">Как бронировать и сколько это стоит</div>
+    <p>
+      Пока размещение доступно только по гарантированным сделкам с фиксированным периодом, стоимостью и числом
+      показов. Позже инвентарь войдет в аукцион «Директа», где цена будет считаться от потенциального охвата.
+      По презентации «Яндекс Рекламы», 15-секундный слот на месяц в августе стоит 2,183 млн рублей уже со скидкой
+      40%. По оценке участников рынка, годовая стоимость подобных прав на конструкцию обычно составляет
+      30-90 млн рублей.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Рекламодателям, которые планируют имиджевые OOH-кампании в Москве и хотят зайти в инвентарь «Яндекса»
+      на старте, пока действуют условия гарантированных сделок и предзапусковая скидка.
+    </p>
+
+    <div class="card-conclusion">
+      Сейчас цена фиксированная и со скидкой, а после перехода на аукцион «Директа» стоимость будет плавать
+      от охвата - если формат интересен, есть смысл забронировать слот по текущим условиям, не дожидаясь аукциона.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://www.unisender.com/ru/blog/news/postradavshim-selleram-wildberries-gotovyat-gospodderzhku/" target="_blank">Пострадавшим селлерам Wildberries готовят господдержку</a> - мера пока в разработке, условия для селлеров не изменились.</li>
+      <li><a href="https://www.unisender.com/ru/blog/news/max-otkroet-api-dlya-sozdaniya-alternativnyh-prilozhenij/" target="_blank">MAX откроет API для создания альтернативных приложений</a> - техническая интеграция, не изменение рекламного кабинета.</li>
+      <li><a href="https://adindex.ru/news/tendencies/2026/08/7/347874.phtml" target="_blank">«Подружка» анонсировала первый поп-ап магазин</a> - розничная новость без изменений в рекламных инструментах.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        «Яндекс» открыл первый крупноформатный медиафасад для рекламы по гарантированным сделкам с фиксированной
+        ценой - пока формат новый и не в аукционе, условия входа проще и дешевле, чем будут после интеграции в «Директ».
+      </li>
+      <li>
+        Cо временем размещение перейдет в аукционную модель, где цена будет зависеть от охвата - для медиапланов
+        с фокусом на Москву стоит зафиксировать текущие условия заранее.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 09 августа 2026 за период 08-09 августа.
+  </div>
+
+</div>
+</body>
+</html>
