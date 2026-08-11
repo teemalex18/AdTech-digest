@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 11 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 11 августа 2026 за период 10-11 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">5</span> релевантных обновлений.
+      Затронуты платформы: <strong>Яндекс Директ, Авито Реклама, VK Реклама</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Обновление кабинета</span>
+      <span class="badge badge-date">11 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/prilozhenie-direkta-epk-agentskiy-akkaunt" target="_blank">Мобильное приложение Директа: создание ЕПК и авторизация через агентский аккаунт</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/prilozhenie-direkta-epk-agentskiy-akkaunt" target="_blank">Яндекс Реклама</a> (официальный блог), подтверждено <a href="https://ppc.world/news/v-prilozhenii-direkta-teper-mozhno-sozdavat-epk-i-avtorizovyvatsya-cherez-agentskiy-akkaunt/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В мобильном приложении Директа теперь доступно не только управление, но и полноценное создание и редактирование
+      Единой перфоманс-кампании: настройка стратегий, целевых действий и их стоимости, корректировки, группы объявлений
+      и сами объявления - без перехода в браузер. Также появилась авторизация через агентский аккаунт с переключением
+      между клиентами и организациями.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Агентствам и специалистам, которые ведут несколько клиентских кабинетов и раньше были вынуждены садиться за
+      компьютер для любых серьезных правок в кампаниях.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Мобильное приложение Директа перестает быть инструментом только для мониторинга и превращается в полноценную
+      рабочую панель управления кампаниями.
+    </p>
+
+    <div class="card-conclusion">
+      Агентствам стоит обновить приложение и настроить вход через агентский аккаунт - это снимает главное ограничение
+      мобильной версии: невозможность полноценно редактировать ЕПК на ходу.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Авито Реклама</span>
+      <span class="badge badge-new">Новая настройка таргетинга</span>
+      <span class="badge badge-date">10 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/v-avito-reklame-poyavilsya-targeting-po-klyuchevym-slovam/" target="_blank">В Авито Рекламе появился таргетинг по ключевым словам</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/v-avito-reklame-poyavilsya-targeting-po-klyuchevym-slovam/" target="_blank">ppc.world</a>, со ссылкой на пресс-службу Авито
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В разделе «Аудитории» кабинета Авито Рекламы появилась вкладка «Ключевые слова»: рекламодатель описывает
+      целевую аудиторию поисковыми фразами, а система формирует сегмент по пользователям, чьи запросы им соответствуют.
+      ML-модели платформы для этого ежедневно обрабатывают 73 млн поисковых запросов.
+    </p>
+
+    <div class="card-section-label">Как использовать</div>
+    <p>
+      Лимиты сегмента - до 500 ключевых слов и 100 минус-слов, минимум 5000 уникальных пользователей. Минус-слова
+      помогают отсечь нецелевой трафик (например, исключить запросы про ремонт при рекламе продажи техники), а
+      объединение с look-alike и CRM-базами повышает точность сегмента.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Рекламодателям, которым важно ловить аудиторию с уже сформированным спросом - тех, кто ищет конкретный товар
+      или услугу прямо сейчас.
+    </p>
+
+    <div class="card-conclusion">
+      Стоит протестировать новый таргетинг в связке с минус-словами на категориях с высокой конкуренцией за трафик -
+      он точнее старого таргетинга по интересам и работает на прямом поисковом намерении.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Новый формат и география</span>
+      <span class="badge badge-date">10 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/naruzhnaya-reklama-v-regionah" target="_blank">Яндекс расширил сеть цифровой наружной рекламы: восемь новых городов и первый медиафасад</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/naruzhnaya-reklama-v-regionah" target="_blank">Яндекс Реклама</a> (официальный блог), подтверждено <a href="https://ppc.world/news/v-seti-cifrovoy-naruzhnoy-reklamy-yandeksa-poyavilas-pervaya-krupnoformatnaya-konstrukciya-mediafasad/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Цифровая наружная реклама через Директ стала доступна еще в восьми городах - Ростове-на-Дону, Воронеже, Перми,
+      Омске, Самаре, Краснодаре, Волгограде и Челябинске - помимо Москвы и Санкт-Петербурга. В регионах уже более
+      400 экранов, первый партнер - розничная сеть «Магнит»: цифровые экраны установлены в уличных витринах магазинов.
+      Одновременно в сети появилась первая крупноформатная конструкция - медиафасад площадью 600 м² на проспекте Мира
+      в Москве, права на продажу рекламы на нем Яндекс получил до 2034 года.
+    </p>
+
+    <div class="card-section-label">Как купить</div>
+    <p>
+      Медиафасад пока доступен только по гарантированной сделке с фиксацией цены и объема показов заранее; позже
+      его подключат к аукциону Директа - так же, как остальные экраны сети, по модели RT OTS (цена за 1000 показов
+      в реальном времени).
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Брендам, рассматривающим наружную рекламу в регионах и крупноформатные знаковые размещения в Москве, а также
+      малому и среднему бизнесу - за первое полугодие 2026 года число компаний, разместивших такую рекламу, выросло
+      в 2 раза.
+    </p>
+
+    <div class="card-conclusion">
+      Если раньше цифровая наружная реклама через Директ ограничивалась Москвой и Петербургом, теперь ее можно
+      тестировать в десяти городах, а для флагманских кампаний - забронировать медиафасад на проспекте Мира заранее,
+      до открытия аукциона.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Акция и бонусы</span>
+      <span class="badge badge-date">11 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/yandex-direct-25-anniversary" target="_blank">Яндекс Директу 25 лет: кешбэк 20% и промокоды на удвоение бюджета</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/yandex-direct-25-anniversary" target="_blank">Яндекс Реклама</a> (официальный блог)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В разделе «Бонусная программа» кабинета Директа открылись задания на кешбэк 20% для действующих рекламодателей.
+      Тем, кто раньше запускал рекламу в Директе, но сейчас неактивен, доступен персональный промокод на удвоение
+      бюджета: при пополнении счета на 5000-15000 рублей начисляется бонус в размере 100% от суммы. Участники также
+      разыгрывают промокоды на продвижение и призы от Яндекс Путешествий и Яндекс Афиши.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Акция действует с 10 августа по 10 сентября 2026 года, победителей объявят 30 сентября, бонусы и промокоды
+      зачислят не позднее 31 октября.
+    </p>
+
+    <div class="card-conclusion">
+      Стоит проверить клиентские аккаунты с приостановленными кампаниями в Директе - для них промокод на удвоение
+      бюджета может ощутимо снизить эффективную стоимость возврата в размещение до 10 сентября.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Реклама</span>
+      <span class="badge badge-date">10 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/deystviya-polzovatelya-v-raznyh-servisah-vk-teper-sobirayutsya-v-odin-neyroprofil/" target="_blank">VK объединила действия пользователей в разных сервисах в единый нейропрофиль</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/deystviya-polzovatelya-v-raznyh-servisah-vk-teper-sobirayutsya-v-odin-neyroprofil/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Действия пользователей в разных сервисах VK теперь агрегируются в единый профиль для рекомендательной системы.
+      По данным ppc.world, это уже сделало рекомендации VK точнее.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Точность рекомендательной системы напрямую влияет на качество аудиторных сегментов и подбор показов в VK
+      Рекламе, даже без отдельной новой настройки в интерфейсе кабинета.
+    </p>
+
+    <div class="card-conclusion">
+      Отдельного переключателя в кабинете VK Рекламы пока нет, но стоит последить за охватом и CTR текущих кампаний -
+      пересчет рекомендаций может их сдвинуть в ту или иную сторону.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://ppc.world/news/google-testiruet-novuyu-glavnuyu-stranicu-bez-knopki-poiska-no-s-ii-instrumentami/" target="_blank">Google тестирует новую главную страницу без кнопки поиска, но с ИИ-инструментами</a> - изменение продукта Google, не рекламного кабинета или условий размещения.</li>
+      <li><a href="https://ppc.world/news/rynochnoe-liderstvo-ne-garantiruet-brendu-vidimost-v-otvetah-ii-issledovanie/" target="_blank">Рыночное лидерство не гарантирует бренду видимость в ответах ИИ</a> - исследование рынка без практического изменения инструментов размещения.</li>
+      <li><a href="https://elama.ru/blog/zayavki-iz-avito-reklamy-po-396-rub-pri-plane-10001300-rub-keys-prodvizheniya-nedvizhimosti-v-krasnoyarske/" target="_blank">Заявки из Авито Рекламы по 396 руб. при плане 1000-1300 руб.</a> - кейс продвижения без новой функции или изменения условий.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Директ отдает мобильному приложению полноценное управление ЕПК и агентский доступ - агентствам стоит
+        перенести часть рутинных правок кампаний со стационарного компьютера на телефон.
+      </li>
+      <li>
+        Таргетинг по ключевым словам в Авито Рекламе точнее старого таргетинга по интересам - имеет смысл
+        протестировать его в первую очередь там, где высокая конкуренция за трафик и важен уже сформированный спрос.
+      </li>
+      <li>
+        Расширение цифровой наружной рекламы Директа на десять городов и появление медиафасада на проспекте Мира
+        открывают наружку через Директ как канал для региональных и флагманских имиджевых кампаний.
+      </li>
+      <li>
+        Юбилейная акция Директа с кешбэком и промокодами на удвоение бюджета - хороший повод реактивировать
+        клиентские аккаунты с приостановленным размещением до 10 сентября.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 11 августа 2026 за период 10-11 августа.
+  </div>
+
+</div>
+</body>
+</html>
