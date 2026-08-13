@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 13 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 13 августа 2026 за период 12-13 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">3</span> релевантных обновления.
+      Затронуты платформы: <strong>Wildberries, Авито Реклама, VK Видео</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">Стоимость размещения</span>
+      <span class="badge badge-date">12 августа 2026</span>
+    </div>
+    <h2><a href="https://www.unisender.com/ru/blog/news/byudzhety-na-bannernuyu-reklamu-wildberries-upali-na-63/" target="_blank">Бюджеты на баннерную рекламу Wildberries упали на 63%, CPM подешевел на 10-15%</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://www.unisender.com/ru/blog/news/byudzhety-na-bannernuyu-reklamu-wildberries-upali-na-63/" target="_blank">Unisender</a>, со ссылкой на данные Digital Budget и «Коммерсантъ»
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      По данным Digital Budget, в июле бюджеты на прямую баннерную рекламу на Wildberries снизились на 63% к июню.
+      Просело и продвижение товаров внутри площадки, сильнее всего в FMCG, фармацевтике, бытовой технике
+      и электронике. Одновременно CPM на Wildberries снизился примерно на 10-15% в зависимости от категории.
+      Участники рынка связывают спад с последствиями атак на склады маркетплейса и проблемами с ассортиментом
+      и логистикой. Сам Wildberries признает изменение объемов, но считает масштаб снижения преувеличенным
+      и уже провел два этапа начисления промобонусов, которыми продавцы могут оплачивать продвижение.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Опрошенные «Коммерсантом» эксперты допускают, что снижение рекламной активности может продлиться
+      от двух до шести месяцев, пока восстанавливаются цепочки поставок и перераспределяется фулфилмент.
+    </p>
+
+    <div class="card-conclusion">
+      Более низкий CPM делает размещение на Wildberries дешевле, но кампании сейчас стоит планировать вместе
+      с остатками и логистикой конкретного продавца, а не только по ставке.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Авито Реклама</span>
+      <span class="badge badge-new">Новая настройка таргетинга</span>
+      <span class="badge badge-date">12 августа 2026</span>
+    </div>
+    <h2><a href="https://elama.ru/blog/targeting-po-klyuchevym-slovam-avito-reklama/" target="_blank">В Авито Рекламе появился таргетинг по ключевым словам: разбор нового инструмента</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://elama.ru/blog/targeting-po-klyuchevym-slovam-avito-reklama/" target="_blank">eLama</a>; инструмент заработал в кабинете Авито Рекламы 10 августа
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Во вкладке «Аудитории» кабинета Авито Рекламы, рядом с ретаргетингом и похожими аудиториями, появился новый
+      тип аудитории - по ключевым словам поисковых запросов. Достаточно описать товар или услугу словами, и система
+      сама соберет пользователей, которые ищут похожее на площадке.
+    </p>
+
+    <div class="card-section-label">Возможности инструмента</div>
+    <p>
+      Система нормализует запросы независимо от регистра, порядка слов, опечаток и раскладки, поддерживает
+      минус-слова для отсечения нерелевантных показов и дает мгновенный прогноз охвата аудитории. Таргетинг
+      по ключевым словам можно комбинировать с look-alike, CRM-базами и другими сегментами Авито.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Рекламодателям и агентствам на Авито, которым важно поймать уже сформированный спрос: пользователь
+      не просто похож на клиента по интересам, а прямо сейчас ищет то, что продают.
+    </p>
+
+    <div class="card-conclusion">
+      Тем, кто уже настроил на Авито ретаргетинг и look-alike, стоит добавить таргетинг по ключевым словам
+      в первую очередь - это готовая точка роста конверсии без увеличения бюджета.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 3 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Видео</span>
+      <span class="badge badge-date">12 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/vk-video-rasshirit-programmu-monetizacii-s-1-sentyabrya/" target="_blank">VK Видео снижает порог входа в программу монетизации до 1000 подписчиков</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/vk-video-rasshirit-programmu-monetizacii-s-1-sentyabrya/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      С 1 сентября 2026 года подключиться к партнерской программе монетизации на VK Видео смогут авторы
+      оригинального контента от 1000 подписчиков и 500 часов просмотров за последние 90 дней - сейчас порог
+      входа составляет 5000 подписчиков. Для новых участников предусмотрен трехмесячный переходный период
+      и гарантированный минимальный доход, пока автор набирает нужные показатели.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Чем больше каналов получают доступ к монетизации, тем шире пул авторов, готовых работать с рекламными
+      интеграциями и брендированным контентом на площадке.
+    </p>
+
+    <div class="card-conclusion">
+      Агентствам, планирующим инфлюенсер-кампании на VK Видео, стоит присмотреться к каналам, которые перейдут
+      в программу монетизации с сентября - конкуренция за них пока ниже, чем среди уже действующих партнеров.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/prilozhenie-direkta-epk-agentskiy-akkaunt" target="_blank">Мобильное приложение Директа: создание ЕПК и авторизация через агентский аккаунт</a> - вне окна дат, первая публикация 11 августа.</li>
+      <li><a href="https://elama.ru/blog/agentskiy-kabinet-vk-reklama/" target="_blank">Агентский кабинет VK Реклама: как создать и использовать для работы с клиентами</a> - обучающий материал про существующий функционал, без новой возможности.</li>
+      <li><a href="https://adindex.ru/news/ad_budjet/2026/08/13/347994.phtml" target="_blank">VK заработал 48,6 млрд рублей благодаря онлайн-рекламе в первом полугодии</a> - финансовые результаты, не является продуктовым обновлением.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Падение бюджетов конкурентов на баннерную рекламу Wildberries снизило CPM на 10-15% - краткосрочное
+        окно для более дешевого размещения, но привязывать закупку стоит к остаткам и логистике конкретного продавца.
+      </li>
+      <li>
+        Новый таргетинг по ключевым словам в Авито Рекламе - быстрый способ поднять конверсию без увеличения
+        бюджета, особенно для тех, кто уже использует ретаргетинг и look-alike на площадке.
+      </li>
+      <li>
+        Расширение порога монетизации VK Видео с сентября увеличит число авторов, готовых к интеграциям -
+        агентствам стоит начать присматривать партнеров уже сейчас, пока конкуренция за них ниже.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 13 августа 2026 за период 12-13 августа.
+  </div>
+
+</div>
+</body>
+</html>
