@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 17 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* Quiet day note */
+  .quiet-note {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+    border-left: 4px solid #d0d4e8;
+    font-size: 15px;
+    color: #444;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 17 августа 2026 за период 14-17 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">3</span> релевантных обновления.
+      Затронуты платформы: <strong>Rutube, getads, МТС Ads и «Кион»</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">getads</span>
+      <span class="badge badge-date">17 августа</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/17/348069.phtml" target="_blank">Платформа getads запустила систему верификации видеорекламы</a></h2>
+    <div class="card-source">AdIndex</div>
+    <p>
+      Новое решение проверяет, что реклама действительно показывается в заявленном формате, и вычисляет реальную
+      долю out-stream-инвентаря в закупке. Проблема, которую решает сервис, знакома многим байерам: подрядчики
+      нередко подмешивают в кампанию более дешёвый out-stream, выдавая его за дорогой in-stream.
+    </p>
+    <div class="card-section-label">Как проходит проверка</div>
+    <p>
+      Три этапа: базовая верификация на фрод, видимость и охват, затем алгоритмическая проверка и экспертная
+      оценка. На выходе рекламодатель получает отчёт с долей out-stream по каждому подрядчику и сводную таблицу
+      по доменам.
+    </p>
+    <div class="card-section-label">Кому полезно</div>
+    <p>Медиабаингу и агентствам, закупающим видеорекламу через посредников и субподрядчиков.</p>
+    <div class="card-conclusion">
+      Вывод: перед подтверждением следующей видеокампании стоит запросить у подрядчика верификацию через getads -
+      это способ увидеть, за какой именно инвентарь на самом деле уходит бюджет.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">МТС Ads / Кион</span>
+      <span class="badge badge-date">17 августа</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/17/348069.phtml" target="_blank">МТС Ads Premium Video и «Кион» запустили брендированную киноколлекцию</a></h2>
+    <div class="card-source">AdIndex</div>
+    <p>
+      Новый формат: персональный лендинг внутри «Кион», где редакция сервиса подбирает 30 единиц контента под
+      аудиторию, продукт или позиционирование конкретного рекламодателя. Продвижение идёт через главные баннеры
+      на стартовой странице и видеоролики на внутренних страницах.
+    </p>
+    <div class="card-section-label">Возможности формата</div>
+    <p>
+      Коллекция охватывает и зрителей без подписки, и премиальную аудиторию подписчиков, то есть закрывает сразу
+      два сегмента одной интеграцией.
+    </p>
+    <div class="card-section-label">Кому подходит</div>
+    <p>Брендам с имиджевыми задачами, которым важен премиальный видеоконтекст, а не performance-показатели.</p>
+    <div class="card-conclusion">
+      Вывод: формат стоит рассматривать как контентную интеграцию для узнаваемости бренда, а не как
+      перформанс-инструмент - у него другая логика оценки эффективности.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Rutube</span>
+      <span class="badge badge-date">17 августа</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/media/2026/08/14/348015.phtml" target="_blank">Rutube представил ML-модель для категоризации видео</a></h2>
+    <div class="card-source">AdIndex</div>
+    <p>
+      Модель определяет категорию видеоконтента по структуре IAB с точностью выше 93%, анализируя текст,
+      аудиодорожку и видеоряд. Цель - размещать рекламу в более подходящем по смыслу контексте и упростить
+      сравнение результатов кампаний между собой.
+    </p>
+    <div class="card-section-label">Кому полезно</div>
+    <p>Медиапланированию и байерам, размещающим видеорекламу на Rutube с прицелом на брендобезопасность.</p>
+    <div class="card-conclusion">
+      Вывод: точная категоризация контекста снижает риск попадания рекламы в нерелевантные ролики - стоит
+      уточнить у Rutube доступность категоризации при планировании следующей закупки.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/adfox-tarify-pryamye-prodazhi-reklamy-2027" target="_blank">Adfox с 1 января 2027 года увеличит бесплатный лимит и обновит тарифы на баннерную рекламу</a> - уже разобрано в выпуске за 14 августа, новых деталей не появилось.</li>
+      <li><a href="https://elama.ru/blog/maksimalnoe-voznagrazhdenie-do-konca-fevralya-2027-goda-prodlili-usloviya-dlya-novyh-partnerov-elama/" target="_blank">eLama продлила максимальное вознаграждение для новых партнёров до конца февраля 2027 года</a> - уже разобрано в выпуске за 14 августа, условия не менялись.</li>
+      <li><a href="https://www.cossa.ru/news/350394/" target="_blank">В Яндекс Бизнесе тестируют платные надстройки для карточки организации</a> - уже разобрано в выпуске за 14 августа, тест остаётся в том же статусе.</li>
+      <li><a href="https://ppc.world/news/wildberries-testiruet-peredachu-tovarov-po-modeli-fbw-cherez-punkty-vydachi-zakazov/" target="_blank">Wildberries тестирует передачу товаров по модели FBW через пункты выдачи</a> - изменение логистики продавца, не рекламного кабинета.</li>
+      <li><a href="https://ppc.world/news/openai-zapustila-reklamu-v-chatgpt-esche-v-pyati-stranah/" target="_blank">OpenAI запустила рекламу в ChatGPT ещё в пяти странах</a> - зарубежная платформа вне фокуса российских рекламных кабинетов, для рекламодателей из РФ пока недоступна.</li>
+      <li><a href="https://yandex.ru/adv/news/v-yandeks-kit-poyavilsya-avs-analiz-tovarov" target="_blank">В Яндекс KIT появился ABC-анализ товаров</a> - инструмент товарной аналитики в кабинете продавца, не изменение рекламного кабинета.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Все три обновления выпуска касаются видеорекламы и контекста показа: Rutube точнее определяет категорию
+        ролика, getads проверяет честность инвентаря, а МТС Ads вместе с «Кион» предлагают новый брендированный
+        формат - вместе это расширяет инструментарий именно для работы с видео.
+      </li>
+      <li>
+        Появление верификации getads - повод пересмотреть, как сейчас проверяется качество закупаемого
+        видеоинвентаря у подрядчиков, особенно там, где есть подозрение на подмену in-stream на out-stream.
+      </li>
+      <li>
+        Брендированная киноколлекция в «Кион» и точная категоризация Rutube полезны прежде всего для имиджевых
+        и брендформинг-кампаний - стоит держать их в поле зрения при планировании интеграций на второе полугодие.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 17 августа 2026 за период 14-17 августа.
+  </div>
+
+</div>
+</body>
+</html>
