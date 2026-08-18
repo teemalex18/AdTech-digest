@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 18 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 18 августа 2026 за период 17-18 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">6</span> релевантных обновлений.
+      Затронуты платформы: <strong>Яндекс Директ, VK Реклама, MAX, YouTube, Яндекс KIT</strong>.
+    </p>
+    <p>
+      Недоступные источники: Inhouse Marketing.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Обновление автостратегии</span>
+      <span class="badge badge-date">18 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/maksimum-pribyli-novye-vozmozhnosti-directa" target="_blank">Стратегия «Максимум прибыли» вышла из беты в Яндекс Директе</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/maksimum-pribyli-novye-vozmozhnosti-directa" target="_blank">Яндекс Реклама</a> (официальный блог)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Автостратегия «Максимум прибыли» завершила бета-тестирование и получила три новые возможности: динамический
+      расчет маржи в режиме "доля от выручки" (маржа задается в процентах, а не фиксированной суммой), оплату
+      за конверсии по цене, которую алгоритм считает оптимальной в момент конверсии, и одновременную оптимизацию
+      сразу по нескольким целям - например, по сайту и мобильным приложениям на iOS и Android.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Интернет-магазинам и бизнесам со сложными воронками продаж, где маржа сильно различается от товара к товару,
+      а конверсии происходят на разных площадках.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      В кейсе компании Tensor после перехода на обновленную стратегию прибыль выросла на 151%, а число заявок -
+      на 33%. Цифры конкретные и стоит проверить их на собственных кампаниях, а не принимать на веру.
+    </p>
+
+    <div class="card-conclusion">
+      Стоит протестировать динамическую маржу на товарах с разной наценкой и сравнить результат с текущей
+      стратегией оплаты за конверсии - особенно тем, у кого продажи идут одновременно через сайт и приложения.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">VK Реклама</span>
+      <span class="badge badge-new">Новый инструмент кабинета</span>
+      <span class="badge badge-date">18 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/vk-reklama-zapustila-kabinet-targetologa-dlya-raboty-s-klientami/" target="_blank">VK Реклама запустила «Кабинет таргетолога» для работы с несколькими клиентами</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/vk-reklama-zapustila-kabinet-targetologa-dlya-raboty-s-klientami/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В VK Рекламе появился «Кабинет таргетолога»: специалист ведет несколько клиентов из одного личного кабинета -
+      запускает и редактирует кампании, работает со статистикой и аудиториями, формирует счета и платежные ссылки.
+      Перенести клиентскую базу можно за несколько кликов - импортом из обычного кабинета VK Рекламы или
+      подключением клиентов через VK ID.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Таргетолог не получает доступа к выводу средств и не может менять платежные реквизиты - рекламодатель
+      остается полноправным владельцем своего кабинета.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      За кампании, запущенные через новый кабинет, начисляются бонусные рубли, которые можно использовать на
+      кампании клиентов или на собственную рекламу - дополнительный стимул консолидировать клиентов в одном месте.
+    </p>
+
+    <div class="card-conclusion">
+      Агентствам и фрилансерам, ведущим больше одного клиента в VK Рекламе, стоит перенести аккаунты в
+      «Кабинет таргетолога» - это удобнее в работе и дает бонусные рубли на кампании.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">MAX</span>
+      <span class="badge badge-date">18 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/digital/2026/08/18/348086.phtml" target="_blank">CPM в каналах мессенджера MAX вырос на 72% за полгода</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/digital/2026/08/18/348086.phtml" target="_blank">AdIndex</a>, по данным eLama и Telega.in
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      eLama и Telega.in выпустили первый ежемесячный бенчмарк рекламы в MAX за январь-июнь 2026 года. CPM вырос
+      с 352 до 606 рублей (плюс 72%), средний бюджет рекламодателя удвоился до 54 000 рублей в месяц, а стоимость
+      публикации выросла с 1500 до 2000 рублей.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Число публикаций на одного рекламодателя выросло с 11,5 до 18,6 в месяц, а средний охват поста снизился
+      с 5600 до 4300 - паблишеры дробятся на более нишевые каналы. Дороже всего размещение в категориях
+      "Маркетинг и PR" (4700 руб.), "Экономика и финансы" (4400 руб.) и "Бизнес и стартапы" (2800 руб.). Отдельно
+      выделяется недвижимость: стоимость публикации выросла более чем в 8 раз, охват - в 12 раз, а вовлеченность -
+      с 1,7% до 25,8%.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      MAX переходит от тестовых размещений к регулярным закупкам, и цена входа растет быстрее, чем в среднем
+      по рынку.
+    </p>
+
+    <div class="card-conclusion">
+      Если MAX еще не заложен в медиаплан отдельной строкой, сейчас подходящий момент - но бюджет на канал стоит
+      планировать с ростом минимум в 1,5-2 раза к показателям начала года, особенно в нишах вроде недвижимости
+      и финансов.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">YouTube</span>
+      <span class="badge badge-date">18 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/media/2026/08/18/348079.phtml" target="_blank">YouTube меняет методику подсчета просмотров, это скажется на аналитике рекламодателей</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/media/2026/08/18/348079.phtml" target="_blank">AdIndex</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      С 24 августа 2026 года YouTube будет засчитывать просмотр сразу при старте воспроизведения или подключении
+      к трансляции, а не спустя 30 секунд просмотра, как раньше. Новая методика приближает счетчик YouTube к
+      подходу, принятому в TikTok.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Публичные цифры просмотров могут заметно вырасти, особенно у роликов с коротким удержанием, и станут менее
+      показательны для оценки реальной популярности контента. Данные о вовлеченном просмотре останутся доступны
+      отдельно во внутренней аналитике канала.
+    </p>
+
+    <div class="card-conclusion">
+      При оценке креативов, инфлюенсеров и охватных кампаний на YouTube после 24 августа стоит ориентироваться
+      на вовлеченные просмотры и внутреннюю аналитику канала, а не на публичный счетчик.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс KIT</span>
+      <span class="badge badge-date">17 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/v-yandeks-kit-poyavilsya-avs-analiz-tovarov" target="_blank">В Яндекс KIT появился ABC-анализ товаров</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/v-yandeks-kit-poyavilsya-avs-analiz-tovarov" target="_blank">Яндекс Реклама</a> (официальный блог)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В Яндекс KIT добавили инструмент ABC-анализа, который показывает вклад каждого товара в продажи интернет-магазина
+      и помогает быстро выделить локомотивы ассортимента и позиции, которые стоит вывести из продвижения.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Интернет-магазинам с большим ассортиментом, которые продвигаются через Яндекс KIT и хотят приоритизировать
+      бюджет на самые прибыльные товары.
+    </p>
+
+    <div class="card-conclusion">
+      Стоит прогнать текущий ассортимент через новый ABC-анализ и перераспределить рекламный бюджет в пользу
+      товаров группы A - быстрый способ повысить отдачу без изменения самих кампаний.
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Similarweb</span>
+      <span class="badge badge-date">18 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/similarweb-razrabotal-instrument-dlya-analiza-reklamy-v-chatgpt-i-ii-servisah-google/" target="_blank">Similarweb представил инструмент для анализа рекламы в ChatGPT и Google AI</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/similarweb-razrabotal-instrument-dlya-analiza-reklamy-v-chatgpt-i-ii-servisah-google/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Similarweb выпустил инструмент, который отслеживает, как реклама брендов и конкурентов появляется в ответах
+      ChatGPT и ИИ-сервисов Google - по сути, аналог мониторинга размещений, но для генеративного поиска.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Командам, которые уже занимаются продвижением в ответах нейросетей (GEO) и хотят понимать, какие бренды
+      и в каком виде показываются рядом с их запросами.
+    </p>
+
+    <div class="card-conclusion">
+      Инструмент стоит держать в поле зрения тем, кто выделяет отдельный бюджет на GEO - один из первых сервисов,
+      переносящих привычный конкурентный мониторинг рекламы в мир ИИ-поиска.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://yandex.ru/adv/news/adfox-tarify-pryamye-prodazhi-reklamy-2027" target="_blank">Adfox пересмотрит тарифы на прямые продажи рекламы с 2027 года</a> - вне окна дат, первая публикация 14 августа.</li>
+      <li><a href="https://blog.click.ru/target/funkciya-vk-reklamy-ocenka-kachestva-lidov-iz-crm/" target="_blank">Новая функция VK Рекламы: оценка качества лидов из CRM</a> - вне окна дат, первая публикация 31 июля.</li>
+      <li><a href="https://ppc.world/news/v-rossii-predlozhili-proveryat-neyroseti-na-duhovno-nravstvennye-cennosti-i-vvesti-obyazatelnuyu-markirovku-ii-kontenta/" target="_blank">В России предложили проверять нейросети на духовно-нравственные ценности и ввести маркировку ИИ-контента</a> - законодательная инициатива, пока не меняет рекламный кабинет напрямую.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Яндекс Директ и VK Реклама в один день обновили ключевые инструменты для управления кампаниями -
+        «Максимум прибыли» и «Кабинет таргетолога» стоит протестировать на пилотных клиентах в первую очередь.
+      </li>
+      <li>
+        MAX переходит от тестовых размещений к регулярным закупкам: CPM вырос почти вдвое за полгода, бюджет
+        на канал нужно закладывать с запасом, особенно в нишах вроде недвижимости и финансов.
+      </li>
+      <li>
+        Смена методики подсчета просмотров на YouTube снижает ценность публичных метрик - при оценке видеокампаний
+        и инфлюенсеров стоит ориентироваться на данные внутри кабинета, а не на витринные цифры.
+      </li>
+      <li>
+        ABC-анализ в Яндекс KIT и инструмент Similarweb для GEO дают дополнительные данные для оптимизации
+        ассортимента и присутствия в ИИ-поиске - стоит включить их в регулярный аудит отчетности.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 18 августа 2026 за период 17-18 августа.
+  </div>
+
+</div>
+</body>
+</html>
