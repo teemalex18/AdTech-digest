@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 24 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 24 августа 2026 за период 21-24 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">7</span> релевантных обновлений.
+      Затронуты платформы: <strong>Яндекс Директ, Wildberries, X5 Медиа, MAX</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Продажи без сайта</span>
+      <span class="badge badge-date">21 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/prodazhi-iz-poiska-i-alisy-ai-teper-dostupny-dlya-vsekh-prodavczov" target="_blank">Яндекс открыл продажи в Поиске и Алисе AI для продавцов без сайта</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/prodazhi-iz-poiska-i-alisy-ai-teper-dostupny-dlya-vsekh-prodavczov" target="_blank">Яндекс Реклама</a> (официальный блог),
+      подтверждено <a href="https://ppc.world/news/yandeks-otkryl-prodazhi-v-poiske-i-alise-ai-dlya-sellerov-bez-saytov/" target="_blank">ppc.world</a>
+      и <a href="https://www.cossa.ru/news/350529/" target="_blank">Cossa</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Раньше продажи из результатов Поиска и диалога с Алисой AI через универсальный чекаут Яндекса могли получать
+      только интернет-магазины с сайтом. Теперь эта возможность в бета-тестировании доступна и продавцам, у которых
+      сайта пока нет.
+    </p>
+
+    <div class="card-section-label">Как подключиться</div>
+    <p>
+      Нужно оставить заявку на подключение в Яндекс Товарах, загрузить ассортимент и настроить цены, оплату и
+      доставку в облегченной версии кабинета на платформе Яндекс KIT β. Подключение бесплатное, оплачиваются только
+      услуги логистики и обработки платежей.
+    </p>
+
+    <div class="card-section-label">Как это работает</div>
+    <p>
+      Алиса AI подбирает товары по запросу пользователя и показывает карточки с кнопкой «Купить в 1 клик» в Поиске
+      и в чате. В карточке видны фото, цена, рейтинг, отзывы и способы доставки.
+    </p>
+
+    <div class="card-conclusion">
+      Для малого бизнеса без сайта это готовый канал продаж без затрат на разработку. Агентствам стоит уже сейчас
+      проверить у клиентов без интернет-магазина, подходят ли они под условия подключения.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">Таргетинг по аудиториям</span>
+      <span class="badge badge-date">24 августа 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/08/24/348265.phtml" target="_blank">В RWB Медиа появился раздел «Аудитории» для таргетинга селлеров Wildberries</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://adindex.ru/news/marketing/2026/08/24/348265.phtml" target="_blank">AdIndex</a>, рубрика «Кабинет рекламодателя»
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В кабинете RWB Медиа у селлеров Wildberries появился раздел «Аудитории»: теперь можно самостоятельно
+      формировать сегменты пользователей для таргетинга в кампаниях «Баннер», «Видео» и «Реклама в ПВЗ».
+    </p>
+
+    <div class="card-section-label">Возможности таргетинга</div>
+    <p>
+      Аудитории собираются по поведению (просмотры товаров бренда, добавление в корзину или избранное, оформленные
+      заказы и покупки), а также по географии, полу, возрасту, размеру одежды и обуви и покупательской способности.
+      Добавлен инструмент look-alike, который расширяет охват за счет пользователей, похожих на покупателей из
+      основного сегмента.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Продавцам и агентствам, которые ведут медийные и видеокампании на Wildberries и хотят точнее управлять
+      показами вместо стандартных широких настроек.
+    </p>
+
+    <div class="card-conclusion">
+      Это первый серьезный шаг RWB Медиа в сторону таргетинга уровня крупных рекламных кабинетов. Стоит
+      протестировать новые сегменты и look-alike на активных кампаниях, пока настройка не стала массовой.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Карусель на CTV</span>
+      <span class="badge badge-date">24 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/karusel-tovarov-i-uslug-reklama-na-connected-tv" target="_blank">В Яндекс Директе видеореклама на Connected TV получила карусель товаров</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/karusel-tovarov-i-uslug-reklama-na-connected-tv" target="_blank">Яндекс Реклама</a> (официальный блог),
+      подтверждено <a href="https://adindex.ru/news/media/2026/08/24/348253.phtml" target="_blank">AdIndex</a>
+      и <a href="https://ppc.world/news/yandeks-direkt-testiruet-reklamu-s-pokupkoy-tovarov-pryamo-s-ekrana-televizora/" target="_blank">ppc.world</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Аукционную видеорекламу на Connected TV (эфирное ТВ онлайн на федеральных и тематических каналах, приложения
+      на YaOS, TCL, Haier) теперь можно дополнить каруселью из 3-15 карточек с товарами, услугами или
+      преимуществами предложения.
+    </p>
+
+    <div class="card-section-label">Как устроен формат</div>
+    <p>
+      В каждой карточке изображение, описание, цена и отдельный QR-код: пользователь сканирует его смартфоном и
+      сразу переходит на нужную страницу предложения. Раньше карусель была доступна только в классической медийной
+      видеорекламе и Видеобаннере в Поиске.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Интернет-магазинам (товары по акции), компаниям из сферы путешествий (направления и туры), финансов (услуги
+      и условия), застройщикам (планировки с ценами) и автодилерам (модели и условия покупки).
+    </p>
+
+    <div class="card-conclusion">
+      Формат превращает CTV-рекламу из имиджевого инструмента в канал с прямым переходом к покупке.
+      Рекламодателям с уже работающими CTV-кампаниями стоит протестировать карусель в числе первых.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Бета: Управление скидками</span>
+      <span class="badge badge-date">24 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/v-direkte-poyavilsya-instrument-upravlenie-skidkami-algoritm-sam-reshaet-komu-i-kakuyu-skidku-pokazat-v-obyavlenii/" target="_blank">В Директе тестируют ML-инструмент «Управление скидками»</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/v-direkte-poyavilsya-instrument-upravlenie-skidkami-algoritm-sam-reshaet-komu-i-kakuyu-skidku-pokazat-v-obyavlenii/" target="_blank">ppc.world</a>,
+      со ссылкой на пресс-службу Яндекса
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Команда Директа начала бета-тестирование инструмента «Управление скидками». ML-модель сама решает, какому
+      покупателю показать скидку в объявлении на Поиске и какого размера, сочетая персональные предложения со
+      скидками, доступными любому пользователю в каналах Яндекса.
+    </p>
+
+    <div class="card-section-label">Статус и охват</div>
+    <p>
+      Доступен ограниченному кругу компаний, работает пока только в объявлениях на Поиске. В будущем расширится на
+      органическую выдачу и диалоги с Алисой.
+    </p>
+
+    <div class="card-conclusion">
+      Подходит интернет-магазинам, которые сейчас распределяют скидки вручную. Стоит запросить у менеджера Яндекса
+      включение в бету, чтобы протестировать автоматическое распределение промо-бюджета раньше конкурентов.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">X5 Медиа</span>
+      <span class="badge badge-new">Автообновление семантики</span>
+      <span class="badge badge-date">24 августа 2026</span>
+    </div>
+    <h2><a href="https://www.cossa.ru/blogs/x5media/350515/" target="_blank">X5 Медиа обновила поисковую рекламу в приложениях «Пятёрочки» и «Перекрёстка»</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://www.cossa.ru/blogs/x5media/350515/" target="_blank">Cossa</a>,
+      подтверждено <a href="https://adindex.ru/news/marketing/2026/08/24/348265.phtml" target="_blank">AdIndex</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Вместо фиксированного набора запросов, который подбирали вручную, система теперь автоматически учитывает
+      релевантность, конверсионность, сезонность и поведенческие факторы и регулярно обновляет семантическое ядро
+      для каждого товара.
+    </p>
+
+    <div class="card-section-label">Результаты</div>
+    <p>
+      По данным компании, первые результаты показали рост объема показов почти в 5 раз и рост количества заказов
+      в 3 раза.
+    </p>
+
+    <div class="card-conclusion">
+      Заметный прирост эффективности без ручной настройки семантики. Брендам, которые размещают товарную рекламу
+      в X5 Медиа, стоит уточнить у менеджера условия перехода на новую модель.
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">ИИ-анализ карточек</span>
+      <span class="badge badge-date">21 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/wildberries-testiruet-ii-ocenku-vizuala-kartochek-tovarov/" target="_blank">Wildberries тестирует ИИ-инструмент «Анализ внимания» для карточек товаров</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/wildberries-testiruet-ii-ocenku-vizuala-kartochek-tovarov/" target="_blank">ppc.world</a>,
+      со ссылкой на справку Wildberries
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Wildberries запускает ИИ-инструмент «Анализ внимания», который на основе компьютерного зрения прогнозирует,
+      куда покупатель посмотрит на карточке товара в первую очередь, где задержит взгляд и что пропустит.
+    </p>
+
+    <div class="card-section-label">Что показывает</div>
+    <p>
+      Тепловую карту зон концентрации внимания, траекторию взгляда и заметность элементов в процентах. Обработка
+      занимает около 15 секунд, инструмент не использует камеры и личные данные покупателей.
+    </p>
+
+    <div class="card-conclusion">
+      Пока доступен не всем продавцам. Тем, кто уже подключен к тестированию, стоит использовать инструмент для
+      быстрой доработки визуала карточек в конкурентных категориях без долгих A/B-тестов.
+    </div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">MAX</span>
+      <span class="badge badge-new">Статистика каналов</span>
+      <span class="badge badge-date">21 августа 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/max-zapustil-statistiku-dlya-kanalov/" target="_blank">MAX запустил статистику для каналов</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/max-zapustil-statistiku-dlya-kanalov/" target="_blank">Click.ru</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В мессенджере MAX авторы и бизнес-аккаунты каналов получили доступ к базовой статистике: охват публикаций
+      и вовлеченность аудитории.
+    </p>
+
+    <div class="card-conclusion">
+      Появление отчетности - необходимый шаг к тому, чтобы MAX стал полноценной рекламной площадкой. Брендам,
+      которые рассматривают MAX как канал, стоит завести и вести канал уже сейчас, чтобы накопить историю данных
+      к моменту запуска полноценных рекламных инструментов.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://blog.click.ru/market-news/vk-reklama-obedinila-rabotu-s-reklamodatelyami-v-novom-kabinete-dlya-targetologov/" target="_blank">VK Реклама объединила работу с рекламодателями в новом «Кабинете таргетолога»</a> - вне окна дат, первая публикация 19 августа.</li>
+      <li><a href="https://blog.click.ru/market-news/yandeks-direkt-vyvel-iz-bety-strategiyu-maksimum-pribyli/" target="_blank">Яндекс Директ вывел из беты стратегию «Максимум прибыли»</a> - вне окна дат, первая публикация 18 августа.</li>
+      <li><a href="https://ppc.world/news/trafik-iz-alisy-ai-v-rossiyskiy-ecommerce-vyros-v-46-raza-s-nachala-goda/" target="_blank">Трафик из Алисы AI в российский ecommerce вырос в 4,6 раза с начала года</a> - аналитика трафика без нового инструмента или изменения условий размещения.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Яндекс одновременно расширяет каналы продаж без сайта (Поиск и Алиса AI) и дает новый формат в CTV с прямым
+        переходом к покупке. Оба обновления стоит закладывать в медиапланы e-commerce клиентов уже сейчас.
+      </li>
+      <li>
+        RWB Медиа впервые подтягивается к уровню таргетинга крупных рекламных кабинетов. Агентствам, ведущим
+        селлеров Wildberries, стоит протестировать новые аудитории и look-alike до массового запуска.
+      </li>
+      <li>
+        Автоматизация снимает часть ручной работы с рекламодателя: «Управление скидками» в Директе и обновленная
+        семантика в X5 Медиа сокращают ручную настройку промо-бюджета и подбора запросов.
+      </li>
+      <li>
+        MAX и Wildberries развивают собственную отчетность и ИИ-инструменты. Доступ пока ограничен, но стоит
+        запросить ранний доступ и завести канал в MAX заранее.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 24 августа 2026 за период 21-24 августа.
+  </div>
+
+</div>
+</body>
+</html>
