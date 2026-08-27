@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 27 августа 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    background: #f4f5f7;
+    color: #1a1a2e;
+  }
+
+  a { color: #1a6ef5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+  .header-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7b8cde;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .header-meta {
+    font-size: 14px;
+    color: #a8b2d8;
+  }
+
+  /* Summary block */
+  .summary {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #7b8cde;
+  }
+  .summary p {
+    font-size: 15px;
+    color: #444;
+  }
+  .summary p + p { margin-top: 8px; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888;
+    margin: 32px 0 14px;
+  }
+
+  /* News card */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e8eaf0;
+  }
+  .card.primary {
+    border-left: 4px solid #1a6ef5;
+  }
+  .card.secondary {
+    border-left: 4px solid #d0d4e8;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+  .badge-platform {
+    background: #eef2ff;
+    color: #3d5af1;
+  }
+  .badge-date {
+    background: #f3f4f6;
+    color: #666;
+  }
+  .badge-new {
+    background: #e6f9f0;
+    color: #0d7a45;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+  }
+  .card h2 a { color: inherit; }
+  .card-source {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #1a6ef5;
+  }
+
+  .card-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin: 14px 0 4px;
+  }
+  .card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-conclusion {
+    background: #f7f9ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #2d3a6e;
+    border-left: 3px solid #7b8cde;
+  }
+
+  /* Not included block */
+  .not-included {
+    background: #fafafa;
+    border: 1px solid #e4e6ee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .not-included ul {
+    padding-left: 18px;
+    font-size: 14px;
+    color: #666;
+  }
+  .not-included ul li {
+    margin-bottom: 8px;
+  }
+  .not-included a {
+    font-weight: 600;
+  }
+
+  /* Takeaway / SUMMARY block */
+  .takeaway {
+    background: #1a1a2e;
+    color: #e8ecff;
+    border-radius: 12px;
+    padding: 24px 26px;
+    margin-top: 10px;
+  }
+  .takeaway .section-title {
+    color: #7b8cde;
+    margin-top: 0;
+  }
+  .takeaway ul {
+    padding-left: 18px;
+  }
+  .takeaway li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #c9d1f0;
+  }
+  .takeaway li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 36px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 21px; }
+    .card h2 { font-size: 16px; }
+    .wrapper { padding: 16px 12px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 27 августа 2026 за период 26-27 августа.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p>
+      Проверено <span class="stat">13</span> источников за период.
+      Найдено <span class="stat">5</span> релевантных обновлений.
+      Затронуты платформы: <strong>Telegram Ads, WB Медиа, Яндекс Директ, Яндекс Метрика</strong>.
+    </p>
+    <p>Недоступные источники: AdIndex.</p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Telegram Ads</span>
+      <span class="badge badge-new">Ставка снижена в 7 раз</span>
+      <span class="badge badge-date">27 августа 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/telegram-ads-snizil-minimalnyy-cpm-v-sem-raz/" target="_blank">Telegram Ads снизил минимальный CPM в семь раз</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://ppc.world/news/telegram-ads-snizil-minimalnyy-cpm-v-sem-raz/" target="_blank">ppc.world</a>,
+      со ссылкой на eLama
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Минимальная ставка CPM в Telegram Ads для таргетинга на каналы, ботов и Поиск в России упала с 1 евро
+      до 0,15 евро за 1000 показов. Порог входа снизился в семь раз.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Такое снижение ставки заметно меняет экономику тестов: можно проверять новые креативы и охватные
+      кампании гораздо дешевле, чем раньше. У части посредников, например eLama, сейчас дополнительно
+      действует сниженная комиссия на первое пополнение кабинета - 10% вместо 20%.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Актуальные минимальные ставки в собственном кабинете Telegram Ads и условия пополнения через
+      привычного посредника - льготная комиссия действует не у всех.
+    </p>
+
+    <div class="card-conclusion">
+      Резкое снижение порога входа стоит использовать прямо сейчас: это лучшее окно, чтобы протестировать
+      новые аудитории и креативы в Telegram Ads с меньшим бюджетом на тесты.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">WB Медиа</span>
+      <span class="badge badge-new">Новая настройка таргетинга</span>
+      <span class="badge badge-date">27 августа 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/wb-media-zapustila-konstruktor-auditorij-dlya-targetinga/" target="_blank">WB Медиа запустила конструктор аудиторий для таргетинга</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/wb-media-zapustila-konstruktor-auditorij-dlya-targetinga/" target="_blank">Click.ru</a>,
+      со ссылкой на пресс-службу RWB
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В рекламном кабинете WB Медиа появился раздел «Аудитории». Селлеры Wildberries теперь сами собирают
+      сегменты по поведению покупателей (просмотры товаров, добавление в корзину или избранное, заказы,
+      покупки) и по демографии - без обращения к менеджеру.
+    </p>
+
+    <div class="card-section-label">Возможности формата</div>
+    <p>
+      Сегменты применяются в кампаниях «Баннер», «Видео» и «Реклама в ПВЗ». Дополнительно доступны
+      похожие аудитории (look-alike) - алгоритм находит пользователей, близких по поведению к исходному
+      сегменту.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Продавцам Wildberries, которые хотят точнее настраивать медийные кампании и расширять охват без
+      постоянного участия менеджера площадки.
+    </p>
+
+    <div class="card-conclusion">
+      Стоит начать с уже прогретых сегментов - тех, кто смотрел товар или добавлял в корзину, - а затем
+      расширять охват через look-alike аудитории.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Новый формат в тесте</span>
+      <span class="badge badge-date">26 августа 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/yandeks-direkt-zapustil-test-pokupatelskix-scenariev-v-ctv-reklame/" target="_blank">Яндекс Директ тестирует покупательские сценарии в CTV-рекламе</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/yandeks-direkt-zapustil-test-pokupatelskix-scenariev-v-ctv-reklame/" target="_blank">Click.ru</a>,
+      со ссылкой на Яндекс Директ
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В аукционной видеорекламе на Connected TV начали тестировать покупательские сценарии. Зритель
+      сканирует QR-код с карточки товара, которая появляется в ролике, и переходит на мобильный сайт
+      рекламодателя. В планах Яндекса - взаимодействие с карточками прямо на экране телевизора.
+    </p>
+
+    <div class="card-section-label">Как использовать</div>
+    <p>
+      Формат подходит не только рознице: бизнес из сферы услуг (недвижимость, финансы) может показывать
+      в ролике сопутствующие товары или предложения через те же карточки.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Результаты размещения можно оценивать через бесплатные исследования Яндекс Директа - Brand Lift,
+      Search Lift, Visit и Target Lift.
+    </p>
+
+    <div class="card-conclusion">
+      Формат пока в тесте, но его стоит держать в поле зрения как способ сократить путь от просмотра
+      ролика на CTV до заказа, особенно для ритейла и услуг с высоким чеком.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Метрика</span>
+      <span class="badge badge-new">Новые отчеты</span>
+      <span class="badge badge-date">27 августа 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/novye-otchety-metriki-uderzhanie" target="_blank">Яндекс добавил новые отчеты в Метрику для анализа удержания и ценности пользователей</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://yandex.ru/adv/news/novye-otchety-metriki-uderzhanie" target="_blank">Яндекс Реклама</a> (официальный блог)
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В Метрике появились отчеты, которые показывают, какие пользователи возвращаются на сайт и продолжают
+      совершать целевые действия, на каком этапе снижается их активность и какие источники трафика
+      приводят самую ценную аудиторию.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Аналитикам и перформанс-специалистам, которые оценивают не разовую конверсию, а долгосрочную
+      ценность привлеченного трафика.
+    </p>
+
+    <div class="card-conclusion">
+      Полезно подключить отчеты в первую очередь для сравнения качества трафика с разных каналов и
+      корректировки закупки на основе LTV, а не только последнего клика.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Вордстат</span>
+      <span class="badge badge-new">Обновление интерфейса</span>
+      <span class="badge badge-date">27 августа 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/v-yandeks-vordstate-obnovilsya-interfejs-i-poyavilsya-umnyj-pomoshhnik/" target="_blank">В Яндекс Вордстате обновился интерфейс и появился умный помощник</a></h2>
+    <div class="card-source">
+      Источник: <a href="https://blog.click.ru/market-news/v-yandeks-vordstate-obnovilsya-interfejs-i-poyavilsya-umnyj-pomoshhnik/" target="_blank">Click.ru</a>
+    </div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Инструменты Вордстата собрали в вертикальном меню слева, добавили отдельное поле для минус-слов,
+      а виртуальный «умный помощник» подсказывает, как пользоваться сервисом. Сами данные и возможности
+      не изменились.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Специалистам по семантике и контекстологам, которые ежедневно работают с частотностью запросов.
+    </p>
+
+    <div class="card-conclusion">
+      Изменения чисто интерфейсные, но стоит выделить пару минут на новую навигацию, чтобы не терять
+      время на поиск привычных разделов.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://ppc.world/news/stoimost-privlecheniya-klienta-v-performance-reklame-vyrosla-za-chetyre-goda-na-144-pri-inflyacii-24/" target="_blank">Стоимость привлечения клиента в performance-рекламе выросла за четыре года на 144%</a> - исследование рынка без изменения инструментов рекламных кабинетов.</li>
+      <li><a href="https://www.cossa.ru/news/350572/" target="_blank">Visible инвестировал 200 млн рублей в развитие платформы аналитики CTV-рекламы</a> - PR-новость об инвестициях без описания нового функционала.</li>
+      <li><a href="https://ppc.world/news/telegram-obnovilsya-poyavilis-privetstvennye-soobscheniya-v-kanalah-knopki-i-novye-opcii-dlya-tablic/" target="_blank">Telegram обновился: приветственные сообщения в каналах, кнопки и подписи к подаркам</a> - обновление мессенджера, а не рекламного кабинета.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>
+        Telegram Ads сейчас особенно выгоден для тестов: минимальная ставка упала в семь раз, а у части
+        посредников еще действуют сниженные комиссии на пополнение кабинета.
+      </li>
+      <li>
+        На Wildberries стоит опробовать новый конструктор аудиторий в WB Медиа - самостоятельная настройка
+        сегментов ускоряет запуск медийных кампаний без ожидания менеджера площадки.
+      </li>
+      <li>
+        CTV-реклама в Яндекс Директе становится интерактивной: тест покупательских сценариев стоит держать
+        в фокусе для клиентов из ритейла и услуг с высоким чеком.
+      </li>
+      <li>
+        Обновления Метрики и Вордстата не требуют срочных действий, но их стоит внедрить в рабочие процессы
+        аналитиков и контекстологов в течение недели.
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 27 августа 2026 за период 26-27 августа.
+  </div>
+
+</div>
+</body>
+</html>
