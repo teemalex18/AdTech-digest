@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ, 7 сентября 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      background: #f4f5f7;
+      color: #1a1a2e;
+    }
+
+    a { color: #1a6ef5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #a8b2d8;
+    }
+
+    /* Summary block */
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-left: 4px solid #7b8cde;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .summary p {
+      font-size: 15px;
+      color: #444;
+    }
+    .summary .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* Section headings */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 32px 0 14px;
+    }
+
+    /* News card */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .card.primary {
+      border-left: 4px solid #1a6ef5;
+    }
+    .card.secondary {
+      border-left: 4px solid #d0d4e8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .badge-platform {
+      background: #eef2ff;
+      color: #3d5af1;
+    }
+    .badge-date {
+      background: #f3f4f6;
+      color: #666;
+    }
+    .badge-new {
+      background: #e6f9f0;
+      color: #0d7a45;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card h2 a { color: inherit; }
+    .card-source {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-source a {
+      color: #1a6ef5;
+    }
+
+    .card-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin: 14px 0 4px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-conclusion {
+      background: #f7f9ff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #2d3a6e;
+      border-left: 3px solid #7b8cde;
+    }
+
+    /* Not included block */
+    .not-included {
+      background: #fafafa;
+      border: 1px solid #e4e6ee;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .not-included ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+    .not-included ul li {
+      margin-bottom: 8px;
+    }
+    .not-included a {
+      color: #1a6ef5;
+      font-weight: 500;
+    }
+
+    /* Takeaway block */
+    .takeaway {
+      background: #1a1a2e;
+      color: #e8ecff;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-top: 10px;
+    }
+    .takeaway .section-title {
+      color: #7b8cde;
+      margin-top: 0;
+    }
+    .takeaway ul {
+      padding-left: 18px;
+    }
+    .takeaway li {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #c9d1f0;
+    }
+    .takeaway li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 21px; }
+      .card h2 { font-size: 16px; }
+      .wrapper { padding: 16px 12px 48px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 7 сентября 2026 за период 4-7 сентября.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления.
+      Затронуты платформы: <strong>Яндекс Директ, Авито, М.Видео, Wildberries</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Охватная реклама</span>
+      <span class="badge badge-date">7 сентября 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/yandeks-otkryl-panoramu-dlya-vsex-reklamodatelej-direkta/" target="_blank" rel="noopener">Яндекс открыл «Панораму» для всех рекламодателей Директа</a></h2>
+    <div class="card-source">Источник: <a href="https://blog.click.ru/market-news/yandeks-otkryl-panoramu-dlya-vsex-reklamodatelej-direkta/" target="_blank" rel="noopener">Click.ru</a>, со ссылкой на данные Яндекса</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Яндекс расширил доступ к инструменту охватной рекламы «Панорама» - теперь запускать кампании с его помощью может любой рекламодатель Директа, включая малый и средний бизнес. «Панорама» объединяет показы на компьютерах, смартфонах и Connected TV в одной кампании без отдельной настройки под каждое устройство и сервис; позже к ним добавится цифровая наружная реклама.
+    </p>
+
+    <div class="card-section-label">Возможности инструмента</div>
+    <p>
+      Минимального бюджета для запуска нет. Суммарный ежемесячный охват доступных поверхностей превышает 120 млн уникальных пользователей - в среднем в 1,6 раза больше аудитории популярных маркетплейсов и классифайдов. Доступен прайм-баннер в 20+ сервисах Яндекса (Поиск, Браузер, Погода, Маркет, Кинопоиск, Музыка и другие), а также видеореклама в Видеосети Яндекса - более 200 площадок РСЯ, включая сайты телеканалов и онлайн-кинотеатров. Система учитывает пересечение аудиторий между площадками и контролирует общую частоту показов.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      По данным Яндекса, в первом полугодии 2026 года число рекламодателей-МСП, запускающих медийные кампании в Директе, выросло на 40% год к году, а их вложения в медийку - на 44%; каждый второй запускал имиджевое продвижение впервые. Снятие ограничений на доступ к «Панораме» снижает порог входа в охватную рекламу для бизнеса с любым бюджетом.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: стоит протестировать «Панораму» на клиентах с медийными задачами, которые раньше не работали с охватными форматами из-за сложности настройки под разные площадки - отсутствие минимального бюджета делает такой тест дешевым.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Авито</span>
+      <span class="badge badge-new">Обновление кабинета</span>
+      <span class="badge badge-date">4 сентября 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/avito-promo-dal-agentstvam-vozmozhnost-prodvigat-obyavleniya-samozanyatyh/" target="_blank" rel="noopener">Авито Промо дал агентствам возможность продвигать объявления самозанятых</a></h2>
+    <div class="card-source">Источник: <a href="https://ppc.world/news/avito-promo-dal-agentstvam-vozmozhnost-prodvigat-obyavleniya-samozanyatyh/" target="_blank" rel="noopener">ppc.world</a>, со ссылкой на пресс-службу Авито; также <a href="https://adindex.ru/news/agencies/2026/09/4/348615.phtml" target="_blank" rel="noopener">AdIndex</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Рекламные агентства теперь могут подключать в «Авито Промо» клиентов-самозанятых - раньше сервис работал только с юрлицами и ИП. Агентства получили доступ к аудитории более 700 000 самозанятых на площадке.
+    </p>
+
+    <div class="card-section-label">Как это работает</div>
+    <p>
+      Подключение идет по стандартному агентскому процессу: в разделе «Клиенты» агентство приглашает самозанятого по номеру профиля на Авито, выбирает модель оплаты и отправляет приглашение - после подтверждения профиль появляется в агентском кабинете. Есть два варианта оплаты: «на клиенте» (со счета продавца или исполнителя - для Товаров, Услуг, Работы и Спецтехники) и «на агентстве» (для Товаров, Услуг и Спецтехники).
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Рекламным агентствам - для расширения клиентской базы и выручки без поиска новых клиентов; самозанятым продавцам и исполнителям - чтобы делегировать продвижение профессионалам.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: агентствам, работающим с Авито, стоит уже сейчас предложить подключение через агентский кабинет самозанятым клиентам - мастерам услуг и частным исполнителям из числа текущих контактов. По данным Авито, число агентств, растущих вместе с площадкой, выросло на 91% год к году - новый сегмент это ускорит.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">М.Видео</span>
+      <span class="badge badge-new">Новый формат</span>
+      <span class="badge badge-date">7 сентября 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/09/3/348570.phtml" target="_blank" rel="noopener">М.Видео запустила новый формат продвижения для внешних рекламодателей</a></h2>
+    <div class="card-source">Источник: <a href="https://adindex.ru/news/marketing/2026/09/7/348684.phtml" target="_blank" rel="noopener">AdIndex</a>, рубрика «Кабинет рекламодателя»</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      «М.Видео» открыла омниканальное продвижение для брендов, компаний и ИП, чьи товары не представлены в розничных или онлайн-каналах ретейлера. Раньше рекламные инструменты «М.Видео» были доступны только поставщикам с прямой ссылкой на продажи в сети.
+    </p>
+
+    <div class="card-section-label">Как работает формат</div>
+    <p>
+      В основе - механики с QR-кодами: пользователь сканирует код в одном из каналов «М.Видео» и переходит на страницу акции или рекламодателя, где может активировать промокод, получить бонус или поучаствовать в розыгрыше и программе лояльности.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Брендам и компаниям без прямого присутствия в ассортименте «М.Видео», которым нужен доступ к аудитории крупного ретейлера электроники для многоканальной коммуникации.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: рекламодателям из смежных категорий стоит уточнить у «М.Видео», подходит ли QR-механика под их задачи по охвату и лидогенерации - формат больше не привязан к товарному ассортименту сети.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">Кабинет продвижения</span>
+      <span class="badge badge-date">7 сентября 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/marketing/2026/09/7/348684.phtml" target="_blank" rel="noopener">Wildberries: аукцион второй цены в WB Продвижении и новый кабинет для Таджикистана</a></h2>
+    <div class="card-source">Источник: <a href="https://adindex.ru/news/marketing/2026/09/7/348684.phtml" target="_blank" rel="noopener">AdIndex</a>, рубрика «Кабинет рекламодателя»</div>
+
+    <div class="card-section-label">Аукцион второй цены</div>
+    <p>
+      «RWB Медиа» начала тестировать аукцион второй цены в кампаниях с оплатой за клик в кабинете «WB Продвижение». За клик списывается ставка ближайшего конкурента с небольшой надбавкой, но не выше ставки, установленной продавцом - раньше в этих кампаниях действовал только аукцион первой цены. Механизм пока работает в поиске и каталоге для отдельных подкатегорий; в рекомендациях по-прежнему аукцион первой цены. Проверить, действует ли новый аукцион для конкретного товара, можно прямо в кабинете.
+    </p>
+
+    <div class="card-section-label">Новый рынок - Таджикистан</div>
+    <p>
+      «RWB Медиа» запустила локализованный кабинет продвижения товаров на Wildberries в Таджикистане с моделями оплаты CPC (базовая, с автоподбором ключевых запросов) и CPM.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: селлерам на WB стоит проверить в кабинете, попал ли товар в тест аукциона второй цены - это может снизить фактическую стоимость клика без изменения ставки; тем, кто планирует выход в Таджикистан, - изучить условия нового кабинета до запуска кампаний.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://ppc.world/news/podklyuchennye-k-yandeks-kit-prodavcy-teper-mogut-upravlyat-internet-magazinom-cherez-codex-i-claude-code/" target="_blank" rel="noopener">Продавцы на Яндекс KIT смогут управлять магазином через Codex и Claude Code</a> - обновление конструктора сайта, не рекламного кабинета.</li>
+      <li><a href="https://adindex.ru/news/marketing/2026/09/7/348684.phtml" target="_blank" rel="noopener">«билайн бизнес» представил CRM со встроенной интеграцией с «Облачной АТС»</a> - интеграция CRM и телефонии, без изменений в рекламном кабинете.</li>
+      <li><a href="https://blog.click.ru/market-news/rwb-sozdala-edinyj-centr-podderzhki-predprinimatelej-rwb-sredu/" target="_blank" rel="noopener">RWB создала единый центр поддержки предпринимателей «RWB Среда»</a> - образовательный ресурс для бизнеса, не рекламный инструмент.</li>
+      <li><a href="https://yandex.ru/adv/news/yandex-problogger-obedinyaet-servisy-rsya" target="_blank" rel="noopener">Яндекс ПроБлогер объединил монетизацию и аналитику для авторов на разных площадках</a> - сервис монетизации контента для блогеров, не рекламный кабинет закупки.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>«Панорама» в Директе стала доступна без ограничений и минимального бюджета - агентствам стоит протестировать охватные форматы у клиентов, которые раньше не работали с медийкой из-за сложности настройки под разные площадки.</li>
+      <li>Авито Промо открыл агентствам сегмент самозанятых (700 000+ пользователей) - это быстрый источник роста выручки на существующей клиентской базе, без поиска новых клиентов.</li>
+      <li>М.Видео теперь монетизирует трафик QR-механиками независимо от товарного ассортимента - рекламодателям из смежных ниш стоит уточнить условия размещения.</li>
+      <li>Тест аукциона второй цены на Wildberries может снизить фактическую цену клика без изменения ставки - селлерам стоит проверить в кабинете WB Продвижение, попал ли их товар в тест.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 7 сентября 2026 за период 4-7 сентября.
+  </div>
+
+</div>
+
+</body></html>
