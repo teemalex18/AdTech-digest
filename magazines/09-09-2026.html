@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ, 9 сентября 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      background: #f4f5f7;
+      color: #1a1a2e;
+    }
+
+    a { color: #1a6ef5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #a8b2d8;
+    }
+
+    /* Summary block */
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-left: 4px solid #7b8cde;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .summary p {
+      font-size: 15px;
+      color: #444;
+    }
+    .summary .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* Section headings */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 32px 0 14px;
+    }
+
+    /* News card */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .card.primary {
+      border-left: 4px solid #1a6ef5;
+    }
+    .card.secondary {
+      border-left: 4px solid #d0d4e8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .badge-platform {
+      background: #eef2ff;
+      color: #3d5af1;
+    }
+    .badge-date {
+      background: #f3f4f6;
+      color: #666;
+    }
+    .badge-new {
+      background: #e6f9f0;
+      color: #0d7a45;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card h2 a { color: inherit; }
+    .card-source {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-source a {
+      color: #1a6ef5;
+    }
+
+    .card-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin: 14px 0 4px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-conclusion {
+      background: #f7f9ff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #2d3a6e;
+      border-left: 3px solid #7b8cde;
+    }
+
+    /* Not included block */
+    .not-included {
+      background: #fafafa;
+      border: 1px solid #e4e6ee;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .not-included ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+    .not-included ul li {
+      margin-bottom: 8px;
+    }
+    .not-included a {
+      color: #1a6ef5;
+      font-weight: 500;
+    }
+
+    /* Takeaway block */
+    .takeaway {
+      background: #1a1a2e;
+      color: #e8ecff;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-top: 10px;
+    }
+    .takeaway .section-title {
+      color: #7b8cde;
+      margin-top: 0;
+    }
+    .takeaway ul {
+      padding-left: 18px;
+    }
+    .takeaway li {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #c9d1f0;
+    }
+    .takeaway li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 21px; }
+      .card h2 { font-size: 16px; }
+      .wrapper { padding: 16px 12px 48px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 9 сентября 2026 за период 8-9 сентября.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления.
+      Затронуты платформы: <strong>Wildberries, Яндекс Директ, Авито</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Wildberries</span>
+      <span class="badge badge-new">Комиссия</span>
+      <span class="badge badge-date">9 сентября 2026</span>
+    </div>
+    <h2><a href="https://www.sostav.ru/publication/wildberries-pereschitaet-komissiyu-dlya-sellerov-rabotayushchikh-po-modeli-fbs-iz-za-oshibki-86809.html" target="_blank" rel="noopener">Wildberries пересчитает комиссию для селлеров, работающих по модели FBS</a></h2>
+    <div class="card-source">Источник: <a href="https://www.sostav.ru/publication/wildberries-pereschitaet-komissiyu-dlya-sellerov-rabotayushchikh-po-modeli-fbs-iz-za-oshibki-86809.html" target="_blank" rel="noopener">Sostav</a>, со ссылкой на Telegram-канал АУРЭК</div>
+
+    <div class="card-section-label">Что случилось</div>
+    <p>
+      При расчете комиссии за период с 31 августа по 6 сентября Wildberries допустил техническую ошибку: часть селлеров, отгружавших товары по модели FBS быстрее 42 часов, не получила положенное снижение ставки на 3,5-5 процентных пунктов. Сегодня маркетплейс пересчитывает комиссию задним числом.
+    </p>
+
+    <div class="card-section-label">Как вернутся деньги</div>
+    <p>
+      Ошибочно списанные суммы отразятся в финансовом отчете за неделю с 7 по 13 сентября с пометкой "Коррекция продаж". Исправленную комиссию можно будет увидеть в столбцах "К перечислению продавцу за реализованный товар" и "Размер кВВ".
+    </p>
+
+    <div class="card-section-label">Контекст</div>
+    <p>
+      Заодно Wildberries подтвердил, что льготные тарифы FBS заморожены до января 2027 года - это отдельная мера поддержки продавцов, не связанная с текущей коррекцией.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: селлерам и агентствам, ведущим их отчетность, стоит сверить финансовый отчет за 7-13 сентября и убедиться, что коррекция комиссии прошла корректно по всем артикулам с быстрой отгрузкой.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Директ</span>
+      <span class="badge badge-new">Новый статус</span>
+      <span class="badge badge-date">9 сентября 2026</span>
+    </div>
+    <h2><a href="https://yandex.ru/adv/news/povyshajte-doverie-auditorii-so-statusom-nadyozhnyj-biznes" target="_blank" rel="noopener">Интернет-магазинам стал доступен статус "Надёжный бизнес"</a></h2>
+    <div class="card-source">Источник: <a href="https://yandex.ru/adv/news/povyshajte-doverie-auditorii-so-statusom-nadyozhnyj-biznes" target="_blank" rel="noopener">Яндекс Реклама</a>, официальный блог</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Яндекс запустил статус "Надёжный бизнес" для интернет-магазинов и сайтов услуг. Он присваивается на основе поведения покупателей: оценок, отзывов и сигналов о нарушениях, а не заявлений самого бизнеса. Статус может отображаться в органической выдаче, на товарных плитках, в карточке товара и в объявлениях Директа в Поиске.
+    </p>
+
+    <div class="card-section-label">Как получить</div>
+    <p>
+      Нужен рейтинг от 4,5 за последние 180 дней, от 20 опубликованных отзывов и отсутствие признаков накрутки. Проверить наличие статуса можно в кабинете Яндекс Товаров, в разделе "Рейтинг и отзывы". Показатели пересчитываются раз в сутки.
+    </p>
+
+    <div class="card-section-label">Кому полезно</div>
+    <p>
+      Интернет-магазинам и сайтам услуг, которые размещают рекламу в Директе и хотят повысить доверие аудитории без дополнительных затрат на медиа.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: имеет смысл заранее проверить рейтинг магазина в кабинете Яндекс Товаров - статус в объявлениях Директа способен повысить CTR без роста рекламного бюджета.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Авито</span>
+      <span class="badge badge-new">Новая аудитория</span>
+      <span class="badge badge-date">9 сентября 2026</span>
+    </div>
+    <h2><a href="https://blog.click.ru/market-news/agentstva-smogut-prodvigat-samozanyatyx-v-avito-promo/" target="_blank" rel="noopener">Авито Промо открыл агентствам доступ к продвижению самозанятых</a></h2>
+    <div class="card-source">Источник: <a href="https://blog.click.ru/market-news/agentstva-smogut-prodvigat-samozanyatyx-v-avito-promo/" target="_blank" rel="noopener">Click.ru</a>, со ссылкой на Telegram-канал Авито</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Раньше в кабинете Авито Промо агентства могли подключать к продвижению только юрлиц и ИП. Теперь доступны и самозанятые - физлица, которых на площадке более 700 тысяч.
+    </p>
+
+    <div class="card-section-label">Как это работает</div>
+    <p>
+      Для категорий "Товары", "Услуги" и "Спецтехника" доступны модели оплаты "на клиенте" и "на агентстве", для "Работы" - только "на клиенте". Чтобы подключить самозанятого, агентство открывает раздел "Клиенты", указывает номер профиля на Авито и выбирает модель работы; остальные возможности кабинета не изменились.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Рекламным агентствам, которые ведут малый бизнес и хотят расширить портфель клиентов за счет сегмента, ранее недоступного для агентского обслуживания.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: агентствам, работающим с Авито, стоит пересмотреть воронку привлечения клиентов - самозанятые на площадке ранее были для них закрытым сегментом.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Яндекс Реклама</span>
+      <span class="badge badge-new">Настройка кабинета</span>
+      <span class="badge badge-date">8 сентября 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/yandeks-rasshiril-nastroyki-nagrady-v-ballah-za-otzyvy/" target="_blank" rel="noopener">Яндекс расширил настройки награды в "Баллах за отзывы"</a></h2>
+    <div class="card-source">Источник: <a href="https://ppc.world/news/yandeks-rasshiril-nastroyki-nagrady-v-ballah-za-otzyvy/" target="_blank" rel="noopener">ppc.world</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Интернет-магазины и сайты услуг теперь могут сами выбирать ставку вознаграждения за отзывы - от 40 до 200 баллов Яндекс Плюса, вместо фиксированного значения.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Более высокая ставка стимулирует покупателей активнее оставлять отзывы, а количество и качество отзывов напрямую влияет на получение статуса "Надёжный бизнес" в Директе (см. выше).
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: магазинам, которым не хватает отзывов до порога "Надёжного бизнеса", стоит протестировать повышенную ставку вознаграждения.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://ppc.world/news/yandeks-vyshel-na-rynok-ii-agentov-rabochie-processy-teper-mozhno-poruchat-alise-ai-dlya-biznesa/" target="_blank" rel="noopener">Яндекс вышел на рынок ИИ-агентов - Алиса AI для бизнеса</a> - запуск ИИ-инструмента для бизнес-процессов, не изменение рекламного кабинета.</li>
+      <li><a href="https://ppc.world/news/sellery-napravili-v-pravitelstvo-pismo-oni-prosyat-vzyat-pod-kontrol-zaderzhki-vyplat-wildberries/" target="_blank" rel="noopener">Селлеры направили в правительство письмо из-за задержек выплат Wildberries</a> - жалоба на сроки выплат, не изменение условий размещения рекламы.</li>
+      <li><a href="https://blog.click.ru/market-news/dzen-dobavil-avtopublikaciyu-materialov-smi-v-max/" target="_blank" rel="noopener">Дзен добавил автопубликацию материалов СМИ в MAX</a> - функция публикации контента, не связана с рекламным кабинетом.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>Коррекция комиссии Wildberries - разовое исправление технической ошибки, а не смена тарифов, но агентствам стоит держать в фокусе финансовые отчеты FBS-продавцов за 7-13 сентября.</li>
+      <li>Статус "Надёжный бизнес" и обновленные баллы за отзывы у Яндекса работают в связке: чем выше ставка вознаграждения, тем быстрее магазин наберет отзывы, нужные для статуса.</li>
+      <li>Расширение Авито Промо на самозанятых - точка роста для агентств, которые ищут новых клиентов без увеличения штата.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 9 сентября 2026 за период 8-9 сентября.
+  </div>
+
+</div>
+
+</body></html>
