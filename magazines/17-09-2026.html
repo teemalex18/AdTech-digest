@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdTech-дайджест: рекламные кабинеты РФ, 17 сентября 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      background: #f4f5f7;
+      color: #1a1a2e;
+    }
+
+    a { color: #1a6ef5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+
+    /* Header */
+    .header {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    .header-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: #a8b2d8;
+    }
+
+    /* Summary block */
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-left: 4px solid #7b8cde;
+    }
+    .summary-title {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7b8cde;
+      margin-bottom: 10px;
+    }
+    .summary p {
+      font-size: 15px;
+      color: #444;
+    }
+    .summary .stat {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.1em;
+    }
+
+    /* Section headings */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 32px 0 14px;
+    }
+
+    /* News card */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e8eaf0;
+    }
+    .card.primary {
+      border-left: 4px solid #1a6ef5;
+    }
+    .card.secondary {
+      border-left: 4px solid #d0d4e8;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+    .badge-platform {
+      background: #eef2ff;
+      color: #3d5af1;
+    }
+    .badge-date {
+      background: #f3f4f6;
+      color: #666;
+    }
+    .badge-new {
+      background: #e6f9f0;
+      color: #0d7a45;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card h2 a { color: inherit; }
+    .card-source {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .card-source a {
+      color: #1a6ef5;
+    }
+
+    .card-section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin: 14px 0 4px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-conclusion {
+      background: #f7f9ff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #2d3a6e;
+      border-left: 3px solid #7b8cde;
+    }
+
+    /* Not included block */
+    .not-included {
+      background: #fafafa;
+      border: 1px solid #e4e6ee;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .not-included ul {
+      padding-left: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+    .not-included ul li {
+      margin-bottom: 8px;
+    }
+    .not-included a {
+      color: #1a6ef5;
+      font-weight: 500;
+    }
+
+    /* Takeaway block */
+    .takeaway {
+      background: #1a1a2e;
+      color: #e8ecff;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-top: 10px;
+    }
+    .takeaway .section-title {
+      color: #7b8cde;
+      margin-top: 0;
+    }
+    .takeaway ul {
+      padding-left: 18px;
+    }
+    .takeaway li {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+      color: #c9d1f0;
+    }
+    .takeaway li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 21px; }
+      .card h2 { font-size: 16px; }
+      .wrapper { padding: 16px 12px 48px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Ежедневный выпуск</div>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="header-meta">Выпуск 17 сентября 2026 за период 16-17 сентября.</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-title">Резюме выпуска</div>
+    <p>
+      Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений.
+      Затронуты платформы: <strong>Telegram Ads, ChatGPT, Google, маркетплейсы, Билайн Adtech</strong>.
+    </p>
+  </div>
+
+  <!-- Главное -->
+  <div class="section-title">Главное</div>
+
+  <!-- Card 1 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Telegram Ads</span>
+      <span class="badge badge-new">Новый формат</span>
+      <span class="badge badge-date">16 сентября 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/v-telegram-ads-teper-mozhno-targetirovatsya-na-auditoriyu-botov/" target="_blank" rel="noopener">Telegram Ads запустил формат Banner in Bot с таргетингом на аудиторию ботов</a></h2>
+    <div class="card-source">Источник: <a href="https://ppc.world/news/v-telegram-ads-teper-mozhno-targetirovatsya-na-auditoriyu-botov/" target="_blank" rel="noopener">ppc.world</a>, со ссылкой на <a href="https://adindex.ru/news/digital/2026/09/15/348909.phtml" target="_blank" rel="noopener">AdIndex</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      В кабинете Telegram Ads появился новый формат Banner in Bot: объявление размещается прямо внутри Telegram-ботов, в разделе Users. Показы можно настраивать по параметрам целевой аудитории: соцдем-характеристикам, подпискам на конкретные каналы или собственной базе телефонных номеров.
+    </p>
+
+    <div class="card-section-label">Формат объявления</div>
+    <p>
+      Баннер поддерживает только текст, логотип и кастомный эмодзи - без фото и видео. Кампании пока можно запускать на боты с аудиторией до 1000 пользователей в месяц.
+    </p>
+
+    <div class="card-section-label">Кому подходит</div>
+    <p>
+      Рекламодателям и сервисам с активными продуктовыми и сервисными ботами: доставка, поддержка, бронирование, малый и средний бизнес с ботом как основной точкой контакта.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: формат стоит протестировать в первую очередь тем, у кого уже есть собственный бот или база подписчиков ботов, пока аудитория и конкуренция за плейсмент небольшие.
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">ChatGPT</span>
+      <span class="badge badge-new">Новый канал</span>
+      <span class="badge badge-date">16 сентября 2026</span>
+    </div>
+    <h2><a href="https://ppc.world/news/chatgpt-nachal-pokazyvat-reklamu-v-dialogah-na-russkom-yazyke/" target="_blank" rel="noopener">Реклама в ChatGPT стала доступна в диалогах на русском языке</a></h2>
+    <div class="card-source">Источник: <a href="https://ppc.world/news/chatgpt-nachal-pokazyvat-reklamu-v-dialogah-na-russkom-yazyke/" target="_blank" rel="noopener">ppc.world</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      OpenAI показывает рекламу в чатах ChatGPT пользователям бесплатного тарифа, если они заходят через VPN из одной из стран, где реклама уже запущена: 30+ стран Европы, а также Великобритания, Мексика, Бразилия, Япония и Южная Корея. Пользователи из России при таком заходе видят объявления на русском языке.
+    </p>
+
+    <div class="card-section-label">Как это выглядит</div>
+    <p>
+      На товарные запросы нейросеть добавляет в ответ подборку с ссылками на конкретные товары и предложения.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Прямого доступа к закупке рекламы для рекламодателей из России пока нет: показы зависят от геолокации через VPN, а не от таргетинга рекламодателя. Стоит следить за списком стран - при его расширении логика может измениться.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: полноценным каналом закупки для рынка РФ реклама в ChatGPT пока не стала, но сам факт появления рекламы в ИИ-диалогах на русском языке стоит держать в фокусе при планировании бюджетов на 2027 год.
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card primary">
+    <div class="card-top">
+      <span class="badge badge-platform">Google</span>
+      <span class="badge badge-new">Регуляторика</span>
+      <span class="badge badge-date">17 сентября 2026</span>
+    </div>
+    <h2><a href="https://adindex.ru/news/right/2026/09/17/348964.phtml" target="_blank" rel="noopener">Google обязали смягчить правила рекламных аукционов после решения суда в США</a></h2>
+    <div class="card-source">Источник: <a href="https://adindex.ru/news/right/2026/09/17/348964.phtml" target="_blank" rel="noopener">AdIndex</a>, со ссылкой на Reuters</div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Суд в штате Вирджиния обязал Google изменить часть бизнес-практик, регулирующих онлайн-аукционы рекламы, и назначить наблюдателя за соблюдением антимонопольного законодательства. Решение стало следствием признанной в апреле 2025 года незаконной монополии Google на часть рекламных технологий. При этом в начале сентября суд разрешил Google сохранить рекламный бизнес целиком - без принудительного разделения или продажи.
+    </p>
+
+    <div class="card-section-label">Почему важно</div>
+    <p>
+      Реклама формирует около 73% выручки Alphabet при рыночной капитализации свыше 4,1 трлн долларов. Google Ad Manager остается одним из крупнейших ad exchange в мире, поэтому изменение правил аукциона способно повлиять на условия работы всей programmatic-цепочки.
+    </p>
+
+    <div class="card-section-label">Что проверить</div>
+    <p>
+      Конкретные новые правила аукциона Google пока не опубликовал. Агентствам и рекламодателям, работающим с Google Ads и GAM в международных кампаниях, стоит следить за официальными разъяснениями по мере их выхода.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: прямых изменений для российских рекламодателей нет, но решение задает вектор для всего рынка programmatic-аукционов - стоит держать в поле зрения перед международными закупками через Google.
+    </div>
+  </div>
+
+  <!-- Остальные обновления -->
+  <div class="section-title">Остальные обновления</div>
+
+  <!-- Card 4 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Маркетплейсы</span>
+      <span class="badge badge-new">Условия размещения</span>
+      <span class="badge badge-date">16 сентября 2026</span>
+    </div>
+    <h2><a href="https://www.unisender.com/ru/blog/news/marketplejsam-hotyat-ogranichit-skidki-i-komissii-dlya-prodavczov/" target="_blank" rel="noopener">Минэкономразвития предложило ограничить скидки и комиссии маркетплейсов для продавцов</a></h2>
+    <div class="card-source">Источник: <a href="https://www.unisender.com/ru/blog/news/marketplejsam-hotyat-ogranichit-skidki-i-komissii-dlya-prodavczov/" target="_blank" rel="noopener">Unisender</a>, со ссылкой на <a href="https://www.vedomosti.ru/business/articles/2026/09/15/1228841-kabmin-podgotovil" target="_blank" rel="noopener">Ведомости</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Второй пакет правил для платформенной экономики затронет комиссии, карточки товаров, цены и расчеты с продавцами. Ключевые предложения: выплаты продавцам не позднее 30 дней с момента продажи; запрет устанавливать более высокие комиссии для российских компаний, ИП и самозанятых по сравнению с другими партнерами; запрет показывать в поиске спецену, доступную только при оплате картой или в рассрочку, без явного указания условий.
+    </p>
+
+    <div class="card-section-label">Что касается скидок</div>
+    <p>
+      Продавцы смогут устанавливать минимальную цену товара, ниже которой площадка не сможет снижать стоимость без их согласия, и отказываться от скидки маркетплейса еще до продажи. Также вводится обязательная проверка карточек товаров площадкой перед публикацией.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: пока это предложение, а не принятые поправки, но уже сейчас стоит закладывать сценарий ограничения комиссий и большей прозрачности скидок в финансовые модели продвижения на Ozon и Wildberries.
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card secondary">
+    <div class="card-top">
+      <span class="badge badge-platform">Билайн Adtech</span>
+      <span class="badge badge-new">Антифрод</span>
+      <span class="badge badge-date">17 сентября 2026</span>
+    </div>
+    <h2><a href="https://www.cossa.ru/news/350957/" target="_blank" rel="noopener">Билайн Adtech внедрил антифрод-систему на основе машинного обучения</a></h2>
+    <div class="card-source">Источник: <a href="https://www.cossa.ru/news/350957/" target="_blank" rel="noopener">Cossa</a></div>
+
+    <div class="card-section-label">Что изменилось</div>
+    <p>
+      Собственная система антифрода Билайн Adtech дополнена ML-моделями для выявления невалидного трафика (IVT) - как базового (GIVT), так и сложных сценариев (SIVT). Модель анализирует сотни признаков запроса на показ рекламы и последовательности событий, работает параллельно с уже существующими механизмами фильтрации, не заменяя их.
+    </p>
+
+    <div class="card-section-label">Цифры</div>
+    <p>
+      По итогам второго квартала 2026 года доля невалидного трафика в кампаниях, которые полностью ведет Билайн Adtech, составила менее 5% по данным независимого верификатора TargetADS.
+    </p>
+
+    <div class="card-conclusion">
+      Вывод: при выборе adtech-партнеров для программатик-закупок стоит запрашивать сопоставимые показатели доли невалидного трафика, подтвержденные независимым верификатором.
+    </div>
+  </div>
+
+  <!-- Не вошло в выпуск -->
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="not-included">
+    <ul>
+      <li><a href="https://ppc.world/news/prodavcy-wildberries-smogut-dobavit-v-kartochku-tovara-knopku-hochu-skidku/" target="_blank" rel="noopener">Продавцы Wildberries смогут добавить в карточку товара кнопку «Хочу скидку»</a> - вне окна дат, первая публикация 15.09.</li>
+      <li><a href="https://ppc.world/news/v-chatgpt-zapuskayut-novyy-format-reklamy-kotoraya-vedet-v-dialog-s-ii-agentom-brenda/" target="_blank" rel="noopener">В ChatGPT запускают новый формат рекламы, которая ведет в диалог с ИИ-агентом бренда</a> - вне окна дат, первая публикация 15.09, тест проводится среди ограниченного круга клиентов.</li>
+      <li><a href="https://ppc.world/news/yandeks-probloger-zapustil-konkurs-dlya-avtorov-s-1000-podpischikov-prizovoy-fond-15-mln-rubley/" target="_blank" rel="noopener">Яндекс ПроБлогер запустил конкурс для авторов с 1000+ подписчиков</a> - конкурс для блогеров на монетизационной платформе, не меняет условия рекламного кабинета.</li>
+      <li><a href="https://www.cossa.ru/news/350954/" target="_blank" rel="noopener">DashaMail отмечает 10-летие обновлением сервиса и запуском новых инструментов</a> - обновление сервиса email-рассылок, не рекламного кабинета.</li>
+    </ul>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="takeaway">
+    <div class="section-title">Summary</div>
+    <ul>
+      <li>Telegram Ads расширяет форматы за счет ботов: Banner in Bot стоит протестировать тем, у кого уже есть собственный бот, пока аудитория плейсмента и конкуренция за него небольшие.</li>
+      <li>Реклама в ChatGPT на русском языке пока доступна только через VPN и без прямого канала закупки для российских рекламодателей - предметно возвращаться к теме стоит при расширении списка стран.</li>
+      <li>Решение суда США по антимонопольному делу против Google затронет правила programmatic-аукционов во всем мире - агентствам с международными кампаниями стоит следить за публикацией новых условий.</li>
+      <li>Предложенные ограничения комиссий и скидок маркетплейсов меняют логику работы с ценами и деньгами на Ozon и Wildberries - имеет смысл заложить сценарий в финансовые модели уже сейчас, не дожидаясь принятия поправок.</li>
+      <li>Билайн Adtech подкрепил антифрод конкретной цифрой (менее 5% невалидного трафика) - хороший повод сверить аналогичные показатели у текущих программатик-поставщиков.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    AdTech-дайджест: рекламные кабинеты РФ<br>
+    Выпуск 17 сентября 2026 за период 16-17 сентября.
+  </div>
+
+</div>
+
+</body></html>
