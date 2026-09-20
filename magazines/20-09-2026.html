@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --header-bg: #16202e;
+    --header-text: #f4f6f9;
+    --card-bg: #ffffff;
+    --card-border: #e5e8ec;
+    --text-main: #1f2530;
+    --text-muted: #5b6472;
+    --accent-primary: #2563eb;
+    --accent-secondary: #94a3b8;
+    --conclusion-bg: #eef4ff;
+    --conclusion-border: #2563eb;
+    --conclusion-text: #1e3a6e;
+    --summary-accent: #2563eb;
+    --dark-block-bg: #16202e;
+    --dark-block-text: #e7ebf2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-main);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.digest-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 16px;
+    padding: 32px 28px;
+    margin-bottom: 20px;
+  }
+  header.digest-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header.digest-header .issue-line {
+    color: #aab4c4;
+    font-size: 1em;
+    margin: 0;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--summary-accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    color: var(--text-main);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .summary p { margin: 0 0 8px 0; }
+  .summary p:last-child { margin-bottom: 0; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 32px 0 14px 0;
+    color: var(--text-main);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent-primary);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--accent-secondary);
+  }
+  .card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.15em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text-main);
+    text-decoration: none;
+  }
+  .card h3 a:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
+  }
+  .card-meta {
+    font-size: 0.88em;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+  }
+  .card-meta span:not(:last-child)::after {
+    content: " · ";
+    color: #c3c9d3;
+  }
+  .card-block {
+    margin-bottom: 12px;
+  }
+  .card-block:last-of-type {
+    margin-bottom: 0;
+  }
+  .card-block .label {
+    font-weight: 700;
+    font-size: 0.92em;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .card-block p {
+    margin: 0;
+    color: #333a45;
+  }
+  .card-conclusion {
+    margin-top: 16px;
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--conclusion-text);
+    font-size: 0.95em;
+  }
+  .card-conclusion .label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 3px;
+    color: var(--conclusion-text);
+  }
+  .skipped-list {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--accent-secondary);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .skipped-list ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .skipped-list li {
+    margin-bottom: 12px;
+    color: #333a45;
+  }
+  .skipped-list li:last-child {
+    margin-bottom: 0;
+  }
+  .skipped-list a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skipped-list a:hover {
+    text-decoration: underline;
+  }
+  .skipped-reason {
+    color: var(--text-muted);
+  }
+  .summary-block {
+    background: var(--dark-block-bg);
+    color: var(--dark-block-text);
+    border-radius: 16px;
+    padding: 28px 26px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+  .summary-block h2 {
+    margin: 0 0 14px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  .summary-block ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .summary-block li {
+    margin-bottom: 10px;
+    color: #cdd5e0;
+  }
+  .summary-block li:last-child {
+    margin-bottom: 0;
+  }
+  footer.digest-footer {
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    color: var(--text-muted);
+    font-size: 0.9em;
+  }
+  footer.digest-footer .footer-title {
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1420;
+      --header-bg: #0a0f18;
+      --card-bg: #1a2130;
+      --card-border: #2a3345;
+      --text-main: #e7ebf2;
+      --text-muted: #8b95a8;
+      --conclusion-bg: #1e2c4a;
+      --conclusion-border: #4f7bee;
+      --conclusion-text: #c9d7f7;
+      --dark-block-bg: #0a0f18;
+      --dark-block-text: #dfe4ec;
+    }
+    .card-block p { color: #cdd3de; }
+    .skipped-list li { color: #cdd3de; }
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px; }
+    header.digest-header { padding: 24px 20px; }
+    .card { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="digest-header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <p class="issue-line">Выпуск 20 сентября 2026 за период 19-20 сентября.</p>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">0</span> релевантных обновлений в рекламных кабинетах. Выходные 19-20 сентября традиционно тихое время для отраслевых редакций и рекламных платформ: новых изменений в форматах, таргетингах, отчётах и условиях размещения за эти два дня не вышло.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <div class="card-meta">
+      <span>19-20 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <p><strong>За выходные рекламные кабинеты не поменяли ни одной настройки.</strong> Ни один из проверенных источников не сообщил об обновлениях форматов, таргетингов, стратегий, отчётов или условий размещения. Обычная сезонность: крупные площадки и профильные редакции публикуют такие новости преимущественно в будни, а последний содержательный блок обновлений вышел ещё в пятницу, 18 сентября, и уже попал в предыдущий выпуск.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Что рядом</span>
+      <p>За эти два дня в лентах встретились только исследование рынка рекламы в MAX и новость о премии одного из сервисов аналитики. Оба материала не описывают изменений в рекламном инструментарии, поэтому в карточки не попали — подробнее в разделе «Не вошло в выпуск».</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Пересматривать кампании или настройки по итогам выходных не нужно: поводов для этого не появилось. Следующего содержательного блока обновлений стоит ждать с началом рабочей недели.
+    </div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="skipped-list">
+    <ul>
+      <li><a href="https://www.cossa.ru/news/348989/" target="_blank" rel="noopener">Рынок рекламы в MAX вырос в 55 раз за полгода: первое исследование Telega.in и АРИР</a> <span class="skipped-reason">- исследование рынка без практического изменения в рекламных кабинетах.</span></li>
+      <li><a href="https://www.cossa.ru/news/349731/" target="_blank" rel="noopener">Telega.in получила народную премию CPC.Awards за аналитику Telegram- и MAX-каналов</a> <span class="skipped-reason">- PR-новость без изменений в рекламном инструменте.</span></li>
+    </ul>
+  </div>
+
+  <div class="summary-block">
+    <h2>SUMMARY</h2>
+    <ul>
+      <li>За 19-20 сентября рекламные кабинеты, форматы и условия размещения не менялись — действовать по итогам выходных не требуется.</li>
+      <li>Рост рекламного рынка MAX в 55 раз за полгода пока остаётся статистикой без конкретных инструментов или условий размещения, поэтому в план работ его включать рано.</li>
+      <li>Основной поток обновлений Яндекс Директа, VK Рекламы и маркетплейсов стоит ждать с началом рабочей недели.</li>
+    </ul>
+  </div>
+
+  <footer class="digest-footer">
+    <div class="footer-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 20 сентября 2026 за период 19-20 сентября.</div>
+  </footer>
+
+</div>
+</body>
+</html>
