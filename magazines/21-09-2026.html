@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --header-bg: #16202e;
+    --header-text: #f4f6f9;
+    --card-bg: #ffffff;
+    --card-border: #e5e8ec;
+    --text-main: #1f2530;
+    --text-muted: #5b6472;
+    --accent-primary: #2563eb;
+    --accent-secondary: #94a3b8;
+    --conclusion-bg: #eef4ff;
+    --conclusion-border: #2563eb;
+    --conclusion-text: #1e3a6e;
+    --summary-accent: #2563eb;
+    --dark-block-bg: #16202e;
+    --dark-block-text: #e7ebf2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-main);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.digest-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 16px;
+    padding: 32px 28px;
+    margin-bottom: 20px;
+  }
+  header.digest-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header.digest-header .issue-line {
+    color: #aab4c4;
+    font-size: 1em;
+    margin: 0;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--summary-accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    color: var(--text-main);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .summary p { margin: 0 0 8px 0; }
+  .summary p:last-child { margin-bottom: 0; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 32px 0 14px 0;
+    color: var(--text-main);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent-primary);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--accent-secondary);
+  }
+  .card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.15em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text-main);
+    text-decoration: none;
+  }
+  .card h3 a:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
+  }
+  .card-meta {
+    font-size: 0.88em;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+  }
+  .card-meta span:not(:last-child)::after {
+    content: " · ";
+    color: #c3c9d3;
+  }
+  .card-block {
+    margin-bottom: 12px;
+  }
+  .card-block:last-of-type {
+    margin-bottom: 0;
+  }
+  .card-block .label {
+    font-weight: 700;
+    font-size: 0.92em;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .card-block p {
+    margin: 0;
+    color: #333a45;
+  }
+  .card-conclusion {
+    margin-top: 16px;
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--conclusion-text);
+    font-size: 0.95em;
+  }
+  .card-conclusion .label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 3px;
+    color: var(--conclusion-text);
+  }
+  .skipped-list {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--accent-secondary);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .skipped-list ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .skipped-list li {
+    margin-bottom: 12px;
+    color: #333a45;
+  }
+  .skipped-list li:last-child {
+    margin-bottom: 0;
+  }
+  .skipped-list a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skipped-list a:hover {
+    text-decoration: underline;
+  }
+  .skipped-reason {
+    color: var(--text-muted);
+  }
+  .summary-block {
+    background: var(--dark-block-bg);
+    color: var(--dark-block-text);
+    border-radius: 16px;
+    padding: 28px 26px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+  .summary-block h2 {
+    margin: 0 0 14px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  .summary-block ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .summary-block li {
+    margin-bottom: 10px;
+    color: #cdd5e0;
+  }
+  .summary-block li:last-child {
+    margin-bottom: 0;
+  }
+  footer.digest-footer {
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    color: var(--text-muted);
+    font-size: 0.9em;
+  }
+  footer.digest-footer .footer-title {
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1420;
+      --header-bg: #0a0f18;
+      --card-bg: #1a2130;
+      --card-border: #2a3345;
+      --text-main: #e7ebf2;
+      --text-muted: #8b95a8;
+      --conclusion-bg: #1e2c4a;
+      --conclusion-border: #4f7bee;
+      --conclusion-text: #c9d7f7;
+      --dark-block-bg: #0a0f18;
+      --dark-block-text: #dfe4ec;
+    }
+    .card-block p { color: #cdd3de; }
+    .skipped-list li { color: #cdd3de; }
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px; }
+    header.digest-header { padding: 24px 20px; }
+    .card { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="digest-header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <p class="issue-line">Выпуск 21 сентября 2026 за период 18-21 сентября.</p>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Яндекс Директ, Яндекс Метрика, МТС DSP, Авито Авто, eLama</strong>.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news/obnovlenie-tovarnyh-obyavleniy" target="_blank" rel="noopener">Яндекс объединил товарные объявления и объявления для каталога в Единой перфоманс-кампании</a></h3>
+    <div class="card-meta">
+      <span>Яндекс Реклама, официальный блог</span>
+      <span>Яндекс Директ</span>
+      <span>21 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Что изменилось</span>
+      <p>Раньше для продвижения всего ассортимента интернет-магазина в ЕПК нужно было настраивать два типа объявлений по отдельности: товарное и для страниц каталога. Теперь их объединили в одно обновлённое товарное объявление: достаточно выбрать источник данных, а Директ сам сформирует объявления и для товаров, и для страниц каталога, даже если в фиде есть только один тип страниц.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Как пройдёт обновление</span>
+      <p>С 21 сентября все новые объявления в ЕПК создаются уже в обновлённом виде, отдельное объявление для страниц каталога больше не создать. Существующие объявления обновятся автоматически, без действий со стороны рекламодателя: статистика и настройки сохранятся, показы не останавливаются.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Кому полезно</span>
+      <p>Интернет-магазинам и агентствам, которые ведут кампании в ЕПК с товарными фидами и каталожными страницами.</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Отдельных действий не требуется, но стоит проверить группы объявлений после автообновления, особенно фильтр «Конверсионные страницы» и источники данных, если ранее товары и каталог вели раздельно.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://adindex.ru/news/marketing/2026/09/21/349048.phtml" target="_blank" rel="noopener">Кабинет рекламодателя: единый ID от «Веборамы», новые инструменты МТС DSP и автопилот продвижения у «Авито Авто»</a></h3>
+    <div class="card-meta">
+      <span>AdIndex</span>
+      <span>Веборама, МТС DSP, Авито Авто</span>
+      <span>21 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Веборама: единый ID</span>
+      <p>«Веборама» запустила Weborama Unified ID (WUID), идентификатор, который объединяет данные о контактах пользователя с рекламой в CTV, DOOH, мобайле и десктопе. Инструмент уже доступен в аналитических продуктах компании и позволяет считать кросс-канальный охват и частоту, строить атрибуционные модели и оценивать влияние рекламы на бренд-метрики и продажи.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">МТС DSP: данные и отчётность</span>
+      <p>В self-service платформе МТС DSP рекламодателям стала доступна передача данных из Яндекс Метрики по API, а в отчётах статистики появились метрики «Вызовы трекинга кликов» и «Вызовы трекинга показов». Обновления уже работают без обращения в техподдержку.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Авито Авто: ИИ-автопилот</span>
+      <p>«Автохаб» (входит в «Авито Авто») представил инструмент «Автопилот продвижения» для дилеров со складом от 50 автомобилей: он сам подбирает стратегию продвижения объявлений с учётом цены, характеристик авто, пробега и интереса покупателей. По данным тестирования у части дилеров целевые контакты выросли на 68%, а стоимость целевого лида снизилась на 48%.</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Три независимых обновления одного дня показывают общий тренд: DSP-платформы наращивают данные и отчётность, а в вертикальных нишах вроде авто появляется измеримая ИИ-автоматизация продвижения.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://elama.ru/blog/tarify-dlya-klientov-v-elama-kak-agentstvam-i-frilanseram-uvelichit-voznagrazhdenie/" target="_blank" rel="noopener">eLama запустила тарифы для клиентов: агентства и фрилансеры смогут получать до 70% от их стоимости</a></h3>
+    <div class="card-meta">
+      <span>eLama</span>
+      <span>Посредник: агентства и фрилансеры</span>
+      <span>18 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Что изменилось</span>
+      <p>eLama ввела пять тарифов для партнёров, от Базового до Максимума, стоимостью от 5% до 15% от суммы пополнения рекламного счёта клиента. Подключать тариф необязательно: партнёр сам решает, каким клиентам его предложить и какой процент выбрать.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Сколько можно заработать</span>
+      <p>Вознаграждение партнёра начисляется дополнительно к стандартной партнёрской программе eLama и составляет от 30% до 70% от стоимости тарифа в зависимости от уровня: Базовый даёт партнёру 30% от своих 5%, Максимум - 70% от 15%.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Что получает клиент</span>
+      <p>Более высокие тарифы открывают дополнительные условия: от доступа к обучающим материалам до отмены штрафов за просрочку оплаты по отложенному платежу и увеличенного лимита постоплаты. Оплату и закрывающие документы по тарифу берёт на себя eLama.</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Для агентств и фрилансеров, работающих через eLama, это способ увеличить маржинальность работы с клиентами без роста операционной нагрузки на администрирование платежей.
+    </div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://yandex.ru/adv/news/benchmarki-po-industriyam-v-metrike" target="_blank" rel="noopener">Яндекс Метрика запустила бесплатные бенчмарки по индустриям</a></h3>
+    <div class="card-meta">
+      <span>Яндекс Реклама, официальный блог</span>
+      <span>Яндекс Метрика</span>
+      <span>18 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Что изменилось</span>
+      <p>В Метрике появился новый отчёт «Средние показатели по индустрии»: дерево из 26 тематик и 164 подтематик, которое позволяет сравнить показатели сайта со средними по рынку: воронку продаж, посещаемость, вовлечённость, источники трафика и типы устройств.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Зачем это нужно</span>
+      <p>Без отраслевого контекста легко сделать неверный вывод, например посчитать снижение трафика проблемой сайта, хотя оно связано с общей ситуацией в индустрии, а не с самим сайтом.</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Бесплатный ориентир для отчётности перед клиентом или руководством: просадку показателей теперь можно сразу сверить с рынком, а не гадать, в сайте дело или в сезонности.
+    </div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="skipped-list">
+    <ul>
+      <li><a href="https://www.cossa.ru/news/348989/" target="_blank" rel="noopener">Рынок рекламы в MAX вырос в 55 раз за полгода: первое исследование Telega.in и АРИР</a> <span class="skipped-reason">- исследование рынка без практического изменения в рекламных кабинетах.</span></li>
+      <li><a href="https://ppc.world/news/v-telegram-ads-teper-mozhno-targetirovatsya-na-auditoriyu-botov/" target="_blank" rel="noopener">В Telegram Ads теперь можно таргетироваться на аудиторию ботов</a> <span class="skipped-reason">- вне окна дат, первая публикация 16.09.</span></li>
+      <li><a href="https://ppc.world/news/prodavcy-wildberries-smogut-dobavit-v-kartochku-tovara-knopku-hochu-skidku/" target="_blank" rel="noopener">Продавцы Wildberries смогут добавить в карточку товара кнопку «Хочу скидку»</a> <span class="skipped-reason">- вне окна дат, первая публикация 15.09.</span></li>
+    </ul>
+  </div>
+
+  <div class="summary-block">
+    <h2>SUMMARY</h2>
+    <ul>
+      <li>Яндекс упростил работу с ЕПК: товары и страницы каталога теперь ведутся в одном объявлении, специалистам стоит проверить группы после автообновления, но перенастраивать кампании с нуля не нужно.</li>
+      <li>Сразу три платформы, Веборама, МТС DSP и Авито Авто, в один день нарастили данные, отчётность и автоматизацию. Тем, кто работает с МТС DSP или размещает автообъявления на Авито, полезно свериться с новыми инструментами уже сейчас.</li>
+      <li>Новые тарифы eLama дают агентствам и фрилансерам легальный способ увеличить доход с клиента без лишней административной нагрузки, стоит сравнить условия по уровням и подключить подходящий там, где это оправдано объёмом работ.</li>
+      <li>Бенчмарки в Яндекс Метрике закрывают частый вопрос в отчётах: снижение показателей - это провал кампании или общая динамика рынка. Стоит включить сравнение с индустрией в регулярную отчётность.</li>
+    </ul>
+  </div>
+
+  <footer class="digest-footer">
+    <div class="footer-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 21 сентября 2026 за период 18-21 сентября.</div>
+  </footer>
+
+</div>
+</body>
+</html>
