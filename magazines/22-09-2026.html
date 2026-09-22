@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --header-bg: #16202e;
+    --header-text: #f4f6f9;
+    --card-bg: #ffffff;
+    --card-border: #e5e8ec;
+    --text-main: #1f2530;
+    --text-muted: #5b6472;
+    --accent-primary: #2563eb;
+    --accent-secondary: #94a3b8;
+    --conclusion-bg: #eef4ff;
+    --conclusion-border: #2563eb;
+    --conclusion-text: #1e3a6e;
+    --summary-accent: #2563eb;
+    --dark-block-bg: #16202e;
+    --dark-block-text: #e7ebf2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-main);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.digest-header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    border-radius: 16px;
+    padding: 32px 28px;
+    margin-bottom: 20px;
+  }
+  header.digest-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header.digest-header .issue-line {
+    color: #aab4c4;
+    font-size: 1em;
+    margin: 0;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--summary-accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    color: var(--text-main);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .summary p { margin: 0 0 8px 0; }
+  .summary p:last-child { margin-bottom: 0; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 32px 0 14px 0;
+    color: var(--text-main);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent-primary);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--accent-secondary);
+  }
+  .card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.15em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text-main);
+    text-decoration: none;
+  }
+  .card h3 a:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
+  }
+  .card-meta {
+    font-size: 0.88em;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+  }
+  .card-meta span:not(:last-child)::after {
+    content: " · ";
+    color: #c3c9d3;
+  }
+  .card-block {
+    margin-bottom: 12px;
+  }
+  .card-block:last-of-type {
+    margin-bottom: 0;
+  }
+  .card-block .label {
+    font-weight: 700;
+    font-size: 0.92em;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .card-block p {
+    margin: 0;
+    color: #333a45;
+  }
+  .card-conclusion {
+    margin-top: 16px;
+    background: var(--conclusion-bg);
+    border-left: 3px solid var(--conclusion-border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--conclusion-text);
+    font-size: 0.95em;
+  }
+  .card-conclusion .label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 3px;
+    color: var(--conclusion-text);
+  }
+  .skipped-list {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--accent-secondary);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .skipped-list ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .skipped-list li {
+    margin-bottom: 12px;
+    color: #333a45;
+  }
+  .skipped-list li:last-child {
+    margin-bottom: 0;
+  }
+  .skipped-list a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skipped-list a:hover {
+    text-decoration: underline;
+  }
+  .skipped-reason {
+    color: var(--text-muted);
+  }
+  .summary-block {
+    background: var(--dark-block-bg);
+    color: var(--dark-block-text);
+    border-radius: 16px;
+    padding: 28px 26px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+  .summary-block h2 {
+    margin: 0 0 14px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  .summary-block ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .summary-block li {
+    margin-bottom: 10px;
+    color: #cdd5e0;
+  }
+  .summary-block li:last-child {
+    margin-bottom: 0;
+  }
+  footer.digest-footer {
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    color: var(--text-muted);
+    font-size: 0.9em;
+  }
+  footer.digest-footer .footer-title {
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1420;
+      --header-bg: #0a0f18;
+      --card-bg: #1a2130;
+      --card-border: #2a3345;
+      --text-main: #e7ebf2;
+      --text-muted: #8b95a8;
+      --conclusion-bg: #1e2c4a;
+      --conclusion-border: #4f7bee;
+      --conclusion-text: #c9d7f7;
+      --dark-block-bg: #0a0f18;
+      --dark-block-text: #dfe4ec;
+    }
+    .card-block p { color: #cdd3de; }
+    .skipped-list li { color: #cdd3de; }
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px; }
+    header.digest-header { padding: 24px 20px; }
+    .card { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="digest-header">
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <p class="issue-line">Выпуск 22 сентября 2026 за период 21-22 сентября.</p>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Яндекс Директ, Яндекс Поиск, Wildberries, Адмитад</strong>.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news/obnovlenie-tovarnyh-obyavleniy" target="_blank" rel="noopener">Яндекс объединил товарные объявления и объявления для каталога в Единой перфоманс-кампании</a></h3>
+    <div class="card-meta">
+      <span>Яндекс Реклама, официальный блог</span>
+      <span>Яндекс Директ</span>
+      <span>21 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Что изменилось</span>
+      <p>Товарные объявления и объявления для страниц каталога в Единой перфоманс-кампании объединили в один тип. Раньше для продвижения всего ассортимента их приходилось настраивать по отдельности, теперь достаточно выбрать источник данных, а Директ сам сформирует нужные объявления, даже если в фиде есть только один тип страниц.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Как пройдёт обновление</span>
+      <p>С 21 сентября все новые объявления в ЕПК создаются уже в обновлённом формате, отдельное объявление для страниц каталога больше не создать. Существующие кампании обновятся автоматически: статистика и настройки сохранятся, показы не остановятся, а на время апдейта настройки объявления на несколько минут станут доступны только для чтения.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Кому полезно</span>
+      <p>Интернет-магазинам и агентствам, которые ведут в ЕПК одновременно товарные фиды и страницы каталога.</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Отдельных действий не требуется, но после автообновления стоит проверить группы объявлений и фильтр «Конверсионные страницы», особенно если раньше товары и каталог вели раздельно.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://www.cossa.ru/news/351121/" target="_blank" rel="noopener">Яндекс изменил кнопку «Купить в 1 клик»: заказы выросли на 5%</a></h3>
+    <div class="card-meta">
+      <span>Cossa</span>
+      <span>Яндекс Поиск, Алиса</span>
+      <span>22 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Что изменилось</span>
+      <p>Яндекс протестировал несколько вариантов дизайна кнопки «Купить в 1 клик», которая стоит рядом с товарным предложением в Поиске. Вариант с иконкой пакета показал на 5% больше завершённых заказов, чем другие, и стал основным.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Как это работает</span>
+      <p>Если пользователь авторизован в Яндекс ID, поля для оформления заказа (имя, адрес доставки, пункт выдачи, оплата) заполняются автоматически. Обновлённая кнопка уже доступна в Поиске и в чате с Алисой.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Почему важно</span>
+      <p>Транзакционный сценарий в Поиске запустили в начале года, и за последние четыре месяца его использование выросло в 10 раз. Это растущий канал, где даже небольшие изменения интерфейса заметно влияют на конверсию.</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Для рекламодателей и селлеров, чьи товары показываются в Поиске Яндекса, это сигнал, что транзакционный сценарий уже даёт измеримый прирост заказов, и его вклад стоит учитывать при оценке эффективности размещения.
+    </div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://blog.click.ru/market-news/wildberries-nachal-davat-rekomendacii-po-novym-faktoram-ranzhirovaniya/" target="_blank" rel="noopener">Wildberries начал давать рекомендации по новым факторам ранжирования</a></h3>
+    <div class="card-meta">
+      <span>Click.ru</span>
+      <span>Wildberries</span>
+      <span>22 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Что изменилось</span>
+      <p>В отчёте «Поисковые запросы: ваши товары» Wildberries добавил рекомендации по девяти факторам, которые влияют на позиции карточки в поиске: контрастность товара на фото, отсутствие затемнений и размытия, читаемость и корректность текста, отсутствие рекламных формулировок и нежелательного контента, точность описания размера, видимость товара из-за упаковки, аккуратность товара в кадре и наличие рекламного трафика за последние семь дней.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Кому доступно</span>
+      <p>Новые параметры видят пользователи подписки «Джем» на всех тарифах и те, кто подключил эту опцию через конструктор тарифов. В бесплатной версии отображается только фактор «Продвижение карточки».</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Продавцам и агентствам, ведущим рекламу на Wildberries, стоит свериться с отчётом «Поисковые запросы» и в первую очередь проверить главное фото карточки: на него приходится большинство новых факторов.
+    </div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://www.cossa.ru/blogs/admitad/351118/" target="_blank" rel="noopener">Адмитад запустил прямые ссылки рекламодателей</a></h3>
+    <div class="card-meta">
+      <span>Cossa, блог компании</span>
+      <span>Адмитад</span>
+      <span>22 сентября 2026</span>
+    </div>
+    <div class="card-block">
+      <span class="label">Что изменилось</span>
+      <p>Адмитад добавил партнёрам новый инструмент: прямые ссылки рекламодателя. В отдельных сценариях вебмастера теперь могут вести пользователя сразу на сайт бренда без промежуточного редиректа через инфраструктуру партнёрской сети, при этом партнёрская модель и учёт вознаграждения сохраняются.</p>
+    </div>
+    <div class="card-block">
+      <span class="label">Почему важно</span>
+      <p>Всё больше покупок происходит из мобильных приложений, соцсетей и мессенджеров, а сами платформы и экосистемы всё жёстче регламентируют, каким способом пользователь должен попадать на сайт рекламодателя. Классические серверные редиректы в части таких сценариев работают хуже или не поддерживаются вовсе.</p>
+    </div>
+    <div class="card-conclusion">
+      <span class="label">Вывод</span>
+      Партнёрам, работающим через Адмитад в закрытых экосистемах и мобильных сценариях, стоит проверить, где имеет смысл переключиться на прямые ссылки, не теряя партнёрское вознаграждение.
+    </div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <div class="skipped-list">
+    <ul>
+      <li><a href="https://ppc.world/news/rynok-reklamy-v-makse-vyros-v-55-raz-za-polgoda-issledovanie-telegain-i-arir/" target="_blank" rel="noopener">Рынок рекламы в Максе вырос в 55 раз за полгода: исследование Telega.in и АРИР</a> <span class="skipped-reason">- исследование рынка без практического изменения в рекламных кабинетах.</span></li>
+      <li><a href="https://blog.click.ru/market-news/v-yandeks-metrike-poyavilis-otraslevye-orientiry-dlya-sravneniya-sajtov/" target="_blank" rel="noopener">В Яндекс Метрике появились отраслевые ориентиры для сравнения сайтов</a> <span class="skipped-reason">- вне окна дат, первая публикация 18 сентября.</span></li>
+      <li><a href="https://elama.ru/blog/tarify-dlya-klientov-v-elama-kak-agentstvam-i-frilanseram-uvelichit-voznagrazhdenie/" target="_blank" rel="noopener">Тарифы для клиентов в eLama: как агентствам и фрилансерам увеличить вознаграждение</a> <span class="skipped-reason">- вне окна дат, первая публикация 18 сентября.</span></li>
+      <li><a href="https://click.ru/news.883.html" target="_blank" rel="noopener">AI Hub для агентного маркетинга от Click.ru</a> <span class="skipped-reason">- вне окна дат, первая публикация 3 сентября.</span></li>
+    </ul>
+  </div>
+
+  <div class="summary-block">
+    <h2>SUMMARY</h2>
+    <ul>
+      <li>Обновление ЕПК в Директе не требует ручных действий, но специалистам стоит проверить группы объявлений и фильтр «Конверсионные страницы» после автообновления.</li>
+      <li>Рост конверсии от новой кнопки «Купить» в Поиске Яндекса показывает, что транзакционный сценарий там продолжает набирать вес. Стоит учитывать это при оценке вклада поисковой рекламы в продажи.</li>
+      <li>Новые рекомендации Wildberries по ранжированию карточек дают продавцам конкретный чек-лист по фото товара, включая факт использования платного продвижения.</li>
+      <li>Прямые ссылки в Адмитаде расширяют варианты работы с трафиком из мобильных приложений и закрытых экосистем. Партнёрам стоит проверить применимость к своим источникам.</li>
+    </ul>
+  </div>
+
+  <footer class="digest-footer">
+    <div class="footer-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 22 сентября 2026 за период 21-22 сентября.</div>
+  </footer>
+
+</div>
+</body>
+</html>
