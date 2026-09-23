@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 23 сентября 2026</title>
+<style>
+  :root {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #93c5fd;
+    --secondary-accent: #64748b;
+    --dark-bg: #111827;
+    --dark-bg-2: #1f2937;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 1.6em;
+    letter-spacing: -0.01em;
+  }
+  header .issue-line {
+    color: #cbd5e1;
+    font-size: 1.02em;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .summary p {
+    margin: 0 0 8px;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 34px 0 14px;
+    padding-left: 2px;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--secondary-accent);
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1.12em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  .card h3 a:hover { color: var(--accent); }
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.88em;
+    margin-bottom: 12px;
+  }
+  .card .meta span { white-space: nowrap; }
+  .card .meta span:not(:last-child)::after {
+    content: "•";
+    margin: 0 6px;
+    color: #cbd5e1;
+  }
+  .card p { margin: 0 0 10px; }
+  .card p:last-of-type { margin-bottom: 0; }
+  .card strong.label {
+    display: block;
+    font-size: 0.82em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    margin: 12px 0 3px;
+  }
+  .card strong.label:first-of-type { margin-top: 0; }
+  .card-conclusion {
+    margin-top: 14px;
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #1e3a5f;
+    font-size: 0.96em;
+  }
+  .card.secondary .card-conclusion {
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    color: #1e3a5f;
+  }
+  ul.excluded {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.excluded li {
+    background: var(--card-bg);
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid var(--secondary-accent);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+  }
+  ul.excluded a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  ul.excluded a:hover { color: var(--accent); }
+  ul.excluded .reason {
+    color: var(--muted);
+    font-size: 0.94em;
+  }
+  .takeaway {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #e5e7eb;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 34px 0 20px;
+  }
+  .takeaway h2 {
+    margin: 0 0 12px;
+    font-size: 1.15em;
+    color: #fff;
+  }
+  .takeaway ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .takeaway li {
+    margin-bottom: 8px;
+  }
+  .takeaway li:last-child { margin-bottom: 0; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9em;
+    padding: 10px 10px 0;
+  }
+  footer .footer-title {
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px; }
+    header { padding: 22px 18px 20px; }
+    header h1 { font-size: 1.35em; }
+    .card, .summary { padding: 16px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 23 сентября 2026 за период 22-23 сентября.</div>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>Яндекс Директ, Авито Реклама, Wildberries, Admitad</strong>.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://blog.click.ru/direct-yandex/reklama-v-alise-ai/" target="_blank" rel="noopener">Директ начал показывать рекламу в ответах Алисы AI</a></h3>
+    <div class="meta"><span>Click.ru</span><span>Яндекс Директ</span><span>23 сентября 2026</span></div>
+    <p>Яндекс тестирует показ рекламных объявлений в диалогах с нейропомощником Алисой: в чате на десктопе, в нейроответах Поиска и в приложениях. Объявления оформляются нативно, помечаются меткой «Промо» и обычно показываются по одному-два на ответ.</p>
+    <strong class="label">Как это работает</strong>
+    <p>Отдельной кампании, настройки или бюджета под Алису пока нет. Показы идут автоматически из обычных поисковых кампаний: Единой перфоманс-кампании, Мастера кампаний и Простого старта, если в них настроен показ на Поиск. Отобрать или купить такие показы отдельно нельзя.</p>
+    <strong class="label">Что проверить</strong>
+    <p>Статистика по показам в Алисе пока не выделяется отдельной строкой: в отчётах Директа на месте поискового запроса стоит прочерк. Оценить эффективность формата напрямую пока нельзя, только косвенно.</p>
+    <div class="card-conclusion">Формат в бета-тестировании и включить его отдельно нельзя, но включение автотаргетинга и «Персонализации» в действующих поисковых кампаниях повышает шансы попасть в показы уже сейчас.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news/obnovlenie-tovarnyh-obyavleniy" target="_blank" rel="noopener">Яндекс Директ объединил товарные объявления и объявления для каталога в ЕПК</a></h3>
+    <div class="meta"><span>Яндекс Реклама</span><span>Яндекс Директ</span><span>21-23 сентября 2026</span></div>
+    <p>В Единой перфоманс-кампании раньше приходилось отдельно настраивать товарные объявления и объявления для страниц каталога. Теперь оба типа объединили в одно обновлённое товарное объявление: достаточно выбрать источник данных, а Директ сам сгенерирует и товарные объявления, и объявления для страниц каталога.</p>
+    <strong class="label">Что проверить</strong>
+    <p>Обновление разворачивается постепенно и автоматически: настройки и статистика сохраняются, показы не останавливаются, но на несколько минут в момент обновления группа становится доступна только для чтения. Создать отдельное объявление для страниц каталога больше нельзя, зато в одной группе теперь может быть до двух активных товарных объявлений.</p>
+    <div class="card-conclusion">Донастройка не нужна, но стоит заглянуть в кампании после автообновления: структура групп с товарами и каталогом изменилась, и это стоит учесть при следующей оптимизации.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://ppc.world/news/v-avito-auditoriyah-poyavilis-rasshirennye-targetingi-po-zdorovyu/" target="_blank" rel="noopener">В Авито Аудиториях появились расширенные таргетинги по здоровью</a></h3>
+    <div class="meta"><span>ppc.world</span><span>Авито Реклама</span><span>23 сентября 2026</span></div>
+    <p>Авито Реклама расширила таргетинги в Авито Аудиториях: добавлены сегменты, связанные со здоровьем. Фарм-бренды и медицинские рекламодатели смогут точнее настраивать кампании на профильную аудиторию.</p>
+    <strong class="label">Кому подходит</strong>
+    <p>Фармацевтическим компаниям, аптечным сетям и медицинским сервисам, продвигающимся через Авито Рекламу.</p>
+    <div class="card-conclusion">Стоит заглянуть в настройки таргетинга и пересобрать аудитории для профильных кампаний: раньше такой точности в этом сегменте у площадки не было.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://blog.click.ru/market-news/wildberries-nachal-davat-rekomendacii-po-novym-faktoram-ranzhirovaniya/" target="_blank" rel="noopener">Wildberries расширил факторы ранжирования в отчёте «Поисковые запросы»</a></h3>
+    <div class="meta"><span>Click.ru</span><span>Wildberries</span><span>22 сентября 2026</span></div>
+    <p>В отчёте «Поисковые запросы: ваши товары» появились рекомендации по девяти факторам, влияющим на позиции карточки в поиске. Большинство касается качества главного фото, но один из них прямо завязан на рекламу: получал ли товар рекламный трафик за последние семь дней.</p>
+    <strong class="label">Что проверить</strong>
+    <p>Все девять параметров доступны на подписке «Джем», в бесплатной версии виден только фактор «Продвижение карточки».</p>
+    <div class="card-conclusion">Реклама карточки официально стала одним из факторов ранжирования на WB, и это стоит закладывать в стратегию продвижения, а не рассматривать отдельно от органической выдачи.</div>
+  </div>
+
+  <div class="card secondary">
+    <h3><a href="https://www.cossa.ru/blogs/admitad/351118/" target="_blank" rel="noopener">Admitad запускает прямые ссылки рекламодателей</a></h3>
+    <div class="meta"><span>Cossa</span><span>Admitad</span><span>22 сентября 2026</span></div>
+    <p>Партнёрская платформа Admitad вводит прямые ссылки рекламодателей: это новый подход к работе с современными источниками трафика для вебмастеров и партнёрских агентств.</p>
+    <strong class="label">Кому полезно</strong>
+    <p>Агентствам и паблишерам, работающим с площадкой по CPA-модели.</p>
+    <div class="card-conclusion">Стоит проверить, появился ли новый тип ссылок в личном кабинете, и сравнить его конверсию с уже используемыми схемами размещения.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <ul class="excluded">
+    <li><a href="https://www.cossa.ru/news/351121/" target="_blank" rel="noopener">Яндекс изменил кнопку «Купить»: число заказов выросло на 5%</a> <span class="reason">- эксперимент с дизайном кнопки в Поиске и Алисе, не изменение рекламного кабинета</span></li>
+    <li><a href="https://ppc.world/news/telegram-testiruet-kvadratnyy-format-videosoobscheniy/" target="_blank" rel="noopener">Telegram тестирует квадратный формат видеосообщений</a> <span class="reason">- тест функции мессенджера, не рекламного формата</span></li>
+    <li><a href="https://ppc.world/news/biznes-smozhet-sozdavat-ii-agentov-dlya-telegram-i-maksa-bez-privlecheniya-razrabotchika-s-pomoschyu-yandex-ai-studio/" target="_blank" rel="noopener">Бизнес сможет создавать ИИ-агентов для Telegram и Макса без разработчика</a> <span class="reason">- инструмент для разработки ИИ-агентов, не рекламный кабинет</span></li>
+    <li><a href="https://ppc.world/news/ppcworld-i-elama-zapustili-besplatnyy-kurs-po-reklame-v-makse/" target="_blank" rel="noopener">ppc.world и eLama запустили бесплатный курс по рекламе в Максе</a> <span class="reason">- анонс образовательного курса, без нового функционала кабинета</span></li>
+  </ul>
+
+  <div class="takeaway">
+    <h2>SUMMARY</h2>
+    <ul>
+      <li>Директ пробует нативную рекламу в диалогах с Алисой: отдельно включить формат нельзя, но автотаргетинг и «Персонализация» в поисковых кампаниях повышают шанс попасть в показы уже сейчас.</li>
+      <li>Обновление ЕПК упрощает работу с товарными фидами и каталогами: после автообновления стоит перепроверить структуру групп объявлений.</li>
+      <li>Реклама карточки на Wildberries официально стала фактором ранжирования в поиске, и агентствам стоит учитывать это при планировании рекламного бюджета на площадке.</li>
+      <li>В Авито Рекламе появился точечный таргетинг для фарм-сегмента: узкополезно, но заметно для медицинских рекламодателей.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footer-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 23 сентября 2026 за период 22-23 сентября.</div>
+  </footer>
+
+</div>
+</body>
+</html>
