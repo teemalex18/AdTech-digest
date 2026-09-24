@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 24 сентября 2026</title>
+<style>
+  :root {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #93c5fd;
+    --secondary-accent: #64748b;
+    --dark-bg: #111827;
+    --dark-bg-2: #1f2937;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 1.6em;
+    letter-spacing: -0.01em;
+  }
+  header .issue-line {
+    color: #cbd5e1;
+    font-size: 1.02em;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .summary p {
+    margin: 0 0 8px;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 34px 0 14px;
+    padding-left: 2px;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--secondary-accent);
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1.12em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  .card h3 a:hover { color: var(--accent); }
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.88em;
+    margin-bottom: 12px;
+  }
+  .card .meta span { white-space: nowrap; }
+  .card .meta span:not(:last-child)::after {
+    content: "•";
+    margin: 0 6px;
+    color: #cbd5e1;
+  }
+  .card p { margin: 0 0 10px; }
+  .card p:last-of-type { margin-bottom: 0; }
+  .card strong.label {
+    display: block;
+    font-size: 0.82em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    margin: 12px 0 3px;
+  }
+  .card strong.label:first-of-type { margin-top: 0; }
+  .card-conclusion {
+    margin-top: 14px;
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #1e3a5f;
+    font-size: 0.96em;
+  }
+  .card.secondary .card-conclusion {
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    color: #1e3a5f;
+  }
+  ul.excluded {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.excluded li {
+    background: var(--card-bg);
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid var(--secondary-accent);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+  }
+  ul.excluded a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  ul.excluded a:hover { color: var(--accent); }
+  ul.excluded .reason {
+    color: var(--muted);
+    font-size: 0.94em;
+  }
+  .takeaway {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #e5e7eb;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 34px 0 20px;
+  }
+  .takeaway h2 {
+    margin: 0 0 12px;
+    font-size: 1.15em;
+    color: #fff;
+  }
+  .takeaway ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .takeaway li {
+    margin-bottom: 8px;
+  }
+  .takeaway li:last-child { margin-bottom: 0; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9em;
+    padding: 10px 10px 0;
+  }
+  footer .footer-title {
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px; }
+    header { padding: 22px 18px 20px; }
+    header h1 { font-size: 1.35em; }
+    .card, .summary { padding: 16px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 24 сентября 2026 за период 23-24 сентября.</div>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">5</span> релевантных обновлений. Затронуты платформы: <strong>СберСеллер, Авито Реклама, Яндекс Директ, Wildberries</strong>.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://adindex.ru/news/releases/2026/09/23/349189.phtml" target="_blank" rel="noopener">«СберСеллер» выводит на рынок платформу «МИРА» для оптимизации рекламных закупок</a></h3>
+    <div class="meta"><span>AdIndex</span><span>СберСеллер</span><span>23 сентября 2026</span></div>
+    <p>«СберСеллер» запустил автоматизированную платформу «МИРА» для управления рекламными закупками. Система подключена к пулу из более чем 30 000 площадок с проверенным инвентарем и продолжает расширять список партнеров.</p>
+    <strong class="label">Как работает</strong>
+    <p>«МИРА» анализирует показатели размещений в реальном времени, применяет предиктивные модели и перераспределяет бюджет в пользу самых эффективных площадок, снижая стоимость целевого действия. Настройки подбираются индивидуально под каждого партнера, а не усредняются по всему пулу.</p>
+    <strong class="label">Что проверить</strong>
+    <p>Внутреннее тестирование на кампаниях Сбера показало прирост эффективности до 12%. Бета для внешних партнеров стартует в четвертом квартале 2026 года, полный запуск запланирован на первый квартал 2027 года.</p>
+    <div class="card-conclusion">Если результаты беты подтвердят заявленные 12% эффективности, «МИРА» может стать заметным инструментом медиазакупок уже к началу 2027 года. Агентствам стоит заранее подать заявку на подключение к бета-тесту.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://ppc.world/news/v-avito-auditoriyah-poyavilis-rasshirennye-targetingi-po-zdorovyu/" target="_blank" rel="noopener">В Авито Аудиториях появилась категория таргетингов «Здоровье и медицинские товары»</a></h3>
+    <div class="meta"><span>ppc.world</span><span>Авито Реклама</span><span>23 сентября 2026</span></div>
+    <p>В Авито Аудиториях появилась новая категория сегментов: «Здоровье и медицинские товары». Она объединяет более 30 подкатегорий, включая витамины, БАДы, противовирусные препараты, средства от кашля и насморка, обезболивающие и товары для глаз.</p>
+    <strong class="label">Как это работает</strong>
+    <p>Таргетинг определяет интерес пользователя к теме здоровья с помощью модели машинного обучения, без использования данных о диагнозах или фактических покупках. Настройка доступна через создание аудитории вручную: условие, категория «Здоровье», нужные сегменты.</p>
+    <strong class="label">Кому подходит</strong>
+    <p>Фарм-брендам и продавцам товаров для здоровья, которым нужна точная настройка кампаний на разных этапах решения, от профилактического интереса до выбора конкретного продукта.</p>
+    <div class="card-conclusion">Точечный таргетинг по здоровью стоит протестировать в первую очередь фарм-рекламодателям, уже работающим в Авито Рекламе: раньше такой детализации сегментов на площадке не было.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://yandex.ru/adv/news/universalnyy-segment-yandex-auditorii" target="_blank" rel="noopener">В Яндекс Аудиториях появился универсальный формат загрузки данных</a></h3>
+    <div class="meta"><span>Яндекс Реклама</span><span>Яндекс Директ</span><span>24 сентября 2026</span></div>
+    <p>Теперь при создании сегмента в Яндекс Аудиториях можно объединить в одном файле разные идентификаторы клиентов: email, номера телефонов, ClientID, а также IDFA и GAID. Раньше для каждого типа идентификатора требовался отдельный файл.</p>
+    <strong class="label">Что проверить</strong>
+    <p>Для хешированных данных нужно добавлять суффикс _sha256 к заголовкам столбцов. Старые сегменты с одним типом идентификатора продолжают работать без изменений, пересобирать их не нужно.</p>
+    <strong class="label">Кому полезно</strong>
+    <p>Рекламодателям и агентствам, которые собирают данные о клиентах из разных источников: CRM, сайт, офлайн-точки, и хотят точнее сопоставлять аудитории без ручной склейки файлов.</p>
+    <div class="card-conclusion">Новый формат упрощает загрузку кросс-канальных данных и повышает точность сопоставления идентификаторов. Стоит перейти на него при следующей загрузке новых сегментов.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://yandex.ru/adv/news/prodavczy-u-kotorykh-poka-net-sajta-teper-mogut-samostoyatelno-podklyuchit-prodazhi-iz-poiska-i-alisy-ai" target="_blank" rel="noopener">Продавцы без сайта теперь могут сами подключить продажи из Поиска и Алисы AI</a></h3>
+    <div class="meta"><span>Яндекс Реклама</span><span>Яндекс</span><span>24 сентября 2026</span></div>
+    <p>Раньше подключение продаж через Поиск и Алису требовало заявки на закрытое тестирование. Теперь продавцы без сайта, работающие через маркетплейсы, соцсети, офлайн-точки или дистрибьюторов, могут подключиться самостоятельно из личного кабинета.</p>
+    <strong class="label">Кому подходит</strong>
+    <p>Малому и среднему бизнесу без собственного сайта, который хочет получить дополнительный канал продаж без разработки: покупатель видит кнопку «Купить» в товарных блоках Поиска и в ответах Алисы, а данные оплаты подтягиваются из Яндекс ID.</p>
+    <div class="card-conclusion">Порог входа в продажи через Поиск и Алису заметно снижен. Стоит предложить этот канал клиентам без сайта как быстрый способ протестировать спрос.</div>
+  </div>
+
+  <div class="card secondary">
+    <h3><a href="https://www.cossa.ru/blogs/zaley_cash/351177/" target="_blank" rel="noopener">Реклама Wildberries через ZaleyCash: первый платеж от 10 000 рублей и бонус до 17%</a></h3>
+    <div class="meta"><span>Cossa</span><span>Wildberries</span><span>24 сентября 2026</span></div>
+    <p>Посредник ZaleyCash предлагает пополнение рекламного бюджета на Wildberries от 10 000 рублей на первом платеже, дальше сумма пополнения свободная. Бонус на пополнение составляет от 12 до 17% в зависимости от грейда клиента и действует на все способы оплаты, для новых аккаунтов дополнительно доступен промокод на 5%.</p>
+    <strong class="label">Что проверить</strong>
+    <p>Бюджет кампании считается как сумма пополнения плюс бонус грейда. Доступны модели CPC и CPM, первая настройка кампании бесплатна.</p>
+    <div class="card-conclusion">Разница в 5 процентных пунктов бонуса ощутима на крупных бюджетах, поэтому условия посредников для рекламы на Wildberries стоит сравнивать перед выбором.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <ul class="excluded">
+    <li><a href="https://blog.click.ru/market-news/yandeks-direkt-obedinit-tovarnye-obyavleniya-i-reklamu-katalogov-v-epk/" target="_blank" rel="noopener">Яндекс Директ объединит товарные объявления и рекламу каталогов в ЕПК</a> <span class="reason">- вне окна дат, первая публикация 21.09</span></li>
+    <li><a href="https://blog.click.ru/market-news/wildberries-nachal-davat-rekomendacii-po-novym-faktoram-ranzhirovaniya/" target="_blank" rel="noopener">Wildberries начал давать рекомендации по новым факторам ранжирования</a> <span class="reason">- вне окна дат, первая публикация 22.09</span></li>
+    <li><a href="https://ppc.world/news/stoimost-celevogo-deystviya-v-internet-reklame-vyrosla-na-174-v-pervom-polugodii-2026-goda/" target="_blank" rel="noopener">Стоимость целевого действия в интернет-рекламе выросла на 17,4% в первом полугодии 2026 года</a> <span class="reason">- исследование рынка без изменений в рекламных кабинетах</span></li>
+  </ul>
+
+  <div class="takeaway">
+    <h2>SUMMARY</h2>
+    <ul>
+      <li>«СберСеллер» выходит на рынок инструментов оптимизации медиазакупок с платформой «МИРА»: пока в закрытом режиме, но с заявленным приростом эффективности до 12%. Агентствам стоит следить за открытием беты в четвертом квартале.</li>
+      <li>Авито Реклама и Яндекс Аудитории в один день расширили возможности точного таргетинга и загрузки данных: фарм-рекламодателям и специалистам по CRM-маркетингу стоит обновить настройки аудиторий уже сейчас.</li>
+      <li>Порог входа в продажи через Поиск и Алису для продавцов без сайта снижен: это удобный быстрый канал для тестирования спроса у малого бизнеса.</li>
+      <li>Для рекламы на Wildberries через посредников разница в бонусах на пополнение достигает 5 процентных пунктов, что имеет смысл сравнивать при выборе сервиса.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footer-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 24 сентября 2026 за период 23-24 сентября.</div>
+  </footer>
+
+</div>
+</body>
+</html>
