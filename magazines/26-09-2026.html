@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 26 сентября 2026</title>
+<style>
+  :root {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #93c5fd;
+    --secondary-accent: #64748b;
+    --dark-bg: #111827;
+    --dark-bg-2: #1f2937;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 1.6em;
+    letter-spacing: -0.01em;
+  }
+  header .issue-line {
+    color: #cbd5e1;
+    font-size: 1.02em;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .summary p {
+    margin: 0 0 8px;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 34px 0 14px;
+    padding-left: 2px;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--secondary-accent);
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1.12em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  .card h3 a:hover { color: var(--accent); }
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.88em;
+    margin-bottom: 12px;
+  }
+  .card .meta span { white-space: nowrap; }
+  .card .meta span:not(:last-child)::after {
+    content: "•";
+    margin: 0 6px;
+    color: #cbd5e1;
+  }
+  .card p { margin: 0 0 10px; }
+  .card p:last-of-type { margin-bottom: 0; }
+  .card strong.label {
+    display: block;
+    font-size: 0.82em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    margin: 12px 0 3px;
+  }
+  .card strong.label:first-of-type { margin-top: 0; }
+  .card-conclusion {
+    margin-top: 14px;
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #1e3a5f;
+    font-size: 0.96em;
+  }
+  .card.secondary .card-conclusion {
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    color: #1e3a5f;
+  }
+  ul.excluded {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.excluded li {
+    background: var(--card-bg);
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid var(--secondary-accent);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+  }
+  ul.excluded a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  ul.excluded a:hover { color: var(--accent); }
+  ul.excluded .reason {
+    color: var(--muted);
+    font-size: 0.94em;
+  }
+  .takeaway {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #e5e7eb;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 34px 0 20px;
+  }
+  .takeaway h2 {
+    margin: 0 0 12px;
+    font-size: 1.15em;
+    color: #fff;
+  }
+  .takeaway ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .takeaway li {
+    margin-bottom: 8px;
+  }
+  .takeaway li:last-child { margin-bottom: 0; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9em;
+    padding: 10px 10px 0;
+  }
+  footer .footer-title {
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px; }
+    header { padding: 22px 18px 20px; }
+    header h1 { font-size: 1.35em; }
+    .card, .summary { padding: 16px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 26 сентября 2026 за период 25-26 сентября.</div>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">3</span> релевантных обновления. Затронуты платформы: <strong>MAX, VK Реклама, Ozon, Click.ru</strong>.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://ppc.world/news/v-makse-poyavilas-targetirovannaya-reklama-messendzher-nachal-testirovat-inventar-vk-reklamy/" target="_blank" rel="noopener">MAX начал тестировать таргетированную рекламу через инвентарь VK Рекламы</a></h3>
+    <div class="meta"><span>ppc.world</span><span>MAX / VK Реклама</span><span>25 сентября 2026</span></div>
+    <p>Мессенджер MAX начал тестировать рекламные инструменты через VK Рекламу: в каналах появилась таргетированная реклама. О тесте первым сообщили «Ведомости», в пресс-службе MAX запуск подтвердили.</p>
+    <strong class="label">Возможности формата</strong>
+    <p>На первом этапе можно продвигать только каналы мессенджера, но уже сейчас доступен таргетинг на разные категории пользователей. Инвентарь работает через VK Рекламу, которая ранее перешла на единую Discovery-платформу и точнее подбирает объявления под конкретного пользователя.</p>
+    <strong class="label">Что проверить</strong>
+    <p>Это ограниченный тест: сроки полноформатного релиза в MAX не назвали, массового доступа к инвентарю для внешних рекламодателей пока нет.</p>
+    <div class="card-conclusion">MAX формирует официальный канал таргетированной рекламы на базе VK. Агентствам стоит заранее разобраться в механике размещения через VK Рекламу, чтобы не терять время, когда тест перерастет в открытый запуск.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://adindex.ru/news/releases/2026/09/25/349282.phtml" target="_blank" rel="noopener">Ozon автоматизировал подбор аудитории для медийной рекламы</a></h3>
+    <div class="meta"><span>AdIndex</span><span>Ozon</span><span>25 сентября 2026</span></div>
+    <p>Ozon внедрил автоматический подбор аудитории в настройки медийных кампаний продавцов: система сама определяет потенциальную аудиторию на основе характеристик текущих покупателей, без ручного выбора сегментов.</p>
+    <strong class="label">Как это работает</strong>
+    <p>Алгоритм анализирует обезличенные данные о прошлых покупателях продавца, выявляет общие характеристики аудитории и формирует сегмент пользователей со схожим профилем. Дополнительно аудиторию можно ограничить по полу, возрасту и географии.</p>
+    <strong class="label">Кому полезно</strong>
+    <p>Продавцам на Ozon, которые запускают медийную рекламу, но не располагают ресурсами на ручную настройку и тестирование сегментов.</p>
+    <div class="card-conclusion">Порог входа в медийную рекламу на Ozon снижается для небольших продавцов: новую настройку стоит опробовать при следующем запуске кампании, прежде чем собирать аудиторию вручную.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://www.cossa.ru/news/351165/" target="_blank" rel="noopener">Click.ru запустил бесплатного ИИ-Директолога</a></h3>
+    <div class="meta"><span>Cossa</span><span>Click.ru</span><span>25 сентября 2026</span></div>
+    <p>В click.ru разработали бесплатного ИИ-помощника для оптимизации кампаний в Яндекс Директе. По данным сервиса, ИИ-Директолог в среднем снижает CPA на 34%, увеличивает конверсию после очистки площадок РСЯ в 2 раза и приносит на 41% больше заявок без роста бюджета.</p>
+    <strong class="label">Что умеет</strong>
+    <p>Отслеживает площадки РСЯ с нулевой отдачей и автоматически добавляет их в исключения, анализирует поисковые запросы и расширяет список минус-слов, формирует отчет по всем внесенным изменениям.</p>
+    <strong class="label">Кому полезно</strong>
+    <p>Агентствам и специалистам, ведущим кампании в Яндекс Директе через click.ru и не успевающим вручную чистить площадки и семантику на каждом клиенте.</p>
+    <div class="card-conclusion">Инструмент бесплатный и встроен в уже используемый сервис, поэтому проверить эффект можно быстро: заявленная экономия бюджета до 28% после первой чистки площадок оправдывает тест на кампаниях с активной РСЯ.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+  <div class="card secondary">
+    <p>За период 25-26 сентября других обновлений рекламных кабинетов, подходящих под критерии выпуска, в проверенных источниках не нашлось. Остальные публикации периода относятся к кадровым новостям, исследованиям рынка и событиям без изменений в инструментах размещения.</p>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <ul class="excluded">
+    <li><a href="https://ppc.world/news/v-avito-auditoriyah-poyavilis-rasshirennye-targetingi-po-zdorovyu/" target="_blank" rel="noopener">В Авито Аудиториях появились расширенные таргетинги по здоровью</a> <span class="reason">- вне окна дат, первая публикация 23.09</span></li>
+    <li><a href="https://adindex.ru/news/digital/2026/09/25/349269.phtml" target="_blank" rel="noopener">OpenAI расширила платформу ChatGPT Ads до Юго-Восточной Азии и Тайваня</a> <span class="reason">- зарубежная платформа, не затрагивает российские рекламные кабинеты</span></li>
+    <li><a href="https://adindex.ru/news/digital/2026/09/25/349263.phtml" target="_blank" rel="noopener">«М.Видео» создаст платформу для объединения онлайн-витрин разных компаний</a> <span class="reason">- витринная платформа ритейлера, не изменение рекламного кабинета</span></li>
+    <li><a href="https://elama.ru/blog/yandeks-urbanads-i-direkt-kak-obedinili-ohvatnuyu-i-performance-reklamu-dlya-reklamy-koncertov-letolayf/" target="_blank" rel="noopener">Яндекс UrbanAds и Директ: объединили охватную и performance-рекламу для рекламы концертов</a> <span class="reason">- кейс без новой функции или изменения условий</span></li>
+  </ul>
+
+  <div class="takeaway">
+    <h2>SUMMARY</h2>
+    <ul>
+      <li>MAX тестирует рекламу через VK: это пока закрытый тест без сроков открытого запуска, но направление понятно, стоит заранее изучить механику размещения через VK Рекламу.</li>
+      <li>Ozon снизил порог входа в медийную рекламу для продавцов без ресурсов на ручной подбор аудитории, автоматический сегмент стоит проверить при следующей кампании.</li>
+      <li>Бесплатный ИИ-Директолог от Click.ru может ощутимо сократить рутину по чистке площадок РСЯ и семантики, особенно полезен агентствам с большим числом клиентских кабинетов.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footer-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 26 сентября 2026 за период 25-26 сентября.</div>
+  </footer>
+
+</div>
+</body>
+</html>
