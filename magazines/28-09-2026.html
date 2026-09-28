@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdTech-дайджест: рекламные кабинеты РФ, 28 сентября 2026</title>
+<style>
+  :root {
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #93c5fd;
+    --secondary-accent: #64748b;
+    --dark-bg: #111827;
+    --dark-bg-2: #1f2937;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 1.6em;
+    letter-spacing: -0.01em;
+  }
+  header .issue-line {
+    color: #cbd5e1;
+    font-size: 1.02em;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .summary p {
+    margin: 0 0 8px;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+  .stat {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1.1em;
+  }
+  .section-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 34px 0 14px;
+    padding-left: 2px;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .card.primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card.secondary {
+    border-left: 4px solid var(--secondary-accent);
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1.12em;
+    line-height: 1.35;
+  }
+  .card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  .card h3 a:hover { color: var(--accent); }
+  .card .meta {
+    color: var(--muted);
+    font-size: 0.88em;
+    margin-bottom: 12px;
+  }
+  .card .meta span { white-space: nowrap; }
+  .card .meta span:not(:last-child)::after {
+    content: "•";
+    margin: 0 6px;
+    color: #cbd5e1;
+  }
+  .card p { margin: 0 0 10px; }
+  .card p:last-of-type { margin-bottom: 0; }
+  .card strong.label {
+    display: block;
+    font-size: 0.82em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    margin: 12px 0 3px;
+  }
+  .card strong.label:first-of-type { margin-top: 0; }
+  .card-conclusion {
+    margin-top: 14px;
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #1e3a5f;
+    font-size: 0.96em;
+  }
+  .card.secondary .card-conclusion {
+    background: #eff6ff;
+    border-left: 3px solid var(--accent);
+    color: #1e3a5f;
+  }
+  ul.excluded {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.excluded li {
+    background: var(--card-bg);
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid var(--secondary-accent);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+  }
+  ul.excluded a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  ul.excluded a:hover { color: var(--accent); }
+  ul.excluded .reason {
+    color: var(--muted);
+    font-size: 0.94em;
+  }
+  .takeaway {
+    background: linear-gradient(135deg, var(--dark-bg), var(--dark-bg-2));
+    color: #e5e7eb;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 34px 0 20px;
+  }
+  .takeaway h2 {
+    margin: 0 0 12px;
+    font-size: 1.15em;
+    color: #fff;
+  }
+  .takeaway ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .takeaway li {
+    margin-bottom: 8px;
+  }
+  .takeaway li:last-child { margin-bottom: 0; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9em;
+    padding: 10px 10px 0;
+  }
+  footer .footer-title {
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; padding: 16px 12px; }
+    header { padding: 22px 18px 20px; }
+    header h1 { font-size: 1.35em; }
+    .card, .summary { padding: 16px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <h1>AdTech-дайджест: рекламные кабинеты РФ</h1>
+    <div class="issue-line">Выпуск 28 сентября 2026 за период 25-28 сентября.</div>
+  </header>
+
+  <div class="summary">
+    <p>Проверено <span class="stat">13</span> источников за период. Найдено <span class="stat">4</span> релевантных обновления. Затронуты платформы: <strong>Купер, Самокат, Мегамаркет, VK Реклама, Авито Реклама</strong>.</p>
+  </div>
+
+  <div class="section-title">Главное</div>
+
+  <div class="card primary">
+    <h3><a href="https://adindex.ru/news/digital/2026/09/28/349309.phtml" target="_blank" rel="noopener">«Купер», «Самокат» и «Мегамаркет» создали единый рекламный кабинет</a></h3>
+    <div class="meta"><span>AdIndex</span><span>Купер / Самокат / Мегамаркет</span><span>28 сентября 2026</span></div>
+    <p>Три e-commerce площадки объединили рекламные кабинеты в один интерфейс. Рекламодатели получили доступ к управлению кампаниями сразу на трёх площадках без отдельной настройки и сбора статистики по каждой из них.</p>
+    <strong class="label">Как это работает</strong>
+    <p>Бюджетами можно управлять на основе общей отчётности по всем трём площадкам сразу. В компаниях считают, что это сократит операционные издержки и ускорит старт размещений для мультиплатформенных кампаний.</p>
+    <strong class="label">Кому полезно</strong>
+    <p>Агентствам и брендам, которые ведут retail media одновременно на нескольких площадках экосистемы и раньше настраивали каждую кампанию отдельно.</p>
+    <div class="card-conclusion">Единая точка входа снижает трудозатраты на ведение нескольких кабинетов: при следующем медиапланировании retail media стоит сразу проверить доступ к объединённому интерфейсу вместо трёх отдельных личных кабинетов.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://ads.vk.ru/news/programma-motivacii-dlya-reklamnykh-agentstv" target="_blank" rel="noopener">VK Реклама запускает программу мотивации для агентств</a></h3>
+    <div class="meta"><span>официальный блог VK Рекламы, подтверждено Sostav</span><span>VK Реклама</span><span>28 сентября 2026</span></div>
+    <p>Агентства смогут получать 10% от суммы привлечённого за квартал рекламного бюджета клиентов на развитие бизнеса. Минимальная выплата составляет 10 000 ₽, что соответствует привлечённому бюджету от 100 000 ₽ без НДС за квартал.</p>
+    <strong class="label">Условия участия</strong>
+    <p>Тип аккаунта «Агентство», регистрация в Едином реестре субъектов МСП, минимум два неаффилированных клиента за квартал, прямая работа с VK Рекламой, официальный сайт или активное сообщество ВКонтакте с публикациями за последние три месяца. Участие недоступно тем, кто уже задействован в других программах поддержки VK.</p>
+    <strong class="label">Как подключиться</strong>
+    <p>Достаточно принять оферту и предоставить документы по запросу.</p>
+    <div class="card-conclusion">Агентствам, работающим с VK Рекламой напрямую и подходящим под критерии МСП, стоит проверить участие уже в этом квартале: премия начисляется от совокупного бюджета клиентов, привлечённого через агентство.</div>
+  </div>
+
+  <div class="card primary">
+    <h3><a href="https://adindex.ru/news/marketing/2026/09/28/349320.phtml" target="_blank" rel="noopener">В Авито Рекламе появилось управление объёмом look-alike-аудитории</a></h3>
+    <div class="meta"><span>AdIndex</span><span>Авито Реклама</span><span>28 сентября 2026</span></div>
+    <p>При создании похожей аудитории в кабинете появились прогноз объёма и регулятор схожести и охвата. Раньше похожая аудитория создавалась без возможности влиять на её размер и степень сходства с исходной.</p>
+    <strong class="label">Как использовать</strong>
+    <p>Система показывает ожидаемый размер аудитории в реальном времени, а рекламодатель сам выбирает баланс между точностью соответствия исходной аудитории и широтой охвата.</p>
+    <strong class="label">Кому полезно</strong>
+    <p>Рекламодателям Авито, использующим look-alike для расширения охвата за пределы уже собранной базы клиентов.</p>
+    <div class="card-conclusion">Стоит пересобрать действующие look-alike-сегменты с новым регулятором: для одних кампаний выгоднее сузить аудиторию под точность, для других расширить под охват.</div>
+  </div>
+
+  <div class="section-title">Остальные обновления</div>
+
+  <div class="card secondary">
+    <h3><a href="https://adindex.ru/news/marketing/2026/09/28/349320.phtml" target="_blank" rel="noopener">Группа RW+ представила сервис для создания рекламных креативов</a></h3>
+    <div class="meta"><span>AdIndex</span><span>RW+ / VK Реклама / Яндекс Директ</span><span>28 сентября 2026</span></div>
+    <p>ИИ-сервис автоматизирует производство и адаптацию креативов под перформанс-рекламу. Для генерации нужно указать ссылку на сайт, и система сама соберёт информацию о продукте и предложении.</p>
+    <strong class="label">Возможности формата</strong>
+    <p>Инструмент создаёт несколько вариантов баннеров под разные УТП и аудитории и адаптирует макеты под форматы конкретных площадок, включая VK Рекламу и Яндекс Директ.</p>
+    <strong class="label">Что проверить</strong>
+    <p>В пробной версии доступно 250 токенов, этого хватает примерно на пять креативов. Сервис работает для пользователей в России.</p>
+    <div class="card-conclusion">Подходит агентствам и in-house командам, которым нужно быстро протестировать разные варианты баннеров перед масштабированием performance-кампании, прежде чем заказывать креатив у дизайнера.</div>
+  </div>
+
+  <div class="section-title">Не вошло в выпуск</div>
+  <ul class="excluded">
+    <li><a href="https://blog.click.ru/market-news/yandeks-direkt-obedinit-tovarnye-obyavleniya-i-reklamu-katalogov-v-epk/" target="_blank" rel="noopener">Яндекс Директ объединит товарные объявления и рекламу каталогов в ЕПК</a> <span class="reason">- вне окна дат, первая публикация 21-23 сентября</span></li>
+    <li><a href="https://blog.click.ru/market-news/wildberries-nachal-davat-rekomendacii-po-novym-faktoram-ranzhirovaniya/" target="_blank" rel="noopener">Wildberries начал давать рекомендации по новым факторам ранжирования</a> <span class="reason">- вне окна дат, первая публикация 22 сентября</span></li>
+    <li><a href="https://adindex.ru/news/marketing/2026/09/24/349214.phtml" target="_blank" rel="noopener">«Делимобиль» представил рекламу на мультимедийных экранах в салонах каршеринга</a> <span class="reason">- вне окна дат, первая публикация 24 сентября</span></li>
+  </ul>
+
+  <div class="takeaway">
+    <h2>SUMMARY</h2>
+    <ul>
+      <li>Объединение кабинетов «Купера», «Самоката» и «Мегамаркета» упрощает работу с retail media сразу на трёх площадках: агентствам стоит проверить доступ к общему интерфейсу перед следующим медиапланированием.</li>
+      <li>Новая программа мотивации VK Рекламы даёт агентствам ощутимый бонус: 10% от бюджета клиентов за квартал. Стоит заранее свериться с критериями участия, чтобы не упустить премию за текущий квартал.</li>
+      <li>Регулятор look-alike-аудитории в Авито Рекламе и генератор креативов RW+ снимают часть ручной работы при настройке кампаний: оба инструмента стоит опробовать на следующей кампании, прежде чем собирать аудиторию или баннеры вручную.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footer-title">AdTech-дайджест: рекламные кабинеты РФ</div>
+    <div>Выпуск 28 сентября 2026 за период 25-28 сентября.</div>
+  </footer>
+
+</div>
+</body>
+</html>
