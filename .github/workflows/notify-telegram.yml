@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Find new digest file
+      - name: Find digest file
         id: find
         env:
           REQUESTED_DATE: ${{ inputs.digest_date }}
@@ -33,14 +33,13 @@ jobs:
                 echo "Expected digest_date format DD-MM-YYYY" >&2
                 exit 1
               fi
-              NEW_FILE="magazines/${REQUESTED_DATE}.html"
+              NEW_FILE="magazines/$REQUESTED_DATE.html"
               if [ ! -f "$NEW_FILE" ]; then
                 echo "Digest file does not exist: $NEW_FILE" >&2
                 exit 1
               fi
             else
-              LATEST=$(find magazines -maxdepth 1 -type f -name '??-??-????.html' -printf '%f\n' |
-                awk -F'[-.]' '{ print $3 $2 $1, $0 }' | sort -r | head -n 1 | cut -d' ' -f2)
+              LATEST=$(find magazines -maxdepth 1 -type f -name '??-??-????.html' -printf '%f\n' | awk -F'[-.]' '{ print $3 $2 $1, $0 }' | sort -r | head -n 1 | cut -d' ' -f2)
               if [ -z "$LATEST" ]; then
                 echo "No digest HTML files found" >&2
                 exit 1
@@ -48,23 +47,21 @@ jobs:
               NEW_FILE="magazines/$LATEST"
             fi
           else
-            NEW_FILE=$(git diff --name-only --diff-filter=A HEAD^ HEAD \
-              | grep '^magazines/.*\.html
-
-          if [ -z "$NEW_FILE" ] && [ "$GITHUB_EVENT_NAME" != "workflow_dispatch" ]; then
-            NEW_FILE=$(git diff --name-only --diff-filter=M HEAD^ HEAD \
-              | grep '^magazines/.*\.html
+            NEW_FILE=$(git diff --name-only --diff-filter=A HEAD^ HEAD | grep '^magazines/.*\.html$' | head -n 1 || true)
+            if [ -z "$NEW_FILE" ]; then
+              NEW_FILE=$(git diff --name-only --diff-filter=M HEAD^ HEAD | grep '^magazines/.*\.html$' | head -n 1 || true)
+            fi
+          fi
 
           if [ -z "$NEW_FILE" ]; then
-            echo "file=" >> $GITHUB_OUTPUT
-            echo "date=" >> $GITHUB_OUTPUT
+            echo "file=" >> "$GITHUB_OUTPUT"
+            echo "date=" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          echo "file=$NEW_FILE" >> $GITHUB_OUTPUT
-
+          echo "file=$NEW_FILE" >> "$GITHUB_OUTPUT"
           BASENAME=$(basename "$NEW_FILE" .html)
-          echo "date=$BASENAME" >> $GITHUB_OUTPUT
+          echo "date=$BASENAME" >> "$GITHUB_OUTPUT"
 
       - name: Wait for GitHub Pages deploy
         if: steps.find.outputs.file != ''
@@ -78,175 +75,24 @@ jobs:
           TG_CHAT_ID_2: ${{ secrets.TG_CHAT_ID_2 }}
           DATE: ${{ steps.find.outputs.date }}
         run: |
-          URL="https://teemalex18.github.io/AdTech-digest/magazines/${DATE}.html"
+          URL="https://teemalex18.github.io/AdTech-digest/magazines/$DATE.html"
 
           if [ -f tg_summary.txt ]; then
             SUMMARY=$(cat tg_summary.txt)
           else
-            SUMMARY="AdTech-дайджест за ${DATE}"
+            SUMMARY="AdTech-дайджест за $DATE"
           fi
 
-          FULL_TEXT="${SUMMARY}"$'\n\n'"[Полный текст выпуска](${URL})"
+          FULL_TEXT="$SUMMARY"$'\n\n'"[Полный текст выпуска]($URL)"
 
-          for CHAT_ID in "${TG_CHAT_ID}" "${TG_CHAT_ID_2}"; do
-            if [ -z "${CHAT_ID}" ]; then
+          for CHAT_ID in "$TG_CHAT_ID" "$TG_CHAT_ID_2"; do
+            if [ -z "$CHAT_ID" ]; then
               continue
             fi
 
-            curl --fail-with-body -sS "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-              -d chat_id="${CHAT_ID}" \
+            curl --fail-with-body -sS "https://api.telegram.org/bot$TG_TOKEN/sendMessage" \
+              -d chat_id="$CHAT_ID" \
               -d parse_mode=Markdown \
               -d disable_web_page_preview=true \
-              --data-urlencode "text=${FULL_TEXT}"
-          done
- | head -n 1)
-          fi
-
-          if [ -z "$NEW_FILE" ]; then
-            NEW_FILE=$(git diff --name-only --diff-filter=M HEAD^ HEAD \
-              | grep '^magazines/.*\.html$' | head -n 1)
-          fi
-
-          if [ -z "$NEW_FILE" ]; then
-            echo "file=" >> $GITHUB_OUTPUT
-            echo "date=" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          echo "file=$NEW_FILE" >> $GITHUB_OUTPUT
-
-          BASENAME=$(basename "$NEW_FILE" .html)
-          echo "date=$BASENAME" >> $GITHUB_OUTPUT
-
-      - name: Wait for GitHub Pages deploy
-        if: steps.find.outputs.file != ''
-        run: sleep 60
-
-      - name: Send to Telegram
-        if: steps.find.outputs.file != ''
-        env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          TG_CHAT_ID_2: ${{ secrets.TG_CHAT_ID_2 }}
-          DATE: ${{ steps.find.outputs.date }}
-        run: |
-          URL="https://teemalex18.github.io/AdTech-digest/magazines/${DATE}.html"
-
-          if [ -f tg_summary.txt ]; then
-            SUMMARY=$(cat tg_summary.txt)
-          else
-            SUMMARY="AdTech-дайджест за ${DATE}"
-          fi
-
-          FULL_TEXT="${SUMMARY}"$'\n\n'"[Полный текст выпуска](${URL})"
-
-          for CHAT_ID in "${TG_CHAT_ID}" "${TG_CHAT_ID_2}"; do
-            if [ -z "${CHAT_ID}" ]; then
-              continue
-            fi
-
-            curl --fail-with-body -sS "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-              -d chat_id="${CHAT_ID}" \
-              -d parse_mode=Markdown \
-              -d disable_web_page_preview=true \
-              --data-urlencode "text=${FULL_TEXT}"
-          done
- | head -n 1)
-          fi
-
-          if [ -z "$NEW_FILE" ]; then
-            echo "file=" >> $GITHUB_OUTPUT
-            echo "date=" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          echo "file=$NEW_FILE" >> $GITHUB_OUTPUT
-
-          BASENAME=$(basename "$NEW_FILE" .html)
-          echo "date=$BASENAME" >> $GITHUB_OUTPUT
-
-      - name: Wait for GitHub Pages deploy
-        if: steps.find.outputs.file != ''
-        run: sleep 60
-
-      - name: Send to Telegram
-        if: steps.find.outputs.file != ''
-        env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          TG_CHAT_ID_2: ${{ secrets.TG_CHAT_ID_2 }}
-          DATE: ${{ steps.find.outputs.date }}
-        run: |
-          URL="https://teemalex18.github.io/AdTech-digest/magazines/${DATE}.html"
-
-          if [ -f tg_summary.txt ]; then
-            SUMMARY=$(cat tg_summary.txt)
-          else
-            SUMMARY="AdTech-дайджест за ${DATE}"
-          fi
-
-          FULL_TEXT="${SUMMARY}"$'\n\n'"[Полный текст выпуска](${URL})"
-
-          for CHAT_ID in "${TG_CHAT_ID}" "${TG_CHAT_ID_2}"; do
-            if [ -z "${CHAT_ID}" ]; then
-              continue
-            fi
-
-            curl --fail-with-body -sS "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-              -d chat_id="${CHAT_ID}" \
-              -d parse_mode=Markdown \
-              -d disable_web_page_preview=true \
-              --data-urlencode "text=${FULL_TEXT}"
-          done
- | head -n 1)
-          fi
-
-          if [ -z "$NEW_FILE" ]; then
-            NEW_FILE=$(git diff --name-only --diff-filter=M HEAD^ HEAD \
-              | grep '^magazines/.*\.html$' | head -n 1)
-          fi
-
-          if [ -z "$NEW_FILE" ]; then
-            echo "file=" >> $GITHUB_OUTPUT
-            echo "date=" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          echo "file=$NEW_FILE" >> $GITHUB_OUTPUT
-
-          BASENAME=$(basename "$NEW_FILE" .html)
-          echo "date=$BASENAME" >> $GITHUB_OUTPUT
-
-      - name: Wait for GitHub Pages deploy
-        if: steps.find.outputs.file != ''
-        run: sleep 60
-
-      - name: Send to Telegram
-        if: steps.find.outputs.file != ''
-        env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          TG_CHAT_ID_2: ${{ secrets.TG_CHAT_ID_2 }}
-          DATE: ${{ steps.find.outputs.date }}
-        run: |
-          URL="https://teemalex18.github.io/AdTech-digest/magazines/${DATE}.html"
-
-          if [ -f tg_summary.txt ]; then
-            SUMMARY=$(cat tg_summary.txt)
-          else
-            SUMMARY="AdTech-дайджест за ${DATE}"
-          fi
-
-          FULL_TEXT="${SUMMARY}"$'\n\n'"[Полный текст выпуска](${URL})"
-
-          for CHAT_ID in "${TG_CHAT_ID}" "${TG_CHAT_ID_2}"; do
-            if [ -z "${CHAT_ID}" ]; then
-              continue
-            fi
-
-            curl --fail-with-body -sS "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-              -d chat_id="${CHAT_ID}" \
-              -d parse_mode=Markdown \
-              -d disable_web_page_preview=true \
-              --data-urlencode "text=${FULL_TEXT}"
+              --data-urlencode "text=$FULL_TEXT"
           done
